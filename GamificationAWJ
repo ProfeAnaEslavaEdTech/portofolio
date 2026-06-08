@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Academic Writing Journey · Ana Eslava-Graterol</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .bebas { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.06em; }
+  .hero-gradient { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); }
+  .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+  .badge-pill { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+  .section-line { width: 60px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #4f46e5, #7c3aed); margin: 0.5rem 0 1.5rem; }
+  .tag { display: inline-block; background: #ede9fe; color: #5b21b6; border-radius: 6px; padding: 3px 10px; font-size: 0.72rem; font-weight: 600; margin: 3px; }
+  .timeline-dot { width: 14px; height: 14px; border-radius: 50%; background: #4f46e5; flex-shrink: 0; margin-top: 4px; box-shadow: 0 0 0 4px #ede9fe; }
+  .glow { box-shadow: 0 0 30px rgba(99,102,241,0.25); }
+  @keyframes fadeup { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:none} }
+  .fadeup { animation: fadeup 0.7s ease both; }
+  .level-badge { width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero-gradient text-white py-24 px-6">
+  <div class="max-w-5xl mx-auto fadeup">
+    <p class="text-indigo-300 text-sm font-semibold tracking-widest uppercase mb-3">EdTech Portfolio · ESP/EAP · Gamification · AI-Assisted Design</p>
+    <h1 class="bebas text-6xl md:text-8xl leading-none mb-4">Academic Writing<br><span style="color:#a5b4fc">Journey</span></h1>
+    <p class="text-xl text-indigo-200 max-w-2xl mb-6">A gamified eLearning unit for university learners progressing from B2 → C1 in academic English, built through responsible Human–AI collaboration.</p>
+    <div class="flex flex-wrap gap-3 mb-8">
+      <span class="badge-pill bg-indigo-600">B2 → C1 CEFR</span>
+      <span class="badge-pill bg-purple-600">6 Levels · 2,500 XP</span>
+      <span class="badge-pill bg-emerald-600">ESP / EAP</span>
+      <span class="badge-pill bg-pink-600">6 Hours Async</span>
+      <span class="badge-pill bg-amber-500 text-gray-900">UDL Accessible</span>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://profeanaeslavaedtech.github.io/Gamification/" target="_blank"
+         class="bg-white text-indigo-700 font-bold px-8 py-3 rounded-full hover:bg-indigo-50 transition">
+        🌐 View Live Project
+      </a>
+      <a href="https://github.com/ProfeAnaEslavaEdTech/Gamification" target="_blank"
+         class="border border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-indigo-700 transition">
+        💻 GitHub Repository
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ AUTHOR ═══════════ -->
+<section class="bg-white py-14 px-6 border-b">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-start">
+    <div class="flex-1">
+      <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">Author</p>
+      <h2 class="text-3xl font-bold mb-1">Ana Eslava-Graterol</h2>
+      <p class="text-gray-500 text-sm mb-3 italic">Subject Matter Expert – Applied Linguistics to Technology<br>Teaching of Academic English · ESP/EAP · <a href="https://www.instagram.com/profeanaeslava" target="_blank" class="text-indigo-500 hover:underline">@profeanaeslava</a></p>
+      <div class="section-line"></div>
+      <p class="text-gray-600 text-sm leading-relaxed max-w-xl">Developed in co-authorship with <strong>Claude Code</strong> (Anthropic) as AI-Powered Web Development Engineer — modelling ethical, transparent, and pedagogically-grounded Human–AI collaboration in educational design.</p>
+    </div>
+    <div class="bg-indigo-50 rounded-3xl p-6 text-sm text-gray-700 max-w-sm w-full">
+      <p class="font-bold text-indigo-700 mb-2">📚 Academic Context</p>
+      <p class="mb-3">Developed within the framework of the course:</p>
+      <p class="italic font-semibold text-gray-800 mb-2">"Simulation, Games and Technology Applied to Teaching Strategies and Research Methodology"</p>
+      <p>taught by <strong>Prof. Casañ Pitarch, Ricardo</strong><br>
+      Department of Applied Linguistics<br>
+      <strong>Universitat Politècnica de València (UPV)</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ INSTRUCTIONAL DESIGN ═══════════ -->
+<section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">1 · Instructional Design</p>
+    <h2 class="text-3xl font-bold mb-1">Frameworks Applied</h2>
+    <div class="section-line"></div>
+    <div class="grid md:grid-cols-3 gap-6 mt-4">
+      <div class="bg-white rounded-3xl p-6 shadow card-hover">
+        <div class="text-3xl mb-3">🔄</div>
+        <h3 class="font-bold text-indigo-700 mb-2">SAM Model</h3>
+        <p class="text-sm text-gray-600">Successive Approximation Model — iterative design cycles (analyse → prototype → review) replacing linear waterfall development.</p>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow card-hover">
+        <div class="text-3xl mb-3">📥📤</div>
+        <h3 class="font-bold text-indigo-700 mb-2">Casañ-Pitarch IPO</h3>
+        <p class="text-sm text-gray-600">Input → Processing → Output model. Each level maps onto one IPO phase, structuring a clear progression from receptive to productive skills.</p>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow card-hover">
+        <div class="text-3xl mb-3">⚡</div>
+        <h3 class="font-bold text-indigo-700 mb-2">ESA + CLIL 4Cs</h3>
+        <p class="text-sm text-gray-600">Engage–Study–Activate combined with Content, Communication, Cognition & Culture within authentic academic contexts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GAMIFICATION ═══════════ -->
+<section class="bg-white py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">2 · Gamification Design</p>
+    <h2 class="text-3xl font-bold mb-1">Mechanics & Motivation</h2>
+    <div class="section-line"></div>
+    <p class="text-gray-500 text-sm mb-8">Applying Kapp (2012) and Deterding et al. (2011) to SLA — addressing Autonomy, Competence & Relatedness (SDT, Ryan & Deci, 2000).</p>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-10">
+      <div class="flex gap-4 items-start bg-indigo-50 rounded-2xl p-4">
+        <span class="text-2xl">🏅</span>
+        <div><p class="font-semibold text-gray-800">Progressive Levelling</p><p class="text-sm text-gray-600">6 levels locked sequentially — each unlocks the next on completion.</p></div>
+      </div>
+      <div class="flex gap-4 items-start bg-purple-50 rounded-2xl p-4">
+        <span class="text-2xl">⭐</span>
+        <div><p class="font-semibold text-gray-800">XP Points System</p><p class="text-sm text-gray-600">100–1,000 XP per level. 2,500 XP total journey reward.</p></div>
+      </div>
+      <div class="flex gap-4 items-start bg-emerald-50 rounded-2xl p-4">
+        <span class="text-2xl">🎭</span>
+        <div><p class="font-semibold text-gray-800">Narrative Identity</p><p class="text-sm text-gray-600">Learner becomes a researcher — from Curious Student to Q1 Master Scholar.</p></div>
+      </div>
+      <div class="flex gap-4 items-start bg-amber-50 rounded-2xl p-4">
+        <span class="text-2xl">🔐</span>
+        <div><p class="font-semibold text-gray-800">Escape Room (Bonus World)</p><p class="text-sm text-gray-600">The Abstract Heist — Skim→Scan→Infer vaults. Up to 180 bonus XP.</p></div>
+      </div>
+      <div class="flex gap-4 items-start bg-rose-50 rounded-2xl p-4">
+        <span class="text-2xl">👑</span>
+        <div><p class="font-semibold text-gray-800">Boss Level</p><p class="text-sm text-gray-600">Level 6 (Conference Pitch) is the final challenge, unlocked via the escape room.</p></div>
+      </div>
+      <div class="flex gap-4 items-start bg-cyan-50 rounded-2xl p-4">
+        <span class="text-2xl">🏆</span>
+        <div><p class="font-semibold text-gray-800">Leaderboard + Badges</p><p class="text-sm text-gray-600">Class Pole Position dashboard. Badges from Bronze Compass → Diamond Crown.</p></div>
+      </div>
+    </div>
+
+    <!-- Level progression visual -->
+    <h3 class="font-bold text-lg mb-4 text-indigo-700">The 6-Level Journey</h3>
+    <div class="flex flex-col gap-3">
+      <div class="flex gap-4 items-center bg-amber-50 border border-amber-200 rounded-2xl p-4">
+        <div class="level-badge bg-amber-100">🥇</div>
+        <div class="flex-1"><span class="font-bold">L1 · Curious Student</span> <span class="text-gray-500 text-sm">· Word Hunter · 100 XP</span></div>
+        <span class="tag">Input · AWL</span>
+      </div>
+      <div class="flex gap-4 items-center bg-slate-50 border border-slate-200 rounded-2xl p-4">
+        <div class="level-badge bg-slate-100">🥈</div>
+        <div class="flex-1"><span class="font-bold">L2 · Apprentice Researcher</span> <span class="text-gray-500 text-sm">· Speed-Reader's Gauntlet · 200 XP</span></div>
+        <span class="tag">Input + Processing</span>
+      </div>
+      <div class="flex gap-4 items-center bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
+        <div class="level-badge bg-yellow-100">🥉</div>
+        <div class="flex-1"><span class="font-bold">L3 · Junior Scholar</span> <span class="text-gray-500 text-sm">· Grammar Forge · 300 XP</span></div>
+        <span class="tag">Processing · Grammar</span>
+      </div>
+      <div class="flex gap-4 items-center bg-gray-900 border border-yellow-600 rounded-2xl p-4">
+        <div class="level-badge bg-yellow-900 text-2xl">🔐</div>
+        <div class="flex-1"><span class="font-bold text-yellow-400">BONUS · The Abstract Heist</span> <span class="text-yellow-600 text-sm">· Escape Room · +180 XP</span></div>
+        <span class="bg-yellow-900 text-yellow-300 rounded-full px-3 py-1 text-xs font-bold">Unlocks Boss</span>
+      </div>
+      <div class="flex gap-4 items-center bg-purple-50 border border-purple-200 rounded-2xl p-4">
+        <div class="level-badge bg-purple-100">🏅</div>
+        <div class="flex-1"><span class="font-bold">L4 · Developing Author</span> <span class="text-gray-500 text-sm">· TED Quest · 400 XP</span></div>
+        <span class="tag">Processing + Output</span>
+      </div>
+      <div class="flex gap-4 items-center bg-cyan-50 border border-cyan-200 rounded-2xl p-4">
+        <div class="level-badge bg-cyan-100">💎</div>
+        <div class="flex-1"><span class="font-bold">L5 · Emerging Researcher</span> <span class="text-gray-500 text-sm">· Paragraph Forge · 500 XP</span></div>
+        <span class="tag">Output · Writing</span>
+      </div>
+      <div class="flex gap-4 items-center bg-indigo-900 border border-indigo-400 rounded-2xl p-4">
+        <div class="level-badge bg-indigo-800 text-2xl">👑</div>
+        <div class="flex-1"><span class="font-bold text-white">L6 · Academic Challenger</span> <span class="text-indigo-300 text-sm">· Conference Pitch · 1,000 XP · BOSS</span></div>
+        <span class="bg-indigo-700 text-indigo-200 rounded-full px-3 py-1 text-xs font-bold">Diamond Crown</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PEDAGOGICAL DESIGN ═══════════ -->
+<section class="py-16 px-6 bg-white border-t">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">Pedagogical Design Document</p>
+    <h2 class="text-3xl font-bold mb-1">Academic Writing Journey: From Reader to Research Communicator</h2>
+    <div class="section-line"></div>
+
+    <!-- Course meta -->
+    <div class="grid md:grid-cols-3 gap-4 mb-10 mt-2 text-sm">
+      <div class="bg-indigo-50 rounded-2xl p-4"><p class="font-bold text-indigo-700 mb-1">Major / Minor</p><p class="text-gray-700">English Language Skills (B2→C1) · Minor: Academic Literacy</p></div>
+      <div class="bg-purple-50 rounded-2xl p-4"><p class="font-bold text-purple-700 mb-1">Format</p><p class="text-gray-700">1 Canva Course · 18 sequenced Activities · Fully async, self-paced</p></div>
+      <div class="bg-emerald-50 rounded-2xl p-4"><p class="font-bold text-emerald-700 mb-1">Audience</p><p class="text-gray-700">Undergraduate (Years 2–4) & Master's students (Years 1–2)</p></div>
+    </div>
+
+    <!-- Description -->
+    <div class="bg-gray-50 rounded-3xl p-6 mb-10">
+      <p class="font-bold text-gray-800 mb-2">Course Description</p>
+      <p class="text-gray-700 text-sm leading-relaxed">I developed this six-level gamified course to help undergraduate and master's students strengthen their academic English and research communication skills. The course guides learners through a progressive journey from academic vocabulary development to reading, analysing, writing, and presenting research abstracts. Drawing on Swales' Move Analysis and Hyland's Metadiscourse Framework, learners gradually build the linguistic and rhetorical skills required for academic success in English-medium higher education.</p>
+    </div>
+
+    <!-- Learning Outcomes -->
+    <div class="bg-indigo-900 text-white rounded-3xl p-6 mb-10">
+      <p class="font-bold text-indigo-300 text-sm uppercase tracking-wider mb-3">Learning Outcomes</p>
+      <p class="text-indigo-100 text-sm leading-relaxed">By the end of the course, learners can <strong class="text-white">read research abstracts critically</strong>, <strong class="text-white">identify rhetorical structures and metadiscourse strategies</strong>, <strong class="text-white">write a cohesive academic abstract</strong>, and <strong class="text-white">deliver a concise spoken research summary</strong> with confidence.</p>
+    </div>
+
+    <!-- Course Structure: 6 levels -->
+    <h3 class="text-xl font-bold text-indigo-700 mb-6">Course Structure — 6 Levels</h3>
+    <div class="space-y-5 mb-10">
+
+      <!-- L1 -->
+      <div class="border border-amber-200 rounded-3xl overflow-hidden">
+        <div class="bg-amber-50 px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">🥇</span>
+          <div><p class="font-bold text-gray-800">Level 1 — Word Hunter</p><p class="text-sm text-amber-700">Focus: Academic Word List (AWL), word families, and collocations.</p></div>
+          <span class="ml-auto badge-pill bg-amber-200 text-amber-800">100 XP</span>
+        </div>
+        <div class="px-6 py-3 flex flex-wrap gap-4 text-sm bg-white">
+          <a href="https://profeanaeslava.my.canva.site/level1design" target="_blank" class="text-indigo-600 hover:underline">📐 Design Document</a>
+          <a href="https://profeanaeslava.my.canva.site/level1" target="_blank" class="text-emerald-600 hover:underline">👩‍🏫 Teacher's Guide</a>
+          <a href="https://profeanaeslava.my.canva.site/level1studentguide" target="_blank" class="text-purple-600 hover:underline">🎓 Student's Guide</a>
+        </div>
+      </div>
+
+      <!-- L2 -->
+      <div class="border border-slate-200 rounded-3xl overflow-hidden">
+        <div class="bg-slate-50 px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">🥈</span>
+          <div><p class="font-bold text-gray-800">Level 2 — Abstract Detective</p><p class="text-sm text-slate-600">Focus: Skimming, scanning, inferencing, and identifying Swales' Moves in research abstracts.</p></div>
+          <span class="ml-auto badge-pill bg-slate-200 text-slate-800">200 XP</span>
+        </div>
+        <div class="px-6 py-3 flex flex-wrap gap-4 text-sm bg-white">
+          <a href="https://profeanaeslava.my.canva.site/level2design" target="_blank" class="text-indigo-600 hover:underline">📐 Design Document</a>
+          <a href="https://profeanaeslava.my.canva.site/level2" target="_blank" class="text-emerald-600 hover:underline">👩‍🏫 Teacher's Guide</a>
+          <a href="https://profeanaeslava.my.canva.site/level2studentguide" target="_blank" class="text-purple-600 hover:underline">🎓 Student's Guide</a>
+        </div>
+      </div>
+
+      <!-- L3 -->
+      <div class="border border-yellow-200 rounded-3xl overflow-hidden">
+        <div class="bg-yellow-50 px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">🥉</span>
+          <div><p class="font-bold text-gray-800">Level 3 — Junior Scholar</p><p class="text-sm text-yellow-700">Focus: Hyland's metadiscourse markers, hedges, boosters, attitude markers, self-mentions, and academic grammar.</p></div>
+          <span class="ml-auto badge-pill bg-yellow-200 text-yellow-800">300 XP</span>
+        </div>
+        <div class="px-6 py-3 flex flex-wrap gap-4 text-sm bg-white">
+          <a href="https://profeanaeslava.my.canva.site/level3design" target="_blank" class="text-indigo-600 hover:underline">📐 Design Document</a>
+          <a href="https://profeanaeslava.my.canva.site/level3tg" target="_blank" class="text-emerald-600 hover:underline">👩‍🏫 Teacher's Guide</a>
+          <a href="https://profeanaeslava.my.canva.site/level3studentguide" target="_blank" class="text-purple-600 hover:underline">🎓 Student's Guide</a>
+        </div>
+      </div>
+
+      <!-- BONUS -->
+      <div class="border border-yellow-600 rounded-3xl overflow-hidden bg-gray-950">
+        <div class="px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">🔐</span>
+          <div><p class="font-bold text-yellow-400">BONUS — The Abstract Heist</p><p class="text-sm text-yellow-600">Escape room: Skim → Scan → Infer vaults. Crack code WATER-81-SAFE to unlock Level 6.</p></div>
+          <span class="ml-auto badge-pill bg-yellow-900 text-yellow-300">+180 XP</span>
+        </div>
+        <div class="px-6 py-3 bg-gray-900">
+          <a href="https://profeanaeslavaedtech.github.io/escaperoom/" target="_blank" class="text-yellow-400 hover:underline text-sm">🎮 Play the Escape Room</a>
+        </div>
+      </div>
+
+      <!-- L4 -->
+      <div class="border border-purple-200 rounded-3xl overflow-hidden">
+        <div class="bg-purple-50 px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">🏅</span>
+          <div><p class="font-bold text-gray-800">Level 4 — Research Navigator</p><p class="text-sm text-purple-700">Focus: Integration of Swales' Moves and Hyland's metadiscourse to analyse rhetorical functions in abstracts.</p></div>
+          <span class="ml-auto badge-pill bg-purple-200 text-purple-800">400 XP</span>
+        </div>
+        <div class="px-6 py-3 flex flex-wrap gap-4 text-sm bg-white">
+          <a href="https://profeanaeslava.my.canva.site/level4design" target="_blank" class="text-indigo-600 hover:underline">📐 Design Document</a>
+          <a href="https://profeanaeslava.my.canva.site/level4teacherguide" target="_blank" class="text-emerald-600 hover:underline">👩‍🏫 Teacher's Guide</a>
+          <a href="https://profeanaeslava.my.canva.site/level4studentguide" target="_blank" class="text-purple-600 hover:underline">🎓 Student's Guide</a>
+        </div>
+      </div>
+
+      <!-- L5 -->
+      <div class="border border-cyan-200 rounded-3xl overflow-hidden">
+        <div class="bg-cyan-50 px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">💎</span>
+          <div><p class="font-bold text-gray-800">Level 5 — Master Abstract Builder</p><p class="text-sm text-cyan-700">Focus: Writing a complete academic abstract using move structure and metadiscourse strategies.</p></div>
+          <span class="ml-auto badge-pill bg-cyan-200 text-cyan-800">500 XP</span>
+        </div>
+        <div class="px-6 py-3 flex flex-wrap gap-4 text-sm bg-white">
+          <a href="https://profeanaeslava.my.canva.site/level5design" target="_blank" class="text-indigo-600 hover:underline">📐 Design Document</a>
+          <a href="https://profeanaeslava.my.canva.site/level5teacherguide" target="_blank" class="text-emerald-600 hover:underline">👩‍🏫 Teacher's Guide</a>
+          <a href="https://profeanaeslava.my.canva.site/level5studentguide" target="_blank" class="text-purple-600 hover:underline">🎓 Student's Guide</a>
+        </div>
+      </div>
+
+      <!-- L6 -->
+      <div class="border border-indigo-500 rounded-3xl overflow-hidden">
+        <div class="bg-indigo-900 px-6 py-4 flex items-center gap-4">
+          <span class="text-3xl">👑</span>
+          <div><p class="font-bold text-white">Level 6 — Academic Communicator <span class="text-indigo-300 text-sm font-normal">· BOSS LEVEL</span></p><p class="text-sm text-indigo-300">Focus: Delivering and recording a spoken academic abstract using academic presentation techniques.</p></div>
+          <span class="ml-auto badge-pill bg-indigo-700 text-indigo-200">1,000 XP</span>
+        </div>
+        <div class="px-6 py-3 flex flex-wrap gap-4 text-sm bg-white">
+          <a href="https://profeanaeslava.my.canva.site/level6design" target="_blank" class="text-indigo-600 hover:underline">📐 Design Document</a>
+          <a href="https://profeanaeslava.my.canva.site/level6teacherguide" target="_blank" class="text-emerald-600 hover:underline">👩‍🏫 Teacher's Guide</a>
+          <a href="https://profeanaeslava.my.canva.site/level6studentguide" target="_blank" class="text-purple-600 hover:underline">🎓 Student's Guide</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Interactions -->
+    <h3 class="text-xl font-bold text-indigo-700 mb-4">Interaction Types</h3>
+    <div class="flex flex-wrap gap-2 mb-10">
+      <span class="tag">Interactive Videos</span><span class="tag">Gamified Challenges</span>
+      <span class="tag">Move Identification Activities</span><span class="tag">Metadiscourse Classification Tasks</span>
+      <span class="tag">Corpus-Based Analysis</span><span class="tag">AI-Guided Practice (PhD Chema)</span>
+      <span class="tag">Solo Worksheets</span><span class="tag">Reflection Logs</span>
+      <span class="tag">Canva Quizzes</span><span class="tag">Peer Feedback Activities</span>
+      <span class="tag">Audio Recording Tasks</span><span class="tag">Badge & XP Progression System</span>
+    </div>
+
+    <!-- Tools -->
+    <h3 class="text-xl font-bold text-indigo-700 mb-4">Tools Used</h3>
+    <div class="flex flex-wrap gap-2">
+      <span class="tag">Canva Courses</span><span class="tag">Canva Worksheets</span><span class="tag">Canva Quizzes</span>
+      <span class="tag">PhD Chema GPT</span><span class="tag">WayGround</span><span class="tag">Padlet</span>
+      <span class="tag">Vocaroo</span><span class="tag">Google Scholar</span><span class="tag">Abstract Generator</span>
+      <span class="tag">NapkinAi</span><span class="tag">Synthesia AI</span><span class="tag">Claude Code</span>
+      <span class="tag">Grok AI</span><span class="tag">GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SLA PRINCIPLES ═══════════ -->
+<section class="py-16 px-6 bg-gradient-to-br from-indigo-50 to-purple-50">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">3 · Second Language Acquisition</p>
+    <h2 class="text-3xl font-bold mb-1">SLA Principles in Practice</h2>
+    <div class="section-line"></div>
+    <div class="grid md:grid-cols-2 gap-5 mt-4">
+      <div class="bg-white rounded-2xl p-5 shadow-sm card-hover">
+        <p class="font-bold text-indigo-700 mb-1">Comprehensible Input +1 <span class="text-gray-400 font-normal text-sm">(Krashen)</span></p>
+        <p class="text-sm text-gray-600">Resources are pitched at i+1, scaffolded by video, infographics, and AI support — always slightly above current proficiency.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm card-hover">
+        <p class="font-bold text-indigo-700 mb-1">Noticing Hypothesis <span class="text-gray-400 font-normal text-sm">(Schmidt)</span></p>
+        <p class="text-sm text-gray-600">Level 3 metadiscourse marker activities make implicit grammatical features salient through focused attention tasks.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm card-hover">
+        <p class="font-bold text-indigo-700 mb-1">Output Hypothesis <span class="text-gray-400 font-normal text-sm">(Swain)</span></p>
+        <p class="text-sm text-gray-600">Levels 5–6 require learners to produce a full abstract and a spoken conference pitch, triggering syntactic processing.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm card-hover">
+        <p class="font-bold text-indigo-700 mb-1">Swales' 5-Move Structure</p>
+        <p class="text-sm text-gray-600">Core academic writing framework introduced in Level 2, applied progressively through Levels 3–5 using real research abstracts.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm card-hover md:col-span-2">
+        <p class="font-bold text-indigo-700 mb-1">Hyland's Metadiscourse Framework</p>
+        <p class="text-sm text-gray-600">Interactive (frame markers, transitions, evidentials) and Interactional markers (hedges, boosters, attitude markers) taught explicitly in Level 3 and applied in Level 4 through a Hyland Taxonomy game.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ UX & ELEARNING ═══════════ -->
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">4 · eLearning & UX Design</p>
+    <h2 class="text-3xl font-bold mb-1">Inclusive Design Decisions</h2>
+    <div class="section-line"></div>
+    <div class="grid md:grid-cols-3 gap-6 mt-4">
+      <div class="bg-gray-50 rounded-3xl p-6 card-hover">
+        <div class="text-3xl mb-3">🧠</div>
+        <h3 class="font-bold mb-2">Cognitive Load Theory <span class="text-gray-400 text-sm font-normal">(Sweller)</span></h3>
+        <p class="text-sm text-gray-600">Information chunked into 6 levels × 3 activities. Collapsible sections, progressive disclosure, and clean visual hierarchy prevent overload.</p>
+      </div>
+      <div class="bg-indigo-50 rounded-3xl p-6 card-hover">
+        <div class="text-3xl mb-3">♿</div>
+        <h3 class="font-bold mb-2">Universal Design for Learning <span class="text-gray-400 text-sm font-normal">(CAST)</span></h3>
+        <p class="text-sm text-gray-600">Floating UDL bar: voice dictation (Web Speech API), large text, high-contrast mode, read-back — multiple means of representation and action.</p>
+      </div>
+      <div class="bg-purple-50 rounded-3xl p-6 card-hover">
+        <div class="text-3xl mb-3">🎬</div>
+        <h3 class="font-bold mb-2">Multimodal Learning</h3>
+        <p class="text-sm text-gray-600">Video (YouTube/TED-Ed), interactive Canva resources, AI tools (GPT), peer platforms (Padlet, Flip), and audio tools (Vocaroo, Synthesia).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ AI COLLABORATION ═══════════ -->
+<section class="py-16 px-6 bg-gradient-to-br from-gray-900 to-indigo-950 text-white">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-400 text-xs font-bold tracking-widest uppercase mb-1">5 · Responsible Human–AI Collaboration</p>
+    <h2 class="text-3xl font-bold mb-1">AI Literacy in Educational Design</h2>
+    <div class="w-14 h-1 rounded bg-indigo-500 mb-6"></div>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-indigo-200 leading-relaxed mb-4">This project was developed in co-authorship with <strong class="text-white">Claude Code</strong> (Anthropic) as AI-Powered Web Development Engineer — a deliberate methodological choice to model and document <strong class="text-indigo-300">ethical, transparent, and pedagogically-grounded Human–AI collaboration</strong> in educational design.</p>
+        <p class="text-indigo-200 leading-relaxed">The AI was used as a <em>technical co-author</em>, not a replacement for the Subject Matter Expert's pedagogical decision-making. All instructional design decisions, content curation, and learning objectives were authored by the human educator.</p>
+      </div>
+      <div class="bg-indigo-900 rounded-3xl p-6 border border-indigo-700">
+        <p class="text-indigo-300 text-sm font-bold mb-4 uppercase tracking-wider">Human vs AI Roles</p>
+        <div class="space-y-3 text-sm">
+          <div class="flex gap-3"><span class="text-emerald-400 font-bold w-20 flex-shrink-0">Human</span><span class="text-gray-300">Pedagogical design, content curation, SLA theory application, instructional sequencing, assessment criteria</span></div>
+          <div class="border-t border-indigo-800"></div>
+          <div class="flex gap-3"><span class="text-indigo-400 font-bold w-20 flex-shrink-0">Claude Code</span><span class="text-gray-300">HTML/CSS/JS development, UX implementation, accessibility layer, bug fixing, code architecture</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TECH STACK ═══════════ -->
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-1">6 · Technology Stack</p>
+    <h2 class="text-3xl font-bold mb-1">Tools & Technologies</h2>
+    <div class="section-line"></div>
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="tag">HTML5</span><span class="tag">Tailwind CSS</span><span class="tag">JavaScript (ES6+)</span>
+      <span class="tag">Web Speech API</span><span class="tag">GitHub Pages</span><span class="tag">Canva LMS</span>
+      <span class="tag">Canva Courses</span><span class="tag">PhD Chema GPT</span><span class="tag">Padlet</span>
+      <span class="tag">Flip</span><span class="tag">Vocaroo</span><span class="tag">Synthesia</span>
+      <span class="tag">Font Awesome</span><span class="tag">Bebas Neue</span><span class="tag">Claude Code (Anthropic)</span>
+      <span class="tag">YouTube / TED-Ed</span><span class="tag">Google Scholar</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CITATION ═══════════ -->
+<section class="py-12 px-6 bg-indigo-50 border-t border-indigo-100">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-3">Citation</p>
+    <p class="text-gray-700 text-sm bg-white rounded-2xl p-5 inline-block shadow-sm text-left max-w-2xl">
+      Eslava-Graterol, A. (2026). <em>Academic Writing Journey</em> [Gamified eLearning unit]. Universitat Politècnica de València.
+      <a href="https://profeanaeslavaedtech.github.io/Gamification/" target="_blank" class="text-indigo-600 hover:underline break-all">https://profeanaeslavaedtech.github.io/Gamification/</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer style="background:linear-gradient(135deg,#0f0c29,#1e1b4b,#24243e);color:#c7d2fe;text-align:center;padding:2rem 1rem;font-size:0.82rem;line-height:1.9;">
+  <p style="font-size:1rem;font-weight:700;color:#fff;">© June 2026 Ana Eslava-Graterol · <a href="https://www.instagram.com/profeanaeslava" target="_blank" style="color:#a5b4fc;">@profeanaeslava</a></p>
+  <p style="color:#818cf8;">Developed in co-authorship with Claude Code · AI-Powered Web Development Engineer</p>
+  <p style="color:#6366f1;margin-top:0.3rem;">Project aimed at promoting ethical and responsible Human–AI Collaboration in Education · ESP/EAP · AI Literacy</p>
+</footer>
+
+</body>
+</html>
