@@ -6,7 +6,7 @@
 <title>Portfolio — Academic Writing Journey · Ana Eslava-Graterol</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
+<style> 
   body { font-family: 'Inter', sans-serif; }
   .bebas { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.06em; }
   .hero-gradient { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); }
@@ -20,6 +20,67 @@
   @keyframes fadeup { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:none} }
   .fadeup { animation: fadeup 0.7s ease both; }
   .level-badge { width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0; }
+  .video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.video-tag {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.video-embed-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-embed-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+.video-links ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.video-links li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.video-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.video-links a:hover {
+  color: #C24A2E;
+  text-decoration: underline;
+}
 </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -421,7 +482,59 @@
     </div>
   </div>
 </section>
+<section class="portfolio-section">
+  <p class="section-label">7 · Video & Multimedia Production</p>
+  <h2>AI-Generated Avatar Video</h2>
+  <p class="section-intro">
+    Five AI-generated avatar videos produced with Synthesia, spanning academic,
+    instructional, internal-pitch, and commercial formats — full lifecycle from
+    script to publish.
+  </p>
 
+  <div class="video-grid">
+
+    <div class="video-card">
+      <h3>Use Academic Language with Confidence</h3>
+      <p class="video-tag">Avatar-led training module</p>
+      <div class="video-embed-wrap">
+        <iframe
+          src="https://share.synthesia.io/embeds/videos/d47c29e8-b0c3-4dee-8ac2-a22bd870c016"
+          loading="lazy"
+          title="Use Academic Language with Confidence"
+          allowfullscreen
+          allow="encrypted-media; fullscreen; microphone; screen-wake-lock;">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <h3>Level 5 — VILT PowerPoint Deck</h3>
+      <p class="video-tag">Gamified course closer (AWJ)</p>
+      <div class="video-embed-wrap">
+        <iframe
+          src="https://share.synthesia.io/embeds/videos/fb2b94fc-b9ad-4b8a-b84d-639830d5e6ee"
+          loading="lazy"
+          title="LEVEL 5 VILT POWER POINT DECK"
+          allowfullscreen
+          allow="encrypted-media; fullscreen; microphone; screen-wake-lock;">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="video-links">
+    <h3>More production work</h3>
+    <ul>
+      <li><a href="https://youtu.be/9CJTA_O6zvo" target="_blank" rel="noopener">🛠️ Tool tutorial — how-to walkthrough</a></li>
+      <li><a href="https://youtu.be/LjmYGpRQE1A" target="_blank" rel="noopener">📊 Internal pitch deck — turning a concept into a program</a></li>
+      <li><a href="https://www.instagram.com/p/DItDwYBoiyD/" target="_blank" rel="noopener">🎬 Demo reel — storytelling in action</a></li>
+      <li><a href="https://www.instagram.com/reel/DGgeCnuIhy6/" target="_blank" rel="noopener">🎓 Live class delivery — reel 1</a></li>
+      <li><a href="https://www.instagram.com/reel/DKEUMovoK8-/" target="_blank" rel="noopener">🎓 Live class delivery — reel 2</a></li>
+      <li><a href="https://www.instagram.com/reel/DVdrNaGCCUb/" target="_blank" rel="noopener">🎙️ Podcast / Adobe Podcast production</a></li>
+    </ul>
+  </div>
+</section>
 <!-- ═══════════ CITATION ═══════════ -->
 <section class="py-12 px-6 bg-indigo-50 border-t border-indigo-100">
   <div class="max-w-5xl mx-auto text-center">
