@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinary Variation in Metadiscourse Use — Metadiscourse Markers Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #4472C4;
+            border-bottom: 3px solid #4472C4;
+            padding-bottom: 10px;
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+        h2 {
+            background-color: #4472C4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 36px;
+            font-size: 1.1rem;
+        }
+        .discipline-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .discipline-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            border-left: 5px solid #4472C4;
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+        .charts-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 700px) {
+            .charts-row { grid-template-columns: 1fr; }
+        }
+        .chart-panel {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 14px;
+        }
+        .chart-panel.textual { border-top: 5px solid #4472C4; }
+        .chart-panel.interpersonal { border-top: 5px solid #ED7D31; }
+        .chart-panel h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .chart-panel h3.textual-title { color: #4472C4; }
+        .chart-panel h3.interpersonal-title { color: #ED7D31; }
+        canvas { width: 100% !important; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 0.88rem;
+        }
+        th {
+            background-color: #D9E2F3;
+            padding: 10px 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        td { padding: 8px 12px; border: 1px solid #ccc; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.82rem;
+            margin: 8px 0 16px 0;
+            color: #555;
+        }
+        .legend-dot {
+            display: inline-block;
+            width: 12px; height: 12px;
+            border-radius: 3px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .note {
+            background-color: #e8f5e9;
+            border-left: 4px solid #70AD47;
+            padding: 12px 15px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts<br>
+Metadiscourse Markers Visualization by Academic Discipline</h1>
+
+<div class="note">
+    <strong>Note:</strong> Charts display Normalized Frequency (per 1,000 words). Hover over any bar to see exact Occurrences and Normalized Frequency values.
+</div>
+
+<div class="legend">
+    <span><span class="legend-dot" style="background:#4472C4;"></span>TEXTUAL markers</span>
+    <span><span class="legend-dot" style="background:#ED7D31;"></span>INTERPERSONAL markers</span>
+</div>
+
+<!-- ARCHITECTURE -->
+<div class="discipline-section">
+    <div class="discipline-title">Architecture</div>
+    <div class="charts-row">
+        <div class="chart-panel textual">
+            <h3 class="textual-title">TEXTUAL Metadiscourse — Architecture</h3>
+            <canvas id="textual-arch"></canvas>
+        </div>
+        <div class="chart-panel interpersonal">
+            <h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Architecture</h3>
+            <canvas id="interp-arch"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- ENGINEERING -->
+<div class="discipline-section">
+    <div class="discipline-title">Engineering</div>
+    <div class="charts-row">
+        <div class="chart-panel textual">
+            <h3 class="textual-title">TEXTUAL Metadiscourse — Engineering</h3>
+            <canvas id="textual-eng"></canvas>
+        </div>
+        <div class="chart-panel interpersonal">
+            <h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Engineering</h3>
+            <canvas id="interp-eng"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- SCI & TECH FOR HEALTH -->
+<div class="discipline-section">
+    <div class="discipline-title">Science and Technology for Health</div>
+    <div class="charts-row">
+        <div class="chart-panel textual">
+            <h3 class="textual-title">TEXTUAL Metadiscourse — Sci &amp; Tech for Health</h3>
+            <canvas id="textual-health"></canvas>
+        </div>
+        <div class="chart-panel interpersonal">
+            <h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Sci &amp; Tech for Health</h3>
+            <canvas id="interp-health"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- ARTS & HUMANITIES -->
+<div class="discipline-section">
+    <div class="discipline-title">Arts and Humanities</div>
+    <div class="charts-row">
+        <div class="chart-panel textual">
+            <h3 class="textual-title">TEXTUAL Metadiscourse — Arts &amp; Humanities</h3>
+            <canvas id="textual-arts"></canvas>
+        </div>
+        <div class="chart-panel interpersonal">
+            <h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Arts &amp; Humanities</h3>
+            <canvas id="interp-arts"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- SCIENCES -->
+<div class="discipline-section">
+    <div class="discipline-title">Sciences</div>
+    <div class="charts-row">
+        <div class="chart-panel textual">
+            <h3 class="textual-title">TEXTUAL Metadiscourse — Sciences</h3>
+            <canvas id="textual-sci"></canvas>
+        </div>
+        <div class="chart-panel interpersonal">
+            <h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Sciences</h3>
+            <canvas id="interp-sci"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- SOCIAL & LEGAL SCIENCES -->
+<div class="discipline-section">
+    <div class="discipline-title">Social and Legal Sciences</div>
+    <div class="charts-row">
+        <div class="chart-panel textual">
+            <h3 class="textual-title">TEXTUAL Metadiscourse — Social &amp; Legal Sciences</h3>
+            <canvas id="textual-social"></canvas>
+        </div>
+        <div class="chart-panel interpersonal">
+            <h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Social &amp; Legal Sciences</h3>
+            <canvas id="interp-social"></canvas>
+        </div>
+    </div>
+</div>
+
+<h2>Data Reference Table (Sheet2 Structure)</h2>
+<table>
+    <tr>
+        <th>Discipline</th>
+        <th>TEXTUAL Subcategories</th>
+        <th>INTERPERSONAL Subcategories</th>
+    </tr>
+    <tr><td>Architecture</td><td rowspan="6">Logical markers · Code Glosses · Frame markers · Endophoric markers · Evidentials</td><td rowspan="6">Boosters · Hedges · Attitude markers · Engagement markers · Self-mentions</td></tr>
+    <tr><td>Engineering</td></tr>
+    <tr><td>Sci &amp; Tech for Health</td></tr>
+    <tr><td>Arts &amp; Humanities</td></tr>
+    <tr><td>Sciences</td></tr>
+    <tr><td>Social &amp; Legal Sciences</td></tr>
+</table>
+
+<footer>
+    <strong>&copy; 2026 Ana Eslava-Graterol @profeanaeslava</strong><br>
+    Applied Linguistics to Technology and Teaching of Academic English / ESP/EAP<br><br>
+    Master's Thesis: <em>"Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts"</em><br>
+    Supervised by <strong>Prof. M&ordf; Luisa Carri&oacute;-Pastor</strong> and <strong>Prof. Ana Eslava-Graterol</strong><br>
+    Department of Applied Linguistics — Universitat Polit&egrave;cnica de Val&egrave;ncia (UPV)
+</footer>
+
+<script>
+// ─── DATA ────────────────────────────────────────────────────────────────────
+// Replace the numbers below with your actual values from Sheet2.
+// Format: [occurrences, normalizedFreq]  for each subcategory in order.
+// TEXTUAL: Logical markers | Code Glosses | Frame markers | Endophoric markers | Evidentials
+// INTERPERSONAL: Boosters | Hedges | Attitude markers | Engagement markers | Self-mentions
+
+const data = {
+    arch: {
+        textual:       [[54,16.18], [11,3.30], [51,15.28], [3,0.90], [1,0.30]],
+        interpersonal: [[8,2.40],   [22,6.60], [4,1.20],   [2,0.60], [3,0.90]]
+    },
+    eng: {
+        textual:       [[48,14.40], [9,2.70], [45,13.50], [5,1.50], [2,0.60]],
+        interpersonal: [[10,3.00],  [25,7.50], [3,0.90],  [1,0.30], [2,0.60]]
+    },
+    health: {
+        textual:       [[42,12.60], [7,2.10], [38,11.40], [4,1.20], [1,0.30]],
+        interpersonal: [[12,3.60],  [30,9.00], [5,1.50],  [2,0.60], [4,1.20]]
+    },
+    arts: {
+        textual:       [[60,18.00], [14,4.20], [55,16.50], [6,1.80], [3,0.90]],
+        interpersonal: [[6,1.80],   [18,5.40], [7,2.10],   [4,1.20], [5,1.50]]
+    },
+    sci: {
+        textual:       [[38,11.40], [6,1.80], [35,10.50], [3,0.90], [2,0.60]],
+        interpersonal: [[15,4.50],  [35,10.50], [4,1.20], [1,0.30], [2,0.60]]
+    },
+    social: {
+        textual:       [[55,16.50], [12,3.60], [50,15.00], [5,1.50], [2,0.60]],
+        interpersonal: [[9,2.70],   [28,8.40], [6,1.80],   [3,0.90], [4,1.20]]
+    }
+};
+
+// ─── LABELS ──────────────────────────────────────────────────────────────────
+const textualLabels      = ['Logical markers','Code Glosses','Frame markers','Endophoric markers','Evidentials'];
+const interpersonalLabels = ['Boosters','Hedges','Attitude markers','Engagement markers','Self-mentions'];
+
+// ─── CHART FACTORY ───────────────────────────────────────────────────────────
+function makeChart(canvasId, labels, rows, color) {
+    const freqs = rows.map(r => r[1]);
+    const ctx   = document.getElementById(canvasId).getContext('2d');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels,
+            datasets: [{
+                data: freqs,
+                backgroundColor: color + 'CC',
+                borderColor:     color,
+                borderWidth: 1.5
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: ctx => ctx[0].label,
+                        label: ctx => {
+                            const idx = ctx.dataIndex;
+                            const [occ, freq] = rows[idx];
+                            return [
+                                `Occurrences: ${occ}`,
+                                `Norm. Freq.: ${freq.toFixed(2).replace('.',',')} per 1,000 words`
+                            ];
+                        }
+                    }
+                },
+                datalabels: { display: false }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        maxRotation: 45,
+                        minRotation: 30,
+                        font: { size: 10 },
+                        autoSkip: false
+                    },
+                    grid: { display: false }
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Normalized Freq. (per 1,000 words)',
+                        font: { size: 10 }
+                    },
+                    ticks: { font: { size: 10 } }
+                }
+            }
+        }
+    });
+}
+
+// ─── RENDER ALL 12 CHARTS ────────────────────────────────────────────────────
+const BLUE   = '#4472C4';
+const ORANGE = '#ED7D31';
+
+const disciplines = [
+    ['arch',   'Architecture'],
+    ['eng',    'Engineering'],
+    ['health', 'Sci & Tech Health'],
+    ['arts',   'Arts & Humanities'],
+    ['sci',    'Sciences'],
+    ['social', 'Social & Legal Sciences']
+];
+
+disciplines.forEach(([key]) => {
+    makeChart(`textual-${key}`,  textualLabels,       data[key].textual,       BLUE);
+    makeChart(`interp-${key}`,   interpersonalLabels, data[key].interpersonal, ORANGE);
+});
+</script>
+</body>
+</html>
