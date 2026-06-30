@@ -46,23 +46,15 @@
         }
         .excel-wrapper > p { font-size: 0.9rem; margin-bottom: 10px; color: #444; }
 
-        .iframe-container {
-            position: relative;
+                #myExcelDiv {
             width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
+            height: 500px;
             border-radius: 6px;
             border: 1px solid #ddd;
-        }
-        .iframe-container iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
+            overflow: hidden;
         }
         @media (min-width: 900px) {
-            .iframe-container { padding-bottom: 70%; }
+            #myExcelDiv { height: 750px; }
         }
 
         .discipline-section {
@@ -148,19 +140,15 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
 <h2 class="purple">📎 Excel Workbook — Live Data</h2>
 
 <div class="excel-wrapper">
-    <p><strong>View the live Excel workbook below.</strong>
-       The data is hosted on OneDrive and can be opened directly to see full details.</p>
-    <div class="iframe-container">
-        <iframe
-            src="https://1drv.ms/x/c/264e9460d4aaf5a6/IQASNGFW4IGLRpXKf1gjLLG0AWcac_ptAfikwlA2wlvk1DA?e=OnXrDM&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"
-            title="Metadiscourse Markers — Excel Workbook"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
-    </div>
+        <p><strong>Interactive Excel workbook — filters, PivotTables and slicers are live.</strong>
+       Any change saved in OneDrive is reflected here automatically.</p>
+    <div id="myExcelDiv"></div>
+    <script type="text/javascript"
+        src="https://1drv.ms/x/c/264e9460d4aaf5a6/IQQSNGFW4IGLRpXKf1gjLLG0AYSiDoqqkyvP2axVVO2B73U?em=3&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdHideHeaders=1&wdAllowInteractivity=1&wdbipreview=True">
+    </script>
     <p style="margin-top:10px; font-size:0.8rem; color:#888;">
         Workbook not loading?
-        <a href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQASNGFW4IGLRpXKf1gjLLG0AWcac_ptAfikwlA2wlvk1DA?e=OnXrDM" target="_blank" rel="noopener">Open directly on OneDrive</a>.
+        <a href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQASNGFW4IGLRpXKf1gjLLG0AWcac_ptAfikwlA2wlvk1DA" target="_blank" rel="noopener">Open directly on OneDrive</a>.
     </p>
 </div>
 
