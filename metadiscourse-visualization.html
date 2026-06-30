@@ -35,8 +35,10 @@
             margin-top: 36px;
             font-size: 1.05rem;
         }
+        h2.green  { background-color: #70AD47; }
         h2.purple { background-color: #7030A0; }
 
+        /* ── Responsive Excel embed ─────────────────────────────────── */
         .excel-wrapper {
             background: white;
             border: 2px solid #7030A0;
@@ -46,17 +48,8 @@
         }
         .excel-wrapper > p { font-size: 0.9rem; margin-bottom: 10px; color: #444; }
 
-                #myExcelDiv {
-            width: 100%;
-            height: 500px;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            overflow: hidden;
-        }
-        @media (min-width: 900px) {
-            #myExcelDiv { height: 750px; }
-        }
 
+        /* ── Charts ─────────────────────────────────────────────────── */
         .discipline-section {
             background-color: white;
             border-radius: 8px;
@@ -92,6 +85,7 @@
         .chart-panel h3.textual-title       { color: #4472C4; }
         .chart-panel h3.interpersonal-title { color: #ED7D31; }
 
+        /* ── Table ──────────────────────────────────────────────────── */
         .table-scroll { overflow-x: auto; }
         table {
             width: 100%;
@@ -106,6 +100,7 @@
         td { padding: 8px 12px; border: 1px solid #ccc; }
         tr:nth-child(even) { background-color: #f9f9f9; }
 
+        /* ── Misc ───────────────────────────────────────────────────── */
         .legend {
             display: flex; gap: 20px; flex-wrap: wrap;
             font-size: 0.82rem; margin: 8px 0 16px; color: #555;
@@ -120,6 +115,7 @@
             padding: 12px 15px; margin: 12px 0; font-size: 0.9rem;
         }
 
+        /* ── Footers ────────────────────────────────────────────────── */
         .doc-footer {
             text-align: center; color: #666; font-size: 12px;
             margin-top: 20px; padding-bottom: 10px;
@@ -130,6 +126,8 @@
             border-top: 2px solid #4472C4;
             background-color: white; border-radius: 8px; line-height: 1.8;
         }
+        .site-footer a { color: #4472C4; text-decoration: none; }
+        .site-footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -137,26 +135,34 @@
 <h1>Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts<br>
 Metadiscourse Markers Visualization by Academic Discipline</h1>
 
-<h2 class="purple">📎 Excel Workbook — Live Data</h2>
+<!-- ══ LIVE EXCEL WORKBOOK ════════════════════════════════════════════ -->
+<h2 class="purple">📎 Interactive Excel Workbook — Live Data</h2>
 
 <div class="excel-wrapper">
-        <p><strong>Interactive Excel workbook — filters, PivotTables and slicers are live.</strong>
-       Any change saved in OneDrive is reflected here automatically.</p>
-    <div id="myExcelDiv"></div>
-    <script type="text/javascript"
-        src="https://1drv.ms/x/c/264e9460d4aaf5a6/IQQSNGFW4IGLRpXKf1gjLLG0AYSiDoqqkyvP2axVVO2B73U?em=3&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdHideHeaders=1&wdAllowInteractivity=1&wdbipreview=True">
-    </script>
-    <p style="margin-top:10px; font-size:0.8rem; color:#888;">
-        Workbook not loading?
-        <a href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQASNGFW4IGLRpXKf1gjLLG0AWcac_ptAfikwlA2wlvk1DA" target="_blank" rel="noopener">Open directly on OneDrive</a>.
-    </p>
+    <p><strong>Live Excel workbook hosted on OneDrive.</strong>
+       Click the button below to open it with full interactivity — filters, PivotTables and slicers work directly in your browser via Excel Online.</p>
+    <div style="margin:18px 0; display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+        <a href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQASNGFW4IGLRpXKf1gjLLG0AWcac_ptAfikwlA2wlvk1DA"
+           target="_blank" rel="noopener"
+           style="display:inline-flex; align-items:center; gap:8px; background:#7030A0; color:white;
+                  font-weight:700; font-size:15px; padding:14px 24px; border-radius:999px;
+                  text-decoration:none; box-shadow:0 2px 8px rgba(112,48,160,0.25);">
+            📊 Open Excel Workbook on OneDrive
+        </a>
+        <span style="font-size:0.85rem; color:#666;">Opens in Excel Online — no software needed</span>
+    </div>
+    <div style="background:#f3eef8; border:1px solid #c9b5e0; border-radius:8px; padding:12px 16px; font-size:0.85rem; color:#555; max-width:600px;">
+        <strong style="color:#7030A0;">Note:</strong> Microsoft OneDrive workbooks cannot be embedded directly on external websites. Click the button above to open the live, interactive version in Excel Online, where all charts, PivotTables and slicers are fully functional.
+    </div>
 </div>
 
+<!-- ══ CHART.JS VISUALIZATIONS ════════════════════════════════════════ -->
 <h2>📊 Interactive Charts — All 6 Disciplines × 2 Categories</h2>
 
 <div class="note">
     <strong>Note:</strong> Charts display Normalized Frequency (per 1,000 words).
     Hover any bar to see exact Occurrences and Normalized Frequency.
+    Update the <code>data</code> object in the script to sync with your Sheet2 values.
 </div>
 
 <div class="legend">
@@ -164,6 +170,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     <span><span class="legend-dot" style="background:#ED7D31;"></span>INTERPERSONAL markers</span>
 </div>
 
+<!-- ARCHITECTURE -->
 <div class="discipline-section">
     <div class="discipline-title">Architecture</div>
     <div class="charts-row">
@@ -172,6 +179,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     </div>
 </div>
 
+<!-- ENGINEERING -->
 <div class="discipline-section">
     <div class="discipline-title">Engineering</div>
     <div class="charts-row">
@@ -180,6 +188,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     </div>
 </div>
 
+<!-- SCI & TECH FOR HEALTH -->
 <div class="discipline-section">
     <div class="discipline-title">Science and Technology for Health</div>
     <div class="charts-row">
@@ -188,6 +197,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     </div>
 </div>
 
+<!-- ARTS & HUMANITIES -->
 <div class="discipline-section">
     <div class="discipline-title">Arts and Humanities</div>
     <div class="charts-row">
@@ -196,6 +206,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     </div>
 </div>
 
+<!-- SCIENCES -->
 <div class="discipline-section">
     <div class="discipline-title">Sciences</div>
     <div class="charts-row">
@@ -204,6 +215,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     </div>
 </div>
 
+<!-- SOCIAL & LEGAL SCIENCES -->
 <div class="discipline-section">
     <div class="discipline-title">Social and Legal Sciences</div>
     <div class="charts-row">
@@ -212,7 +224,8 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     </div>
 </div>
 
-<h2>📋 Data Reference Table</h2>
+<!-- ══ REFERENCE TABLE ════════════════════════════════════════════════ -->
+<h2>📋 Data Reference Table (Sheet2 Structure)</h2>
 <div class="table-scroll">
 <table>
     <tr>
@@ -232,9 +245,10 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
 </table>
 </div>
 
+<!-- ══ FOOTERS ════════════════════════════════════════════════════════ -->
 <hr style="margin-top:40px; border-color:#ddd;">
 <p class="doc-footer">
-    Master's Thesis: Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts<br>
+    Auto-generated Documentation | Master´s Thesis: Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts<br>
     6 disciplines × 2 charts = 12 visualizations
 </p>
 
@@ -245,7 +259,7 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     AI-Powered Web Development User and Specialist in Andragogical Educational Interfaces<br><br>
     Project aimed at promoting the ethical and responsible use of <strong>Human-AI collaboration</strong><br>
     in <strong>AI Literacy</strong> and <strong>Academic Writing in English for Specific Purposes (ESP/EAP)</strong><br><br>
-    Developed within the framework of the Master's Thesis<br>
+    Developed within the framework of the Master´s Thesis<br>
     <strong>"Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts"</strong><br>
     by<br>
     <strong>Prof. Mª Luisa Carrió-Pastor</strong> and <strong>Prof. Ana Eslava-Graterol</strong>,<br>
@@ -253,7 +267,14 @@ Metadiscourse Markers Visualization by Academic Discipline</h1>
     Universitat Politècnica de València (UPV)
 </div>
 
+<!-- ══ CHART DATA & RENDERING ════════════════════════════════════════ -->
 <script>
+// ── DATA ──────────────────────────────────────────────────────────────
+// Format: [occurrences, normalizedFreq] per subcategory in order:
+//   TEXTUAL:       Logical markers | Code Glosses | Frame markers | Endophoric markers | Evidentials
+//   INTERPERSONAL: Boosters | Hedges | Attitude markers | Engagement markers | Self-mentions
+// Replace values below with your real Sheet2 numbers.
+
 const data = {
     arch:   { textual: [[54,16.18],[11,3.30],[51,15.28],[3,0.90],[1,0.30]],  interpersonal: [[8,2.40],[22,6.60],[4,1.20],[2,0.60],[3,0.90]] },
     eng:    { textual: [[48,14.40],[9,2.70],[45,13.50],[5,1.50],[2,0.60]],   interpersonal: [[10,3.00],[25,7.50],[3,0.90],[1,0.30],[2,0.60]] },
