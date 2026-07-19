@@ -1,327 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disciplinary Variation in Metadiscourse Use — Metadiscourse Markers Visualization</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Corpus Data Book — Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts</title>
+<meta name="description" content="Interactive data book for the master's thesis 'Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts' (UPV): corpus metadata, lexical profiles and metadiscourse-marker visualisations across six disciplinary subcorpora.">
+<script src="vendor/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 16px;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
+  /* ============ THEME TOKENS ============ */
+  :root {
+    --indigo:#5B4FE5; --indigo-light:#EEECFD; --indigo-dark:#312A8C;
+    --ink:#1A1D29; --ink-soft:#5B5F73; --ink-faint:#8B8FA3;
+    --paper:#FFFFFF; --bg-tint:#F8F8FC; --card:#FFFFFF; --line:#E7E6F2;
+    --gold:#E8A33D; --surface-1:#FFFFFF; --grid:#ECEBF5;
+    --radius-lg:20px; --radius-md:14px; --radius-sm:10px; --radius-pill:999px;
+    --shadow:0 2px 14px rgba(35,30,80,0.07);
+    /* discipline categorical palette — validated colourblind-safe (documented order) */
+    --c-ARQ:#2a78d6; --c-ENG:#008300; --c-STH:#e87ba4; --c-ART:#eda100; --c-SLS:#1baf7a; --c-SCI:#eb6834;
+    --c-textual:#2a78d6; --c-interpersonal:#eb6834;
+  }
+  :root[data-theme="dark"] {
+    --indigo:#8B80F0; --indigo-light:#211D3D; --indigo-dark:#C9C3FA;
+    --ink:#EDECF7; --ink-soft:#A9ADC4; --ink-faint:#7C7F97;
+    --paper:#12121C; --bg-tint:#1A1A28; --card:#1C1C2B; --line:#2C2C40;
+    --surface-1:#1C1C2B; --grid:#2A2A3E;
+    --shadow:0 2px 16px rgba(0,0,0,0.4);
+    --c-ARQ:#3987e5; --c-ENG:#12a012; --c-STH:#d55181; --c-ART:#c98500; --c-SLS:#199e70; --c-SCI:#d95926;
+    --c-textual:#3987e5; --c-interpersonal:#d95926;
+  }
 
-        h1 {
-            color: #4472C4;
-            border-bottom: 3px solid #4472C4;
-            padding-bottom: 10px;
-            font-size: clamp(1rem, 2.5vw, 1.35rem);
-            line-height: 1.4;
-            margin-bottom: 18px;
-        }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family:'Inter',system-ui,sans-serif; color:var(--ink);
+    background:var(--paper); line-height:1.6; -webkit-font-smoothing:antialiased;
+    transition:background .25s,color .25s;
+  }
+  *:focus-visible { outline:3px solid var(--indigo); outline-offset:3px; border-radius:4px; }
+  @media (prefers-reduced-motion:reduce){ *,*::before,*::after{ animation-duration:.01ms!important; transition-duration:.01ms!important; } }
+  a { color:var(--indigo); }
+  .skip-link { position:absolute; left:-9999px; }
+  .skip-link:focus { left:12px; top:12px; background:var(--indigo); color:#fff; padding:8px 14px; border-radius:8px; z-index:200; }
+  .wrap { max-width:1160px; margin:0 auto; padding:0 24px; }
 
-        h2 {
-            background-color: #4472C4;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 36px;
-            font-size: 1.05rem;
-        }
-        h2.green  { background-color: #70AD47; }
-        h2.purple { background-color: #7030A0; }
+  /* ============ TOP BAR ============ */
+  .topbar {
+    position:sticky; top:0; z-index:100; background:color-mix(in srgb,var(--paper) 88%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line);
+  }
+  .topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 24px; max-width:1160px; margin:0 auto; flex-wrap:wrap; }
+  .brand { font-weight:800; font-size:14px; letter-spacing:-.01em; display:flex; align-items:center; gap:9px; }
+  .brand-badge { background:var(--indigo); color:#fff; border-radius:8px; font-size:11px; font-weight:700; padding:3px 8px; letter-spacing:.02em; }
+  .navlinks { display:flex; gap:16px; font-size:13px; font-weight:600; flex-wrap:wrap; }
+  .navlinks a { color:var(--ink-soft); text-decoration:none; }
+  .navlinks a:hover { color:var(--indigo); }
+  .theme-btn { border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:var(--radius-pill); padding:7px 14px; font:inherit; font-size:12.5px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
+  .theme-btn:hover { border-color:var(--indigo); color:var(--indigo); }
 
-        /* ── Responsive Excel embed ─────────────────────────────────── */
-        .excel-wrapper {
-            background: white;
-            border: 2px solid #7030A0;
-            border-radius: 10px;
-            padding: 16px;
-            margin: 18px 0;
-        }
-        .excel-wrapper > p { font-size: 0.9rem; margin-bottom: 10px; color: #444; }
+  /* ============ COVER / HERO ============ */
+  .cover { padding:54px 0 40px; }
+  .eyebrow { font-size:12px; font-weight:700; color:var(--indigo); letter-spacing:.16em; text-transform:uppercase; margin-bottom:16px; }
+  .cover h1 { font-size:clamp(26px,4.6vw,44px); font-weight:800; letter-spacing:-.02em; line-height:1.08; margin-bottom:16px; max-width:16ch; }
+  .cover-lead { font-size:clamp(15px,2vw,18px); color:var(--ink-soft); max-width:70ch; margin-bottom:26px; }
+  .credits { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-bottom:8px; }
+  .credit { background:var(--bg-tint); border:1px solid var(--line); border-radius:var(--radius-md); padding:14px 16px; }
+  .credit .k { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:5px; }
+  .credit .v { font-size:14px; font-weight:600; color:var(--ink); }
+  .credit .v span { display:block; font-weight:500; color:var(--ink-soft); font-size:13px; }
 
+  /* ============ SECTION ============ */
+  section { padding:30px 0; }
+  .sec-head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:6px; }
+  .sec-kicker { font-size:12px; font-weight:800; color:var(--indigo); letter-spacing:.12em; text-transform:uppercase; }
+  h2.sec-title { font-size:clamp(20px,3vw,27px); font-weight:800; letter-spacing:-.01em; margin:2px 0 6px; }
+  .sec-desc { color:var(--ink-soft); max-width:74ch; font-size:14.5px; margin-bottom:22px; }
 
-        /* ── Charts ─────────────────────────────────────────────────── */
-        .discipline-section {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin: 24px 0;
-        }
-        .discipline-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #1a1a2e;
-            border-left: 5px solid #4472C4;
-            padding-left: 12px;
-            margin-bottom: 16px;
-        }
-        .charts-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        @media (max-width: 640px) {
-            .charts-row { grid-template-columns: 1fr; }
-        }
-        .chart-panel {
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 14px;
-            min-width: 0;
-        }
-        .chart-panel.textual       { border-top: 5px solid #4472C4; }
-        .chart-panel.interpersonal { border-top: 5px solid #ED7D31; }
-        .chart-panel h3 { font-size: 0.88rem; margin-bottom: 10px; }
-        .chart-panel h3.textual-title       { color: #4472C4; }
-        .chart-panel h3.interpersonal-title { color: #ED7D31; }
+  /* ============ STAT TILES ============ */
+  .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin:6px 0 8px; }
+  .tile { background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); padding:18px; box-shadow:var(--shadow); }
+  .tile .num { font-size:clamp(24px,3.4vw,32px); font-weight:800; letter-spacing:-.02em; line-height:1; }
+  .tile .lbl { font-size:12.5px; color:var(--ink-soft); margin-top:7px; font-weight:600; }
+  .tile .sub { font-size:11.5px; color:var(--ink-faint); margin-top:2px; }
 
-        /* ── Table ──────────────────────────────────────────────────── */
-        .table-scroll { overflow-x: auto; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 14px 0;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            font-size: 0.88rem;
-            min-width: 480px;
-        }
-        th { background-color: #D9E2F3; padding: 10px 12px; text-align: left; border: 1px solid #ccc; }
-        td { padding: 8px 12px; border: 1px solid #ccc; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
+  /* ============ CARD / CHART ============ */
+  .card { background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); padding:22px; box-shadow:var(--shadow); margin-bottom:22px; }
+  .card-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:6px; }
+  .card-title { font-size:16px; font-weight:700; }
+  .card-note { font-size:13px; color:var(--ink-soft); margin-bottom:14px; max-width:80ch; }
+  .chart-box { position:relative; width:100%; }
+  .chart-box.h-tall { height:min(62vh,440px); }
+  .chart-box.h-mid { height:min(52vh,360px); }
 
-        /* ── Misc ───────────────────────────────────────────────────── */
-        .legend {
-            display: flex; gap: 20px; flex-wrap: wrap;
-            font-size: 0.82rem; margin: 8px 0 16px; color: #555;
-        }
-        .legend-dot {
-            display: inline-block; width: 12px; height: 12px;
-            border-radius: 3px; margin-right: 5px; vertical-align: middle;
-        }
-        .note {
-            background-color: #e8f5e9;
-            border-left: 4px solid #70AD47;
-            padding: 12px 15px; margin: 12px 0; font-size: 0.9rem;
-        }
+  /* ============ CONTROLS ============ */
+  .controls { display:flex; gap:16px; flex-wrap:wrap; align-items:flex-end; margin-bottom:16px; }
+  .ctl-group { display:flex; flex-direction:column; gap:6px; }
+  .ctl-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-faint); }
+  .seg { display:inline-flex; background:var(--bg-tint); border:1px solid var(--line); border-radius:var(--radius-pill); padding:3px; gap:2px; }
+  .seg button { border:none; background:transparent; color:var(--ink-soft); font:inherit; font-size:13px; font-weight:600; padding:7px 14px; border-radius:var(--radius-pill); cursor:pointer; white-space:nowrap; }
+  .seg button[aria-pressed="true"] { background:var(--indigo); color:#fff; }
+  .seg button:hover:not([aria-pressed="true"]) { color:var(--indigo); }
+  .disc-pills { display:flex; gap:8px; flex-wrap:wrap; }
+  .disc-pill { display:inline-flex; align-items:center; gap:7px; border:1.5px solid var(--line); background:var(--card); color:var(--ink); font:inherit; font-size:13px; font-weight:600; padding:8px 14px; border-radius:var(--radius-pill); cursor:pointer; }
+  .disc-pill .dot { width:11px; height:11px; border-radius:3px; flex:none; }
+  .disc-pill[aria-pressed="true"] { border-color:currentColor; }
+  .linkbtn { border:none; background:transparent; color:var(--indigo); font:inherit; font-size:13px; font-weight:700; cursor:pointer; padding:6px 0; text-decoration:underline; text-underline-offset:3px; }
 
-        /* ── Footers ────────────────────────────────────────────────── */
-        .doc-footer {
-            text-align: center; color: #666; font-size: 12px;
-            margin-top: 20px; padding-bottom: 10px;
-        }
-        .site-footer {
-            text-align: center; color: #444; font-size: 13px;
-            margin-top: 36px; padding: 24px 16px;
-            border-top: 2px solid #4472C4;
-            background-color: white; border-radius: 8px; line-height: 1.8;
-        }
-        .site-footer a { color: #4472C4; text-decoration: none; }
-        .site-footer a:hover { text-decoration: underline; }
-    </style>
+  /* ============ TABLE ============ */
+  .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius-md); margin-top:14px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; min-width:520px; }
+  thead th { background:var(--bg-tint); text-align:left; padding:10px 12px; font-weight:700; font-size:12px; color:var(--ink-soft); border-bottom:1px solid var(--line); white-space:nowrap; }
+  tbody td { padding:9px 12px; border-bottom:1px solid var(--line); }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr:hover td { background:var(--bg-tint); }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .hidden { display:none; }
+
+  /* ============ DEEP DIVE ============ */
+  .dd-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:22px; align-items:start; }
+  @media (max-width:820px){ .dd-grid{ grid-template-columns:1fr; } }
+  .dd-tiles { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:16px; }
+  .dd-tile { background:var(--bg-tint); border:1px solid var(--line); border-radius:var(--radius-sm); padding:12px 14px; }
+  .dd-tile .n { font-size:22px; font-weight:800; }
+  .dd-tile .l { font-size:11.5px; color:var(--ink-soft); font-weight:600; }
+  .marker-list { list-style:none; }
+  .marker-list li { display:flex; align-items:baseline; gap:10px; padding:8px 0; border-bottom:1px dashed var(--line); }
+  .marker-list li:last-child { border-bottom:none; }
+  .marker-form { font-weight:700; font-size:14px; }
+  .marker-count { margin-left:auto; font-weight:800; font-variant-numeric:tabular-nums; color:var(--indigo); flex:none; }
+  .marker-sense { font-size:12px; color:var(--ink-faint); }
+  .sub-tag { display:inline-flex; align-items:center; gap:6px; font-size:12px; background:var(--bg-tint); border:1px solid var(--line); border-radius:var(--radius-pill); padding:4px 11px; margin:3px 4px 3px 0; }
+  .sub-tag b { color:var(--indigo); font-variant-numeric:tabular-nums; }
+
+  /* ============ VIDEO ============ */
+  .video-frame { position:relative; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:#000; }
+  .video-frame video { display:block; width:100%; height:auto; aspect-ratio:16/9; }
+
+  /* ============ LEGEND ============ */
+  .legend { display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; color:var(--ink-soft); margin:2px 0 14px; }
+  .legend span { display:inline-flex; align-items:center; gap:7px; font-weight:600; }
+  .legend .dot { width:12px; height:12px; border-radius:3px; }
+
+  /* ============ ACCORDION ============ */
+  .acc-item { border:1px solid var(--line); border-radius:var(--radius-md); margin-bottom:10px; overflow:hidden; background:var(--card); }
+  .acc-btn { width:100%; text-align:left; background:transparent; border:none; font:inherit; font-size:14.5px; font-weight:700; color:var(--ink); padding:16px 18px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .acc-btn:hover { color:var(--indigo); }
+  .acc-chev { transition:transform .2s; color:var(--ink-faint); }
+  .acc-item.open .acc-chev { transform:rotate(180deg); }
+  .acc-panel { display:none; padding:0 18px 18px; font-size:13.5px; color:var(--ink-soft); }
+  .acc-item.open .acc-panel { display:block; }
+  .acc-panel p { margin-bottom:10px; }
+  .acc-panel strong { color:var(--ink); }
+
+  /* ============ CALLOUT / DOWNLOAD ============ */
+  .callout { display:flex; gap:14px; align-items:flex-start; background:var(--indigo-light); border:1px solid color-mix(in srgb,var(--indigo) 30%,transparent); border-radius:var(--radius-md); padding:16px 18px; font-size:13.5px; color:var(--ink); }
+  .callout .ico { font-size:20px; line-height:1; }
+  .dl-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }
+  .btn { display:inline-flex; align-items:center; gap:9px; font-weight:700; font-size:14px; padding:13px 22px; border-radius:var(--radius-pill); text-decoration:none; border:1.5px solid transparent; cursor:pointer; }
+  .btn-primary { background:var(--indigo); color:#fff; }
+  .btn-primary:hover { background:var(--indigo-dark); }
+  :root[data-theme="dark"] .btn-primary:hover { background:var(--indigo); filter:brightness(1.1); }
+  .btn-ghost { border-color:var(--line); color:var(--ink); background:var(--card); }
+  .btn-ghost:hover { border-color:var(--indigo); color:var(--indigo); }
+
+  /* ============ FOOTER ============ */
+  footer { border-top:1px solid var(--line); margin-top:24px; padding:34px 0 48px; font-size:13px; color:var(--ink-soft); line-height:1.9; }
+  footer strong { color:var(--ink); }
+  footer a { color:var(--indigo); text-decoration:none; }
+  footer a:hover { text-decoration:underline; }
+  .foot-mini { font-size:11.5px; color:var(--ink-faint); margin-top:14px; }
+
+  @media (max-width:560px){ .dd-tiles{ grid-template-columns:1fr; } .wrap{ padding:0 16px; } }
+</style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
-<h1>Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts<br>
-Metadiscourse Markers Visualization by Academic Discipline</h1>
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="brand-badge">DATA BOOK</span> TFM Corpus · Metadiscourse</div>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#video">Intro</a>
+      <a href="#overview">Corpus</a>
+      <a href="#markers">Markers</a>
+      <a href="#deepdive">By discipline</a>
+      <a href="#population">Sampling</a>
+      <a href="#notes">Notes</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light or dark theme"><span id="themeIco" aria-hidden="true">🌙</span> <span id="themeTxt">Dark</span></button>
+  </div>
+</div>
 
-<!-- ══ LIVE EXCEL WORKBOOK ════════════════════════════════════════════ -->
-<h2 class="purple">📎 Interactive Excel Workbook — Live Data</h2>
+<main id="main">
 
-<div class="excel-wrapper">
-    <p><strong>Live Excel workbook hosted on OneDrive.</strong>
-       Click the button below to open it with full interactivity — filters, PivotTables and slicers work directly in your browser via Excel Online.</p>
-    <div style="margin:18px 0; display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
-        <a href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQASNGFW4IGLRpXKf1gjLLG0AWcac_ptAfikwlA2wlvk1DA"
-           target="_blank" rel="noopener"
-           style="display:inline-flex; align-items:center; gap:8px; background:#7030A0; color:white;
-                  font-weight:700; font-size:15px; padding:14px 24px; border-radius:999px;
-                  text-decoration:none; box-shadow:0 2px 8px rgba(112,48,160,0.25);">
-            📊 Open Excel Workbook on OneDrive
-        </a>
-        <span style="font-size:0.85rem; color:#666;">Opens in Excel Online — no software needed</span>
+<!-- ============ COVER PAGE ============ -->
+<header class="cover wrap">
+  <p class="eyebrow">Master's Thesis (TFM) · Interactive Data Book</p>
+  <h1>Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts</h1>
+  <p class="cover-lead">A living appendix to the thesis: browse the corpus metadata, lexical profiles and metadiscourse-marker results across six disciplinary subcorpora of master's-thesis abstracts deposited at the Universitat Politècnica de València (RiuNet, 2022–2024). Every figure below is rendered live from the source workbook.</p>
+  <div class="credits">
+    <div class="credit"><div class="k">Authors</div><div class="v">Prof. Mª Luisa Carrió-Pastor <span>Prof. Ana Eslava-Graterol</span></div></div>
+    <div class="credit"><div class="k">Department</div><div class="v">Applied Linguistics <span>Universitat Politècnica de València (UPV)</span></div></div>
+    <div class="credit"><div class="k">Framework</div><div class="v">Hyland (2005) metadiscourse <span>METOOL annotation · double classification</span></div></div>
+    <div class="credit"><div class="k">Corpus</div><div class="v">RiuNet repository <span>TFM abstracts · deposit years 2022–2024</span></div></div>
+  </div>
+</header>
+
+<!-- ============ HEADLINE METRICS ============ -->
+<section class="wrap" aria-label="Key metrics">
+  <div class="tiles">
+    <div class="tile"><div class="num">6</div><div class="lbl">Disciplinary subcorpora</div><div class="sub">Balanced comparison design</div></div>
+    <div class="tile"><div class="num">180</div><div class="lbl">Abstracts analysed</div><div class="sub">30 per subcorpus</div></div>
+    <div class="tile"><div class="num">18,000</div><div class="lbl">Words</div><div class="sub">3,000 per subcorpus</div></div>
+    <div class="tile"><div class="num">920</div><div class="lbl">Metadiscourse markers</div><div class="sub">METOOL occurrences</div></div>
+    <div class="tile"><div class="num">4,049</div><div class="lbl">TFMs in population</div><div class="sub">Sampling frame 2022–2024</div></div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section id="video" class="wrap">
+  <div class="sec-head"><span class="sec-kicker">Watch first</span></div>
+  <h2 class="sec-title">Animated overview of the results</h2>
+  <p class="sec-desc">A short motion-graphics summary of the cross-disciplinary metadiscourse findings that head the thesis cover page.</p>
+  <div class="video-frame">
+    <video controls preload="metadata" playsinline poster="">
+      <source src="assets/corpus-intro-video.mp4" type="video/mp4">
+      Your browser does not support embedded video. <a href="assets/corpus-intro-video.mp4">Download the video</a>.
+    </video>
+  </div>
+</section>
+
+<!-- ============ CORPUS OVERVIEW ============ -->
+<section id="overview" class="wrap">
+  <div class="sec-head"><span class="sec-kicker">Section 1</span></div>
+  <h2 class="sec-title">The corpus at a glance</h2>
+  <p class="sec-desc">Each subcorpus concatenates 30 abstracts into a standardised 3,000-word text. METOOL reports types and tokens per subcorpus; the Type–Token Ratio (TTR) indexes lexical density — all six subcorpora fall in the low band (0.319–0.339), confirming comparable lexical texture across disciplines. Token counts exceed 3,000 because METOOL counts reformulation punctuation as tokens.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Lexical profile per subcorpus</div>
+      <button class="linkbtn" data-table-toggle="tblLex" aria-expanded="false">Show data table</button>
     </div>
-    <div style="background:#f3eef8; border:1px solid #c9b5e0; border-radius:8px; padding:12px 16px; font-size:0.85rem; color:#555; max-width:600px;">
-        <strong style="color:#7030A0;">Note:</strong> Microsoft OneDrive workbooks cannot be embedded directly on external websites. Click the button above to open the live, interactive version in Excel Online, where all charts, PivotTables and slicers are fully functional.
+    <div class="controls">
+      <div class="ctl-group">
+        <span class="ctl-label">Measure</span>
+        <div class="seg" role="group" aria-label="Lexical measure" id="lexMetric">
+          <button type="button" data-v="both" aria-pressed="true">Types &amp; Tokens</button>
+          <button type="button" data-v="ttr">Type–Token Ratio</button>
+        </div>
+      </div>
     </div>
-</div>
+    <div class="legend" id="lexLegend"></div>
+    <div class="chart-box h-mid"><canvas id="chLex" aria-label="Lexical profile chart"></canvas></div>
+    <div class="table-wrap hidden" id="tblLex"></div>
+  </div>
+</section>
 
-<!-- ══ CHART.JS VISUALIZATIONS ════════════════════════════════════════ -->
-<h2>📊 Interactive Charts — All 6 Disciplines × 2 Categories</h2>
+<!-- ============ METADISCOURSE MARKERS ============ -->
+<section id="markers" class="wrap">
+  <div class="sec-head"><span class="sec-kicker">Section 2 · Core results</span></div>
+  <h2 class="sec-title">Metadiscourse markers across disciplines</h2>
+  <p class="sec-desc">Following Hyland (2005), markers split into <strong>Textual</strong> (interactive — organising the discourse) and <strong>Interpersonal</strong> (interactional — projecting stance and engaging the reader), each with five categories. Compare raw occurrences or frequencies normalised per 1,000 tokens, which control for the small token differences between subcorpora.</p>
 
-<div class="note">
-    <strong>Note:</strong> Charts display Normalized Frequency (per 1,000 words).
-    Hover any bar to see exact Occurrences and Normalized Frequency.
-    Update the <code>data</code> object in the script to sync with your Sheet2 values.
-</div>
-
-<div class="legend">
-    <span><span class="legend-dot" style="background:#4472C4;"></span>TEXTUAL markers</span>
-    <span><span class="legend-dot" style="background:#ED7D31;"></span>INTERPERSONAL markers</span>
-</div>
-
-<!-- ARCHITECTURE -->
-<div class="discipline-section">
-    <div class="discipline-title">Architecture</div>
-    <div class="charts-row">
-        <div class="chart-panel textual"><h3 class="textual-title">TEXTUAL Metadiscourse — Architecture</h3><canvas id="textual-arch"></canvas></div>
-        <div class="chart-panel interpersonal"><h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Architecture</h3><canvas id="interp-arch"></canvas></div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Category comparison — all six disciplines</div>
+      <button class="linkbtn" data-table-toggle="tblCat" aria-expanded="false">Show data table</button>
     </div>
-</div>
-
-<!-- ENGINEERING -->
-<div class="discipline-section">
-    <div class="discipline-title">Engineering</div>
-    <div class="charts-row">
-        <div class="chart-panel textual"><h3 class="textual-title">TEXTUAL Metadiscourse — Engineering</h3><canvas id="textual-eng"></canvas></div>
-        <div class="chart-panel interpersonal"><h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Engineering</h3><canvas id="interp-eng"></canvas></div>
+    <div class="controls">
+      <div class="ctl-group">
+        <span class="ctl-label">Measure</span>
+        <div class="seg" role="group" aria-label="Marker measure" id="catMetric">
+          <button type="button" data-v="norm" aria-pressed="true">Per 1,000 tokens</button>
+          <button type="button" data-v="raw">Raw occurrences</button>
+        </div>
+      </div>
+      <div class="ctl-group">
+        <span class="ctl-label">Marker type</span>
+        <div class="seg" role="group" aria-label="Marker type filter" id="catGroup">
+          <button type="button" data-v="all" aria-pressed="true">All 10</button>
+          <button type="button" data-v="Textual">Textual</button>
+          <button type="button" data-v="Interpersonal">Interpersonal</button>
+        </div>
+      </div>
     </div>
-</div>
+    <div class="legend" id="catLegend"></div>
+    <div class="chart-box h-tall"><canvas id="chCat" aria-label="Metadiscourse category comparison chart"></canvas></div>
+    <div class="table-wrap hidden" id="tblCat"></div>
+  </div>
 
-<!-- SCI & TECH FOR HEALTH -->
-<div class="discipline-section">
-    <div class="discipline-title">Science and Technology for Health</div>
-    <div class="charts-row">
-        <div class="chart-panel textual"><h3 class="textual-title">TEXTUAL Metadiscourse — Sci &amp; Tech for Health</h3><canvas id="textual-health"></canvas></div>
-        <div class="chart-panel interpersonal"><h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Sci &amp; Tech for Health</h3><canvas id="interp-health"></canvas></div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">Textual vs Interpersonal balance</div>
+      <button class="linkbtn" data-table-toggle="tblBal" aria-expanded="false">Show data table</button>
     </div>
-</div>
-
-<!-- ARTS & HUMANITIES -->
-<div class="discipline-section">
-    <div class="discipline-title">Arts and Humanities</div>
-    <div class="charts-row">
-        <div class="chart-panel textual"><h3 class="textual-title">TEXTUAL Metadiscourse — Arts &amp; Humanities</h3><canvas id="textual-arts"></canvas></div>
-        <div class="chart-panel interpersonal"><h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Arts &amp; Humanities</h3><canvas id="interp-arts"></canvas></div>
+    <p class="card-note">The interactive/interactional split per subcorpus. Textual markers dominate every discipline, but the interpersonal share rises in Health, Sciences and Arts &amp; Humanities.</p>
+    <div class="controls">
+      <div class="ctl-group">
+        <span class="ctl-label">Measure</span>
+        <div class="seg" role="group" aria-label="Balance measure" id="balMetric">
+          <button type="button" data-v="norm" aria-pressed="true">Per 1,000 tokens</button>
+          <button type="button" data-v="raw">Raw occurrences</button>
+        </div>
+      </div>
     </div>
-</div>
-
-<!-- SCIENCES -->
-<div class="discipline-section">
-    <div class="discipline-title">Sciences</div>
-    <div class="charts-row">
-        <div class="chart-panel textual"><h3 class="textual-title">TEXTUAL Metadiscourse — Sciences</h3><canvas id="textual-sci"></canvas></div>
-        <div class="chart-panel interpersonal"><h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Sciences</h3><canvas id="interp-sci"></canvas></div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--c-textual)"></span>Textual (interactive)</span>
+      <span><span class="dot" style="background:var(--c-interpersonal)"></span>Interpersonal (interactional)</span>
     </div>
-</div>
+    <div class="chart-box h-mid"><canvas id="chBal" aria-label="Textual versus interpersonal balance chart"></canvas></div>
+    <div class="table-wrap hidden" id="tblBal"></div>
+  </div>
+</section>
 
-<!-- SOCIAL & LEGAL SCIENCES -->
-<div class="discipline-section">
-    <div class="discipline-title">Social and Legal Sciences</div>
-    <div class="charts-row">
-        <div class="chart-panel textual"><h3 class="textual-title">TEXTUAL Metadiscourse — Social &amp; Legal Sciences</h3><canvas id="textual-social"></canvas></div>
-        <div class="chart-panel interpersonal"><h3 class="interpersonal-title">INTERPERSONAL Metadiscourse — Social &amp; Legal Sciences</h3><canvas id="interp-social"></canvas></div>
+<!-- ============ DEEP DIVE ============ -->
+<section id="deepdive" class="wrap">
+  <div class="sec-head"><span class="sec-kicker">Section 3 · Explore</span></div>
+  <h2 class="sec-title">One discipline at a time</h2>
+  <p class="sec-desc">Select a subcorpus to see its full category profile, subcategory breakdown and the metadiscourse markers that occur most often in its abstracts.</p>
+
+  <div class="disc-pills" id="discPills" role="group" aria-label="Choose a discipline" style="margin-bottom:18px;"></div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title" id="ddTitle">—</div></div>
+    <div class="dd-tiles" id="ddTiles"></div>
+    <div class="dd-grid">
+      <div>
+        <div class="legend">
+          <span><span class="dot" style="background:var(--c-textual)"></span>Textual categories</span>
+          <span><span class="dot" style="background:var(--c-interpersonal)"></span>Interpersonal categories</span>
+        </div>
+        <div class="chart-box h-tall"><canvas id="chDD" aria-label="Selected discipline category chart"></canvas></div>
+        <div style="margin-top:16px;">
+          <div class="ctl-label" style="margin-bottom:8px;">Subcategory detail</div>
+          <div id="ddSubs"></div>
+        </div>
+      </div>
+      <div>
+        <div class="ctl-label" style="margin-bottom:10px;">Most frequent markers (form · occurrences)</div>
+        <ul class="marker-list" id="ddMarkers"></ul>
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
-<!-- ══ REFERENCE TABLE ════════════════════════════════════════════════ -->
-<h2>📋 Data Reference Table (Sheet2 Structure)</h2>
-<div class="table-scroll">
-<table>
-    <tr>
-        <th>Discipline</th>
-        <th>TEXTUAL Subcategories</th>
-        <th>INTERPERSONAL Subcategories</th>
-    </tr>
-    <tr><td>Architecture</td>
-        <td rowspan="6">Logical markers · Code Glosses · Frame markers · Endophoric markers · Evidentials</td>
-        <td rowspan="6">Boosters · Hedges · Attitude markers · Engagement markers · Self-mentions</td>
-    </tr>
-    <tr><td>Engineering</td></tr>
-    <tr><td>Sci &amp; Tech for Health</td></tr>
-    <tr><td>Arts &amp; Humanities</td></tr>
-    <tr><td>Sciences</td></tr>
-    <tr><td>Social &amp; Legal Sciences</td></tr>
-</table>
-</div>
+<!-- ============ POPULATION / SAMPLING ============ -->
+<section id="population" class="wrap">
+  <div class="sec-head"><span class="sec-kicker">Section 4</span></div>
+  <h2 class="sec-title">Sampling population &amp; access</h2>
+  <p class="sec-desc">The sampling frame comprises 4,049 TFMs deposited across the six knowledge areas in 2022–2024, split almost evenly into open-access and restricted (closed) theses. From this frame, 30 abstracts per subcorpus were sampled on rhetorical criteria. Abstracts of restricted theses were read from the RiuNet preview; the rest from the final director-approved PDF.</p>
 
-<!-- ══ FOOTERS ════════════════════════════════════════════════════════ -->
-<hr style="margin-top:40px; border-color:#ddd;">
-<p class="doc-footer">
-    Auto-generated Documentation | Master´s Thesis: Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts<br>
-    6 disciplines × 2 charts = 12 visualizations
-</p>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">TFM population by access status</div>
+      <button class="linkbtn" data-table-toggle="tblPop" aria-expanded="false">Show data table</button>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--indigo)"></span>Open access</span>
+      <span><span class="dot" style="background:var(--ink-faint)"></span>Closed (restricted)</span>
+    </div>
+    <div class="chart-box h-mid"><canvas id="chPop" aria-label="TFM population by access status"></canvas></div>
+    <div class="table-wrap hidden" id="tblPop"></div>
+  </div>
+</section>
 
-<div class="site-footer">
-    <strong>© 2026 Ana Eslava-Graterol @profeanaeslava</strong><br>
-    Applied Linguistics to Technology and Teaching of Academic English / ESP/EAP<br><br>
-    Developed with <strong>Grok</strong><br>
-    AI-Powered Web Development User and Specialist in Andragogical Educational Interfaces<br><br>
-    Project aimed at promoting the ethical and responsible use of <strong>Human-AI collaboration</strong><br>
-    in <strong>AI Literacy</strong> and <strong>Academic Writing in English for Specific Purposes (ESP/EAP)</strong><br><br>
-    Developed within the framework of the Master´s Thesis<br>
+<!-- ============ NOTES / DICTIONARY / LIMITATIONS ============ -->
+<section id="notes" class="wrap">
+  <div class="sec-head"><span class="sec-kicker">Section 5</span></div>
+  <h2 class="sec-title">Method notes &amp; limitations</h2>
+  <p class="sec-desc">Disclosed for transparency, drawn directly from the workbook's Data Dictionary and Limitations draft.</p>
+
+  <div class="acc-item">
+    <button class="acc-btn" aria-expanded="false"><span>How the categories are defined (Hyland 2005 / METOOL)</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+    <div class="acc-panel">
+      <p><strong>Textual (interactive)</strong> — Logical markers, Code Glosses, Frame markers, Endophoric markers, Evidentials. These organise the discourse and guide the reader through the text.</p>
+      <p><strong>Interpersonal (interactional)</strong> — Boosters, Hedges, Attitude markers, Engagement markers, Self-mentions. These project the writer's stance and involve the reader.</p>
+      <p>Markers were annotated with METOOL. Polyfunctional forms (e.g. <em>and</em>, <em>will</em>, <em>such as</em>) are counted once per function under the double-classification protocol, so a form can appear in more than one category.</p>
+    </div>
+  </div>
+
+  <div class="acc-item">
+    <button class="acc-btn" aria-expanded="false"><span>Corpus design &amp; consolidation to six subcorpora</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+    <div class="acc-panel">
+      <p>Each subcorpus contains 30 abstracts, 10 per deposit year (2022–2024), ~1,000 words per year, selected on rhetorical criteria (lexical bundles signalling Moves 2–4; at least three of five moves per abstract).</p>
+      <p>Ten fine-grained subcorpora were originally collected; in consultation with the thesis supervisor the design was consolidated to the six established knowledge areas. Within Engineering &amp; Architecture, only <strong>Architecture</strong> was kept separate, on the grounds of its distinct, design-oriented rhetorical culture.</p>
+    </div>
+  </div>
+
+  <div class="acc-item">
+    <button class="acc-btn" aria-expanded="false"><span>Health Sciences year imbalance — diachronic analysis postponed</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+    <div class="acc-panel">
+      <p>The Health Sciences subcorpus deviates from the balanced 10/10/10 year design (final distribution 10/12/8): 2024 did not offer enough eligible TFMs, so two records were drawn from 2023 to reach the 30-abstract target.</p>
+      <p>Because the year groups are unequal, per-year marker rates in this subcorpus cannot be compared on equal terms and the diachronic analysis was postponed. This does <strong>not</strong> affect the cross-disciplinary comparison, which rests on the complete 3,000-word subcorpora.</p>
+    </div>
+  </div>
+
+  <div class="acc-item">
+    <button class="acc-btn" aria-expanded="false"><span>Disclosed data-quality incidents</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+    <div class="acc-panel">
+      <p><strong>Architecture duplicate.</strong> The 2022 record IAAQ7 was inadvertently duplicated into a 2023 slot (+74 non-unique words, +2.5%). Sensitivity analysis: shift &lt;0.2 per 1,000 tokens; no between-discipline comparison affected; the duplicate is excluded from per-abstract and diachronic analyses.</p>
+      <p><strong>Source flags.</strong> Three abstracts (ENG-20, STH-09, SCI-30) lacked a source flag; all three were confirmed as extracted from the final director-approved TFM PDF and coded accordingly.</p>
+      <p><strong>Gender coding.</strong> Author gender was coded from given names in the Spanish naming context; 16 records (8.9%), mostly in Arts &amp; Humanities, could not be reliably attributed and were left blank. Any gender comparison is exploratory.</p>
+    </div>
+  </div>
+
+  <div class="acc-item">
+    <button class="acc-btn" aria-expanded="false"><span>External validity &amp; instrument limitations</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+    <div class="acc-panel">
+      <p>All 180 abstracts come from a single institutional repository (RiuNet, UPV) and represent novice academic writing in English by L1-Spanish master's students; generalisation requires multi-institutional replication, and expert-corpus comparisons read as novice-vs-expert contrasts.</p>
+      <p>With 3,000 words per subcorpus, low-frequency categories (e.g. endophoric markers, 3–5 occurrences) yield cells too small for inferential treatment and are reported descriptively only. METOOL's automated sense assignment carries an inherent misclassification risk that systematic manual review mitigated but did not eliminate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section class="wrap">
+  <div class="callout">
+    <span class="ico" aria-hidden="true">📂</span>
+    <div>
+      <strong>Full source workbook.</strong> Every number on this page is drawn from the appendix workbook — 18 sheets covering abstracts master data, programs availability, corpus summary, the six marker tabs, the data dictionary and the limitations draft.
+      <div class="dl-row">
+        <a class="btn btn-primary" href="assets/appendix-corpus-metadata-and-results.xlsx" download><span aria-hidden="true">⬇️</span> Download the Excel workbook</a>
+        <a class="btn btn-ghost" href="https://github.com/ProfeAnaEslavaEdTech/portofolio" target="_blank" rel="noopener"><span aria-hidden="true">💻</span> View repository</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>© 2026 Ana Eslava-Graterol · @profeanaeslava</strong><br>
+    Applied Linguistics · Technology &amp; Teaching of Academic English (ESP/EAP)</p>
+    <p style="margin-top:12px;">Developed within the framework of the master's thesis<br>
     <strong>"Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts"</strong><br>
-    by<br>
-    <strong>Prof. Mª Luisa Carrió-Pastor</strong> and <strong>Prof. Ana Eslava-Graterol</strong>,<br>
-    Department of Applied Linguistics<br>
-    Universitat Politècnica de València (UPV)
-</div>
+    by <strong>Prof. Mª Luisa Carrió-Pastor</strong> and <strong>Prof. Ana Eslava-Graterol</strong> · Department of Applied Linguistics · Universitat Politècnica de València (UPV).</p>
+    <p class="foot-mini">Interactive data book built with Chart.js. Marker figures follow Hyland (2005) as annotated in METOOL; frequencies normalised per 1,000 tokens. Chart palette validated for colour-vision-deficiency accessibility. A project in ethical, transparent Human–AI collaboration for AI literacy and academic writing.</p>
+  </div>
+</footer>
 
-<!-- ══ CHART DATA & RENDERING ════════════════════════════════════════ -->
 <script>
-// ── DATA ──────────────────────────────────────────────────────────────
-// Format: [occurrences, normalizedFreq] per subcategory in order:
-//   TEXTUAL:       Logical markers | Code Glosses | Frame markers | Endophoric markers | Evidentials
-//   INTERPERSONAL: Boosters | Hedges | Attitude markers | Engagement markers | Self-mentions
-// Replace values below with your real Sheet2 numbers.
+const DATA = {"cats":{"Textual":["Logical markers","Code Glosses","Frame markers","Endophoric markers","Evidentials"],"Interpersonal":["Boosters","Hedges","Attitude markers","Engagement markers","Self-mentions"]},"corpora":[{"code":"ARQ","name":"Architecture","tokens":3338,"types":1065,"ttr":0.3191,"words":3000,"total":219,"textTot":134,"interTot":85,"catTot":{"Logical markers":54,"Code Glosses":11,"Frame markers":51,"Endophoric markers":5,"Evidentials":13,"Boosters":11,"Hedges":29,"Attitude markers":34,"Engagement markers":5,"Self-mentions":6},"norm":{"Logical markers":16.18,"Code Glosses":3.3,"Frame markers":15.28,"Endophoric markers":1.5,"Evidentials":3.89,"Boosters":3.3,"Hedges":8.69,"Attitude markers":10.19,"Engagement markers":1.5,"Self-mentions":1.8},"textNorm":40.14,"interNorm":25.46,"totalNorm":65.61,"subs":{"Logical markers":[["Additive",45],["Consecutive",9]],"Code Glosses":[["Exemplification",8],["Reformulation",3]],"Frame markers":[["Announcers",39],["Sequencers",10],["Topicalisers",2]],"Endophoric markers":[["Anaphoric",3],["Cataphoric",2]],"Evidentials":[["Impersonal",10],["Personal",3]],"Boosters":[["Booster- verb",7],["Booster- adverbs",1],["Booster- phrases",1],["Booster- adjectives",1],["booster- noun",1]],"Hedges":[["Hedges- Verbs",12],["Hedges- Modal verbs",5],["Hedges- adjectives",4],["Hedges- nouns",4],["Hedges- adverbs",3],["Hedges-phrases",1]],"Attitude markers":[["Attitude- adjectives",20],["Attitude- nouns",10],["Attitude verbs",4]],"Engagement markers":[["Imperatives",3],["Directives",1],["Personal references",1]],"Self-mentions":[["Personal references- exclusive pronouns",4],["Self-citations",2]]},"topMarkers":[{"m":"will","n":35,"sense":"Announce the following idea, action. Frame marker"},{"m":"and","n":30,"sense":"It introduces additional information. Be careful, \"and\" is a metadisocurse marker when it joins two propositions, but not two name"},{"m":"main","n":7,"sense":"larger, more important, or having more influence than others of the same type"},{"m":"In addition","n":6,"sense":"This is a logical marker that adds information. Logical markers."},{"m":":","n":6,"sense":"Parentheses are used to include further information or reformulate"},{"m":"new","n":5,"sense":"To be found, discovered or learned in the future"},{"m":"also","n":4,"sense":"Describes new information"},{"m":"seeks","n":4,"sense":"It announces the intention of the author"},{"m":"importance","n":4,"sense":"the quality or condition of being important; significance"},{"m":"the first","n":3,"sense":"coming before all others in order, time, amount, quality, or importance"},{"m":"following","n":3,"sense":"After an act. Logical marker"},{"m":"such as","n":3,"sense":"To illustrate"}],"markerRows":114,"program":{"programs":21,"total":1373,"closed":673,"open":700,"sampled":30}},{"code":"ENG","name":"Engineering","tokens":3428,"types":1144,"ttr":0.3337,"words":3000,"total":250,"textTot":163,"interTot":87,"catTot":{"Logical markers":81,"Code Glosses":28,"Frame markers":23,"Endophoric markers":3,"Evidentials":28,"Boosters":10,"Hedges":26,"Attitude markers":36,"Engagement markers":7,"Self-mentions":8},"norm":{"Logical markers":23.63,"Code Glosses":8.17,"Frame markers":6.71,"Endophoric markers":0.88,"Evidentials":8.17,"Boosters":2.92,"Hedges":7.58,"Attitude markers":10.5,"Engagement markers":2.04,"Self-mentions":2.33},"textNorm":47.55,"interNorm":25.38,"totalNorm":72.93,"subs":{"Logical markers":[["Additive",69],["Contrastive",6],["Consecutive",6]],"Code Glosses":[["Reformulation",17],["Exemplification",11]],"Frame markers":[["Announcers",13],["Sequencers",6],["Topicalisers",4]],"Endophoric markers":[["Cataphoric",2],["Anaphoric",1]],"Evidentials":[["Impersonal",17],["Personal",11]],"Boosters":[["Booster- verb",8],["Booster- adverbs",2]],"Hedges":[["Hedges- Modal verbs",9],["Hedges- Verbs",6],["Hedges- adjectives",6],["Hedges- nouns",3],["Hedges- adverbs",2]],"Attitude markers":[["Attitude- adjectives",22],["Attitude- nouns",10],["Attitude verbs",4]],"Engagement markers":[["Personal references",5],["Imperatives",2]],"Self-mentions":[["Personal references- exclusive pronouns",8]]},"topMarkers":[{"m":"and","n":55,"sense":"It introduces additional information. Be careful, \"and\" is a metadisocurse marker when it joins two propositions, but not two name"},{"m":"will","n":14,"sense":"Announce the following idea, action. Frame marker"},{"m":"model","n":8,"sense":"A good example or an approach extremely good that should be followed. Evidentials"},{"m":"such as","n":8,"sense":"To illustrate"},{"m":"research","n":8,"sense":"A detailed study of a subject, especially in order to discover new information"},{"m":"as well as","n":6,"sense":"In addition"},{"m":"also","n":6,"sense":"Describes new information"},{"m":":","n":5,"sense":"Colons are used to provide examples of what comes before"},{"m":"Specifically","n":5,"sense":"Provide specific information"},{"m":"we","n":5,"sense":"It mentions the speaker and other people, but excludes the listener"},{"m":"specifically","n":4,"sense":"Provide specific information"},{"m":"analysis","n":4,"sense":"Indicator of the source of information, it makes reference to textual information originated in a scholar work"}],"markerRows":129,"program":{"programs":22,"total":1266,"closed":773,"open":493,"sampled":30}},{"code":"STH","name":"Science and Technology for Health","tokens":3453,"types":1158,"ttr":0.3354,"words":3000,"total":260,"textTot":140,"interTot":120,"catTot":{"Logical markers":105,"Code Glosses":8,"Frame markers":9,"Endophoric markers":1,"Evidentials":17,"Boosters":25,"Hedges":34,"Attitude markers":37,"Engagement markers":12,"Self-mentions":12},"norm":{"Logical markers":30.41,"Code Glosses":2.32,"Frame markers":2.61,"Endophoric markers":0.29,"Evidentials":4.92,"Boosters":7.24,"Hedges":9.85,"Attitude markers":10.72,"Engagement markers":3.48,"Self-mentions":3.48},"textNorm":40.54,"interNorm":34.75,"totalNorm":75.3,"subs":{"Logical markers":[["Additive",92],["Consecutive",7],["Contrastive",6]],"Code Glosses":[["Exemplification",6],["Reformulation",2]],"Frame markers":[["Announcers",5],["Sequencers",4]],"Endophoric markers":[["Cataphoric",1]],"Evidentials":[["Personal",13],["Impersonal",4]],"Boosters":[["Booster- verb",20],["Booster- adverbs",5]],"Hedges":[["Hedges- adjectives",15],["Hedges- Modal verbs",11],["Hedges- adverbs",3],["Hedges- Verbs",3],["Hedges- nouns",2]],"Attitude markers":[["Attitude- adjectives",28],["Attitude- nouns",5],["Attitude verbs",4]],"Engagement markers":[["Personal references",9],["Imperatives",2],["Directives",1]],"Self-mentions":[["Personal references- exclusive pronouns",12]]},"topMarkers":[{"m":"and","n":84,"sense":"It introduces additional information. Be careful, \"and\" is a metadisocurse marker when it joins two propositions, but not two name"},{"m":"we","n":8,"sense":"It includes the speaker and the reader to engage him/her"},{"m":"as well as","n":7,"sense":"In addition"},{"m":"analysis","n":6,"sense":"Indicator of the source of information, it makes reference to textual information originated in a scholar work"},{"m":"potential","n":6,"sense":"Capable of being but not yet in existence; latent or undeveloped"},{"m":"possible","n":5,"sense":"Capable of happening, existing, or being true without contradicting proven facts, laws, or circumstances"},{"m":"One","n":4,"sense":"3rd person sg; indefinite pronoun whose reference is the speaker, the listener or any other third party: Interactional- engagement"},{"m":"but","n":3,"sense":"Constrast one negative and one positive proposition. Logical marker"},{"m":"could","n":3,"sense":"Suggestion"},{"m":"can","n":3,"sense":"used to express possibility in the present"},{"m":"also","n":3,"sense":"Describes new information"},{"m":":","n":3,"sense":"Colons are used to provide examples of what comes before"}],"markerRows":131,"program":{"programs":3,"total":76,"closed":46,"open":30,"sampled":30}},{"code":"ART","name":"Arts and Humanities","tokens":3400,"types":1089,"ttr":0.3203,"words":3000,"total":327,"textTot":193,"interTot":134,"catTot":{"Logical markers":117,"Code Glosses":15,"Frame markers":21,"Endophoric markers":2,"Evidentials":38,"Boosters":15,"Hedges":45,"Attitude markers":32,"Engagement markers":27,"Self-mentions":15},"norm":{"Logical markers":34.41,"Code Glosses":4.41,"Frame markers":6.18,"Endophoric markers":0.59,"Evidentials":11.18,"Boosters":4.41,"Hedges":13.24,"Attitude markers":9.41,"Engagement markers":7.94,"Self-mentions":4.41},"textNorm":56.76,"interNorm":39.41,"totalNorm":96.18,"subs":{"Logical markers":[["Additive",99],["Consecutive",10],["Contrastive",8]],"Code Glosses":[["Exemplification",11],["Reformulation",4]],"Frame markers":[["Announcers",16],["Sequencers",4],["Topicalisers",1]],"Endophoric markers":[["Anaphoric",1],["Cataphoric",1]],"Evidentials":[["Impersonal",21],["Personal",17]],"Boosters":[["Booster- verb",8],["Booster- adverbs",5],["booster- noun",2]],"Hedges":[["Hedges- adjectives",14],["Hedges- Verbs",13],["Hedges- nouns",10],["Hedges- Modal verbs",8]],"Attitude markers":[["Attitude- adjectives",14],["Attitude- nouns",10],["Attitude verbs",7],["Attitude - phrases",1]],"Engagement markers":[["Personal references",17],["Directives",7],["Imperatives",3]],"Self-mentions":[["Personal references- exclusive pronouns",12],["Self-citations",3]]},"topMarkers":[{"m":"and","n":86,"sense":"It introduces additional information. Be careful, \"and\" is a metadisocurse marker when it joins two propositions, but not two name"},{"m":"research","n":18,"sense":"A detailed study of a subject, especially in order to discover new information"},{"m":"will","n":15,"sense":"Announce the following idea, action. Frame marker"},{"m":"we","n":14,"sense":"It mentions the speaker and other people, but excludes the listener"},{"m":"analysis","n":9,"sense":"Indicator of the source of information, it makes reference to textual information originated in a scholar work"},{"m":"as well as","n":8,"sense":"In addition"},{"m":"our","n":7,"sense":"It explains the possession of the speaker and the listener"},{"m":"one","n":5,"sense":"3rd person sg; indefinite pronoun whose reference is the speaker, the listener or any other third party: Interactional- engagement"},{"m":"such as","n":5,"sense":"To illustrate"},{"m":"can","n":5,"sense":"used to express possibility in the present"},{"m":"approach","n":5,"sense":"A way of considering or doing something previously originated in other scholars' wo"},{"m":"possible","n":4,"sense":"Capable of happening, existing, or being true without contradicting proven facts, laws, or circumstances"}],"markerRows":183,"program":{"programs":8,"total":488,"closed":199,"open":289,"sampled":30}},{"code":"SLS","name":"Social and Legal Sciences","tokens":3328,"types":1062,"ttr":0.3191,"words":3000,"total":334,"textTot":210,"interTot":124,"catTot":{"Logical markers":130,"Code Glosses":12,"Frame markers":24,"Endophoric markers":5,"Evidentials":39,"Boosters":18,"Hedges":31,"Attitude markers":45,"Engagement markers":23,"Self-mentions":7},"norm":{"Logical markers":39.06,"Code Glosses":3.61,"Frame markers":7.21,"Endophoric markers":1.5,"Evidentials":11.72,"Boosters":5.41,"Hedges":9.31,"Attitude markers":13.52,"Engagement markers":6.91,"Self-mentions":2.1},"textNorm":63.1,"interNorm":37.26,"totalNorm":100.36,"subs":{"Logical markers":[["Additive",121],["Consecutive",5],["Contrastive",4]],"Code Glosses":[["Exemplification",6],["Reformulation",6]],"Frame markers":[["Announcers",12],["Topicalisers",7],["Sequencers",5]],"Endophoric markers":[["Anaphoric",4],["Cataphoric",1]],"Evidentials":[["Personal",20],["Impersonal",19]],"Boosters":[["Booster- verb",12],["Booster- adverbs",5],["Booster- phrases",1]],"Hedges":[["Hedges- nouns",11],["Hedges- adjectives",9],["Hedges- Modal verbs",7],["Hedges- Verbs",3],["Hedges-phrases",1]],"Attitude markers":[["Attitude- adjectives",34],["Attitude- nouns",6],["Attitude verbs",5]],"Engagement markers":[["Personal references",21],["Directives",1],["Imperatives",1]],"Self-mentions":[["Personal references- exclusive pronouns",4],["Self-citations",3]]},"topMarkers":[{"m":"and","n":98,"sense":"It introduces additional information. Be careful, \"and\" is a metadisocurse marker when it joins two propositions, but not two name"},{"m":"analysis","n":17,"sense":"Indicator of the source of information, it makes reference to textual information originated in a scholar work"},{"m":"will","n":9,"sense":"Announce the following idea, action. Frame marker"},{"m":"main","n":8,"sense":"larger, more important, or having more influence than others of the same type"},{"m":"research","n":7,"sense":"A detailed study of a subject, especially in order to discover new information"},{"m":"we","n":5,"sense":"It includes the speaker and the reader to engage him/her"},{"m":"models","n":5,"sense":"A good example or an approach extremely good that should be followed. Evidentials"},{"m":"one","n":5,"sense":"3rd person sg; indefinite pronoun whose reference is the speaker, the listener or any other third party: Interactional- engagement"},{"m":"as well as","n":4,"sense":"In addition"},{"m":"approach","n":4,"sense":"A way of considering or doing something previously originated in other scholars' wo"},{"m":"but","n":4,"sense":"Constrast one negative and one positive proposition. Logical marker"},{"m":"potential","n":4,"sense":"Capable of being but not yet in existence; latent or undeveloped"}],"markerRows":195,"program":{"programs":12,"total":412,"closed":201,"open":211,"sampled":30}},{"code":"SCI","name":"Sciences","tokens":3430,"types":1164,"ttr":0.3394,"words":3000,"total":263,"textTot":149,"interTot":114,"catTot":{"Logical markers":82,"Code Glosses":16,"Frame markers":18,"Endophoric markers":2,"Evidentials":31,"Boosters":29,"Hedges":30,"Attitude markers":35,"Engagement markers":10,"Self-mentions":10},"norm":{"Logical markers":23.91,"Code Glosses":4.66,"Frame markers":5.25,"Endophoric markers":0.58,"Evidentials":9.04,"Boosters":8.45,"Hedges":8.75,"Attitude markers":10.2,"Engagement markers":2.92,"Self-mentions":2.92},"textNorm":43.44,"interNorm":33.24,"totalNorm":76.68,"subs":{"Logical markers":[["Additive",73],["Contrastive",5],["Consecutive",4]],"Code Glosses":[["Exemplification",8],["Reformulation",8]],"Frame markers":[["Sequencers",11],["Announcers",4],["Topicalisers",2],["Discourse labels",1]],"Endophoric markers":[["Anaphoric",2]],"Evidentials":[["Personal",21],["Impersonal",10]],"Boosters":[["Booster- verb",24],["Booster- adverbs",3],["booster- noun",2]],"Hedges":[["Hedges- adjectives",11],["Hedges- Modal verbs",8],["Hedges- adverbs",4],["Hedges- Verbs",4],["Hedges- nouns",3]],"Attitude markers":[["Attitude- adjectives",27],["Attitude- nouns",5],["Attitude verbs",2],["Attitude- adverbs",1]],"Engagement markers":[["Personal references",9],["Imperatives",1]],"Self-mentions":[["Personal references- exclusive pronouns",8],["Self-citations",2]]},"topMarkers":[{"m":"and","n":65,"sense":"It introduces additional information. Be careful, \"and\" is a metadisocurse marker when it joins two propositions, but not two name"},{"m":"we","n":10,"sense":"It mentions the speaker and other people, but excludes the listener"},{"m":"analysis","n":8,"sense":"Indicator of the source of information, it makes reference to textual information originated in a scholar work"},{"m":"such as","n":6,"sense":"for example"},{"m":"effect","n":6,"sense":"The result of a particular influence previously mentioned. Evidential"},{"m":"as well as","n":5,"sense":"In addition"},{"m":"can","n":5,"sense":"used to express possibility in the present"},{"m":"On the other hand","n":5,"sense":"Second explanation of an idea. Frame marker"},{"m":"will","n":5,"sense":"Announce the following idea, action. Frame marker"},{"m":"However","n":4,"sense":"Used to introduce a statement that contrasts with or seems to contradict something. Logical marker"},{"m":"main","n":4,"sense":"larger, more important, or having more influence than others of the same type"},{"m":"research","n":4,"sense":"A detailed study of a subject, especially in order to discover new information"}],"markerRows":168,"program":{"programs":14,"total":434,"closed":181,"open":253,"sampled":30}}]};
 
-const data = {
-    arch:   { textual: [[54,16.18],[11,3.30],[51,15.28],[3,0.90],[1,0.30]],  interpersonal: [[8,2.40],[22,6.60],[4,1.20],[2,0.60],[3,0.90]] },
-    eng:    { textual: [[48,14.40],[9,2.70],[45,13.50],[5,1.50],[2,0.60]],   interpersonal: [[10,3.00],[25,7.50],[3,0.90],[1,0.30],[2,0.60]] },
-    health: { textual: [[42,12.60],[7,2.10],[38,11.40],[4,1.20],[1,0.30]],   interpersonal: [[12,3.60],[30,9.00],[5,1.50],[2,0.60],[4,1.20]] },
-    arts:   { textual: [[60,18.00],[14,4.20],[55,16.50],[6,1.80],[3,0.90]],  interpersonal: [[6,1.80],[18,5.40],[7,2.10],[4,1.20],[5,1.50]] },
-    sci:    { textual: [[38,11.40],[6,1.80],[35,10.50],[3,0.90],[2,0.60]],   interpersonal: [[15,4.50],[35,10.50],[4,1.20],[1,0.30],[2,0.60]] },
-    social: { textual: [[55,16.50],[12,3.60],[50,15.00],[5,1.50],[2,0.60]],  interpersonal: [[9,2.70],[28,8.40],[6,1.80],[3,0.90],[4,1.20]] }
-};
+/* ---------- palette helpers (read live CSS vars so theme switch works) ---------- */
+const CODES = ['ARQ','ENG','STH','ART','SLS','SCI'];
+const SHORT = {ARQ:'Architecture',ENG:'Engineering',STH:'Health Sci. & Tech.',ART:'Arts & Humanities',SLS:'Social & Legal',SCI:'Sciences'};
+function cssv(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+function discColor(code){ return cssv('--c-'+code); }
+function ink(){ return cssv('--ink'); }
+function inkSoft(){ return cssv('--ink-soft'); }
+function gridC(){ return cssv('--grid'); }
+const byCode = Object.fromEntries(DATA.corpora.map(c=>[c.code,c]));
+const TXT = DATA.cats.Textual, INT = DATA.cats.Interpersonal, ALLCATS = [...TXT, ...INT];
 
-const textualLabels       = ['Logical markers','Code Glosses','Frame markers','Endophoric markers','Evidentials'];
-const interpersonalLabels = ['Boosters','Hedges','Attitude markers','Engagement markers','Self-mentions'];
+/* ---------- Chart.js global defaults ---------- */
+Chart.defaults.font.family = "'Inter',system-ui,sans-serif";
+Chart.defaults.font.size = 12;
+Chart.defaults.plugins.legend.display = false;
+Chart.defaults.animation.duration = 500;
+function tooltipStyle(){
+  return { backgroundColor: cssv('--ink'), titleColor: cssv('--paper'), bodyColor: cssv('--paper'),
+    padding:10, cornerRadius:8, displayColors:true, borderWidth:0,
+    titleFont:{weight:'700',size:12.5}, bodyFont:{size:12.5} };
+}
+const charts = {};
 
-function makeChart(canvasId, labels, rows, color) {
-    new Chart(document.getElementById(canvasId).getContext('2d'), {
-        type: 'bar',
-        data: {
-            labels,
-            datasets: [{ data: rows.map(r => r[1]), backgroundColor: color + 'CC', borderColor: color, borderWidth: 1.5 }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    callbacks: {
-                        title: c => c[0].label,
-                        label: c => {
-                            const [occ, freq] = rows[c.dataIndex];
-                            return [`Occurrences: ${occ}`, `Norm. Freq.: ${freq.toFixed(2).replace('.', ',')} per 1,000 words`];
-                        }
-                    }
-                }
-            },
-            scales: {
-                x: { ticks: { maxRotation: 45, minRotation: 30, font: { size: 10 }, autoSkip: false }, grid: { display: false } },
-                y: { beginAtZero: true, title: { display: true, text: 'Normalized Freq. (per 1,000 words)', font: { size: 10 } }, ticks: { font: { size: 10 } } }
-            }
-        }
-    });
+/* ---------- reusable axis config ---------- */
+function scales(opts){
+  const o = opts||{};
+  return {
+    x:{ stacked:!!o.stacked, grid:{display:o.xgrid||false, color:gridC()}, ticks:{ color:inkSoft(), font:{size:11}, maxRotation:o.rot||0, minRotation:o.rot||0, autoSkip:false } , border:{color:gridC()} },
+    y:{ stacked:!!o.stacked, beginAtZero:true, grid:{color:gridC()}, border:{display:false}, ticks:{ color:inkSoft(), font:{size:11} }, title:{ display:!!o.ytitle, text:o.ytitle||'', color:inkSoft(), font:{size:11,weight:'600'} } }
+  };
+}
+const barGeom = { borderRadius:4, borderSkipped:false, maxBarThickness:46, categoryPercentage:0.82, barPercentage:0.9 };
+
+/* ================= 1. LEXICAL ================= */
+let lexMetric='both';
+function renderLex(){
+  const ctx = document.getElementById('chLex');
+  if(charts.lex) charts.lex.destroy();
+  const labels = CODES.map(c=>SHORT[c]);
+  const leg = document.getElementById('lexLegend');
+  let datasets;
+  if(lexMetric==='both'){
+    datasets = [
+      { label:'Tokens', data:CODES.map(c=>byCode[c].tokens), backgroundColor:cssv('--indigo'), ...barGeom },
+      { label:'Types', data:CODES.map(c=>byCode[c].types), backgroundColor:cssv('--gold'), ...barGeom }
+    ];
+    leg.innerHTML = '<span><span class="dot" style="background:var(--indigo)"></span>Tokens</span><span><span class="dot" style="background:var(--gold)"></span>Types</span>';
+  } else {
+    datasets = [{ label:'TTR', data:CODES.map(c=>byCode[c].ttr), backgroundColor:CODES.map(c=>discColor(c)), ...barGeom }];
+    leg.innerHTML = '<span>Type–Token Ratio — higher = more lexical variety. All six fall in the low band (&lt;0.5).</span>';
+  }
+  charts.lex = new Chart(ctx,{ type:'bar', data:{labels,datasets},
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{ ...tooltipStyle(), callbacks:{ label:c=> lexMetric==='ttr' ? ` TTR: ${c.raw.toFixed(4)}` : ` ${c.dataset.label}: ${c.raw.toLocaleString()}` } } },
+      scales: scales({ ytitle: lexMetric==='ttr'?'Type–Token Ratio':'Count', rot: labels.some(l=>l.length>12)?18:0 }) } });
+  buildTable('tblLex', ['Discipline','Words','Types','Tokens','TTR','Density'],
+    DATA.corpora.map(c=>[c.name, c.words.toLocaleString(), c.types.toLocaleString(), c.tokens.toLocaleString(), c.ttr.toFixed(4), 'Low']),
+    [false,true,true,true,true,false]);
 }
 
-const B = '#4472C4', O = '#ED7D31';
-['arch', 'eng', 'health', 'arts', 'sci', 'social'].forEach(k => {
-    makeChart(`textual-${k}`, textualLabels,       data[k].textual,       B);
-    makeChart(`interp-${k}`,  interpersonalLabels, data[k].interpersonal, O);
+/* ================= 2. CATEGORY COMPARISON ================= */
+let catMetric='norm', catGroup='all';
+function renderCat(){
+  const ctx=document.getElementById('chCat');
+  if(charts.cat) charts.cat.destroy();
+  const cats = catGroup==='all'?ALLCATS : DATA.cats[catGroup];
+  const datasets = CODES.map(code=>{
+    const c=byCode[code];
+    return { label:SHORT[code], data:cats.map(cat=> catMetric==='norm'? c.norm[cat] : c.catTot[cat]),
+      backgroundColor:discColor(code), ...barGeom, categoryPercentage:0.86, barPercentage:0.92 };
+  });
+  document.getElementById('catLegend').innerHTML = CODES.map(c=>`<span><span class="dot" style="background:${discColor(c)}"></span>${SHORT[c]}</span>`).join('');
+  charts.cat = new Chart(ctx,{ type:'bar', data:{labels:cats,datasets},
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{ ...tooltipStyle(), callbacks:{ label:c=> catMetric==='norm'? ` ${c.dataset.label}: ${c.raw.toFixed(2)} /1k` : ` ${c.dataset.label}: ${c.raw} occ.` } } },
+      scales: scales({ ytitle: catMetric==='norm'?'Frequency per 1,000 tokens':'Occurrences', rot: cats.length>5?22:0 }) } });
+  // table
+  const head=['Discipline',...cats];
+  const rows=DATA.corpora.map(c=>[c.name, ...cats.map(cat=> catMetric==='norm'? c.norm[cat].toFixed(2) : c.catTot[cat])]);
+  buildTable('tblCat', head, rows, head.map((h,i)=>i>0));
+}
+
+/* ================= 2b. BALANCE ================= */
+let balMetric='norm';
+function renderBal(){
+  const ctx=document.getElementById('chBal');
+  if(charts.bal) charts.bal.destroy();
+  const labels=CODES.map(c=>SHORT[c]);
+  const tData=CODES.map(c=> balMetric==='norm'? byCode[c].textNorm : byCode[c].textTot);
+  const iData=CODES.map(c=> balMetric==='norm'? byCode[c].interNorm : byCode[c].interTot);
+  charts.bal=new Chart(ctx,{ type:'bar', data:{ labels, datasets:[
+    { label:'Textual', data:tData, backgroundColor:cssv('--c-textual'), ...barGeom, categoryPercentage:0.7 },
+    { label:'Interpersonal', data:iData, backgroundColor:cssv('--c-interpersonal'), ...barGeom, categoryPercentage:0.7 }
+  ]},
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{ ...tooltipStyle(), callbacks:{ label:c=> balMetric==='norm'? ` ${c.dataset.label}: ${c.raw.toFixed(2)} /1k` : ` ${c.dataset.label}: ${c.raw} occ.` } } },
+      scales: scales({ stacked:true, ytitle: balMetric==='norm'?'Frequency per 1,000 tokens':'Occurrences', rot: labels.some(l=>l.length>12)?18:0 }) } });
+  buildTable('tblBal', ['Discipline','Textual','Interpersonal','Total','Textual %'],
+    DATA.corpora.map(c=>[c.name,
+      balMetric==='norm'?c.textNorm.toFixed(2):c.textTot,
+      balMetric==='norm'?c.interNorm.toFixed(2):c.interTot,
+      balMetric==='norm'?c.totalNorm.toFixed(2):c.total,
+      Math.round(c.textTot/c.total*100)+'%']),
+    [false,true,true,true,true]);
+}
+
+/* ================= 3. DEEP DIVE ================= */
+let ddCode='ARQ';
+function renderDD(){
+  const c=byCode[ddCode];
+  document.getElementById('ddTitle').textContent = c.name + ' subcorpus';
+  document.getElementById('ddTiles').innerHTML = [
+    ['Total markers', c.total], ['Textual', c.textTot], ['Interpersonal', c.interTot],
+    ['Per 1,000 tokens', c.totalNorm.toFixed(1)], ['Marker forms', c.markerRows], ['TTR', c.ttr.toFixed(3)]
+  ].map(t=>`<div class="dd-tile"><div class="n">${t[1]}</div><div class="l">${t[0]}</div></div>`).join('');
+  // horizontal bar of 10 categories
+  const ctx=document.getElementById('chDD');
+  if(charts.dd) charts.dd.destroy();
+  const cats=ALLCATS;
+  const colors=cats.map(cat=> TXT.includes(cat)? cssv('--c-textual') : cssv('--c-interpersonal'));
+  charts.dd=new Chart(ctx,{ type:'bar', data:{ labels:cats, datasets:[{ label:'Occurrences', data:cats.map(cat=>c.catTot[cat]), backgroundColor:colors, borderRadius:4, borderSkipped:false, maxBarThickness:26 }]},
+    options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{ ...tooltipStyle(), callbacks:{ label:c2=>` ${c2.raw} occ. · ${byCode[ddCode].norm[c2.label].toFixed(2)} /1k` } } },
+      scales:{ x:{ beginAtZero:true, grid:{color:gridC()}, border:{display:false}, ticks:{color:inkSoft(),font:{size:11}} }, y:{ grid:{display:false}, border:{color:gridC()}, ticks:{color:ink(),font:{size:11.5,weight:'600'}} } } } });
+  // subcategories
+  const subsWrap=document.getElementById('ddSubs');
+  let html='';
+  ALLCATS.forEach(cat=>{ const list=c.subs[cat]; if(list && list.length){ list.forEach(([s,n])=> html+=`<span class="sub-tag">${s} <b>${n}</b></span>`); } });
+  subsWrap.innerHTML=html;
+  // top markers
+  document.getElementById('ddMarkers').innerHTML = c.topMarkers.map(m=>
+    `<li><div><span class="marker-form">${escapeHtml(m.m)}</span><div class="marker-sense">${escapeHtml(m.sense||'')}</div></div><span class="marker-count">${m.n}</span></li>`).join('');
+  // pills state
+  document.querySelectorAll('#discPills .disc-pill').forEach(p=>p.setAttribute('aria-pressed', p.dataset.code===ddCode));
+}
+
+/* ================= 4. POPULATION ================= */
+function renderPop(){
+  const ctx=document.getElementById('chPop');
+  if(charts.pop) charts.pop.destroy();
+  const labels=CODES.map(c=>SHORT[c]);
+  charts.pop=new Chart(ctx,{ type:'bar', data:{ labels, datasets:[
+    { label:'Open access', data:CODES.map(c=>byCode[c].program.open), backgroundColor:cssv('--indigo'), ...barGeom, categoryPercentage:0.72 },
+    { label:'Closed (restricted)', data:CODES.map(c=>byCode[c].program.closed), backgroundColor:cssv('--ink-faint'), ...barGeom, categoryPercentage:0.72 }
+  ]},
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{ ...tooltipStyle(), callbacks:{ label:c=>` ${c.dataset.label}: ${c.raw.toLocaleString()}`, footer:items=>{ const c=byCode[CODES[items[0].dataIndex]]; return `Total: ${c.program.total.toLocaleString()} · sampled 30`; } } } },
+      scales: scales({ stacked:true, ytitle:'TFMs deposited 2022–2024', rot: labels.some(l=>l.length>12)?18:0 }) } });
+  buildTable('tblPop', ['Discipline','Programs','Total TFMs','Closed','Open','Abstracts sampled'],
+    DATA.corpora.map(c=>[c.name, c.program.programs, c.program.total.toLocaleString(), c.program.closed.toLocaleString(), c.program.open.toLocaleString(), c.program.sampled]),
+    [false,true,true,true,true,true]);
+}
+
+/* ---------- table + util ---------- */
+function buildTable(id, head, rows, numCols){
+  const el=document.getElementById(id);
+  const thead='<thead><tr>'+head.map((h,i)=>`<th class="${numCols[i]?'num':''}">${h}</th>`).join('')+'</tr></thead>';
+  const tbody='<tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>`<td class="${numCols[i]?'num':''}">${v}</td>`).join('')+'</tr>').join('')+'</tbody>';
+  el.innerHTML='<table>'+thead+tbody+'</table>';
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch])); }
+
+/* ---------- segmented control wiring ---------- */
+function wireSeg(id, cb){
+  const box=document.getElementById(id);
+  box.addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return;
+    box.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', x===b));
+    cb(b.dataset.v); });
+}
+wireSeg('lexMetric', v=>{ lexMetric=v; renderLex(); });
+wireSeg('catMetric', v=>{ catMetric=v; renderCat(); });
+wireSeg('catGroup', v=>{ catGroup=v; renderCat(); });
+wireSeg('balMetric', v=>{ balMetric=v; renderBal(); });
+
+/* discipline pills */
+const pillsBox=document.getElementById('discPills');
+pillsBox.innerHTML=CODES.map(c=>`<button class="disc-pill" type="button" data-code="${c}" aria-pressed="${c===ddCode}"><span class="dot" style="background:${discColor(c)}"></span>${SHORT[c]}</button>`).join('');
+pillsBox.addEventListener('click', e=>{ const b=e.target.closest('.disc-pill'); if(!b) return; ddCode=b.dataset.code; renderDD(); });
+
+/* table toggles */
+document.querySelectorAll('[data-table-toggle]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{ const t=document.getElementById(btn.dataset.tableToggle);
+    const show=t.classList.toggle('hidden')===false; btn.setAttribute('aria-expanded', show); btn.textContent= show?'Hide data table':'Show data table'; });
 });
+
+/* accordions */
+document.querySelectorAll('.acc-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{ const item=btn.closest('.acc-item'); const open=item.classList.toggle('open'); btn.setAttribute('aria-expanded', open); });
+});
+
+/* ---------- theme ---------- */
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  document.getElementById('themeIco').textContent = t==='dark'?'☀️':'🌙';
+  document.getElementById('themeTxt').textContent = t==='dark'?'Light':'Dark';
+  try{ localStorage.setItem('databook-theme', t); }catch(e){}
+  renderAll();
+}
+(function initTheme(){
+  let t='light';
+  try{ t=localStorage.getItem('databook-theme') || (matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'); }catch(e){}
+  document.documentElement.setAttribute('data-theme', t);
+  document.getElementById('themeIco').textContent = t==='dark'?'☀️':'🌙';
+  document.getElementById('themeTxt').textContent = t==='dark'?'Light':'Dark';
+})();
+document.getElementById('themeBtn').addEventListener('click', ()=>{
+  applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+});
+
+/* ---------- render everything ---------- */
+function renderAll(){ renderLex(); renderCat(); renderBal(); renderDD(); renderPop(); }
+renderAll();
 </script>
 </body>
 </html>
