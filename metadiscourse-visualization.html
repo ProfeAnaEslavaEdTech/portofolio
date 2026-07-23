@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interactive Corpus Data Book — Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts</title>
-<meta name="description" content="Interactive data book for the master's thesis 'Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts' (UPV): corpus metadata, lexical profiles and metadiscourse-marker visualisations across six disciplinary subcorpora.">
+<title>Interactive Corpus Data Book — Metadiscourse in Master's Thesis Abstracts: Disciplinary Variation and AI Literacy</title>
+<meta name="description" content="Interactive data book for the master's thesis 'Metadiscourse in Master's Thesis Abstracts: Disciplinary Variation and AI Literacy' (UPV): corpus metadata, lexical profiles and metadiscourse-marker visualisations across six disciplinary subcorpora.">
 <script>
 /*!
  * Chart.js v4.4.0
@@ -30,7 +30,7 @@
     --indigo:#5B4FE5; --indigo-light:#EEECFD; --indigo-dark:#312A8C;
     --ink:#1A1D29; --ink-soft:#5B5F73; --ink-faint:#8B8FA3;
     --paper:#FFFFFF; --bg-tint:#F8F8FC; --card:#FFFFFF; --line:#E7E6F2;
-    --gold:#E8A33D; --surface-1:#FFFFFF; --grid:#ECEBF5;
+    --gold:#E8A33D; --surface-1:#FFFFFF; --grid:#ECEBF5; --good:#0ca30c; --warn:#c8801a; --bad:#d03b3b;
     --radius-lg:20px; --radius-md:14px; --radius-sm:10px; --radius-pill:999px;
     --shadow:0 2px 14px rgba(35,30,80,0.07);
     /* discipline categorical palette — validated colourblind-safe (documented order) */
@@ -41,7 +41,7 @@
     --indigo:#8B80F0; --indigo-light:#211D3D; --indigo-dark:#C9C3FA;
     --ink:#EDECF7; --ink-soft:#A9ADC4; --ink-faint:#7C7F97;
     --paper:#12121C; --bg-tint:#1A1A28; --card:#1C1C2B; --line:#2C2C40;
-    --surface-1:#1C1C2B; --grid:#2A2A3E;
+    --surface-1:#1C1C2B; --grid:#2A2A3E; --good:#3fbf3f; --warn:#e6a13a; --bad:#e66767;
     --shadow:0 2px 16px rgba(0,0,0,0.4);
     --c-ARQ:#3987e5; --c-ENG:#12a012; --c-STH:#d55181; --c-ART:#c98500; --c-SLS:#199e70; --c-SCI:#d95926;
     --c-textual:#3987e5; --c-interpersonal:#d95926;
@@ -189,7 +189,37 @@
 
   @media (max-width:560px){ .dd-tiles{ grid-template-columns:1fr; } .wrap{ padding:0 16px; } }
 
-  /* ===== DATA BAR ===== */
+  /* ===== TAB BAR ===== */
+  .tabbar{ position:sticky; top:0; z-index:90; background:color-mix(in srgb,var(--paper) 92%,transparent); backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line); }
+  .tabbar-inner{ max-width:1160px; margin:0 auto; padding:0 24px; display:flex; gap:6px; }
+  .tab{ appearance:none; border:none; background:transparent; font:inherit; font-size:14px; font-weight:700; color:var(--ink-soft); padding:15px 18px; cursor:pointer; border-bottom:3px solid transparent; display:inline-flex; align-items:center; gap:9px; }
+  .tab:hover{ color:var(--indigo); }
+  .tab[aria-selected="true"]{ color:var(--indigo); border-bottom-color:var(--indigo); }
+  .tab .tnum{ background:var(--indigo-light); color:var(--indigo-dark); font-size:12px; font-weight:800; width:22px; height:22px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; }
+  .tab[aria-selected="true"] .tnum{ background:var(--indigo); color:#fff; }
+  .tabpanel[hidden]{ display:none; }
+  @media (max-width:560px){ .tab{ padding:13px 12px; font-size:13px; } .tab .tlabel{ display:none; } }
+
+  /* ===== STATS TAB ===== */
+  .verdict-pill{ display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:var(--radius-pill); white-space:nowrap; }
+  .vp-both{ background:#e5f5e5; color:#0a7d0a; } .vp-rate{ background:#e7f0fd; color:#1c5cab; }
+  .vp-comp{ background:#fdeede; color:#a35a12; } .vp-ns{ background:var(--bg-tint); color:var(--ink-faint); }
+  .vp-desc{ background:#f0edf9; color:#5a4aa8; }
+  :root[data-theme="dark"] .vp-both{ background:#123012; color:#5fd35f; } :root[data-theme="dark"] .vp-rate{ background:#12233d; color:#7db4ff; }
+  :root[data-theme="dark"] .vp-comp{ background:#3a2a12; color:#e0a24f; } :root[data-theme="dark"] .vp-desc{ background:#241f3d; color:#b0a4e9; }
+  .band-legend{ display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; color:var(--ink-soft); margin:2px 0 14px; }
+  .band-legend span{ display:inline-flex; align-items:center; gap:7px; font-weight:600; }
+  .band-dot{ width:12px; height:12px; border-radius:3px; }
+  .ref-chips{ display:flex; flex-wrap:wrap; gap:9px; margin-top:6px; }
+  .ref-chip{ font-size:12.5px; font-weight:600; color:var(--indigo-dark); background:var(--indigo-light); border-radius:var(--radius-pill); padding:7px 14px; text-decoration:none; }
+  a.ref-chip:hover{ background:var(--indigo); color:#fff; }
+  .callout.ok{ background:#e9f7e9; border-color:color-mix(in srgb,#0ca30c 34%,transparent); }
+  :root[data-theme="dark"] .callout.ok{ background:#0f2a0f; }
+  .refs-list{ font-size:13px; color:var(--ink-soft); line-height:1.9; }
+  .refs-list li{ margin-bottom:8px; list-style:none; padding-left:16px; text-indent:-16px; }
+  .refs-list a{ color:var(--indigo); text-decoration:none; } .refs-list a:hover{ text-decoration:underline; }
+
+  body[data-tab="stats"] .navlinks, body[data-tab="refs"] .navlinks{ display:none; }
   .databar{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); padding:20px 22px; box-shadow:var(--shadow); display:grid; grid-template-columns:1fr auto; gap:14px 20px; align-items:center; }
   .databar-main{ display:flex; gap:14px; align-items:flex-start; }
   .databar-badge{ background:var(--gold); color:#3a2a00; font-weight:800; font-size:11px; letter-spacing:.05em; padding:4px 9px; border-radius:7px; flex:none; margin-top:2px; }
@@ -220,12 +250,21 @@
   </div>
 </div>
 
+<div class="tabbar">
+  <div class="tabbar-inner" role="tablist" aria-label="Data book sections">
+    <button class="tab" id="tabbtn-corpus" role="tab" data-tab="corpus" aria-selected="true" aria-controls="tab-corpus"><span class="tnum">1</span> <span class="tlabel">Corpus Data Book</span></button>
+    <button class="tab" id="tabbtn-stats" role="tab" data-tab="stats" aria-selected="false" aria-controls="tab-stats"><span class="tnum">2</span> <span class="tlabel">Statistical Results</span></button>
+    <button class="tab" id="tabbtn-refs" role="tab" data-tab="refs" aria-selected="false" aria-controls="tab-refs"><span class="tnum">3</span> <span class="tlabel">References</span></button>
+  </div>
+</div>
+
 <main id="main">
+<div id="tab-corpus" class="tabpanel" role="tabpanel" aria-labelledby="tabbtn-corpus">
 
 <!-- ============ COVER PAGE ============ -->
 <header class="cover wrap">
   <p class="eyebrow">Master's Thesis (TFM) · Interactive Data Book</p>
-  <h1>Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts</h1>
+  <h1>Metadiscourse in Master's Thesis Abstracts: Disciplinary Variation and AI Literacy</h1>
   <p class="cover-lead">A living appendix to the thesis: browse the corpus metadata, lexical profiles and metadiscourse-marker results across six disciplinary subcorpora of master's-thesis abstracts deposited at the Universitat Politècnica de València (RiuNet, 2022–2024). Every chart below is rendered live from the source workbook.</p>
   <div class="credits">
     <div class="credit"><div class="k">Authors</div><div class="v">Prof. Mª Luisa Carrió-Pastor <span>Prof. Ana Eslava-Graterol</span></div></div>
@@ -473,6 +512,296 @@
   </div>
 </section>
 
+</div>
+
+<!-- ============ STATS TAB PANEL ============ -->
+<div id="tab-stats" class="tabpanel" role="tabpanel" aria-labelledby="tabbtn-stats" hidden>
+
+  <header class="cover wrap">
+    <p class="eyebrow">Companion workbook · Chapter III → Chapter IV</p>
+    <h1>The statistics behind the research — and what they say about transferability</h1>
+    <p class="cover-lead">The same study, viewed through its inferential layer. These procedures test whether the disciplinary differences in metadiscourse use are real and, crucially, whether the <strong>corpus design itself is transferable</strong> — i.e. balanced, evenly dispersed and independently reproducible, so that the same sampling and tagging protocol can be reused on new disciplines and corpora. All inferential statistics were computed with the LLM assistant <strong>Kimi (Moonshot AI, 2026)</strong> — AI-assisted yet fully traceable, in the spirit of Pérez-Paredes (2026) — and then cross-validated: dispersion against the <strong>Lancaster Stats Tools</strong> calculator (Brezina, 2018), the standard deviation against the Pearson calculator, and every figure reconciled cell-by-cell against the corpus workbook.</p>
+    <div class="ref-chips">
+      <span class="ref-chip">Kimi · Moonshot AI (2026) · statistics run by LLM</span>
+      <span class="ref-chip">Brezina (2018) · method &amp; Lancaster tool</span>
+      <a class="ref-chip" href="https://doi.org/10.1017/S0261444825101109" target="_blank" rel="noopener">Pérez-Paredes (2026) · reproducible, traceable analysis</a>
+      <span class="ref-chip">Gries (2008) · DP</span>
+      <span class="ref-chip">Juilland &amp; Chang-Rodríguez (1964) · D</span>
+    </div>
+  </header>
+
+  <!-- headline tiles -->
+  <section class="wrap" aria-label="Headline statistics">
+    <div class="tiles">
+      <div class="tile"><div class="num">153.57</div><div class="lbl">Overall χ² (df = 40)</div><div class="sub">p &lt; .001 · real disciplinary variation</div></div>
+      <div class="tile"><div class="num">.137</div><div class="lbl">Cramér's V</div><div class="sub">small, orderly effect</div></div>
+      <div class="tile"><div class="num">.924 / .925</div><div class="lbl">Macro Juilland's D</div><div class="sub">textual / interpersonal — evenly dispersed</div></div>
+      <div class="tile"><div class="num">10 / 10</div><div class="lbl">Lancaster match</div><div class="sub">dispersion independently verified</div></div>
+      <div class="tile"><div class="num">12.1</div><div class="lbl">Bayes factor BF₀₁</div><div class="sub">stable textual/interpersonal balance</div></div>
+    </div>
+  </section>
+
+  <!-- data bar -->
+  <section class="wrap" aria-label="Statistical workbook source">
+    <div class="databar">
+      <div class="databar-main">
+        <span class="databar-badge" aria-hidden="true">DATA</span>
+        <div>
+          <div class="databar-title">Statistical results · updated 23 July 2026</div>
+          <div class="databar-sub">Every value on this tab is drawn from the statistical-results workbook (companion to Chapters III–IV). The full, live workbook is available on OneDrive, and a copy can be downloaded from the verification panel below.</div>
+        </div>
+      </div>
+      <div class="databar-actions">
+        <a class="btn-file" href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQDwDO07NV1sSpTM2sQF0cfYAcOtCILgaMoZTgO6G3eY3TI?e=AWeF88" target="_blank" rel="noopener"><span aria-hidden="true">☁️</span> Live workbook (OneDrive)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- tools & cross-checking -->
+  <section class="wrap" aria-label="Statistical tools">
+    <div class="callout">
+      <span class="ico" aria-hidden="true">🧮</span>
+      <div>
+        <strong>How the statistics were produced.</strong> Following Pérez-Paredes's (2026) case for AI-assisted but transparent, reproducible corpus work, all inferential procedures — contingency-table tests, confidence intervals, effect sizes, Monte-Carlo simulation and Bayesian re-analysis — were run in <strong>Kimi (Moonshot AI, 2026)</strong>, the single computation environment for the study. Three independent cross-checks guard every value: dispersion against <strong>Lancaster Stats Tools online</strong> (Brezina, 2018), the standard deviation against the Pearson calculator, and a cell-by-cell reconciliation against the unified corpus workbook. Metadiscourse tagging used <strong>METOOL</strong> (Carrió-Pastor, 2020); the statistical method follows Brezina (2018).
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFERABILITY / DISPERSION -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">The transferability evidence</span></div>
+    <h2 class="sec-title">Dispersion — how evenly each category spreads across the six subcorpora</h2>
+    <p class="sec-desc">Transferability rests on dispersion: if a category's occurrences are spread evenly across the six subcorpora rather than concentrated in one, the sampling design generalises. <strong>Juilland's D</strong> ranges 0 (concentrated) to 1 (perfectly even); <strong>DP</strong> (deviation of proportions) is the inverse — lower is more even. Both macro-categories reach D ≈ .92, and seven of ten categories sit in the High band (D ≥ .80) — a universal core repertoire — while only the three most discipline-bound categories (frame, endophoric and engagement markers) fall to the Medium band, confirming a balanced, reusable design.</p>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">Juilland's D and DP by category</div>
+        <button class="linkbtn" data-table-toggle="tblDisp" aria-expanded="false">Show data table</button>
+      </div>
+      <div class="controls">
+        <div class="ctl-group"><span class="ctl-label">Measure</span>
+          <div class="seg" role="group" aria-label="Dispersion measure" id="dispMetric">
+            <button type="button" data-v="D" aria-pressed="true">Juilland's D (even = high)</button>
+            <button type="button" data-v="DP">DP (even = low)</button>
+          </div>
+        </div>
+      </div>
+      <div class="band-legend">
+        <span><span class="band-dot" style="background:var(--good)"></span>High (D ≥ .80)</span>
+        <span><span class="band-dot" style="background:var(--warn)"></span>Medium (.50–.79)</span>
+        <span><span class="band-dot" style="background:var(--bad)"></span>Low (&lt; .50)</span>
+      </div>
+      <div class="chart-box h-tall"><canvas id="chDisp" aria-label="Juilland's D by category"></canvas></div>
+      <div class="table-wrap hidden" id="tblDisp"></div>
+      <p class="card-note" style="margin-top:14px;">Macro-categories: <strong>textual D = .924</strong> (DP .077) · <strong>interpersonal D = .925</strong> (DP .073) — both High. Marker level (251 unique forms): mean D = .289 — categories disperse evenly even though individual markers vary, exactly as Brezina (2018) and Gries (2008) predict. Crucially, the evenly-dispersed categories are precisely the ones the independence tests find <em>no</em> difference in, and the concentrated Medium categories are precisely the significant ones — dispersion and significance tell one coherent story, and the design detects difference only where difference exists.</p>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico" aria-hidden="true">✓</span>
+      <div>
+        <strong>Independently reproduced.</strong> All ten category-level Juilland's D values match the verified Lancaster Stats Tools output after two-decimal rounding (10 / 10). Raw Lancaster input and output are archived in the workbook as direct evidence — the reproducibility that Pérez-Paredes (2026) argues corpus work needs.
+        <div class="dl-row">
+          <a class="btn btn-ghost" href="https://1drv.ms/x/c/264e9460d4aaf5a6/IQDwDO07NV1sSpTM2sQF0cfYAcOtCILgaMoZTgO6G3eY3TI?e=AWeF88" target="_blank" rel="noopener"><span aria-hidden="true">☁️</span> Live workbook (OneDrive)</a>
+          <a class="btn btn-ghost" href="https://corpus-stats.lancs.ac.uk/#2-dispersion" target="_blank" rel="noopener"><span aria-hidden="true">🔗</span> Lancaster dispersion calculator</a>
+          <a class="btn btn-primary" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,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" download="tfm-statistical-results.xlsx"><span aria-hidden="true">⬇️</span> Download the statistical workbook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OMNIBUS -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Do disciplines really differ?</span></div>
+    <h2 class="sec-title">Omnibus tests — a real but small, orderly effect</h2>
+    <p class="sec-desc">The whole-table tests are highly significant: disciplines differ in how they use metadiscourse. The effect size is small (Cramér's V = .137), and the textual/interpersonal <em>macro balance</em> does <strong>not</strong> differ (p = .090) — variation is in the fine categories, not the overall architecture. That combination — real signal, small effect, stable macro-structure — is what makes the design portable.</p>
+    <div class="card">
+      <div class="card-title" style="margin-bottom:12px;">Whole-table &amp; macro-level results</div>
+      <div class="table-wrap" id="tblOverall"></div>
+    </div>
+  </section>
+
+  <!-- PER-CATEGORY -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Where the variation lives</span></div>
+    <h2 class="sec-title">Per-category tests — composition vs rate layer</h2>
+    <p class="sec-desc">Each category is tested twice: in the <strong>composition</strong> layer (its share of the repertoire) and the <strong>rate</strong> layer (occurrences per 1,000 tokens), with Bonferroni control (family k = 10). The dashed line marks the χ² ≈ 11.07 critical value (df = 5, α = .05). Frame and logical markers drive the differences in both layers; hedges, attitude markers and self-mentions are stable everywhere.</p>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">χ² by category — composition vs rate</div>
+        <button class="linkbtn" data-table-toggle="tblPerCat" aria-expanded="false">Show data table</button>
+      </div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--c-textual)"></span>Composition χ²</span>
+        <span><span class="dot" style="background:var(--c-interpersonal)"></span>Rate χ²</span>
+        <span style="color:var(--ink-faint)">— — critical χ² (df 5) = 11.07</span>
+      </div>
+      <div class="chart-box h-tall"><canvas id="chPerCat" aria-label="Chi-square by category"></canvas></div>
+      <div class="table-wrap hidden" id="tblPerCat"></div>
+    </div>
+  </section>
+
+  <!-- DRIVERS -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Which cells drive the table</span></div>
+    <h2 class="sec-title">Driver cells — adjusted standardised residuals</h2>
+    <p class="sec-desc">Adjusted standardised residuals (ASR) locate the category × discipline cells responsible for the significant table. Positive = over-use, negative = under-use. Cells beyond |z| = 3.31 survive the strict family-wise (Bonferroni) threshold over all 54 cells; the rest hold at the per-comparison level (|z| &gt; 2.58).</p>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">ASR by driver cell</div>
+        <button class="linkbtn" data-table-toggle="tblDrivers" aria-expanded="false">Show data table</button>
+      </div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--good)"></span>Over-use (+)</span>
+        <span><span class="dot" style="background:var(--bad)"></span>Under-use (−)</span>
+      </div>
+      <div class="chart-box h-mid"><canvas id="chDrivers" aria-label="Adjusted standardised residuals"></canvas></div>
+      <div class="table-wrap hidden" id="tblDrivers"></div>
+    </div>
+  </section>
+
+  <!-- CONTRASTS -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">How big are the differences</span></div>
+    <h2 class="sec-title">Key pairwise contrasts — effect sizes</h2>
+    <p class="sec-desc">The strongest rate contrasts, with Log Ratio (log₂) effect sizes and %DIFF. A Log Ratio of 2.41 means the higher rate is 2<sup>2.41</sup> ≈ 5.3× the lower one. Each rate carries a 95% Wilson confidence interval (see the table).</p>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">Log Ratio by contrast</div>
+        <button class="linkbtn" data-table-toggle="tblContrasts" aria-expanded="false">Show data table</button>
+      </div>
+      <div class="chart-box h-mid"><canvas id="chContrasts" aria-label="Log ratio by contrast"></canvas></div>
+      <div class="table-wrap hidden" id="tblContrasts"></div>
+    </div>
+  </section>
+
+  <!-- SOFT/HARD + DESCRIPTIVES -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Robustness checks</span></div>
+    <h2 class="sec-title">No soft/hard divide · between-subcorpus spread</h2>
+    <p class="sec-desc">Grouping the disciplines into "soft" and "hard" science yields no detectable difference in the textual/interpersonal balance — and Bayes factors quantify positive evidence <em>for</em> that null (the data are ≈ 12× more likely under "no divide"). The coefficient of variation across subcorpora is modest (≈ 17–18%), another marker of a balanced design.</p>
+    <div class="dd-grid">
+      <div class="card" style="margin:0;">
+        <div class="card-title" style="margin-bottom:10px;">Soft vs hard science</div>
+        <div class="dd-tiles" id="bfTiles"></div>
+        <div class="table-wrap" id="tblSoftHard"></div>
+      </div>
+      <div class="card" style="margin:0;">
+        <div class="card-title" style="margin-bottom:10px;">Between-subcorpus descriptives</div>
+        <div class="table-wrap" id="tblDesc"></div>
+        <p class="card-note" style="margin-top:12px;">Statistics over the six subcorpus subtotals of normalised occurrences per 1,000 tokens (n = 6 subcorpora × 30 abstracts = 180 texts).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCEDURES + DEFERRED -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Full method record</span></div>
+    <h2 class="sec-title">Every procedure, what it measures, and the result</h2>
+    <p class="sec-desc">The master table maps each statistical procedure to what it tests, the result obtained, and where it is reported in the thesis — a transparent, auditable chain from method to claim.</p>
+    <div class="card">
+      <div class="table-wrap" id="tblProcedures"></div>
+    </div>
+
+    <div class="acc-item">
+      <button class="acc-btn" aria-expanded="false"><span>Pre-registered but deferred — reserved for the follow-up study</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+      <div class="acc-panel" id="deferredPanel"></div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY POINTER -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">References &amp; methodology</span></div>
+    <h2 class="sec-title">Corpus-linguistics research methodology</h2>
+    <p class="sec-desc">The design and its transferability rest on an established corpus-statistics methodology (Brezina, 2018; Gries, 2008; Juilland &amp; Chang-Rodríguez, 1964); the reproducibility argument follows Pérez-Paredes's (2026) open-box, traceable-evidence view of corpus work. All statistics were computed with Kimi (Moonshot AI, 2026) in Python and independently cross-checked. The full bibliography (APA 7th, with DOIs and links) and the declaration of AI use are on the References tab.</p>
+    <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+      <div style="font-weight:600;color:var(--ink-soft);font-size:14px;">Complete references, tools and the AI-use declaration &rarr;</div>
+      <button class="btn btn-primary" type="button" data-goto-tab="refs"><span aria-hidden="true">&#128218;</span> Open the References tab</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ REFERENCES TAB PANEL ============ -->
+<div id="tab-refs" class="tabpanel" role="tabpanel" aria-labelledby="tabbtn-refs" hidden>
+
+  <header class="cover wrap">
+    <p class="eyebrow">Transparency · Bibliography · APA 7th</p>
+    <h1>References &amp; declaration of AI use</h1>
+    <p class="cover-lead">The complete works cited across the thesis, in APA 7th edition with DOIs and open-access links, together with a full disclosure of the AI tools used to compute and present the statistics — in line with Pérez-Paredes's (2026) call for transparent, reproducible, traceable corpus work. The canonical list is the thesis's own References chapter; entries here are compiled from the in-text citations of Chapters I–V.</p>
+  </header>
+
+  <!-- AI-USE DECLARATION -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Declaration</span></div>
+    <h2 class="sec-title">Declaration of AI use</h2>
+    <div class="callout">
+      <span class="ico" aria-hidden="true">🤖</span>
+      <div>
+        <p style="margin:0 0 10px;"><strong>Statistical computation.</strong> All inferential statistics reported in this study were computed with <strong>Kimi</strong> (Moonshot AI, 2026), an AI computational assistant used as the statistical-analysis environment, which acted solely as a creator and executor of <strong>Python 3</strong> code for every procedure — normalisation, contingency-table tests (χ² and log-likelihood), Cramér's V and Log-Ratio effect sizes, Wilson and Newcombe confidence intervals, Monte-Carlo simulation, Bayesian (Bayes-factor) re-analysis, and the dispersion measures (DP, Juilland's D). The tool ran under short, fully specified instructions naming the test, formula, input matrix and output format; every analytical decision — which tests to run, which significance thresholds and corrections to apply — was taken by the author and fixed in advance. This AI-assisted workflow follows Pérez-Paredes's (2026) argument that AI can support corpus analysis provided the process stays transparent and reproducible.</p>
+        <p style="margin:0 0 10px;"><strong>Independent verification.</strong> Every value was cross-checked by non-AI means: dispersion against the <strong>Lancaster Stats Tools online</strong> calculator (Brezina, 2018) — all ten categories matched — the standard deviation against the Pearson online calculator, and a cell-by-cell reconciliation against the unified corpus workbook. No result enters the thesis unless it reproduces exactly from the raw marker counts.</p>
+        <p style="margin:0;"><strong>Human authorship.</strong> The research questions, corpus design and selection, metadiscourse annotation decisions, interpretation of the results, and the writing of the thesis are the author's own. AI was used as a computational and tagging aid, not to generate findings or arguments. Corpus tagging used <strong>METOOL</strong> (Carrió-Pastor, 2020); the animated results overview was produced with a motion-graphics AI tool (Easy Motion AI, 2026); this interactive data book was built with an AI coding assistant. All uses are disclosed here for full transparency and responsible, ethical Human–AI collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS & SOFTWARE -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Tools</span></div>
+    <h2 class="sec-title">Tools &amp; software used</h2>
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Tool</th><th>Role in the study</th><th>Access</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Kimi</strong> (Moonshot AI, 2026)</td><td>AI assistant / statistical-analysis environment; wrote and ran the Python code for all inferential procedures</td><td><a href="https://kimi.com" target="_blank" rel="noopener">kimi.com</a></td></tr>
+            <tr><td><strong>Python 3</strong></td><td>Language in which every statistic was computed and independently re-run</td><td><a href="https://www.python.org" target="_blank" rel="noopener">python.org</a></td></tr>
+            <tr><td><strong>METOOL</strong> (Carrió-Pastor, 2020)</td><td>Online tool that tagged and quantified the metadiscourse markers of the corpus</td><td><a href="https://riunet.upv.es/handle/10251/176512" target="_blank" rel="noopener">RiuNet record</a></td></tr>
+            <tr><td><strong>Lancaster Stats Tools online</strong> (Brezina, 2018)</td><td>Independent cross-check of the dispersion layer (DP, Juilland's D)</td><td><a href="https://corpus-stats.lancs.ac.uk/#2-dispersion" target="_blank" rel="noopener">corpus-stats.lancs.ac.uk</a></td></tr>
+            <tr><td>Pearson standard-deviation calculator</td><td>Cross-check of the standard deviation</td><td><a href="https://www.pearson.com/channels/calculators/standard-deviation-calculator" target="_blank" rel="noopener">Pearson calculator</a></td></tr>
+            <tr><td>Easy Motion AI (2026)</td><td>Motion-graphics generation of the animated results overview</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="wrap">
+    <div class="sec-head"><span class="sec-kicker">Works cited · APA 7th</span></div>
+    <h2 class="sec-title">References</h2>
+    <div class="card">
+      <ul class="refs-list">
+        <li>Benjamini, Y., &amp; Hochberg, Y. (1995). Controlling the false discovery rate: A practical and powerful approach to multiple testing. <em>Journal of the Royal Statistical Society: Series B (Methodological), 57</em>(1), 289–300. <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x" target="_blank" rel="noopener">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a></li>
+        <li>Biber, D. (1993). Representativeness in corpus design. <em>Literary and Linguistic Computing, 8</em>(4), 243–257. <a href="https://doi.org/10.1093/llc/8.4.243" target="_blank" rel="noopener">https://doi.org/10.1093/llc/8.4.243</a></li>
+        <li>Brezina, V. (2018). <em>Statistics in corpus linguistics: A practical guide</em>. Cambridge University Press. <a href="https://doi.org/10.1017/9781316410899" target="_blank" rel="noopener">https://doi.org/10.1017/9781316410899</a></li>
+        <li>Carrió-Pastor, M. L. (2020). Conocer la lengua a través de los corpus: La herramienta METOOL, retos para el análisis de los marcadores discursivos. <em>Pragmalingüística, 28</em>, 255–274. <a href="https://riunet.upv.es/handle/10251/176512" target="_blank" rel="noopener">https://riunet.upv.es/handle/10251/176512</a></li>
+        <li>Gabrielatos, C., &amp; Marchi, A. (2012, September 13–14). <em>Keyness: Appropriate metrics and practical issues</em> [Conference presentation]. CADS International Conference 2012, University of Bologna, Italy. <a href="https://research.edgehill.ac.uk/en/publications/keyness-appropriate-metrics-and-practical-issues-2/" target="_blank" rel="noopener">research.edgehill.ac.uk</a></li>
+        <li>Gries, S. Th. (2008). Dispersions and adjusted frequencies in corpora. <em>International Journal of Corpus Linguistics, 13</em>(4), 403–437. <a href="https://doi.org/10.1075/ijcl.13.4.02gri" target="_blank" rel="noopener">https://doi.org/10.1075/ijcl.13.4.02gri</a></li>
+        <li>Hardie, A. (2014, April 28). <em>Log ratio – An informal introduction</em>. ESRC Centre for Corpus Approaches to Social Science (CASS). <a href="https://cass.lancs.ac.uk/log-ratio-an-informal-introduction/" target="_blank" rel="noopener">cass.lancs.ac.uk</a></li>
+        <li>Hyland, K. (2005). <em>Metadiscourse: Exploring interaction in writing</em>. Continuum.</li>
+        <li>Jeffreys, H. (1961). <em>Theory of probability</em> (3rd ed.). Oxford University Press. <a href="https://archive.org/details/theoryofprobabil0000haro" target="_blank" rel="noopener">archive.org</a></li>
+        <li>Jiang, F. K., &amp; Hyland, K. (2025a). Does ChatGPT write like a student? Engagement markers in argumentative essays. <em>Written Communication</em>. Advance online publication. <a href="https://doi.org/10.1177/07410883251328311" target="_blank" rel="noopener">https://doi.org/10.1177/07410883251328311</a></li>
+        <li>Jiang, F. K., &amp; Hyland, K. (2025b). Metadiscursive nouns in academic argument: ChatGPT vs student practices. <em>Journal of English for Academic Purposes</em>. Advance online publication. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1475158525000451" target="_blank" rel="noopener">sciencedirect.com</a></li>
+        <li>Jiang, F. K., &amp; Hyland, K. (2025c). Rhetorical distinctions: Comparing metadiscourse in essays by ChatGPT and students. <em>English for Specific Purposes, 79</em>, 17–29. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0889490625000134" target="_blank" rel="noopener">sciencedirect.com</a></li>
+        <li>Juilland, A., &amp; Chang-Rodríguez, E. (1964). <em>Frequency dictionary of Spanish words</em>. Mouton.</li>
+        <li>Mur-Dueñas, P. (2011). An intercultural analysis of metadiscourse features in research articles written in English and in Spanish. <em>Journal of Pragmatics, 43</em>(12), 3068–3079. <a href="https://doi.org/10.1016/j.pragma.2011.05.002" target="_blank" rel="noopener">https://doi.org/10.1016/j.pragma.2011.05.002</a></li>
+        <li>Newcombe, R. G. (1998). Interval estimation for the difference between independent proportions: Comparison of eleven methods. <em>Statistics in Medicine, 17</em>(8), 873–890. <a href="https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8%3C873::AID-SIM779%3E3.0.CO;2-I" target="_blank" rel="noopener">https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8&lt;873::AID-SIM779&gt;3.0.CO;2-I</a></li>
+        <li>OpenAI. (2022, November 30). <em>Introducing ChatGPT</em>. <a href="https://openai.com/blog/chatgpt" target="_blank" rel="noopener">https://openai.com/blog/chatgpt</a></li>
+        <li>Omidian, T., Shahriari, H., &amp; Siyanova-Chanturia, A. (2018). A cross-disciplinary investigation of multi-word expressions in the moves of research article abstracts. <em>Journal of English for Academic Purposes, 36</em>, 1–14. <a href="https://doi.org/10.1016/j.jeap.2018.08.002" target="_blank" rel="noopener">https://doi.org/10.1016/j.jeap.2018.08.002</a></li>
+        <li>Pérez-Paredes, P. (2026). Corpus linguistics and AI in the reconfiguration of language learning ecologies. <em>Language Teaching</em>, 1–13. <a href="https://doi.org/10.1017/S0261444825101109" target="_blank" rel="noopener">https://doi.org/10.1017/S0261444825101109</a></li>
+        <li>Rayson, P., &amp; Garside, R. (2000). Comparing corpora using frequency profiling. In <em>Proceedings of the Workshop on Comparing Corpora</em> (pp. 1–6). Association for Computational Linguistics. <a href="https://doi.org/10.3115/1117729.1117730" target="_blank" rel="noopener">https://doi.org/10.3115/1117729.1117730</a></li>
+        <li>Salas Valdebenito, M. (2015). A taxonomy of metadiscourse in written scientific Spanish. <em>Revista Signos, 48</em>(87), 95–120. <a href="https://doi.org/10.4067/S0718-09342015000100005" target="_blank" rel="noopener">https://doi.org/10.4067/S0718-09342015000100005</a></li>
+        <li>Sinclair, J. (2005). Corpus and text — Basic principles. In M. Wynne (Ed.), <em>Developing linguistic corpora: A guide to good practice</em> (pp. 1–16). Oxbow Books.</li>
+        <li>Swales, J. M., &amp; Feak, C. B. (2009). <em>Abstracts and the writing of abstracts</em>. University of Michigan Press.</li>
+        <li>Wallis, S. (2013). Binomial confidence intervals and contingency tests: Mathematical fundamentals and the evaluation of alternative methods. <em>Journal of Quantitative Linguistics, 20</em>(3), 178–208. <a href="https://doi.org/10.1080/09296174.2013.799918" target="_blank" rel="noopener">https://doi.org/10.1080/09296174.2013.799918</a></li>
+        <li>Yates, F. (1934). Contingency tables involving small numbers and the χ² test. <em>Supplement to the Journal of the Royal Statistical Society, 1</em>(2), 217–235. <a href="https://doi.org/10.2307/2983604" target="_blank" rel="noopener">https://doi.org/10.2307/2983604</a></li>
+        <li>Yule, G. U. (1944). <em>The statistical study of literary vocabulary</em>. Cambridge University Press. <a href="https://archive.org/details/statisticalstudy0000yule" target="_blank" rel="noopener">archive.org</a></li>
+      </ul>
+      <p class="card-note" style="margin-top:16px;">Software cited as tools: Moonshot AI. (2026). <em>Kimi</em> [Large language model]. <a href="https://kimi.com" target="_blank" rel="noopener">kimi.com</a> · Python Software Foundation. (2024). <em>Python 3</em> [Computer software]. <a href="https://www.python.org" target="_blank" rel="noopener">python.org</a> · Brezina, V. (2018). <em>Lancaster Stats Tools online</em> [Software]. Lancaster University. <a href="https://corpus-stats.lancs.ac.uk" target="_blank" rel="noopener">corpus-stats.lancs.ac.uk</a></p>
+    </div>
+  </section>
+
+</div>
+
 </main>
 
 <footer>
@@ -480,7 +809,7 @@
     <p><strong>© 2026 Ana Eslava-Graterol · @profeanaeslava</strong><br>
     Applied Linguistics · Technology &amp; Teaching of Academic English (ESP/EAP)</p>
     <p style="margin-top:12px;">Developed within the framework of the master's thesis<br>
-    <strong>"Disciplinary Variation in Metadiscourse Use across Master's Thesis Abstracts"</strong><br>
+    <strong>"Metadiscourse in Master's Thesis Abstracts: Disciplinary Variation and AI Literacy"</strong><br>
     by <strong>Prof. Mª Luisa Carrió-Pastor</strong> and <strong>Prof. Ana Eslava-Graterol</strong> · Department of Applied Linguistics · Universitat Politècnica de València (UPV).</p>
     <p class="foot-mini">Interactive data book built with Chart.js. Metadiscourse markers follow Hyland (2005) as annotated in METOOL; occurrences normalised per 1,000 tokens. Chart palette validated for colour-vision-deficiency accessibility. Charts reflect the corpus results updated 19 July 2026. A project in ethical, transparent Human–AI collaboration for AI literacy and academic writing.</p>
   </div>
@@ -685,7 +1014,7 @@ function applyTheme(t){
   document.getElementById('themeIco').textContent = t==='dark'?'☀️':'🌙';
   document.getElementById('themeTxt').textContent = t==='dark'?'Light':'Dark';
   try{ localStorage.setItem('databook-theme', t); }catch(e){}
-  renderAll();
+  renderActive();
 }
 (function initTheme(){
   let t='light';
@@ -701,6 +1030,715 @@ document.getElementById('themeBtn').addEventListener('click', ()=>{
 /* ---------- render everything ---------- */
 function renderAll(){ renderLex(); renderCat(); renderBal(); renderDD(); renderPop(); }
 renderAll();
+
+/* ================= STATISTICS TAB ================= */
+const STATS = {
+ "meta": {
+  "title": "Statistical Results & the Transferability of the Corpus Design",
+  "updated": "23 July 2026",
+  "verify": "All inferential statistics computed with Kimi (Moonshot AI, 2026); dispersion cross-validated with Lancaster Stats Tools online (Brezina, 2018), SD cross-checked with the Pearson calculator, and every figure reconciled cell-by-cell against the corpus workbook."
+ },
+ "overall": [
+  {
+   "test": "Composition layer (9 categories × 6 subcorpora, endophoric excluded)",
+   "stat": "χ² = 153.57",
+   "df": 40,
+   "N": "1,635",
+   "p": "< .001 (3.2×10⁻¹⁵)",
+   "es": "Cramér's V = .137"
+  },
+  {
+   "test": "Concordant measure (log-likelihood)",
+   "stat": "G² = 137.88",
+   "df": 40,
+   "N": "1,635",
+   "p": "< .001 (1.1×10⁻¹²)",
+   "es": "—"
+  },
+  {
+   "test": "Full 10 × 6 table (record)",
+   "stat": "χ² = 158.54",
+   "df": 45,
+   "N": "1,653",
+   "p": "MC p < .001",
+   "es": "Cramér's V = .139"
+  },
+  {
+   "test": "Macro balance (textual vs interpersonal × 6)",
+   "stat": "χ² = 9.52",
+   "df": 5,
+   "N": "1,653",
+   "p": ".090",
+   "es": "Cramér's V = .076"
+  },
+  {
+   "test": "Overall density (rate layer, token-offset GOF)",
+   "stat": "χ² = 39.70",
+   "df": 5,
+   "N": "1,653",
+   "p": "< .001 (1.7×10⁻⁷)",
+   "es": "—"
+  }
+ ],
+ "perCat": [
+  {
+   "cat": "Frame markers",
+   "comp": 70.96,
+   "compP": "< .001*",
+   "rate": 43.01,
+   "rateP": "< .001*",
+   "mc": "—",
+   "verdict": "significant, both layers",
+   "v": "both"
+  },
+  {
+   "cat": "Logical markers",
+   "comp": 18.29,
+   "compP": ".026*",
+   "rate": 41.42,
+   "rateP": "< .001*",
+   "mc": "—",
+   "verdict": "significant, both layers",
+   "v": "both"
+  },
+  {
+   "cat": "Engagement markers",
+   "comp": 16.35,
+   "compP": ".059",
+   "rate": 29.05,
+   "rateP": ".0002*",
+   "mc": ".0055",
+   "verdict": "rate-significant; composition nominal",
+   "v": "rate"
+  },
+  {
+   "cat": "Evidentials",
+   "comp": 10.77,
+   "compP": ".562",
+   "rate": 21.19,
+   "rateP": ".0075*",
+   "mc": "—",
+   "verdict": "rate-significant only",
+   "v": "rate"
+  },
+  {
+   "cat": "Code glosses",
+   "comp": 21.89,
+   "compP": ".006*",
+   "rate": 15.86,
+   "rateP": ".073",
+   "mc": "—",
+   "verdict": "composition-significant only",
+   "v": "comp"
+  },
+  {
+   "cat": "Boosters",
+   "comp": 18.93,
+   "compP": ".020*",
+   "rate": 15.61,
+   "rateP": ".081",
+   "mc": ".0019",
+   "verdict": "composition-significant only",
+   "v": "comp"
+  },
+  {
+   "cat": "Hedges",
+   "comp": 4.6,
+   "compP": "1.00",
+   "rate": 6.75,
+   "rateP": "1.00",
+   "mc": "—",
+   "verdict": "not significant",
+   "v": "ns"
+  },
+  {
+   "cat": "Attitude markers",
+   "comp": 4.92,
+   "compP": "1.00",
+   "rate": 3.16,
+   "rateP": "1.00",
+   "mc": "—",
+   "verdict": "not significant",
+   "v": "ns"
+  },
+  {
+   "cat": "Self-mentions",
+   "comp": 4.55,
+   "compP": "1.00",
+   "rate": 5.66,
+   "rateP": "1.00",
+   "mc": ".475",
+   "verdict": "not significant",
+   "v": "ns"
+  },
+  {
+   "cat": "Endophoric markers",
+   "comp": 5.6,
+   "compP": "1.00",
+   "rate": 4.93,
+   "rateP": "1.00",
+   "mc": ".349",
+   "verdict": "descriptive only (small cell; 18 occ.)",
+   "v": "desc"
+  }
+ ],
+ "dispersion": [
+  {
+   "cat": "Attitude markers",
+   "total": 219,
+   "mean": 36.5,
+   "sd": 4.11,
+   "cv": 0.11,
+   "cvpct": 5.04,
+   "D": 0.95,
+   "DP": 0.042,
+   "band": "High"
+  },
+  {
+   "cat": "Hedges",
+   "total": 195,
+   "mean": 32.5,
+   "sd": 6.08,
+   "cv": 0.19,
+   "cvpct": 8.36,
+   "D": 0.916,
+   "DP": 0.069,
+   "band": "High"
+  },
+  {
+   "cat": "Logical markers",
+   "total": 569,
+   "mean": 94.83,
+   "sd": 25.35,
+   "cv": 0.27,
+   "cvpct": 11.95,
+   "D": 0.88,
+   "DP": 0.119,
+   "band": "High"
+  },
+  {
+   "cat": "Self-mentions",
+   "total": 58,
+   "mean": 9.67,
+   "sd": 3.09,
+   "cv": 0.32,
+   "cvpct": 14.3,
+   "D": 0.857,
+   "DP": 0.133,
+   "band": "High"
+  },
+  {
+   "cat": "Evidentials",
+   "total": 166,
+   "mean": 27.67,
+   "sd": 9.79,
+   "cv": 0.35,
+   "cvpct": 15.83,
+   "D": 0.842,
+   "DP": 0.153,
+   "band": "High"
+  },
+  {
+   "cat": "Boosters",
+   "total": 108,
+   "mean": 18,
+   "sd": 6.98,
+   "cv": 0.39,
+   "cvpct": 17.33,
+   "D": 0.827,
+   "DP": 0.166,
+   "band": "High"
+  },
+  {
+   "cat": "Code glosses",
+   "total": 90,
+   "mean": 15,
+   "sd": 6.38,
+   "cv": 0.43,
+   "cvpct": 19.01,
+   "D": 0.81,
+   "DP": 0.152,
+   "band": "High"
+  },
+  {
+   "cat": "Endophoric markers",
+   "total": 18,
+   "mean": 3,
+   "sd": 1.53,
+   "cv": 0.51,
+   "cvpct": 22.77,
+   "D": 0.772,
+   "DP": 0.228,
+   "band": "Medium"
+  },
+  {
+   "cat": "Frame markers",
+   "total": 146,
+   "mean": 24.33,
+   "sd": 12.91,
+   "cv": 0.53,
+   "cvpct": 23.72,
+   "D": 0.763,
+   "DP": 0.187,
+   "band": "Medium"
+  },
+  {
+   "cat": "Engagement markers",
+   "total": 84,
+   "mean": 14,
+   "sd": 8.16,
+   "cv": 0.58,
+   "cvpct": 26.08,
+   "D": 0.739,
+   "DP": 0.265,
+   "band": "Medium"
+  }
+ ],
+ "dispersionMacro": [
+  {
+   "cat": "Textual (interactive)",
+   "D": 0.924,
+   "DP": 0.077,
+   "band": "High"
+  },
+  {
+   "cat": "Interpersonal (interactional)",
+   "D": 0.925,
+   "DP": 0.073,
+   "band": "High"
+  }
+ ],
+ "drivers": [
+  {
+   "cell": "Frame markers × Architecture",
+   "asr": 8.2,
+   "status": "survives strict threshold",
+   "interp": "strong over-use (procedural, design-oriented sequencing)"
+  },
+  {
+   "cell": "Code glosses × Engineering",
+   "asr": 4.36,
+   "status": "survives strict threshold",
+   "interp": "over-use (term-explication culture)"
+  },
+  {
+   "cell": "Boosters × Sciences",
+   "asr": 3.2,
+   "status": "per-comparison only",
+   "interp": "over-use (assertive results rhetoric)"
+  },
+  {
+   "cell": "Engagement markers × Arts & Humanities",
+   "asr": 2.89,
+   "status": "per-comparison only",
+   "interp": "over-use (direct reader address)"
+  },
+  {
+   "cell": "Logical markers × Architecture",
+   "asr": -3.15,
+   "status": "per-comparison only",
+   "interp": "under-use (lowest rate in the corpus: 16.18)"
+  },
+  {
+   "cell": "Frame markers × STH",
+   "asr": -3.36,
+   "status": "survives strict threshold",
+   "interp": "under-use"
+  }
+ ],
+ "contrasts": [
+  {
+   "c": "Frame markers: ARQ vs STH",
+   "rates": "15.28 vs 2.61",
+   "pct": 486,
+   "lr": 2.55
+  },
+  {
+   "c": "Engagement: ART vs ARQ",
+   "rates": "7.94 vs 1.50",
+   "pct": 430,
+   "lr": 2.41
+  },
+  {
+   "c": "Code glosses: ENG vs STH",
+   "rates": "8.17 vs 2.32",
+   "pct": 253,
+   "lr": 1.82
+  },
+  {
+   "c": "Evidentials: SLS vs ARQ",
+   "rates": "11.72 vs 3.89",
+   "pct": 201,
+   "lr": 1.59
+  },
+  {
+   "c": "Boosters: SCI vs ENG",
+   "rates": "8.45 vs 2.92",
+   "pct": 190,
+   "lr": 1.54
+  },
+  {
+   "c": "Logical markers: SLS vs ARQ",
+   "rates": "39.06 vs 16.18",
+   "pct": 141,
+   "lr": 1.27
+  }
+ ],
+ "descriptives": [
+  {
+   "macro": "Textual (interactive)",
+   "M": 48.59,
+   "min": 40.14,
+   "max": 63.1,
+   "range": 22.96,
+   "sdpop": 8.57,
+   "sdsamp": 9.39,
+   "cvpop": 17.65,
+   "cvsamp": 19.33
+  },
+  {
+   "macro": "Interpersonal (interactional)",
+   "M": 32.58,
+   "min": 25.38,
+   "max": 39.41,
+   "range": 14.03,
+   "sdpop": 5.42,
+   "sdsamp": 5.94,
+   "cvpop": 16.63,
+   "cvsamp": 18.22
+  }
+ ],
+ "softhard": {
+  "bf": [
+   {
+    "g": "Grouping A (soft = ART + SLS)",
+    "bf": "BF₀₁ = 12.1",
+    "strength": "strong evidence for no soft/hard divide"
+   },
+   {
+    "g": "Grouping B (soft = ARQ + ART + SLS)",
+    "bf": "BF₀₁ = 9.5",
+    "strength": "moderate-to-strong evidence"
+   }
+  ],
+  "rows": [
+   [
+    "Textual rate, soft vs hard (per 1,000)",
+    "59.90 vs 42.93",
+    "53.35 vs 43.84"
+   ],
+   [
+    "Interpersonal rate, soft vs hard",
+    "38.35 vs 29.75",
+    "34.08 vs 31.13"
+   ],
+   [
+    "Balance test (2×2, Yates)",
+    "χ²(1) = 0.52, p = .472",
+    "χ²(1) = 1.01, p = .315"
+   ],
+   [
+    "Balance difference (Newcombe 95% CI)",
+    "+1.9 pp [−2.9, +6.7]",
+    "—"
+   ],
+   [
+    "Bayes factor for the null (BF₀₁)",
+    "12.1 (strong)",
+    "9.5 (moderate-to-strong)"
+   ]
+  ]
+ },
+ "lancaster": {
+  "matches": "10 / 10 categories match",
+  "meanD": "≈ .84",
+  "note": "All ten category-level Juilland's D values match the verified Lancaster Stats Tools output after two-decimal rounding. The workbook retains higher-precision exact D and archives the raw Lancaster input/output as direct evidence.",
+  "source": "https://corpus-stats.lancs.ac.uk/#2-dispersion"
+ },
+ "procedures": [
+  [
+   "1",
+   "Normalisation per 1,000 METOOL tokens",
+   "Comparable rates across unequal subcorpora",
+   "Totals 65.61 (ARQ) → 100.36 (SLS)/1,000; Σ = 20,377 tokens, 1,653 markers",
+   "Ch. III T2; Ch. IV T14–16"
+  ],
+  [
+   "2",
+   "Mean, SD, coefficient of variation",
+   "Between-subcorpus descriptive spread",
+   "Textual CV = 17.65%; Interpersonal CV = 16.63%",
+   "Ch. III T5 & T7"
+  ],
+  [
+   "3",
+   "Chi-square test of independence (composition)",
+   "Association category × discipline",
+   "χ²(40) = 153.57, p < .001, V = .137",
+   "Ch. III T8–9"
+  ],
+  [
+   "4",
+   "Chi-square GOF with token offset (rate)",
+   "Rate differences per 1,000 tokens",
+   "Density χ²(5) = 39.70, p < .001",
+   "Ch. III T8–9"
+  ],
+  [
+   "5",
+   "Log-likelihood (G²)",
+   "Concordant overall measure",
+   "G²(40) = 137.88, p < .001",
+   "Ch. III T8"
+  ],
+  [
+   "6",
+   "Cramér's V",
+   "Effect size of association",
+   "Overall V = .137 (small); 10×6 V = .139; macro V = .076",
+   "Ch. III T8–9, 12"
+  ],
+  [
+   "7",
+   "Adjusted standardised residuals (ASR)",
+   "Which cells drive the table",
+   "6 driver cells (Frame×ARQ +8.20 …)",
+   "Ch. III T11"
+  ],
+  [
+   "8",
+   "Wilson score 95% CI",
+   "Precision of a normalised rate",
+   "Every rate with CI (e.g. engagement ART 7.94 [5.46, 11.53])",
+   "Ch. III T12"
+  ],
+  [
+   "9",
+   "%DIFF and Log Ratio (log₂)",
+   "Effect sizes for pairwise contrasts",
+   "Engagement ART vs ARQ +430% (LR 2.41) …",
+   "Ch. III T12"
+  ],
+  [
+   "10",
+   "Bonferroni correction",
+   "Family-wise error control",
+   "Applied to every family (k = 10 per layer)",
+   "Ch. III T9–10"
+  ],
+  [
+   "11",
+   "Benjamini–Hochberg FDR",
+   "Error control for large families",
+   "Pre-designated for planned per-text/diachronic families",
+   "Part 3, rule 2"
+  ],
+  [
+   "12",
+   "Monte-Carlo simulation (20,000 runs, seed 42)",
+   "Valid p when expected cells < 5",
+   "10×6: zero exceedances → p ≲ .00005",
+   "Ch. III T8–9"
+  ],
+  [
+   "13",
+   "Yates-corrected 2×2 chi-square",
+   "Soft/hard macro balance",
+   "A: χ²(1) = 0.52, p = .472; B: χ²(1) = 1.01, p = .315",
+   "Ch. III T10"
+  ],
+  [
+   "14",
+   "Newcombe 95% CI (difference of proportions)",
+   "Magnitude of the balance difference",
+   "Textual share +1.9 pp [−2.9, +6.7]",
+   "Ch. III T10"
+  ],
+  [
+   "15",
+   "Bayes factor BF₀₁ (beta-binomial)",
+   "Strength of evidence FOR the null",
+   "A: BF₀₁ = 12.1; B: BF₀₁ = 9.5",
+   "Ch. III T10"
+  ],
+  [
+   "16",
+   "DP; Juilland's D; coverage %",
+   "Dispersion across the subcorpora",
+   "Category D .739–.950; macro D .924/.925; marker mean D .289",
+   "Ch. III T13; Ch. IV T18"
+  ],
+  [
+   "17",
+   "Kruskal–Wallis; Mann–Whitney + FDR",
+   "Per-text corroboration",
+   "NOT executed — reserved for follow-up study",
+   "Dispersion; Limitations"
+  ]
+ ],
+ "deferred": [
+  {
+   "proc": "Deviation of proportions (DP; Gries, 2008)",
+   "status": "Executed at subcorpus level (n = 6); per-text (n = 180) pre-registered",
+   "why": "Per-text dispersion answers a different question than RQ1–RQ3; needs a 10 × 180 per-abstract matrix not yet built. Reserved for the follow-up study."
+  },
+  {
+   "proc": "Juilland's D (Juilland & Chang-Rodríguez, 1964); coverage %",
+   "status": "Executed at subcorpus level and Lancaster-verified; per-text pre-registered",
+   "why": "Subcorpus run confirmed by the archived Lancaster output and raw input/output sheets (identical). Per-text pipeline reserved for the follow-up study."
+  },
+  {
+   "proc": "Kruskal–Wallis; pairwise Mann–Whitney with FDR",
+   "status": "NOT executed — pre-registered",
+   "why": "Planned per-text corroboration; the aggregate tests already answer the RQs. Requires the same 10 × 180 matrix; accompanies the larger re-tagged corpus."
+  }
+ ]
+};
+const bandColor = b => b==='High' ? cssv('--good') : b==='Medium' ? cssv('--warn') : cssv('--bad');
+let _statsInit = false;
+
+const thresholdLine = {
+  id:'thr',
+  afterDraw(chart, args, opts){
+    if(opts.value==null) return;
+    const {ctx, chartArea:{left,right}, scales:{y}} = chart;
+    const yv = y.getPixelForValue(opts.value);
+    ctx.save(); ctx.beginPath(); ctx.setLineDash([5,4]); ctx.lineWidth=1.5;
+    ctx.strokeStyle = cssv('--ink-faint'); ctx.moveTo(left,yv); ctx.lineTo(right,yv); ctx.stroke(); ctx.restore();
+  }
+};
+
+function statsInit(){
+  if(_statsInit) return; _statsInit = true;
+
+  // Dispersion metric toggle (wire once)
+  wireSeg('dispMetric', v=>{ _dispMetric=v; drawDisp(); });
+
+  // Static tables
+  buildTable('tblDisp',['Category','Total','Mean','SD','CV','CV%†',"Juilland's D",'DP','Band'],
+    STATS.dispersion.map(r=>[r.cat,r.total,r.mean,r.sd,r.cv,r.cvpct,r.D,r.DP,
+      `<span class="verdict-pill ${r.band==='High'?'vp-both':'vp-comp'}">${r.band}</span>`]),
+    [false,true,true,true,true,true,true,true,false]);
+
+  buildTable('tblOverall',['Test','Statistic','df','N','p','Effect size'],
+    STATS.overall.map(r=>[r.test,r.stat,r.df,r.N,r.p,r.es]),[false,false,true,true,false,false]);
+
+  buildTable('tblPerCat',['Category','Composition χ²','p (Bonf.)','Rate χ²','p (Bonf.)','MC p','Verdict'],
+    STATS.perCat.map(r=>[r.cat,r.comp,r.compP,r.rate,r.rateP,r.mc,
+      `<span class="verdict-pill vp-${r.v}">${r.verdict}</span>`]),
+    [false,true,false,true,false,false,false]);
+
+  buildTable('tblDrivers',['Driver cell (category × subcorpus)','ASR','Status','Interpretation'],
+    STATS.drivers.map(r=>[r.cell, (r.asr>0?'+':'')+r.asr.toFixed(2), r.status, r.interp]),
+    [false,true,false,false]);
+
+  buildTable('tblContrasts',['Contrast','Rates per 1,000','%DIFF','Log Ratio'],
+    STATS.contrasts.map(r=>[r.c, r.rates, '+'+r.pct+'%', r.lr.toFixed(2)]),
+    [false,false,true,true]);
+
+  // Soft/hard
+  document.getElementById('bfTiles').innerHTML = STATS.softhard.bf.map(b=>
+    `<div class="dd-tile"><div class="n">${b.bf}</div><div class="l">${b.g}<br>${b.strength}</div></div>`).join('');
+  buildTable('tblSoftHard',['Analysis','Grouping A (ART + SLS)','Grouping B (ARQ + ART + SLS)'],
+    STATS.softhard.rows, [false,false,false]);
+
+  buildTable('tblDesc',['Macro-category','M','Min','Max','SD (pop.)','CV% (pop.)'],
+    STATS.descriptives.map(r=>[r.macro,r.M,r.min,r.max,r.sdpop,r.cvpop+'%']),
+    [false,true,true,true,true,true]);
+
+  buildTable('tblProcedures',['#','Procedure','What it measures','Result obtained','Reported'],
+    STATS.procedures, [true,false,false,false,false]);
+
+  document.getElementById('deferredPanel').innerHTML = STATS.deferred.map(d=>
+    `<p><strong>${d.proc}.</strong> <em>${d.status}.</em> ${d.why}</p>`).join('') +
+    '<p style="color:var(--ink-faint);font-size:12.5px;">Archived reference copies: Yule (1944), <em>The Statistical Study of Literary Vocabulary</em>; Jeffreys (1961), <em>Theory of Probability</em> (source of the Bayes-factor bands).</p>';
+}
+
+let _dispMetric = 'D';
+function drawDisp(){
+  const ctx=document.getElementById('chDisp'); if(!ctx) return;
+  if(charts.disp) charts.disp.destroy();
+  const rows=STATS.dispersion.slice().sort((a,b)=> _dispMetric==='D'? b.D-a.D : b.DP-a.DP);
+  const vals=rows.map(r=> _dispMetric==='D'? r.D : r.DP);
+  charts.disp=new Chart(ctx,{type:'bar',
+    data:{labels:rows.map(r=>r.cat),datasets:[{data:vals,backgroundColor:rows.map(r=>bandColor(r.band)),borderRadius:4,borderSkipped:false,maxBarThickness:28}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{...tooltipStyle(),callbacks:{label:c=>{const r=rows[c.dataIndex];return [` Juilland's D: ${r.D}`,` DP: ${r.DP}`,` Band: ${r.band}`];}}}},
+      scales:{x:{beginAtZero:true, max:_dispMetric==='D'?1:undefined, grid:{color:gridC()},border:{display:false},ticks:{color:inkSoft(),font:{size:11}},
+          title:{display:true,text:_dispMetric==='D'?"Juilland's D (1 = perfectly even)":'DP (0 = perfectly even)',color:inkSoft(),font:{size:11,weight:'600'}}},
+        y:{grid:{display:false},border:{color:gridC()},ticks:{color:ink(),font:{size:11,weight:'600'}}}}}});
+}
+
+function drawStatsCharts(){
+  drawDisp();
+
+  // Per-category composition vs rate
+  if(charts.perCat) charts.perCat.destroy();
+  (function(){
+    const cats=STATS.perCat.map(r=>r.cat);
+    const sc=scales({ytitle:'χ² (df = 5)',rot:24});
+    charts.perCat=new Chart(document.getElementById('chPerCat'),{type:'bar',
+      data:{labels:cats,datasets:[
+        {label:'Composition χ²',data:STATS.perCat.map(r=>r.comp),backgroundColor:cssv('--c-textual'),...barGeom,categoryPercentage:0.8},
+        {label:'Rate χ²',data:STATS.perCat.map(r=>r.rate),backgroundColor:cssv('--c-interpersonal'),...barGeom,categoryPercentage:0.8}
+      ]},
+      options:{responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},thr:{value:11.07},
+          tooltip:{...tooltipStyle(),callbacks:{afterBody:items=>['Verdict: '+STATS.perCat[items[0].dataIndex].verdict]}}},
+        scales:sc},
+      plugins:[thresholdLine]});
+  })();
+
+  // Drivers (diverging horizontal)
+  if(charts.drivers) charts.drivers.destroy();
+  (function(){
+    const rows=STATS.drivers.slice().sort((a,b)=>b.asr-a.asr);
+    charts.drivers=new Chart(document.getElementById('chDrivers'),{type:'bar',
+      data:{labels:rows.map(r=>r.cell),datasets:[{data:rows.map(r=>r.asr),
+        backgroundColor:rows.map(r=>r.asr>=0?cssv('--good'):cssv('--bad')),borderRadius:4,borderSkipped:false,maxBarThickness:26}]},
+      options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{...tooltipStyle(),callbacks:{label:c=>{const r=rows[c.dataIndex];return [` ASR: ${(r.asr>0?'+':'')+r.asr.toFixed(2)}`,` ${r.status}`,` ${r.interp}`];}}}},
+        scales:{x:{grid:{color:gridC()},border:{display:false},ticks:{color:inkSoft(),font:{size:11}},title:{display:true,text:'Adjusted standardised residual (z)',color:inkSoft(),font:{size:11,weight:'600'}}},
+          y:{grid:{display:false},border:{color:gridC()},ticks:{color:ink(),font:{size:11,weight:'600'}}}}}});
+  })();
+
+  // Contrasts (Log Ratio horizontal)
+  if(charts.contrasts) charts.contrasts.destroy();
+  (function(){
+    const rows=STATS.contrasts.slice().sort((a,b)=>b.lr-a.lr);
+    charts.contrasts=new Chart(document.getElementById('chContrasts'),{type:'bar',
+      data:{labels:rows.map(r=>r.c),datasets:[{data:rows.map(r=>r.lr),backgroundColor:cssv('--indigo'),borderRadius:4,borderSkipped:false,maxBarThickness:26}]},
+      options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{...tooltipStyle(),callbacks:{label:c=>{const r=rows[c.dataIndex];return [` Log Ratio: ${r.lr.toFixed(2)}`,` %DIFF: +${r.pct}%`,` ${r.rates} per 1,000`];}}}},
+        scales:{x:{beginAtZero:true,grid:{color:gridC()},border:{display:false},ticks:{color:inkSoft(),font:{size:11}},title:{display:true,text:'Log Ratio (log₂)',color:inkSoft(),font:{size:11,weight:'600'}}},
+          y:{grid:{display:false},border:{color:gridC()},ticks:{color:ink(),font:{size:11,weight:'600'}}}}}});
+  })();
+}
+
+function renderActive(){
+  const t=document.body.getAttribute('data-tab');
+  if(t==='stats'){ statsInit(); drawStatsCharts(); }
+  else if(t==='corpus'){ renderAll(); }
+}
+
+/* ----- tab switching ----- */
+(function tabs(){
+  const tabBtns=document.querySelectorAll('.tab');
+  const panels={ corpus:document.getElementById('tab-corpus'), stats:document.getElementById('tab-stats'), refs:document.getElementById('tab-refs') };
+  function activate(name){
+    if(!panels[name]) return;
+    tabBtns.forEach(t=>t.setAttribute('aria-selected', String(t.dataset.tab===name)));
+    Object.keys(panels).forEach(k=>{ if(panels[k]) panels[k].hidden = (k!==name); });
+    document.body.setAttribute('data-tab', name);
+    if(name==='stats'){ statsInit(); drawStatsCharts(); }
+    else if(name==='corpus'){ renderAll(); }
+    window.scrollTo(0,0);
+  }
+  tabBtns.forEach(t=>t.addEventListener('click', ()=>activate(t.dataset.tab)));
+  document.addEventListener('click', e=>{ const g=e.target.closest('[data-goto-tab]'); if(g){ activate(g.dataset.gotoTab); } });
+  document.body.setAttribute('data-tab','corpus');
+})();
+
 </script>
 </body>
 </html>
