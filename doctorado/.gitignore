@@ -1,0 +1,9 @@
+# ─── Documentación acreditativa personal — NUNCA en un repositorio público ───
+# Este portafolio se publica en GitHub Pages. Los documentos originales
+# contienen número de cédula, pasaporte y fecha de nacimiento, y sus códigos
+# de verificación permiten descargarlos íntegros desde las sedes electrónicas.
+# Guárdalos en local o en almacenamiento privado; súbelos solo a la sede de la
+# universidad al presentar la solicitud.
+03-anexos/DOC-*.pdf
+03-anexos/*PRIVADO*
+06-privado/

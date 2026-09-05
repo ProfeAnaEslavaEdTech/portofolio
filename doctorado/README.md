@@ -44,13 +44,27 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 
 | Mérito | Estado | Nota |
 |---|---|---|
-| Expediente académico (70 %) | ✅ | Máster UPV **9,4/10** con **2 Matrículas de Honor** · Licenciatura **Summa Cum Laude**, **primer rango de promoción** |
-| Premio extraordinario de grado | ✅ | **Premio Extraordinario Fin de Carrera** (ULA, 2004) |
-| Premio extraordinario de máster | ⚠️ | Se poseen **2 Matrículas de Honor**; el *Premio Extraordinario* es otro mérito — **verificar en Secretaría** antes de declararlo |
+| Expediente académico (70 %) | ✅ | Máster UPV **9,4/10** con **2 Matrículas de Honor** · Licenciatura **9,07/10** en escala española (equivalencia oficial del Ministerio, CSV verificable) |
+| Premio extraordinario de grado | ✅ | **1.º de 56 graduandos** (18,97 frente a 15,77 de la promoción) — Constancia de Rango Académico con certificación rectoral y **apostilla de La Haya** |
+| Premio extraordinario de máster | ❌ | No procede: el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster |
 | Segundo máster | ❌ | No procede — se declara honestamente a cero |
 | Idiomas ajenos a las titulaciones | ⚠️ | C1 Advanced · CELTA · examinadora DELE — **preguntar a la comisión** si el inglés computa, dado que las titulaciones son de inglés |
 | Becas | ✅ | **Beca de Excelencia Académica** (grado, ULA) · **beca del Ministerio** (máster, UPV) |
 | Experiencia profesional en el ámbito | ✅ | **1.568 horas de docencia universitaria acreditadas** · 20+ años · diseño instruccional 2019–actualidad |
+
+**Lectura honesta:** entre **15 % y 20 % de los 30 %** de méritos, con el 70 % del expediente en el tramo alto. El punto fuerte no es el número de casillas marcadas sino la **calidad de la prueba**: el mérito de grado llega apostillado con código de validación en línea, y la nota media del expediente extranjero viene ya calculada por la Administración española.
+
+### Documentos ya verificados
+
+> 🔒 **Privacidad.** Este repositorio es público. Los documentos originales y sus **códigos de verificación** no se versionan aquí: los códigos permiten descargar los documentos íntegros —con cédula, pasaporte y fecha de nacimiento— desde las sedes electrónicas. La copia del CV que se entrega a la comisión **sí los lleva**; la copia pública los sustituye por «⟨código en la copia entregada a la comisión⟩». Los originales están cubiertos por `doctorado/.gitignore`.
+
+| Doc. | Qué acredita | Dato clave |
+|---|---|---|
+| DOC-05 | Declaración de equivalencia de la nota media | **9,07/10** · CSV verificable en la sede electrónica del Ministerio |
+| DOC-06 | Constancia de Rango Académico + apostilla | **1.º de 56** · con apostilla de La Haya validable en línea |
+| DOC-07 | Diploma de Honor del TFG | **20/20 Sobresaliente**, Rector de la ULA, 15 nov. 2004 |
+| DOC-19 | Publicación arbitrada | *Kaleidoscopio* **2(3), 51–56 (2005)**, ISSN 1690-6054, CLASE–UNAM |
+| DOC-24 | Ponencia en congreso internacional | **II CIES**, Cumaná, 31 jul.–2 ago. 2008, ref. CIES/P 048 |
 
 ---
 
@@ -68,10 +82,10 @@ Si editas un `.md`, regenera el `.docx` y el `.pdf` correspondientes para que no
 
 ## Pendiente antes de enviar
 
-- [ ] **Nota media de la licenciatura en escala 0–10** según la equivalencia oficial española.
-- [ ] **Estado del Premio Extraordinario de Máster** (Secretaría UPV).
+- [ ] 🔴 **Comprobación de nivel del título extranjero** ante la Escuela de Doctorado de la UPV (art. 6 RD 99/2011). La declaración de equivalencia acredita la **nota media**, no la homologación del título («Título homologado/equivalente: NO»). Es requisito de **admisibilidad** y tarda: iniciarlo antes que nada.
 - [ ] **Elegibilidad del inglés** en el apartado de idiomas (consultar a la comisión).
-- [ ] **Curso académico y denominación oficial** de las dos becas + sus resoluciones.
+- [ ] **Resoluciones de las dos becas**, con curso académico y denominación oficial de la convocatoria.
+- [ ] Reunir el resto de certificados (DOC-01 a DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).
 - [ ] Verificar en la fuente original la **paginación de Casañ-Pitarch (2017), Coyle (2007) y Crawford (2001)**.
 - [ ] Ampliar §4.4 y §4.5 de la propuesta con **literatura 2024–2026 sobre tutores LLM**.
 - [ ] Escanear la documentación en un **PDF único** con la portada de `03-anexos/`.

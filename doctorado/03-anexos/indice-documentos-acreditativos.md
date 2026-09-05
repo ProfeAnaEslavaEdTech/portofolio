@@ -21,16 +21,16 @@
 | **DOC-01** | Certificación académica personal UPV — nota media **9,4/10** y **2 Matrículas de Honor** · *UPV transcript* | A.1 · B.2 | ☐ |
 | **DOC-02** | Título o resguardo del Máster en Lenguas y Tecnología (UPV) · *Master's certificate* | A.1 | ☐ |
 | **DOC-03** | Certificación académica personal ULA con nota media · *ULA transcript with GPA* | A.2 | ☐ |
-| **DOC-04** | Título de Licenciatura en Educación, mención Inglés (ULA) · *Undergraduate degree certificate* | A.2 | ☐ |
-| **DOC-05** | Equivalencia / declaración de equivalencia de nivel académico · *Official academic-level equivalence* | A.2 | ☐ |
+| **DOC-04** | Título de Licenciatura (ULA) + acta de grado con la distinción *Summa Cum Laude* · *Undergraduate degree + graduation record* | A.2 | ☐ |
+| **DOC-05** | ⭐ **Declaración de equivalencia de la nota media** — Secretaría General de Universidades · **9,07/10** · CSV ⟨CSV en la copia entregada a la comisión⟩ · *Grade-average equivalence declaration* | A.2 · **70 %** | ☑ |
 
 ## Bloque B — Otros méritos (30 %) · *Other merits*
 
 | Código | Documento / Document | Mérito / Merit | ☑ |
 |---|---|---|---|
-| **DOC-06** | Resolución o diploma del **Premio Extraordinario Fin de Carrera** (ULA, 2004) | B.1 · 5 % | ☐ |
-| **DOC-07** | Certificación de **primer rango de promoción** y distinción *Summa Cum Laude* | B.1 · 5 % | ☐ |
-| **DOC-08** | Resolución del **Premio Extraordinario de Máster** *(solo si está resuelto — verificar en Secretaría)* | B.2 · 5 % | ☐ |
+| **DOC-06** | ⭐ **Constancia de Rango Académico** — **1.º de 56 graduandos**, 18,97 vs 15,77 · certificación rectoral n.º ⟨n.º en la copia entregada a la comisión⟩ · **Apostilla de La Haya ⟨n.º en la copia entregada a la comisión⟩** (código ⟨código en la copia entregada a la comisión⟩) | B.1 · 5 % | ☑ |
+| **DOC-07** | ⭐ **Diploma de Honor** del Trabajo Especial de Grado — **20/20 Sobresaliente**, Rector de la ULA, 15 nov. 2004 | B.1 · §5 | ☑ |
+| **DOC-08** | Resolución del Premio Extraordinario de Máster — *hoy no procede; el premio es el de grado* | B.2 | ➖ |
 | **DOC-09** | Certificado **C1 Advanced (CAE)** — Cambridge English | B.4 · 5 % | ☐ |
 | **DOC-10** | Certificado **CELTA** — Cambridge English | B.4 · 5 % | ☐ |
 | **DOC-11** | Acreditación de **examinadora DELE** — Instituto Cervantes | B.4 · 5 % | ☐ |
@@ -38,7 +38,7 @@
 | **DOC-13** | Resolución de concesión de la **beca del Ministerio** (máster, UPV) | B.5 · 5 % | ☐ |
 | **DOC-14** | Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* — portada + **página de agradecimientos (p. 8)** | B.6 · §5 | ☐ |
 | **DOC-15** | Evidencia de la calificación **10/10** de *Academic Writing Journey* (UPV, 2026) | A.1 · B.6 | ☐ |
-| **DOC-16** | Certificados de servicio docente — UDO (2005–2015), **1.568 horas acreditadas** | B.6 · 5 % | ☐ |
+| **DOC-16** | Certificados de servicio docente — UDO Núcleo Nueva Esparta (2005–2015), **1.568 horas acreditadas** | B.6 · 5 % | ☐ |
 | **DOC-17** | Vida laboral / certificado de actividad profesional en España | B.6 · 5 % | ☐ |
 | **DOC-18** | Acreditación de tutoría en **AVE Global** — Instituto Cervantes | B.6 · 5 % | ☐ |
 
@@ -46,22 +46,35 @@
 
 | Código | Documento / Document | Acredita / Supports | ☑ |
 |---|---|---|---|
-| **DOC-19** | Publicación en *Kaleidoscopio* (ISSN 1690-6054, indexada en CLASE–UNAM) — **primera y última página** | §5 | ☐ |
+| **DOC-19** | ⭐ **Kaleidoscopio 2(3), 51–56 (2005)** — primera y última página + carta de aceptación tras arbitraje (UNEG, 09-03-2005). ISSN 1690-6054, indexada en CLASE–UNAM | §5 | ☑ |
+| **DOC-24** | ⭐ **II Congreso Internacional de Educación Superior** (Cumaná, 31 jul.–2 ago. 2008) — carta de aceptación de la ponencia, ref. CIES/P 048 | §5 | ☑ |
 | **DOC-20** | Certificado *Instructional Design: Course Planning and Pedagogy* — UC Irvine (ene. 2025) | §6 | ☐ |
 | **DOC-21** | Certificado *Instructional Design Fundamentals* — University of Cambridge (mar. 2025) | §6 | ☐ |
 | **DOC-22** | *AP Stylebook Workshop Certificate* — The Associated Press (may. 2024) | §6 | ☐ |
 | **DOC-23** | Certificado SEPE — contenidos digitales, mobile learning y gamificación (2024) | §6 | ☐ |
 
+> ⭐ = documento **ya en mano y verificado**. Colócalos al principio de su bloque: son los que sostienen el 70 % y el mérito B.1.
+>
+> *⭐ = document **already in hand and verified**. Place these first within their block — they carry the 70% and merit B.1.*
+
 ---
 
-## Tres verificaciones antes de escanear · *Three checks before scanning*
+## Antes de escanear · *Before scanning*
 
-1. **Nota media de la licenciatura en escala 0–10** según la equivalencia oficial → es el dato que la comisión introduce en el 70 %.
-   *Undergraduate GPA on the Spanish 0–10 scale, as stated in the official equivalence.*
-2. **Estado del Premio Extraordinario de Máster** en Secretaría → si no está resuelto, **no lo declares como premio**; declara las 2 Matrículas de Honor.
-   *Status of the Extraordinary Master's Award — if unresolved, declare the 2 Matrículas de Honor instead.*
-3. **Elegibilidad del inglés** en el apartado de idiomas → preguntar a la comisión si computa, dado que las titulaciones previas son de inglés.
-   *Eligibility of English in the languages item — ask the committee, since the previous degrees are English degrees.*
+**Ya resuelto con los documentos en mano** — *already resolved:*
+
+1. **Nota media de la licenciatura: 9,07/10**, certificada por la Administración española (DOC-05). Es el número que entra en el 70 %; no hay que estimarlo.
+2. **Premio extraordinario de grado: 1.º de 56 graduandos** (DOC-06), con certificación rectoral y apostilla de La Haya.
+3. **Premio extraordinario de máster: no procede** — el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster.
+
+**Pendiente** — *outstanding:*
+
+4. 🔴 **Comprobación de nivel del título extranjero** ante la Escuela de Doctorado de la UPV (art. 6 RD 99/2011). La declaración de equivalencia dice «Título homologado/equivalente: NO»: acredita la nota media, no el nivel del título. Es requisito de **admisibilidad** y tarda — iniciarlo antes que nada.
+   *Level verification of the foreign degree with UPV's Doctoral School — an admissibility requirement, not a scoring one. Start it first.*
+5. **Elegibilidad del inglés** en el apartado de idiomas — preguntar a la comisión, dado que las titulaciones previas son de inglés.
+   *Eligibility of English in the languages item — ask the committee.*
+6. **Resoluciones de las dos becas** (excelencia académica ULA y beca del Ministerio) con su curso académico y denominación oficial.
+   *Award letters for both scholarships, with academic year and official name.*
 
 ---
 

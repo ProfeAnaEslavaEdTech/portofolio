@@ -23,7 +23,7 @@
 
 | Campo | Dato |
 |---|---|
-| Nombre y apellidos | Ana Zoraida Eslava-Graterol |
+| Nombre y apellidos | **Ana Zoraimy Eslava Graterol** |
 | Correo electrónico | profeanaeslava@gmail.com |
 | Residencia | Valencia, España (disponibilidad inmediata) |
 | LinkedIn | https://www.linkedin.com/in/anaeslava |
@@ -50,20 +50,31 @@
 
 **Relevancia para el doctorado.** El máster es la titulación de acceso directo al programa y sitúa el expediente en el tramo superior de la escala. La especialidad de Didáctica y el Departamento de Lingüística Aplicada de la UPV son exactamente el marco en el que se inscribe la propuesta de tesis (MLLDE), lo que garantiza continuidad metodológica y de dirección.
 
-## A.2 · Licenciatura en Educación, mención Inglés — especialidad Currículo
-**Universidad de Los Andes (ULA), Táchira, Venezuela — 2004**
+## A.2 · Licenciada en Educación, mención Inglés
+**Universidad de Los Andes (ULA) — Núcleo Universitario «Dr. Pedro Rincón Gutiérrez», San Cristóbal, Táchira, Venezuela**
 
-| Indicador | Valor |
-|---|---|
-| Distinción académica | **Summa Cum Laude** |
-| Posición en la promoción | **Primer rango de la promoción** |
-| Distinción del TFG | **Summa Cum Laude**, con **publicación derivada en revista indexada** (véase §B.6 y §5) |
-| Líneas de investigación de la titulación | Diseño curricular y enseñanza del inglés |
-| Acreditación | Certificación académica personal ULA con nota media **[DOC-03]** · Título **[DOC-04]** · Equivalencia / declaración de equivalencia de nivel académico **[DOC-05]** |
+**Estudios 1999–2003 · egresada en el período lectivo U-2003 · grado conferido en 2004**
 
-**Relevancia para el doctorado.** La mención es **Inglés con especialidad en Currículo**: la formación de origen ya es de diseño curricular, que es el objeto de la tesis. El TFG, calificado Summa Cum Laude, no quedó en el expediente sino que se llevó a **publicación en revista indexada** (Kaleidoscopio, ISSN 1690-6054, indexada en CLASE–UNAM), lo que acredita capacidad investigadora desde la titulación de grado.
+| Indicador | Valor | Fuente |
+|---|---|---|
+| **Nota media equivalente en la escala española** | **9,07 / 10** | Declaración de equivalencia — Secretaría General de Universidades **[DOC-05]** |
+| Nota media en la escala de origen | **18,97 / 20** (escala venezolana 0–20, aprobado ≥ 10) | Constancia de Rango Académico **[DOC-06]** |
+| **Posición en la promoción** | **1.º de 56 graduandos** — promedio de la promoción: 15,77 | Constancia de Rango Académico **[DOC-06]** |
+| Distribución de calificaciones | 0 % aprobado · 28,45 % notable · **38,79 % sobresaliente** · **32,76 % matrícula de honor** | Declaración de equivalencia **[DOC-05]** |
+| Volumen del expediente | 119 asignaturas/créditos (116 con calificación) | Declaración de equivalencia **[DOC-05]** |
+| Rama de conocimiento española · ISCED | Ciencias Sociales y Jurídicas · **0114** (formación de docentes) | Declaración de equivalencia **[DOC-05]** |
+| Distinción académica | **Summa Cum Laude** | Acta de grado / diploma **[DOC-04]** |
+| **Trabajo Especial de Grado** | **20 / 20 — Sobresaliente**, con **Diploma de Honor concedido por el Rector de la ULA** (Mérida, 15 nov. 2004) | Diploma de Honor **[DOC-07]** |
+| Recorrido investigador del TFG | Publicado tras arbitraje en revista indexada y presentado como ponencia arbitrada en congreso internacional (§5.1) | **[DOC-19]** · **[DOC-24]** |
+| Líneas de investigación de la titulación | Diseño curricular y enseñanza del inglés | — |
 
-> ⚠️ **A completar antes de enviar:** confirmar la **nota media numérica de la licenciatura en escala 0–10** tal como figure en la equivalencia oficial española, ya que es el dato que la comisión introduce en el 70 %. Indicar aquí: **[NOTA MEDIA LICENCIATURA: ____ / 10]**.
+**El dato que la comisión introduce en el 70 % es 9,07/10**, ya calculado y certificado por la Administración española: la *Declaración de equivalencia de la nota media del expediente académico de estudios cursados en el extranjero* (Secretaría General de Universidades, Dirección General de Política Universitaria), verificada por la Junta de Andalucía y comprobable en línea mediante el **CSV ⟨CSV en la copia entregada a la comisión⟩** en <https://sede.educacion.gob.es/cid>. No hay que estimarlo ni convertirlo: basta adjuntar la declaración.
+
+**Relevancia para el doctorado.** La titulación es de **Educación mención Inglés** con líneas de diseño curricular y enseñanza del inglés — es decir, la formación de origen ya es de diseño curricular, que es el objeto de la tesis. El Trabajo Especial de Grado, calificado **20/20 con Diploma de Honor del Rector**, no quedó en el expediente: se arbitró y publicó en **revista indexada** (*Kaleidoscopio*, ISSN 1690-6054, indexada en CLASE–UNAM) y se presentó como **ponencia arbitrada en un congreso internacional** (§5.1). Es capacidad investigadora autónoma acreditada desde la titulación de grado.
+
+> ⚠️ **Punto de acceso que hay que resolver — no es puntuación, es admisibilidad.** La declaración de equivalencia indica expresamente **«Título homologado/equivalente: NO»**: lo que está declarado es la **equivalencia de la nota media**, no la homologación del título. Para acceder a un doctorado con un título extranjero no homologado, el artículo 6 del RD 99/2011 permite la admisión previa **comprobación por la universidad de que el título acredita un nivel de formación equivalente** al de máster español y faculta para el acceso a doctorado en el país de expedición.
+>
+> **Acción:** solicitar a la Escuela de Doctorado de la UPV la **comprobación de nivel** (o iniciar la equivalencia de nivel académico ante el Ministerio) **antes** de que cierre el plazo — este trámite tarda y bloquea la admisión aunque la puntuación sea alta. Adjuntar la declaración de equivalencia de nota media como documento de apoyo, no como sustituto.
 
 ---
 
@@ -73,29 +84,43 @@
 
 ---
 
-## B.1 · Premio extraordinario de licenciatura o grado — **5 %** ✅ ACREDITADO
+## B.1 · Premio extraordinario de licenciatura o grado — **5 %** ✅ ACREDITADO Y **APOSTILLADO**
 
-**Premio Extraordinario Fin de Carrera** — Universidad de Los Andes (ULA), Táchira, Venezuela, 2004.
+**Primer lugar de la promoción — 1.º de 56 graduandos**, Licenciatura en Educación mención Inglés, ULA – Núcleo Universitario «Dr. Pedro Rincón Gutiérrez», Táchira.
 
-- **Primer rango de la promoción** de la Licenciatura en Educación, mención Inglés.
-- Distinción académica **Summa Cum Laude**.
-- **TFG Summa Cum Laude**, posteriormente publicado en revista indexada (§5).
+| Dato certificado | Valor |
+|---|---|
+| Puesto en la promoción | **PRIMERO (1.º) de CINCUENTA Y SEIS (56) graduandos** |
+| Promedio de la candidata | **18,97 / 20** |
+| Promedio de la promoción | 15,77 / 20 |
+| Diferencia sobre la promoción | **+3,20 puntos** |
+| Documento | **Constancia de Rango Académico**, Oficina de Registros Estudiantiles, ULA-Táchira, 13 de enero de 2026 — firmada por la Coordinadora (E) de la ORE y el Vicerrector-Decano |
+| Certificación de firmas | Secretaría de la ULA, papel de seguridad **n.º ⟨n.º en la copia entregada a la comisión⟩**, 30 de enero de 2026; refrendo del Rector. Verificable en <http://www.ula.ve/ocgre/> con el n.º **⟨n.º en la copia entregada a la comisión⟩** |
+| **Legalización internacional** | **Apostilla de La Haya n.º ⟨n.º en la copia entregada a la comisión⟩**, Ministerio del Poder Popular para Relaciones Exteriores, Caracas, 20-03-2026 — validable con el código **⟨código en la copia entregada a la comisión⟩** en <https://consultalegalizacionve.mppre.gob.ve> |
 
-**Acreditación:** resolución / diploma del Premio Extraordinario Fin de Carrera **[DOC-06]** · certificación de primer rango de promoción **[DOC-07]**.
+**Distinciones asociadas:** **Summa Cum Laude** y, por el Trabajo Especial de Grado, **Diploma de Honor concedido por el Rector de la ULA** con calificación de **veinte (20) puntos — Sobresaliente** (Mérida, 15 de noviembre de 2004) **[DOC-07]**.
+
+> **Cómo redactarlo ante la comisión — esto importa.** El documento venezolano **no se titula «Premio Extraordinario Fin de Carrera»**, porque la ULA no emite ese premio con esa denominación: emite la **Constancia de Rango Académico**, que es su equivalente funcional y certifica exactamente lo mismo que el premio español acredita — **haber ocupado el primer puesto de la promoción**. Preséntalo así, con esas palabras, y adjunta la constancia apostillada: la comisión ve un dato numérico verificable (1.º de 56, 18,97 frente a 15,77) en lugar de una etiqueta que tendría que interpretar.
+>
+> Es, además, el mérito **mejor documentado de todo el expediente**: constancia oficial + certificación de firmas del Rectorado + apostilla de La Haya con código de validación en línea. Ningún otro apartado del baremo llega a ese nivel de prueba.
+
+**Acreditación:** Constancia de Rango Académico con certificación rectoral y apostilla **[DOC-06]** · Diploma de Honor del TFG (20/20 Sobresaliente) **[DOC-07]**.
 
 ---
 
-## B.2 · Premio extraordinario de máster — **5 %** ⚠️ REVISAR REDACCIÓN
+## B.2 · Premio extraordinario de máster — **5 %** ❌ NO PROCEDE COMO PREMIO
 
-**Distinción obtenida:** **2 Matrículas de Honor** en el Máster Universitario en Lenguas y Tecnología (UPV, 2026), sobre un expediente de 9,4/10.
+**El Premio Extraordinario que se posee es el de grado (§B.1), no el de máster.** No se declara aquí ningún premio.
 
-> **Advertencia honesta, importante para no perder puntos.** La *Matrícula de Honor* y el *Premio Extraordinario de Máster* son méritos **distintos**: la MH es una calificación de asignatura; el Premio Extraordinario es una resolución de la universidad al mejor expediente de la promoción, que suele publicarse meses después del cierre del curso. Dos escenarios:
-> - **Si la UPV ya ha resuelto el Premio Extraordinario a tu favor**, adjunta la resolución como **[DOC-08]** y este apartado puntúa íntegro (5 %).
-> - **Si aún no está resuelto o no se te ha concedido**, **no lo declares como premio**: declara las **2 Matrículas de Honor** y el expediente de 9,4/10 como distinción académica del máster. Declarar un premio no resuelto puede invalidar el mérito y proyecta una imagen de imprecisión ante la comisión.
->
-> **Acción:** consultar en Secretaría / ETSINF-Departamento el estado del Premio Extraordinario de Máster de tu promoción antes de cerrar el CV.
+**Lo que sí se declara como distinción académica del máster** — y que refuerza el Bloque A, no este apartado:
 
-**Acreditación:** certificación académica con las 2 MH (incluida en **[DOC-01]**) · resolución del Premio Extraordinario, si procede **[DOC-08]**.
+- **2 Matrículas de Honor** en el Máster Universitario en Lenguas y Tecnología (UPV, 2026).
+- Nota media del expediente **9,4 / 10**.
+- Calificación de **10/10** en el proyecto *Academic Writing Journey*.
+
+> **Por qué dejarlo a cero es la decisión correcta.** Una *Matrícula de Honor* es una calificación de asignatura; el *Premio Extraordinario de Máster* es una resolución de la universidad al mejor expediente de la promoción. Declarar la una como el otro invalidaría el mérito y restaría credibilidad al resto del CV — precisamente cuando §B.1 sí aporta un premio real, certificado y apostillado. Si la UPV resolviera el Premio Extraordinario a tu favor más adelante, se añade la resolución como **[DOC-08]** y este apartado pasa a puntuar.
+
+**Acreditación:** certificación académica con las 2 Matrículas de Honor, incluida en **[DOC-01]**.
 
 ---
 
@@ -156,7 +181,7 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 **Más de 20 años de experiencia continuada en el ámbito exacto de la tesis, con 1.568 horas de docencia universitaria acreditadas:** enseñanza de lenguas alineada al MCER, diseño curricular e instruccional, y tecnologías educativas para el aprendizaje de idiomas.
 
 ### B.6.1 · Docencia e investigación universitaria
-**Profesora de Inglés Científico y redactora de contenido científico** — Universidad de Oriente (UDO), Venezuela · **2005 – 2015**
+**Profesora de Inglés Científico y redactora de contenido científico** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2005 – 2015**
 - **1.568 horas acreditadas de docencia universitaria** (certificación de servicio docente, **[DOC-16]**).
 - Docencia de inglés científico en titulaciones de ciencias.
 - Redacción y revisión de contenido científico en inglés (odontología, biología marina) para revistas revisadas por pares de alto impacto.
@@ -192,34 +217,48 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 
 | Apartado | Peso | Estado | Evidencia principal |
 |---|---|---|---|
-| **Expediente académico** | **70 %** | ✅ | Máster UPV 9,4/10 con 2 MH · Licenciatura Summa Cum Laude, primer rango |
-| B.1 Premio extraordinario de grado | 5 % | ✅ | Premio Extraordinario Fin de Carrera (ULA, 2004) |
-| B.2 Premio extraordinario de máster | 5 % | ⚠️ | 2 Matrículas de Honor (UPV) — verificar resolución del premio |
+| **Expediente académico** | **70 %** | ✅ | Máster UPV **9,4/10** con 2 MH · Licenciatura **9,07/10** (equivalencia oficial), 1.º de 56 |
+| B.1 Premio extraordinario de grado | 5 % | ✅ | **1.º de 56 graduandos** — constancia apostillada |
+| B.2 Premio extraordinario de máster | 5 % | ❌ | No procede — el premio es el de grado |
 | B.3 Segundo máster | 5 % | ❌ | No procede |
 | B.4 Idiomas ajenos a las titulaciones | 5 % | ⚠️ | C1 CAE · CELTA · examinadora DELE — verificar si computa |
-| B.5 Becas | 5 % | ✅ | **Beca de excelencia académica (grado)** · **beca del Ministerio (máster)** |
+| B.5 Becas | 5 % | ✅ | Beca de excelencia académica (grado) · beca del Ministerio (máster) |
 | B.6 Experiencia profesional en el ámbito | 5 % | ✅ | **1.568 h de docencia universitaria acreditadas** · 20+ años · ID 2019-actualidad |
 
-**Lectura:** cuatro de los seis méritos están cubiertos o son cubribles con documentación existente; dos requieren una verificación previa (B.2 y B.4) y uno no procede (B.3). El peso decisivo, el 70 % del expediente, está en el tramo alto.
+**Lectura honesta.** Tres méritos están plenamente acreditados (B.1, B.5, B.6), uno depende de la interpretación de la comisión (B.4) y dos no proceden (B.2, B.3). Es decir: **entre 15 % y 20 % de los 30 %**, con el 70 % del expediente en el tramo alto (9,4 y 9,07 sobre 10). El punto fuerte no es el número de casillas marcadas, sino la **calidad de la prueba**: el mérito de B.1 llega apostillado y con código de validación en línea, y el expediente de grado trae la nota media ya calculada por la Administración española.
+
+**Dónde se gana el margen que falta.** El único apartado mejorable a corto plazo es B.4: una acreditación oficial de un tercer idioma (valenciano A2–B1 por JQCV/CIEACOVA es la vía más rápida y barata) activaría ese 5 % sin depender de la interpretación de nadie.
 
 ---
 
 # 5. Producción científica y difusión
 
-**Publicación en revista indexada (derivada del TFG Summa Cum Laude)**
+## 5.1 · Trayectoria investigadora desde el Trabajo Especial de Grado
 
-> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en educación mención inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. ISSN 1690-6054. Indexada en CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+El TFG no se quedó en el expediente: recorrió el ciclo completo de investigación — **defensa con máxima calificación → arbitraje y publicación en revista indexada → ponencia arbitrada en congreso internacional**. Es la evidencia más directa de capacidad investigadora autónoma que puede aportarse a una solicitud de doctorado.
 
-**Reconocimiento en agradecimientos**
+| Etapa | Hito | Fecha | Doc. |
+|---|---|---|---|
+| **1 · Defensa** | Trabajo Especial de Grado calificado **20/20 — Sobresaliente**; **Diploma de Honor** concedido por el Rector de la Universidad de Los Andes | 15 nov. 2004 | **[DOC-07]** |
+| **2 · Arbitraje** | Artículo recibido (13-06-2004) y **aceptado tras arbitraje** (19-07-2004) por *Kaleidoscopio*, revista arbitrada de Educación, Humanidades y Artes de la **Universidad Nacional Experimental de Guayana (UNEG)** | 2004–2005 | **[DOC-19]** |
+| **3 · Publicación** | Publicado en **Kaleidoscopio, vol. 2, n.º 3 (ene.–jun. 2005), pp. 51–56**, con resumen bilingüe español/inglés. ISSN 1690-6054. **Indexada en CLASE (UNAM)** | 2005 | **[DOC-19]** |
+| **4 · Congreso internacional** | Resumen **aceptado por la comisión de arbitraje** y ponencia presentada en el **II Congreso Internacional de Educación Superior «Tendencias y Perspectivas de la Educación Superior en América Latina / en el Siglo XXI»**, Asociación de Educadores de Latinoamérica y del Caribe + Universidad de Oriente, **Cumaná, 31 jul. – 2 ago. 2008** (ref. CIES/P 048) | 2008 | **[DOC-24]** |
 
-> Sotelo-Casas et al. (2019). *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8 — por el contenido científico y la revisión en inglés del manuscrito.
+**Cita completa:**
 
-**Difusión y divulgación profesional**
+> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexada en CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+
+**Relevancia para la propuesta de tesis.** El objeto de aquel estudio — el perfil del egresado medido contra las funciones docentes y las competencias lingüísticas previstas en la reforma curricular — es, en el fondo, el mismo problema que aborda MLLDE veinte años después: **cómo alinear un diseño curricular con un marco de competencias verificable**. La continuidad de línea de investigación es real, no retórica.
+
+## 5.2 · Reconocimiento en agradecimientos
+
+> Sotelo-Casas et al. (2019). *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8 — por el contenido científico y la revisión en inglés del manuscrito. **[DOC-14]**
+
+## 5.3 · Difusión y divulgación profesional
+
 - Portafolio EdTech de seis áreas (vídeo, gamificación, diseño de cursos, herramientas interactivas, formación virtual, investigación).
 - Libro de datos interactivo del corpus de metadiscurso (visualización de resultados de investigación en lingüística aplicada), publicado en el portafolio de investigación.
 - Podcast profesional en Spotify y canal de YouTube sobre diseño de aprendizaje y escritura académica.
-
-**Acreditación:** primera y última página de la publicación **[DOC-19]** · página de agradecimientos de Sotelo-Casas et al. (2019) **[DOC-14]**.
 
 ---
 
@@ -249,43 +288,52 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 
 > Enviar un único PDF con los documentos **en este orden**, con una portada que reproduzca esta tabla. La comisión debe poder ir del mérito al documento en un solo salto.
 
-| Código | Documento | Acredita |
-|---|---|---|
-| DOC-01 | Certificación académica personal UPV (nota media 9,4/10 + 2 MH) | A.1 · B.2 |
-| DOC-02 | Título o resguardo del Máster (UPV) | A.1 |
-| DOC-03 | Certificación académica personal ULA con nota media | A.2 |
-| DOC-04 | Título de Licenciatura (ULA) | A.2 |
-| DOC-05 | Equivalencia / declaración de equivalencia de nivel académico | A.2 |
-| DOC-06 | Resolución o diploma del Premio Extraordinario Fin de Carrera | B.1 |
-| DOC-07 | Certificación de primer rango de promoción | B.1 |
-| DOC-08 | Resolución del Premio Extraordinario de Máster *(si procede)* | B.2 |
-| DOC-09 | Certificado C1 Advanced (CAE) — Cambridge | B.4 |
-| DOC-10 | Certificado CELTA — Cambridge | B.4 |
-| DOC-11 | Acreditación de examinadora DELE — Instituto Cervantes | B.4 |
-| DOC-12 | Credencial de la Beca de Excelencia Académica (ULA) | B.5 |
-| DOC-13 | Resolución de concesión de la beca del Ministerio (máster UPV) | B.5 |
-| DOC-14 | Sotelo-Casas et al. (2019) — portada + página de agradecimientos (p. 8) | B.6 · §5 |
-| DOC-15 | Evidencia de la calificación 10/10 de Academic Writing Journey (UPV) | A.1 · B.6 |
-| DOC-16 | Certificados de servicio docente — UDO (2005–2015), **1.568 h acreditadas** | B.6 |
-| DOC-17 | Vida laboral / certificado de actividad profesional en España | B.6 |
-| DOC-18 | Acreditación de tutoría en AVE Global — Instituto Cervantes | B.6 |
-| DOC-19 | Publicación en Kaleidoscopio — primera y última página | §5 |
-| DOC-20 | Certificado UC Irvine | §6 |
-| DOC-21 | Certificado University of Cambridge (PCE) | §6 |
-| DOC-22 | Certificado AP Stylebook | §6 |
-| DOC-23 | Certificado SEPE | §6 |
+| Código | Documento | Acredita | Estado |
+|---|---|---|---|
+| DOC-01 | Certificación académica personal UPV (nota media 9,4/10 + 2 MH) | A.1 · B.2 | ⬜ |
+| DOC-02 | Título o resguardo del Máster (UPV) | A.1 | ⬜ |
+| DOC-03 | Certificación académica personal ULA con nota media | A.2 | ⬜ |
+| DOC-04 | Título de Licenciatura (ULA) + acta de grado con la distinción *Summa Cum Laude* | A.2 | ⬜ |
+| DOC-05 | **Declaración de equivalencia de la nota media** — Secretaría General de Universidades · **9,07/10** · CSV ⟨CSV en la copia entregada a la comisión⟩ | A.2 · **70 %** | ✅ **en mano** |
+| DOC-06 | **Constancia de Rango Académico** (1.º de 56) + certificación rectoral n.º ⟨n.º en la copia entregada a la comisión⟩ + **Apostilla ⟨n.º en la copia entregada a la comisión⟩** | B.1 | ✅ **en mano** |
+| DOC-07 | **Diploma de Honor** del Trabajo Especial de Grado — 20/20 Sobresaliente, Rector de la ULA, 15 nov. 2004 | B.1 · §5 | ✅ **en mano** |
+| DOC-08 | Resolución del Premio Extraordinario de Máster *(solo si la UPV lo resolviera; hoy no procede)* | B.2 | ➖ |
+| DOC-09 | Certificado C1 Advanced (CAE) — Cambridge | B.4 | ⬜ |
+| DOC-10 | Certificado CELTA — Cambridge | B.4 | ⬜ |
+| DOC-11 | Acreditación de examinadora DELE — Instituto Cervantes | B.4 | ⬜ |
+| DOC-12 | Credencial de la **Beca de Excelencia Académica** (ULA, grado) | B.5 | ⬜ |
+| DOC-13 | Resolución de concesión de la **beca del Ministerio** (máster UPV) | B.5 | ⬜ |
+| DOC-14 | Sotelo-Casas et al. (2019) — portada + página de agradecimientos (p. 8) | B.6 · §5 | ⬜ |
+| DOC-15 | Evidencia de la calificación 10/10 de *Academic Writing Journey* (UPV) | A.1 · B.6 | ⬜ |
+| DOC-16 | Certificados de servicio docente — UDO Núcleo Nueva Esparta (2005–2015), **1.568 h acreditadas** | B.6 | ⬜ |
+| DOC-17 | Vida laboral / certificado de actividad profesional en España | B.6 | ⬜ |
+| DOC-18 | Acreditación de tutoría en AVE Global — Instituto Cervantes | B.6 | ⬜ |
+| DOC-19 | **Kaleidoscopio 2(3), 51–56 (2005)** — primera y última página + carta de aceptación tras arbitraje (UNEG, 09-03-2005) | §5 | ✅ **en mano** |
+| DOC-20 | Certificado UC Irvine | §6 | ⬜ |
+| DOC-21 | Certificado University of Cambridge (PCE) | §6 | ⬜ |
+| DOC-22 | Certificado AP Stylebook | §6 | ⬜ |
+| DOC-23 | Certificado SEPE | §6 | ⬜ |
+| DOC-24 | **II Congreso Internacional de Educación Superior** (Cumaná, 2008) — carta de aceptación de la ponencia, ref. CIES/P 048 | §5 | ✅ **en mano** |
 
 ---
 
 ## Lista de verificación antes de enviar
 
-- [ ] Confirmar la **nota media de la licenciatura en escala 0–10** según la equivalencia española → §A.2.
-- [ ] Verificar en Secretaría el estado del **Premio Extraordinario de Máster** → §B.2.
+**Resuelto con la documentación ya aportada:**
+
+- [x] Nota media de la licenciatura en escala 0–10 → **9,07**, certificada por la Administración española (DOC-05).
+- [x] Premio extraordinario de grado → **1.º de 56**, constancia apostillada (DOC-06).
+- [x] Estado del Premio Extraordinario de Máster → no procede; se declaran las 2 Matrículas de Honor.
+- [x] Datos completos de la publicación → *Kaleidoscopio* 2(3), 51–56, 2005, con carta de arbitraje y ponencia en congreso internacional (DOC-19, DOC-24).
+
+**Pendiente:**
+
+- [ ] 🔴 **Comprobación de nivel del título extranjero** ante la Escuela de Doctorado de la UPV (art. 6 RD 99/2011). Es un requisito de *admisibilidad*, no de puntuación, y es lo que puede bloquear la solicitud aunque el baremo salga alto. **Iniciarlo ya.**
 - [ ] Consultar a la comisión si el **inglés computa** en el apartado de idiomas → §B.4.
-- [ ] Completar el **curso académico** y la **denominación oficial** de las dos becas y adjuntar sus resoluciones → §B.5.
-- [ ] Escanear todos los documentos en un **único PDF**, en el orden del Anexo §8, con portada-índice.
+- [ ] Completar el **curso académico** y la **denominación oficial** de las dos becas y localizar sus resoluciones → §B.5.
+- [ ] Reunir el resto de certificados (DOC-01 a DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).
+- [ ] Escanear todo en un **PDF único**, en el orden del Anexo §8, con portada-índice.
 - [ ] Adjuntar la **propuesta de tesis MLLDE** (documento independiente, `01-propuesta/`).
-- [ ] Revisar que ningún mérito declarado carezca de su documento acreditativo.
 
 ---
 

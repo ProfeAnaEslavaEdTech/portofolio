@@ -23,7 +23,7 @@
 
 | Field | Detail |
 |---|---|
-| Full name | Ana Zoraida Eslava-Graterol |
+| Full name | **Ana Zoraimy Eslava Graterol** |
 | Email | profeanaeslava@gmail.com |
 | Location | Valencia, Spain (immediate availability) |
 | LinkedIn | https://www.linkedin.com/in/anaeslava |
@@ -50,20 +50,31 @@
 
 **Relevance to the doctorate.** This master's is the direct access qualification for the programme and places the record in the upper band of the scale. The Didactics specialisation and UPV's Department of Applied Linguistics are precisely the setting of the MLLDE thesis proposal, which guarantees methodological and supervisory continuity.
 
-## A.2 · Degree in Education, English major — Curriculum specialisation
-**Universidad de Los Andes (ULA), Táchira, Venezuela — 2004**
+## A.2 · Licenciada en Educación, mención Inglés (Degree in Education, English major)
+**Universidad de Los Andes (ULA) — Núcleo Universitario "Dr. Pedro Rincón Gutiérrez", San Cristóbal, Táchira, Venezuela**
 
-| Indicator | Value |
-|---|---|
-| Academic distinction | **Summa Cum Laude** |
-| Class ranking | **First in the graduating class** |
-| Final-year dissertation | **Summa Cum Laude**, subsequently **published in an indexed journal** (see §B.6 and §5) |
-| Degree research lines | Curriculum design and English language teaching |
-| Evidence | ULA academic transcript with GPA **[DOC-03]** · Degree certificate **[DOC-04]** · Official academic-level equivalence **[DOC-05]** |
+**Studies 1999–2003 · graduated in academic term U-2003 · degree conferred 2004**
 
-**Relevance to the doctorate.** The degree is in **English with a Curriculum specialisation**: the original training is already in curriculum design, which is the object of the thesis. The final-year dissertation, awarded Summa Cum Laude, did not stay in the file — it was taken through to **publication in an indexed journal** (Kaleidoscopio, ISSN 1690-6054, indexed in CLASE–UNAM), evidencing research capacity from the undergraduate stage onward.
+| Indicator | Value | Source |
+|---|---|---|
+| **GPA converted to the Spanish scale** | **9.07 / 10** | Official grade-equivalence declaration — Spanish General Secretariat for Universities **[DOC-05]** |
+| GPA on the home scale | **18.97 / 20** (Venezuelan 0–20 scale, pass ≥ 10) | Academic Rank Certificate **[DOC-06]** |
+| **Class ranking** | **1st of 56 graduates** — cohort average: 15.77 | Academic Rank Certificate **[DOC-06]** |
+| Grade distribution | 0 % pass · 28.45 % notable · **38.79 % sobresaliente** · **32.76 % matrícula de honor** | Equivalence declaration **[DOC-05]** |
+| Volume of the record | 119 courses/credits (116 graded) | Equivalence declaration **[DOC-05]** |
+| Spanish knowledge branch · ISCED | Social and Legal Sciences · **0114** (teacher training) | Equivalence declaration **[DOC-05]** |
+| Academic distinction | **Summa Cum Laude** | Graduation record / diploma **[DOC-04]** |
+| **Final-year dissertation** | **20 / 20 — Sobresaliente**, with a **Diploma of Honour awarded by the Rector of ULA** (Mérida, 15 Nov 2004) | Diploma of Honour **[DOC-07]** |
+| Research trajectory of the dissertation | Peer-reviewed and published in an indexed journal, then presented as a refereed paper at an international conference (§5.1) | **[DOC-19]** · **[DOC-24]** |
+| Degree research lines | Curriculum design and English language teaching | — |
 
-> ⚠️ **To complete before submission:** confirm the **numerical GPA of the undergraduate degree on the 0–10 Spanish scale** as stated in the official equivalence, since that is the figure the committee enters into the 70%. State it here: **[UNDERGRADUATE GPA: ____ / 10]**.
+**The figure the committee enters into the 70% is 9.07/10**, already computed and certified by the Spanish administration: the *Declaración de equivalencia de la nota media del expediente académico de estudios cursados en el extranjero* (General Secretariat for Universities, Directorate-General for University Policy), verified by the Regional Government of Andalusia and checkable online with **CSV ⟨CSV in the copy submitted to the committee⟩** at <https://sede.educacion.gob.es/cid>. Nothing needs to be estimated or converted — the declaration is simply attached.
+
+**Relevance to the doctorate.** The degree is in **Education with an English major**, with research lines in curriculum design and English language teaching — the original training is already in curriculum design, which is the object of the thesis. The final-year dissertation, graded **20/20 with a Rector's Diploma of Honour**, did not stay in the file: it was peer-reviewed and published in an **indexed journal** (*Kaleidoscopio*, ISSN 1690-6054, indexed in CLASE–UNAM) and presented as a **refereed paper at an international conference** (§5.1). That is independent research capacity evidenced from the undergraduate stage onward.
+
+> ⚠️ **An admissibility issue to resolve — this is not about points.** The equivalence declaration states explicitly **"Título homologado/equivalente: NO"**: what has been declared is the **equivalence of the grade average**, not recognition (*homologación*) of the degree itself. To enter a doctorate with a non-recognised foreign degree, Article 6 of Royal Decree 99/2011 allows admission once **the university has verified that the degree certifies a level of education equivalent** to a Spanish master's and grants access to doctoral study in the issuing country.
+>
+> **Action:** request the **level verification** from UPV's Doctoral School (or start the academic-level equivalence procedure with the Ministry) **before** the deadline — it takes time and it blocks admission however high the score. Attach the grade-equivalence declaration as supporting evidence, not as a substitute.
 
 ---
 
@@ -73,29 +84,43 @@
 
 ---
 
-## B.1 · Extraordinary award for the undergraduate degree — **5 %** ✅ EVIDENCED
+## B.1 · Extraordinary award for the undergraduate degree — **5 %** ✅ EVIDENCED AND **APOSTILLED**
 
-**Extraordinary Graduation Award (*Premio Extraordinario Fin de Carrera*)** — Universidad de Los Andes (ULA), Táchira, Venezuela, 2004.
+**First in the graduating class — 1st of 56 graduates**, Degree in Education (English major), ULA – Núcleo Universitario "Dr. Pedro Rincón Gutiérrez", Táchira.
 
-- **First in the graduating class** of the Degree in Education, English major.
-- Academic distinction **Summa Cum Laude**.
-- **Final-year dissertation awarded Summa Cum Laude**, later published in an indexed journal (§5).
+| Certified fact | Value |
+|---|---|
+| Class ranking | **FIRST (1st) of FIFTY-SIX (56) graduates** |
+| Candidate's average | **18.97 / 20** |
+| Cohort average | 15.77 / 20 |
+| Margin over the cohort | **+3.20 points** |
+| Document | **Constancia de Rango Académico** (Academic Rank Certificate), Student Records Office, ULA-Táchira, 13 January 2026 — signed by the Acting Head of Student Records and the Vice-Rector-Dean |
+| Signature certification | ULA General Secretariat, security paper **no. ⟨no. in the copy submitted to the committee⟩**, 30 January 2026; countersigned by the Rector. Verifiable at <http://www.ula.ve/ocgre/> under no. **⟨no. in the copy submitted to the committee⟩** |
+| **International legalisation** | **Hague Apostille no. ⟨no. in the copy submitted to the committee⟩**, Ministry of Foreign Affairs, Caracas, 20-03-2026 — validatable with code **⟨code in the copy submitted to the committee⟩** at <https://consultalegalizacionve.mppre.gob.ve> |
 
-**Evidence:** award resolution / diploma **[DOC-06]** · certificate of first-in-class ranking **[DOC-07]**.
+**Associated distinctions:** **Summa Cum Laude** and, for the final-year dissertation, a **Diploma of Honour awarded by the Rector of ULA** with a grade of **twenty (20) points — Sobresaliente** (Mérida, 15 November 2004) **[DOC-07]**.
+
+> **How to word this for the committee — it matters.** The Venezuelan document is **not titled "Premio Extraordinario Fin de Carrera"**, because ULA does not issue an award under that name: it issues the **Academic Rank Certificate**, its functional equivalent, certifying exactly what the Spanish award evidences — **having ranked first in the graduating class**. Present it in those terms and attach the apostilled certificate: the committee then sees a verifiable number (1st of 56; 18.97 against 15.77) instead of a label it would have to interpret.
+>
+> It is also the **best-documented merit in the whole file**: official certificate + Rectorate signature certification + Hague Apostille with an online validation code. No other rubric item reaches that standard of proof.
+
+**Evidence:** Academic Rank Certificate with rectoral certification and apostille **[DOC-06]** · Diploma of Honour for the dissertation (20/20 Sobresaliente) **[DOC-07]**.
 
 ---
 
-## B.2 · Extraordinary award for the master's degree — **5 %** ⚠️ WORDING TO VERIFY
+## B.2 · Extraordinary award for the master's degree — **5 %** ❌ NOT APPLICABLE
 
-**Distinction held:** **2 *Matrículas de Honor*** in the Master's Degree in Languages and Technology (UPV, 2026), on a 9.4/10 record.
+**The Extraordinary Award held is the undergraduate one (§B.1), not a master's award.** No award is declared here.
 
-> **Honest warning — this is where points are most easily lost.** A *Matrícula de Honor* and an *Extraordinary Master's Award* are **different merits**: the former is a course-level grade, the latter a university resolution awarded to the best record of the cohort, usually published months after the academic year closes. Two scenarios:
-> - **If UPV has already resolved the Extraordinary Award in your favour**, attach the resolution as **[DOC-08]** and this item scores in full (5%).
-> - **If it has not been resolved or was not awarded to you**, **do not declare it as an award**: declare the **2 Matrículas de Honor** and the 9.4/10 record as the master's academic distinction. Declaring an unresolved award can void the merit and signals imprecision to the committee.
->
-> **Action:** check the status of the Extraordinary Master's Award for your cohort with the UPV registrar / department before finalising the CV.
+**What is declared instead, as the master's academic distinction** — reinforcing Block A, not this item:
 
-**Evidence:** academic transcript showing the 2 MH (included in **[DOC-01]**) · award resolution, if applicable **[DOC-08]**.
+- **2 Matrículas de Honor** in the Master's Degree in Languages and Technology (UPV, 2026).
+- Grade-point average **9.4 / 10**.
+- **10/10** for the *Academic Writing Journey* project.
+
+> **Why leaving this at zero is the right call.** A *Matrícula de Honor* is a course-level grade; the *Extraordinary Master's Award* is a university resolution recognising the best record of the cohort. Declaring one as the other would void the merit and undercut the credibility of the rest of the CV — precisely when §B.1 does supply a real award, certified and apostilled. Should UPV later resolve the Extraordinary Award in your favour, add the resolution as **[DOC-08]** and this item begins to score.
+
+**Evidence:** academic transcript showing the 2 Matrículas de Honor, included in **[DOC-01]**.
 
 ---
 
@@ -156,7 +181,7 @@ As of this application, no second official master's degree is held besides the M
 **More than 20 years of continuous experience in the exact field of the thesis, including 1,568 accredited university teaching hours:** CEFR-aligned language teaching, curriculum and instructional design, and educational technology for language learning.
 
 ### B.6.1 · University teaching and research
-**Scientific English Lecturer & Scientific Content Writer** — Universidad de Oriente (UDO), Venezuela · **2005 – 2015**
+**Scientific English Lecturer & Scientific Content Writer** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2005 – 2015**
 - **1,568 accredited university teaching hours** (service certificate, **[DOC-16]**).
 - Taught scientific English within science degree programmes.
 - Wrote and reviewed scientific content in English (dentistry, marine biology) for high-impact peer-reviewed journals.
@@ -192,34 +217,48 @@ As of this application, no second official master's degree is held besides the M
 
 | Item | Weight | Status | Main evidence |
 |---|---|---|---|
-| **Academic record** | **70 %** | ✅ | UPV master's 9.4/10 with 2 MH · Undergraduate Summa Cum Laude, first in class |
-| B.1 Extraordinary undergraduate award | 5 % | ✅ | Extraordinary Graduation Award (ULA, 2004) |
-| B.2 Extraordinary master's award | 5 % | ⚠️ | 2 Matrículas de Honor (UPV) — verify award resolution |
+| **Academic record** | **70 %** | ✅ | UPV master's **9.4/10** with 2 distinctions · Undergraduate **9.07/10** (official equivalence), 1st of 56 |
+| B.1 Extraordinary undergraduate award | 5 % | ✅ | **1st of 56 graduates** — apostilled certificate |
+| B.2 Extraordinary master's award | 5 % | ❌ | Not applicable — the award is the undergraduate one |
 | B.3 Second master's degree | 5 % | ❌ | Not applicable |
-| B.4 Languages beyond the degrees | 5 % | ⚠️ | C1 CAE · CELTA · DELE examiner — verify eligibility |
-| B.5 Scholarships | 5 % | ✅ | **Academic excellence scholarship (undergraduate)** · **Ministry scholarship (master's)** |
+| B.4 Languages beyond the degrees | 5 % | ⚠️ | C1 CAE · CELTA · DELE examiner — eligibility to confirm |
+| B.5 Scholarships | 5 % | ✅ | Academic excellence scholarship (undergraduate) · Ministry scholarship (master's) |
 | B.6 Professional experience in the field | 5 % | ✅ | **1,568 accredited university teaching hours** · 20+ years · ID 2019–present |
 
-**Reading:** four of the six merits are covered or coverable with existing documentation; two need prior verification (B.2 and B.4) and one does not apply (B.3). The decisive weight — the 70% academic record — sits in the upper band.
+**Honest reading.** Three merits are fully evidenced (B.1, B.5, B.6), one depends on the committee's interpretation (B.4) and two do not apply (B.2, B.3). That is **roughly 15–20 of the 30 points**, with the 70% academic record in the upper band (9.4 and 9.07 out of 10). The strength here is not the number of boxes ticked but the **quality of the proof**: the B.1 merit arrives apostilled with an online validation code, and the undergraduate record comes with its grade average already computed by the Spanish administration.
+
+**Where the remaining margin is.** The only item improvable in the short term is B.4: an official certificate in a third language (Valencian A2–B1 through JQCV/CIEACOVA is the fastest and cheapest route) would activate that 5% without depending on anyone's interpretation.
 
 ---
 
 # 5. Research output and dissemination
 
-**Indexed-journal publication (derived from the Summa Cum Laude dissertation)**
+## 5.1 · A research trajectory that began with the final-year dissertation
 
-> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en educación mención inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. ISSN 1690-6054. Indexed in CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+The dissertation did not stay in the file: it ran the full research cycle — **defence with the top grade → peer review and publication in an indexed journal → refereed paper at an international conference**. It is the most direct evidence of independent research capacity that a doctoral application can carry.
 
-**Acknowledgement**
+| Stage | Milestone | Date | Doc. |
+|---|---|---|---|
+| **1 · Defence** | Final-year dissertation graded **20/20 — Sobresaliente**; **Diploma of Honour** awarded by the Rector of Universidad de Los Andes | 15 Nov 2004 | **[DOC-07]** |
+| **2 · Peer review** | Article received (13-06-2004) and **accepted after peer review** (19-07-2004) by *Kaleidoscopio*, refereed journal of Education, Humanities and Arts of **Universidad Nacional Experimental de Guayana (UNEG)** | 2004–2005 | **[DOC-19]** |
+| **3 · Publication** | Published in **Kaleidoscopio, vol. 2, no. 3 (Jan–Jun 2005), pp. 51–56**, with a bilingual Spanish/English abstract. ISSN 1690-6054. **Indexed in CLASE (UNAM)** | 2005 | **[DOC-19]** |
+| **4 · International conference** | Abstract **accepted by the refereeing committee** and paper presented at the **2nd International Conference on Higher Education, "Trends and Perspectives of Higher Education in Latin America / in the 21st Century"**, Association of Educators of Latin America and the Caribbean + Universidad de Oriente, **Cumaná, 31 Jul – 2 Aug 2008** (ref. CIES/P 048) | 2008 | **[DOC-24]** |
 
-> Sotelo-Casas et al. (2019). *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8 — for the manuscript's English and scientific content.
+**Full citation:**
 
-**Professional dissemination**
+> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexed in CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+
+**Relevance to the thesis proposal.** The object of that study — the graduate's profile measured against the teaching functions and linguistic competences set out in the curriculum reform — is, at bottom, the same problem MLLDE addresses twenty years later: **how to align a curriculum design with a verifiable competence framework**. The continuity of the research line is real, not rhetorical.
+
+## 5.2 · Acknowledgement
+
+> Sotelo-Casas et al. (2019). *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8 — for the manuscript's English and scientific content. **[DOC-14]**
+
+## 5.3 · Professional dissemination
+
 - Six-area EdTech portfolio (video, gamification, course design, interactive tools, virtual training, research).
 - Interactive corpus data book on metadiscourse (research-results visualisation in applied linguistics), published in the research portfolio.
 - Professional podcast on Spotify and a YouTube channel on learning design and academic writing.
-
-**Evidence:** first and last page of the publication **[DOC-19]** · acknowledgements page of Sotelo-Casas et al. (2019) **[DOC-14]**.
 
 ---
 
@@ -249,43 +288,52 @@ As of this application, no second official master's degree is held besides the M
 
 > Submit a single PDF with the documents **in this order**, opening with a cover page that reproduces this table. The committee must be able to go from merit to document in one jump.
 
-| Code | Document | Supports |
-|---|---|---|
-| DOC-01 | UPV academic transcript (GPA 9.4/10 + 2 MH) | A.1 · B.2 |
-| DOC-02 | Master's degree certificate (UPV) | A.1 |
-| DOC-03 | ULA academic transcript with GPA | A.2 |
-| DOC-04 | Undergraduate degree certificate (ULA) | A.2 |
-| DOC-05 | Official academic-level equivalence | A.2 |
-| DOC-06 | Extraordinary Graduation Award resolution / diploma | B.1 |
-| DOC-07 | Certificate of first-in-class ranking | B.1 |
-| DOC-08 | Extraordinary Master's Award resolution *(if applicable)* | B.2 |
-| DOC-09 | C1 Advanced (CAE) certificate — Cambridge | B.4 |
-| DOC-10 | CELTA certificate — Cambridge | B.4 |
-| DOC-11 | DELE examiner accreditation — Instituto Cervantes | B.4 |
-| DOC-12 | Academic Excellence Scholarship credential (ULA) | B.5 |
-| DOC-13 | Ministry scholarship award resolution (UPV master's) | B.5 |
-| DOC-14 | Sotelo-Casas et al. (2019) — cover + acknowledgements page (p. 8) | B.6 · §5 |
-| DOC-15 | Evidence of the 10/10 grade for Academic Writing Journey (UPV) | A.1 · B.6 |
-| DOC-16 | UDO teaching service certificates (2005–2015), **1,568 accredited hours** | B.6 |
-| DOC-17 | Spanish employment history / professional activity certificate | B.6 |
-| DOC-18 | AVE Global tutoring accreditation — Instituto Cervantes | B.6 |
-| DOC-19 | Kaleidoscopio publication — first and last page | §5 |
-| DOC-20 | UC Irvine certificate | §6 |
-| DOC-21 | University of Cambridge (PCE) certificate | §6 |
-| DOC-22 | AP Stylebook certificate | §6 |
-| DOC-23 | SEPE certificate | §6 |
+| Code | Document | Supports | Status |
+|---|---|---|---|
+| DOC-01 | UPV academic transcript (GPA 9.4/10 + 2 distinctions) | A.1 · B.2 | ⬜ |
+| DOC-02 | Master's degree certificate (UPV) | A.1 | ⬜ |
+| DOC-03 | ULA academic transcript with GPA | A.2 | ⬜ |
+| DOC-04 | Undergraduate degree certificate (ULA) + graduation record showing *Summa Cum Laude* | A.2 | ⬜ |
+| DOC-05 | **Grade-average equivalence declaration** — Spanish General Secretariat for Universities · **9.07/10** · CSV ⟨CSV in the copy submitted to the committee⟩ | A.2 · **70 %** | ✅ **in hand** |
+| DOC-06 | **Academic Rank Certificate** (1st of 56) + rectoral certification no. ⟨no. in the copy submitted to the committee⟩ + **Apostille ⟨no. in the copy submitted to the committee⟩** | B.1 | ✅ **in hand** |
+| DOC-07 | **Diploma of Honour** for the final-year dissertation — 20/20 Sobresaliente, Rector of ULA, 15 Nov 2004 | B.1 · §5 | ✅ **in hand** |
+| DOC-08 | Extraordinary Master's Award resolution *(only if UPV resolves one; not applicable today)* | B.2 | ➖ |
+| DOC-09 | C1 Advanced (CAE) certificate — Cambridge | B.4 | ⬜ |
+| DOC-10 | CELTA certificate — Cambridge | B.4 | ⬜ |
+| DOC-11 | DELE examiner accreditation — Instituto Cervantes | B.4 | ⬜ |
+| DOC-12 | Academic Excellence Scholarship credential (ULA, undergraduate) | B.5 | ⬜ |
+| DOC-13 | Ministry scholarship award resolution (UPV master's) | B.5 | ⬜ |
+| DOC-14 | Sotelo-Casas et al. (2019) — cover + acknowledgements page (p. 8) | B.6 · §5 | ⬜ |
+| DOC-15 | Evidence of the 10/10 grade for *Academic Writing Journey* (UPV) | A.1 · B.6 | ⬜ |
+| DOC-16 | UDO Núcleo Nueva Esparta teaching service certificates (2005–2015), **1,568 accredited hours** | B.6 | ⬜ |
+| DOC-17 | Spanish employment history / professional activity certificate | B.6 | ⬜ |
+| DOC-18 | AVE Global tutoring accreditation — Instituto Cervantes | B.6 | ⬜ |
+| DOC-19 | **Kaleidoscopio 2(3), 51–56 (2005)** — first and last page + peer-review acceptance letter (UNEG, 09-03-2005) | §5 | ✅ **in hand** |
+| DOC-20 | UC Irvine certificate | §6 | ⬜ |
+| DOC-21 | University of Cambridge (PCE) certificate | §6 | ⬜ |
+| DOC-22 | AP Stylebook certificate | §6 | ⬜ |
+| DOC-23 | SEPE certificate | §6 | ⬜ |
+| DOC-24 | **2nd International Conference on Higher Education** (Cumaná, 2008) — paper acceptance letter, ref. CIES/P 048 | §5 | ✅ **in hand** |
 
 ---
 
 ## Pre-submission checklist
 
-- [ ] Confirm the **undergraduate GPA on the 0–10 Spanish scale** from the official equivalence → §A.2.
-- [ ] Verify the status of the **Extraordinary Master's Award** with the registrar → §B.2.
+**Resolved by the documentation already supplied:**
+
+- [x] Undergraduate GPA on the 0–10 Spanish scale → **9.07**, certified by the Spanish administration (DOC-05).
+- [x] Extraordinary undergraduate award → **1st of 56**, apostilled certificate (DOC-06).
+- [x] Status of the Extraordinary Master's Award → not applicable; the 2 Matrículas de Honor are declared instead.
+- [x] Full publication details → *Kaleidoscopio* 2(3), 51–56, 2005, with the peer-review letter and the international conference paper (DOC-19, DOC-24).
+
+**Outstanding:**
+
+- [ ] 🔴 **Level verification of the foreign degree** with UPV's Doctoral School (Art. 6, RD 99/2011). This is an *admissibility* requirement, not a scoring one, and it is what can block the application however high the score comes out. **Start it now.**
 - [ ] Ask the committee whether **English counts** in the languages item → §B.4.
-- [ ] Complete the **academic year** and **official name** of both scholarships and attach their resolutions → §B.5.
-- [ ] Scan all documents into a **single PDF**, in the Annex §8 order, with a cover index.
+- [ ] Complete the **academic year** and **official name** of both scholarships and locate their award letters → §B.5.
+- [ ] Gather the remaining certificates (DOC-01 to DOC-04, DOC-09 to DOC-18, DOC-20 to DOC-23).
+- [ ] Scan everything into a **single PDF**, in the Annex §8 order, with a cover index.
 - [ ] Attach the **MLLDE thesis proposal** (separate document, `01-propuesta/`).
-- [ ] Check that no declared merit is left without its supporting document.
 
 ---
 
