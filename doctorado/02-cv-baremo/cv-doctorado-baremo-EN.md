@@ -62,7 +62,8 @@
 | **Class ranking** | **1st of 56 graduates** — cohort average: 15.77 | Academic Rank Certificate **[DOC-06]** |
 | Grade distribution | 0 % pass · 28.45 % notable · **38.79 % sobresaliente** · **32.76 % matrícula de honor** | Equivalence declaration **[DOC-05]** |
 | Volume of the record | 119 courses/credits (116 graded) | Equivalence declaration **[DOC-05]** |
-| Spanish knowledge branch · ISCED | Social and Legal Sciences · **0114** (teacher training) | Equivalence declaration **[DOC-05]** |
+| **Degree equivalence** | **Declared equivalent to the academic level of GRADO (bachelor's)**, branch of **Arts and Humanities**, specific field **Languages** — Spanish Ministry of Universities, RD 967/2014, Madrid, 17 June 2020 | Equivalence resolution **[DOC-05B]** |
+| Knowledge branch · ISCED | Arts and Humanities / Languages (degree resolution) · ISCED **0114**, teacher training (grade-average form) | **[DOC-05B]** · **[DOC-05]** |
 | Academic distinction | **Summa Cum Laude** | Graduation record / diploma **[DOC-04]** |
 | **Final-year dissertation** | **20 / 20 — Sobresaliente**, with a **Diploma of Honour awarded by the Rector of ULA** (Mérida, 15 Nov 2004) | Diploma of Honour **[DOC-07]** |
 | Research trajectory of the dissertation | Peer-reviewed and published in an indexed journal, then presented as a refereed paper at an international conference (§5.1) | **[DOC-19]** · **[DOC-24]** |
@@ -72,9 +73,21 @@
 
 **Relevance to the doctorate.** The degree is in **Education with an English major**, with research lines in curriculum design and English language teaching — the original training is already in curriculum design, which is the object of the thesis. The final-year dissertation, graded **20/20 with a Rector's Diploma of Honour**, did not stay in the file: it was peer-reviewed and published in an **indexed journal** (*Kaleidoscopio*, ISSN 1690-6054, indexed in CLASE–UNAM) and presented as a **refereed paper at an international conference** (§5.1). That is independent research capacity evidenced from the undergraduate stage onward.
 
-> ⚠️ **An admissibility issue to resolve — this is not about points.** The equivalence declaration states explicitly **"Título homologado/equivalente: NO"**: what has been declared is the **equivalence of the grade average**, not recognition (*homologación*) of the degree itself. To enter a doctorate with a non-recognised foreign degree, Article 6 of Royal Decree 99/2011 allows admission once **the university has verified that the degree certifies a level of education equivalent** to a Spanish master's and grants access to doctoral study in the issuing country.
+> ✅ **Doctoral access — resolved.** On **17 June 2020** the Spanish Ministry of Universities declared the **degree equivalent to the academic level of *Grado*** (branch of Arts and Humanities, specific field Languages) under **RD 967/2014** **[DOC-05B]**. The access route is therefore complete, with nothing outstanding:
 >
-> **Action:** request the **level verification** from UPV's Doctoral School (or start the academic-level equivalence procedure with the Ministry) **before** the deadline — it takes time and it blocks admission however high the score. Attach the grade-equivalence declaration as supporting evidence, not as a substitute.
+> **Foreign degree with official equivalence to *Grado* (Ministry, 2020)** + **official Spanish Master's Degree in Languages and Technology (UPV, 2026)** → **general doctoral access under Article 6, RD 99/2011.**
+>
+> Two points worth stating precisely in the application:
+>
+> 1. **The equivalence is to *Grado* level, not to master's level.** The qualification granting access is therefore the **official UPV master's**; the undergraduate degree enters the record as a previously recognised prior qualification. No additional "level verification" from the Doctoral School is required.
+> 2. **Equivalence ≠ *homologación*.** The grade-average form shows "Título homologado/equivalente: NO" because *homologación* (to a specific Spanish degree conferring access to a regulated profession) is a different instrument, and the resolution itself states that the equivalence **does not confer the right to practise regulated professions**. For doctoral admission that is irrelevant: what is required is the academic level, and it has been declared.
+
+> ⚠️ **One administrative detail worth fixing — the identity chain.** The documents arrive under **two different names**:
+>
+> - **Ana Zoraimy Eslava Graterol** — ULA academic transcript and Academic Rank Certificate, *Kaleidoscopio* publication.
+> - **Ana Zoraimy Eslava de Morales** — Ministry equivalence resolution (2020) and the international conference letter (2008).
+>
+> It is the married surname, but **the committee has no way of knowing that** and will see two names in one file. **Action:** include a one-line **identity note** in the evidence PDF together with the document linking both names (national ID, marriage certificate, or a ULA certificate showing both forms), and use **one name consistently** across the CV and the proposal. A five-minute fix that prevents a formal-review query.
 
 ---
 
@@ -217,7 +230,7 @@ As of this application, no second official master's degree is held besides the M
 
 | Item | Weight | Status | Main evidence |
 |---|---|---|---|
-| **Academic record** | **70 %** | ✅ | UPV master's **9.4/10** with 2 distinctions · Undergraduate **9.07/10** (official equivalence), 1st of 56 |
+| **Academic record** | **70 %** | ✅ | UPV master's **9.4/10** with 2 distinctions · Undergraduate **9.07/10** (official grade equivalence) · degree with **official equivalence to *Grado*** |
 | B.1 Extraordinary undergraduate award | 5 % | ✅ | **1st of 56 graduates** — apostilled certificate |
 | B.2 Extraordinary master's award | 5 % | ❌ | Not applicable — the award is the undergraduate one |
 | B.3 Second master's degree | 5 % | ❌ | Not applicable |
@@ -292,8 +305,9 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 |---|---|---|---|
 | DOC-01 | UPV academic transcript (GPA 9.4/10 + 2 distinctions) | A.1 · B.2 | ⬜ |
 | DOC-02 | Master's degree certificate (UPV) | A.1 | ⬜ |
-| DOC-03 | ULA academic transcript with GPA | A.2 | ⬜ |
+| DOC-03 | **Global Grades Certification + full transcript** — ULA General Secretariat, 28 Jan 2009 (control no. in the private copy) | A.2 | ✅ **in hand** |
 | DOC-04 | Undergraduate degree certificate (ULA) + graduation record showing *Summa Cum Laude* | A.2 | ⬜ |
+| DOC-05B | ⭐ **Declaration of degree equivalence to the academic level of GRADO** — Spanish Ministry of Universities, RD 967/2014, 17 Jun 2020 (Arts and Humanities, Languages) | A.2 · **access** | ✅ **in hand** |
 | DOC-05 | **Grade-average equivalence declaration** — Spanish General Secretariat for Universities · **9.07/10** · CSV ⟨CSV in the copy submitted to the committee⟩ | A.2 · **70 %** | ✅ **in hand** |
 | DOC-06 | **Academic Rank Certificate** (1st of 56) + rectoral certification no. ⟨no. in the copy submitted to the committee⟩ + **Apostille ⟨no. in the copy submitted to the committee⟩** | B.1 | ✅ **in hand** |
 | DOC-07 | **Diploma of Honour** for the final-year dissertation — 20/20 Sobresaliente, Rector of ULA, 15 Nov 2004 | B.1 · §5 | ✅ **in hand** |
@@ -325,13 +339,15 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 - [x] Extraordinary undergraduate award → **1st of 56**, apostilled certificate (DOC-06).
 - [x] Status of the Extraordinary Master's Award → not applicable; the 2 Matrículas de Honor are declared instead.
 - [x] Full publication details → *Kaleidoscopio* 2(3), 51–56, 2005, with the peer-review letter and the international conference paper (DOC-19, DOC-24).
+- [x] **Doctoral access** → degree officially declared equivalent to *Grado* level (Ministry, 2020) plus an official Spanish master's. No level verification needed (DOC-05B).
+- [x] Undergraduate academic transcript → in hand (DOC-03).
 
 **Outstanding:**
 
-- [ ] 🔴 **Level verification of the foreign degree** with UPV's Doctoral School (Art. 6, RD 99/2011). This is an *admissibility* requirement, not a scoring one, and it is what can block the application however high the score comes out. **Start it now.**
+- [ ] 🟠 **Identity note** linking "Eslava Graterol" and "Eslava de Morales", with the document evidencing it, and one name used consistently throughout the file.
 - [ ] Ask the committee whether **English counts** in the languages item → §B.4.
 - [ ] Complete the **academic year** and **official name** of both scholarships and locate their award letters → §B.5.
-- [ ] Gather the remaining certificates (DOC-01 to DOC-04, DOC-09 to DOC-18, DOC-20 to DOC-23).
+- [ ] Gather the remaining certificates (DOC-01, DOC-02, DOC-04, DOC-09 to DOC-18, DOC-20 to DOC-23).
 - [ ] Scan everything into a **single PDF**, in the Annex §8 order, with a cover index.
 - [ ] Attach the **MLLDE thesis proposal** (separate document, `01-propuesta/`).
 

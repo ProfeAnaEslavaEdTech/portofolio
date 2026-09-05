@@ -44,13 +44,15 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 
 | Mérito | Estado | Nota |
 |---|---|---|
-| Expediente académico (70 %) | ✅ | Máster UPV **9,4/10** con **2 Matrículas de Honor** · Licenciatura **9,07/10** en escala española (equivalencia oficial del Ministerio, CSV verificable) |
+| Expediente académico (70 %) | ✅ | Máster UPV **9,4/10** con **2 Matrículas de Honor** · Licenciatura **9,07/10** en escala española · título con **equivalencia oficial a nivel de Grado** (Ministerio, 2020) |
 | Premio extraordinario de grado | ✅ | **1.º de 56 graduandos** (18,97 frente a 15,77 de la promoción) — Constancia de Rango Académico con certificación rectoral y **apostilla de La Haya** |
 | Premio extraordinario de máster | ❌ | No procede: el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster |
 | Segundo máster | ❌ | No procede — se declara honestamente a cero |
 | Idiomas ajenos a las titulaciones | ⚠️ | C1 Advanced · CELTA · examinadora DELE — **preguntar a la comisión** si el inglés computa, dado que las titulaciones son de inglés |
 | Becas | ✅ | **Beca de Excelencia Académica** (grado, ULA) · **beca del Ministerio** (máster, UPV) |
 | Experiencia profesional en el ámbito | ✅ | **1.568 horas de docencia universitaria acreditadas** · 20+ años · diseño instruccional 2019–actualidad |
+
+**Acceso resuelto.** El título tiene **equivalencia oficial al nivel académico de Grado** (Ministerio de Universidades, RD 967/2014, 17 jun. 2020) y a ello se suma el **máster oficial español de la UPV**: el acceso por el art. 6 del RD 99/2011 está completo y no requiere comprobación de nivel adicional.
 
 **Lectura honesta:** entre **15 % y 20 % de los 30 %** de méritos, con el 70 % del expediente en el tramo alto. El punto fuerte no es el número de casillas marcadas sino la **calidad de la prueba**: el mérito de grado llega apostillado con código de validación en línea, y la nota media del expediente extranjero viene ya calculada por la Administración española.
 
@@ -60,7 +62,9 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 
 | Doc. | Qué acredita | Dato clave |
 |---|---|---|
+| DOC-03 | Certificación académica ULA (calificaciones globales + listado) | Secretaría de la ULA, 28 ene. 2009 |
 | DOC-05 | Declaración de equivalencia de la nota media | **9,07/10** · CSV verificable en la sede electrónica del Ministerio |
+| DOC-05B | **Equivalencia del título a nivel de Grado** — Ministerio de Universidades, RD 967/2014 | 17 jun. 2020 · Artes y Humanidades / Idiomas |
 | DOC-06 | Constancia de Rango Académico + apostilla | **1.º de 56** · con apostilla de La Haya validable en línea |
 | DOC-07 | Diploma de Honor del TFG | **20/20 Sobresaliente**, Rector de la ULA, 15 nov. 2004 |
 | DOC-19 | Publicación arbitrada | *Kaleidoscopio* **2(3), 51–56 (2005)**, ISSN 1690-6054, CLASE–UNAM |
@@ -82,7 +86,7 @@ Si editas un `.md`, regenera el `.docx` y el `.pdf` correspondientes para que no
 
 ## Pendiente antes de enviar
 
-- [ ] 🔴 **Comprobación de nivel del título extranjero** ante la Escuela de Doctorado de la UPV (art. 6 RD 99/2011). La declaración de equivalencia acredita la **nota media**, no la homologación del título («Título homologado/equivalente: NO»). Es requisito de **admisibilidad** y tarda: iniciarlo antes que nada.
+- [ ] 🟠 **Cadena de identidad:** los documentos alternan «Eslava Graterol» (ULA) y «Eslava de Morales» (Ministerio, congreso 2008). Añadir una nota de identidad con el documento que los enlaza y usar un solo nombre en todo el expediente.
 - [ ] **Elegibilidad del inglés** en el apartado de idiomas (consultar a la comisión).
 - [ ] **Resoluciones de las dos becas**, con curso académico y denominación oficial de la convocatoria.
 - [ ] Reunir el resto de certificados (DOC-01 a DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).

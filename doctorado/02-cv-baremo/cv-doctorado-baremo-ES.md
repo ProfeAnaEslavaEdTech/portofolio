@@ -62,7 +62,8 @@
 | **Posición en la promoción** | **1.º de 56 graduandos** — promedio de la promoción: 15,77 | Constancia de Rango Académico **[DOC-06]** |
 | Distribución de calificaciones | 0 % aprobado · 28,45 % notable · **38,79 % sobresaliente** · **32,76 % matrícula de honor** | Declaración de equivalencia **[DOC-05]** |
 | Volumen del expediente | 119 asignaturas/créditos (116 con calificación) | Declaración de equivalencia **[DOC-05]** |
-| Rama de conocimiento española · ISCED | Ciencias Sociales y Jurídicas · **0114** (formación de docentes) | Declaración de equivalencia **[DOC-05]** |
+| **Equivalencia del título** | **Declarada al nivel académico de GRADO**, rama de **Artes y Humanidades**, campo específico **Idiomas** — Ministerio de Universidades, RD 967/2014, Madrid, 17 de junio de 2020 | Resolución de equivalencia **[DOC-05B]** |
+| Rama de conocimiento · ISCED | Artes y Humanidades / Idiomas (resolución del título) · ISCED **0114**, formación de docentes (formulario de nota media) | **[DOC-05B]** · **[DOC-05]** |
 | Distinción académica | **Summa Cum Laude** | Acta de grado / diploma **[DOC-04]** |
 | **Trabajo Especial de Grado** | **20 / 20 — Sobresaliente**, con **Diploma de Honor concedido por el Rector de la ULA** (Mérida, 15 nov. 2004) | Diploma de Honor **[DOC-07]** |
 | Recorrido investigador del TFG | Publicado tras arbitraje en revista indexada y presentado como ponencia arbitrada en congreso internacional (§5.1) | **[DOC-19]** · **[DOC-24]** |
@@ -72,9 +73,21 @@
 
 **Relevancia para el doctorado.** La titulación es de **Educación mención Inglés** con líneas de diseño curricular y enseñanza del inglés — es decir, la formación de origen ya es de diseño curricular, que es el objeto de la tesis. El Trabajo Especial de Grado, calificado **20/20 con Diploma de Honor del Rector**, no quedó en el expediente: se arbitró y publicó en **revista indexada** (*Kaleidoscopio*, ISSN 1690-6054, indexada en CLASE–UNAM) y se presentó como **ponencia arbitrada en un congreso internacional** (§5.1). Es capacidad investigadora autónoma acreditada desde la titulación de grado.
 
-> ⚠️ **Punto de acceso que hay que resolver — no es puntuación, es admisibilidad.** La declaración de equivalencia indica expresamente **«Título homologado/equivalente: NO»**: lo que está declarado es la **equivalencia de la nota media**, no la homologación del título. Para acceder a un doctorado con un título extranjero no homologado, el artículo 6 del RD 99/2011 permite la admisión previa **comprobación por la universidad de que el título acredita un nivel de formación equivalente** al de máster español y faculta para el acceso a doctorado en el país de expedición.
+> ✅ **Acceso al doctorado — resuelto.** El Ministerio de Universidades declaró el **17 de junio de 2020** la **equivalencia del título** de Licenciada en Educación mención Inglés **al nivel académico de Grado** (rama de Artes y Humanidades, campo específico Idiomas), conforme al **RD 967/2014** **[DOC-05B]**. Con eso, la vía de acceso al programa queda completa y sin trámites pendientes:
 >
-> **Acción:** solicitar a la Escuela de Doctorado de la UPV la **comprobación de nivel** (o iniciar la equivalencia de nivel académico ante el Ministerio) **antes** de que cierre el plazo — este trámite tarda y bloquea la admisión aunque la puntuación sea alta. Adjuntar la declaración de equivalencia de nota media como documento de apoyo, no como sustituto.
+> **Título extranjero con equivalencia oficial a Grado (Ministerio, 2020)** + **Máster Universitario oficial español en Lenguas y Tecnología (UPV, 2026)** → **acceso general al doctorado por el art. 6 del RD 99/2011.**
+>
+> Dos matices que conviene tener claros al redactar la solicitud:
+>
+> 1. **La equivalencia es a nivel de Grado, no de Máster.** La titulación que da el acceso es, por tanto, el **máster oficial de la UPV**; la licenciatura entra en el expediente como titulación previa, ya reconocida oficialmente. No hace falta pedir ninguna «comprobación de nivel» adicional a la Escuela de Doctorado.
+> 2. **Equivalencia ≠ homologación.** El formulario de la nota media marca «Título homologado/equivalente: NO» porque la *homologación* (a un título español concreto que habilita para profesión regulada) es otra figura, y la propia resolución advierte que la equivalencia **no habilita para el ejercicio de profesiones reguladas**. Para acceder a un doctorado eso es irrelevante: lo que se exige es el nivel académico, y está declarado.
+
+> ⚠️ **Un detalle administrativo que sí conviene resolver — la cadena de identidad.** Los documentos llegan a nombre de **dos formas distintas**:
+>
+> - **Ana Zoraimy Eslava Graterol** — certificación académica y Constancia de Rango Académico de la ULA, publicación en *Kaleidoscopio*.
+> - **Ana Zoraimy Eslava de Morales** — resolución de equivalencia del Ministerio (2020) y carta del congreso internacional (2008).
+>
+> Es el apellido de casada, pero **la comisión no tiene por qué saberlo** y verá dos nombres en el mismo expediente. **Acción:** incluir en el PDF de documentación una **nota de identidad** de una línea junto con el documento que enlaza ambos nombres (DNI/NIE, acta de matrimonio o certificado de la ULA que recoja las dos formas), y usar **un solo nombre de manera consistente** en el CV y en la propuesta. Es un trámite de cinco minutos que evita una incidencia en la revisión formal.
 
 ---
 
@@ -217,7 +230,7 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 
 | Apartado | Peso | Estado | Evidencia principal |
 |---|---|---|---|
-| **Expediente académico** | **70 %** | ✅ | Máster UPV **9,4/10** con 2 MH · Licenciatura **9,07/10** (equivalencia oficial), 1.º de 56 |
+| **Expediente académico** | **70 %** | ✅ | Máster UPV **9,4/10** con 2 MH · Licenciatura **9,07/10** (equivalencia oficial de nota) · título con **equivalencia oficial a Grado** |
 | B.1 Premio extraordinario de grado | 5 % | ✅ | **1.º de 56 graduandos** — constancia apostillada |
 | B.2 Premio extraordinario de máster | 5 % | ❌ | No procede — el premio es el de grado |
 | B.3 Segundo máster | 5 % | ❌ | No procede |
@@ -292,8 +305,9 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 |---|---|---|---|
 | DOC-01 | Certificación académica personal UPV (nota media 9,4/10 + 2 MH) | A.1 · B.2 | ⬜ |
 | DOC-02 | Título o resguardo del Máster (UPV) | A.1 | ⬜ |
-| DOC-03 | Certificación académica personal ULA con nota media | A.2 | ⬜ |
+| DOC-03 | **Certificación de Calificaciones Globales + listado de calificaciones** — ULA, Secretaría, 28 ene. 2009 (n.º de control en la copia privada) | A.2 | ✅ **en mano** |
 | DOC-04 | Título de Licenciatura (ULA) + acta de grado con la distinción *Summa Cum Laude* | A.2 | ⬜ |
+| DOC-05B | ⭐ **Declaración de equivalencia del título al nivel académico de GRADO** — Ministerio de Universidades, RD 967/2014, 17 jun. 2020 (rama Artes y Humanidades, campo Idiomas) | A.2 · **acceso** | ✅ **en mano** |
 | DOC-05 | **Declaración de equivalencia de la nota media** — Secretaría General de Universidades · **9,07/10** · CSV ⟨CSV en la copia entregada a la comisión⟩ | A.2 · **70 %** | ✅ **en mano** |
 | DOC-06 | **Constancia de Rango Académico** (1.º de 56) + certificación rectoral n.º ⟨n.º en la copia entregada a la comisión⟩ + **Apostilla ⟨n.º en la copia entregada a la comisión⟩** | B.1 | ✅ **en mano** |
 | DOC-07 | **Diploma de Honor** del Trabajo Especial de Grado — 20/20 Sobresaliente, Rector de la ULA, 15 nov. 2004 | B.1 · §5 | ✅ **en mano** |
@@ -325,13 +339,15 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 - [x] Premio extraordinario de grado → **1.º de 56**, constancia apostillada (DOC-06).
 - [x] Estado del Premio Extraordinario de Máster → no procede; se declaran las 2 Matrículas de Honor.
 - [x] Datos completos de la publicación → *Kaleidoscopio* 2(3), 51–56, 2005, con carta de arbitraje y ponencia en congreso internacional (DOC-19, DOC-24).
+- [x] **Acceso al doctorado** → título con **equivalencia oficial a nivel de Grado** (Ministerio, 2020) + máster oficial español. No hace falta comprobación de nivel (DOC-05B).
+- [x] Certificación académica de la licenciatura → en mano (DOC-03).
 
 **Pendiente:**
 
-- [ ] 🔴 **Comprobación de nivel del título extranjero** ante la Escuela de Doctorado de la UPV (art. 6 RD 99/2011). Es un requisito de *admisibilidad*, no de puntuación, y es lo que puede bloquear la solicitud aunque el baremo salga alto. **Iniciarlo ya.**
+- [ ] 🟠 **Nota de identidad** que enlace «Eslava Graterol» y «Eslava de Morales», con el documento que lo acredite, y uso de un solo nombre en todo el expediente.
 - [ ] Consultar a la comisión si el **inglés computa** en el apartado de idiomas → §B.4.
 - [ ] Completar el **curso académico** y la **denominación oficial** de las dos becas y localizar sus resoluciones → §B.5.
-- [ ] Reunir el resto de certificados (DOC-01 a DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).
+- [ ] Reunir el resto de certificados (DOC-01, DOC-02, DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).
 - [ ] Escanear todo en un **PDF único**, en el orden del Anexo §8, con portada-índice.
 - [ ] Adjuntar la **propuesta de tesis MLLDE** (documento independiente, `01-propuesta/`).
 
