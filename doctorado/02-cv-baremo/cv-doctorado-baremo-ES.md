@@ -66,6 +66,7 @@
 | Rama de conocimiento · ISCED | Artes y Humanidades / Idiomas (resolución del título) · ISCED **0114**, formación de docentes (formulario de nota media) | **[DOC-05B]** · **[DOC-05]** |
 | Distinción académica | **Summa Cum Laude** | Acta de grado / diploma **[DOC-04]** |
 | **Trabajo Especial de Grado** | **20 / 20 — Sobresaliente**, con **Diploma de Honor concedido por el Rector de la ULA** (Mérida, 15 nov. 2004) | Diploma de Honor **[DOC-07]** |
+| **Distinción sostenida durante la carrera** | **Orden «Luis María Ribas Dávila»** conferida por la ULA **cuatro años consecutivos — 2000, 2001, 2002 y 2003** — por el **más alto rendimiento académico** de la Escuela de Educación, Núcleo Universitario del Táchira | Cuatro diplomas rectorales **[DOC-07B]** |
 | Recorrido investigador del TFG | Publicado tras arbitraje en revista indexada y presentado como ponencia arbitrada en congreso internacional (§5.1) | **[DOC-19]** · **[DOC-24]** |
 | Líneas de investigación de la titulación | Diseño curricular y enseñanza del inglés | — |
 
@@ -84,7 +85,7 @@
 
 > ⚠️ **Un detalle administrativo que sí conviene resolver — la cadena de identidad.** Los documentos llegan a nombre de **dos formas distintas**:
 >
-> - **Ana Zoraimy Eslava Graterol** — certificación académica y Constancia de Rango Académico de la ULA, publicación en *Kaleidoscopio*.
+> - **Ana Zoraimy Eslava Graterol** — certificación académica y Constancia de Rango Académico de la ULA, publicación en *Kaleidoscopio*, constancia de beca, Órdenes «Ribas Dávila» (una de ellas con la errata **«Ana Soraymi»**).
 > - **Ana Zoraimy Eslava de Morales** — resolución de equivalencia del Ministerio (2020) y carta del congreso internacional (2008).
 >
 > Es el apellido de casada, pero **la comisión no tiene por qué saberlo** y verá dos nombres en el mismo expediente. **Acción:** incluir en el PDF de documentación una **nota de identidad** de una línea junto con el documento que enlaza ambos nombres (DNI/NIE, acta de matrimonio o certificado de la ULA que recoja las dos formas), y usar **un solo nombre de manera consistente** en el CV y en la propuesta. Es un trámite de cinco minutos que evita una incidencia en la revisión formal.
@@ -112,6 +113,17 @@
 | **Legalización internacional** | **Apostilla de La Haya n.º ⟨n.º en la copia entregada a la comisión⟩**, Ministerio del Poder Popular para Relaciones Exteriores, Caracas, 20-03-2026 — validable con el código **⟨código en la copia entregada a la comisión⟩** en <https://consultalegalizacionve.mppre.gob.ve> |
 
 **Distinciones asociadas:** **Summa Cum Laude** y, por el Trabajo Especial de Grado, **Diploma de Honor concedido por el Rector de la ULA** con calificación de **veinte (20) puntos — Sobresaliente** (Mérida, 15 de noviembre de 2004) **[DOC-07]**.
+
+**El primer puesto no fue un resultado puntual.** La ULA le confirió la **Orden «Luis María Ribas Dávila»** —distinción rectoral al **más alto rendimiento académico** de la Escuela de Educación, Núcleo Universitario del Táchira— en **cuatro años consecutivos**:
+
+| Año | Distinción | Firmada por |
+|---|---|---|
+| **2000** | Orden «Luis María Ribas Dávila» — más alto rendimiento académico | Rector y Secretaria de la ULA |
+| **2001** | Orden «Luis María Ribas Dávila» — más alto rendimiento académico | Rector y Secretaria de la ULA |
+| **2002** | Orden «Luis María Ribas Dávila» — mayor rendimiento académico | Rector y Secretaria de la ULA |
+| **2003** | Orden «Luis María Ribas Dávila» — mayor rendimiento académico | Rector y Secretaria de la ULA |
+
+Cuatro diplomas rectorales consecutivos **[DOC-07B]** demuestran que el 1.º de 56 al graduarse fue la culminación de una trayectoria sostenida, no el resultado de un solo curso. Es el argumento que conviene poner por delante si la comisión duda de la equiparación con el Premio Extraordinario español.
 
 > **Cómo redactarlo ante la comisión — esto importa.** El documento venezolano **no se titula «Premio Extraordinario Fin de Carrera»**, porque la ULA no emite ese premio con esa denominación: emite la **Constancia de Rango Académico**, que es su equivalente funcional y certifica exactamente lo mismo que el premio español acredita — **haber ocupado el primer puesto de la promoción**. Preséntalo así, con esas palabras, y adjunta la constancia apostillada: la comisión ve un dato numérico verificable (1.º de 56, 18,97 frente a 15,77) en lugar de una etiqueta que tendría que interpretar.
 >
@@ -173,19 +185,25 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 
 ## B.5 · Consecución de becas — **5 %** ✅ ACREDITADO
 
-**Dos becas obtenidas, una en cada titulación — una de ellas de excelencia y la otra de convocatoria ministerial:**
+**Beca de Alto Rendimiento — Universidad de Los Andes, Núcleo Táchira.** Beca **de mérito, no asistencial**: se concede por rendimiento académico, y en este caso es la consecuencia directa de las cuatro Órdenes «Luis María Ribas Dávila» (§B.1).
+
+| Dato certificado | Valor |
+|---|---|
+| Denominación | **Beca de Alto Rendimiento** |
+| Entidad | Universidad de Los Andes – Táchira, **Dirección de Asuntos Estudiantiles**, Jefatura de Asistencia Socio Económica Estudiantil |
+| Titulación | Educación mención Inglés |
+| Periodo acreditado | **Julio – diciembre de 2003**, y **vigente** en la fecha de expedición |
+| Documento | **Constancia** firmada por la Trabajadora Social de la ULA-Táchira, San Cristóbal, **13 de mayo de 2004** **[DOC-12]** |
+
+**Segunda beca — beca del Ministerio (máster, UPV).**
 
 | # | Beca | Entidad convocante | Titulación / periodo | Tipo | Documento |
 |---|---|---|---|---|---|
-| 1 | **Beca de Excelencia Académica** | Universidad de Los Andes (ULA), Táchira, Venezuela | Licenciatura en Educación, mención Inglés · *[curso a completar]* | **Excelencia académica** (concedida por rendimiento, no por renta) | **[DOC-12]** |
 | 2 | **Beca del Ministerio** (beca general de estudios universitarios) | Ministerio de Educación *[confirmar denominación exacta de la convocatoria]* | Máster Universitario en Lenguas y Tecnología, UPV · *[curso a completar]* | Beca general de estudios de máster | **[DOC-13]** |
 
-**Por qué este mérito refuerza el bloque A.** La **beca de excelencia académica** no es una ayuda asistencial: se concede por rendimiento, de modo que **acredita por vía independiente el mismo hecho que el expediente de grado** (Summa Cum Laude, primer rango de promoción). Conviene señalarlo expresamente en la solicitud, porque convierte el 5 % de becas en una evidencia adicional del 70 % del expediente.
+**Por qué este mérito refuerza el bloque A.** La Beca de Alto Rendimiento **no es una ayuda por renta**: se otorga por rendimiento académico. Acredita por vía independiente —y desde una oficina distinta de la que emite las calificaciones— el mismo hecho que sostiene el 70 % del expediente. Conviene decirlo así de forma explícita en la solicitud: convierte el 5 % de becas en una segunda fuente de prueba del expediente.
 
-> **Acción antes de enviar:**
-> - Localizar la **credencial o resolución de concesión** de cada beca (el justificante de pago no acredita el mérito).
-> - Completar el **curso académico** de cada una y la **denominación oficial exacta** de la convocatoria ministerial.
-> - Si la resolución de la ULA está en español venezolano con terminología local, adjuntar una **nota explicativa breve** del carácter competitivo de la convocatoria.
+> **Acción antes de enviar:** completar el **curso académico** y la **denominación oficial exacta** de la convocatoria ministerial y localizar su resolución de concesión (el justificante de pago no acredita el mérito).
 
 ---
 
@@ -231,11 +249,11 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 | Apartado | Peso | Estado | Evidencia principal |
 |---|---|---|---|
 | **Expediente académico** | **70 %** | ✅ | Máster UPV **9,4/10** con 2 MH · Licenciatura **9,07/10** (equivalencia oficial de nota) · título con **equivalencia oficial a Grado** |
-| B.1 Premio extraordinario de grado | 5 % | ✅ | **1.º de 56 graduandos** — constancia apostillada |
+| B.1 Premio extraordinario de grado | 5 % | ✅ | **1.º de 56 graduandos** (constancia apostillada) + **Orden «Ribas Dávila» 4 años seguidos** |
 | B.2 Premio extraordinario de máster | 5 % | ❌ | No procede — el premio es el de grado |
 | B.3 Segundo máster | 5 % | ❌ | No procede |
 | B.4 Idiomas ajenos a las titulaciones | 5 % | ⚠️ | C1 CAE · CELTA · examinadora DELE — verificar si computa |
-| B.5 Becas | 5 % | ✅ | Beca de excelencia académica (grado) · beca del Ministerio (máster) |
+| B.5 Becas | 5 % | ✅ | **Beca de Alto Rendimiento** acreditada (ULA, 2003-2004) · beca del Ministerio (máster) |
 | B.6 Experiencia profesional en el ámbito | 5 % | ✅ | **1.568 h de docencia universitaria acreditadas** · 20+ años · ID 2019-actualidad |
 
 **Lectura honesta.** Tres méritos están plenamente acreditados (B.1, B.5, B.6), uno depende de la interpretación de la comisión (B.4) y dos no proceden (B.2, B.3). Es decir: **entre 15 % y 20 % de los 30 %**, con el 70 % del expediente en el tramo alto (9,4 y 9,07 sobre 10). El punto fuerte no es el número de casillas marcadas, sino la **calidad de la prueba**: el mérito de B.1 llega apostillado y con código de validación en línea, y el expediente de grado trae la nota media ya calculada por la Administración española.
@@ -311,11 +329,12 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 | DOC-05 | **Declaración de equivalencia de la nota media** — Secretaría General de Universidades · **9,07/10** · CSV ⟨CSV en la copia entregada a la comisión⟩ | A.2 · **70 %** | ✅ **en mano** |
 | DOC-06 | **Constancia de Rango Académico** (1.º de 56) + certificación rectoral n.º ⟨n.º en la copia entregada a la comisión⟩ + **Apostilla ⟨n.º en la copia entregada a la comisión⟩** | B.1 | ✅ **en mano** |
 | DOC-07 | **Diploma de Honor** del Trabajo Especial de Grado — 20/20 Sobresaliente, Rector de la ULA, 15 nov. 2004 | B.1 · §5 | ✅ **en mano** |
+| DOC-07B | ⭐ **Cuatro Órdenes «Luis María Ribas Dávila»** (2000, 2001, 2002, 2003) — más alto rendimiento académico, Escuela de Educación, ULA-Táchira | B.1 · A.2 | ✅ **en mano** |
 | DOC-08 | Resolución del Premio Extraordinario de Máster *(solo si la UPV lo resolviera; hoy no procede)* | B.2 | ➖ |
 | DOC-09 | Certificado C1 Advanced (CAE) — Cambridge | B.4 | ⬜ |
 | DOC-10 | Certificado CELTA — Cambridge | B.4 | ⬜ |
 | DOC-11 | Acreditación de examinadora DELE — Instituto Cervantes | B.4 | ⬜ |
-| DOC-12 | Credencial de la **Beca de Excelencia Académica** (ULA, grado) | B.5 | ⬜ |
+| DOC-12 | ⭐ **Constancia de Beca de Alto Rendimiento** — ULA-Táchira, Dirección de Asuntos Estudiantiles, 13 may. 2004 (periodo jul.–dic. 2003, vigente) | B.5 | ✅ **en mano** |
 | DOC-13 | Resolución de concesión de la **beca del Ministerio** (máster UPV) | B.5 | ⬜ |
 | DOC-14 | Sotelo-Casas et al. (2019) — portada + página de agradecimientos (p. 8) | B.6 · §5 | ⬜ |
 | DOC-15 | Evidencia de la calificación 10/10 de *Academic Writing Journey* (UPV) | A.1 · B.6 | ⬜ |
@@ -341,13 +360,14 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 - [x] Datos completos de la publicación → *Kaleidoscopio* 2(3), 51–56, 2005, con carta de arbitraje y ponencia en congreso internacional (DOC-19, DOC-24).
 - [x] **Acceso al doctorado** → título con **equivalencia oficial a nivel de Grado** (Ministerio, 2020) + máster oficial español. No hace falta comprobación de nivel (DOC-05B).
 - [x] Certificación académica de la licenciatura → en mano (DOC-03).
+- [x] **Beca de grado** → **Beca de Alto Rendimiento** de la ULA, acreditada por constancia oficial (DOC-12), más las **cuatro Órdenes «Luis María Ribas Dávila»** (DOC-07B).
 
 **Pendiente:**
 
 - [ ] 🟠 **Nota de identidad** que enlace «Eslava Graterol» y «Eslava de Morales», con el documento que lo acredite, y uso de un solo nombre en todo el expediente.
 - [ ] Consultar a la comisión si el **inglés computa** en el apartado de idiomas → §B.4.
 - [ ] Completar el **curso académico** y la **denominación oficial** de las dos becas y localizar sus resoluciones → §B.5.
-- [ ] Reunir el resto de certificados (DOC-01, DOC-02, DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).
+- [ ] Reunir el resto de certificados (DOC-01, DOC-02, DOC-04, DOC-09 a DOC-11, DOC-13 a DOC-18, DOC-20 a DOC-23).
 - [ ] Escanear todo en un **PDF único**, en el orden del Anexo §8, con portada-índice.
 - [ ] Adjuntar la **propuesta de tesis MLLDE** (documento independiente, `01-propuesta/`).
 

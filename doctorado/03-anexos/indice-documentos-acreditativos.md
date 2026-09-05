@@ -31,11 +31,12 @@
 |---|---|---|---|
 | **DOC-06** | ⭐ **Constancia de Rango Académico** — **1.º de 56 graduandos**, 18,97 vs 15,77 · certificación rectoral n.º ⟨n.º en la copia entregada a la comisión⟩ · **Apostilla de La Haya ⟨n.º en la copia entregada a la comisión⟩** (código ⟨código en la copia entregada a la comisión⟩) | B.1 · 5 % | ☑ |
 | **DOC-07** | ⭐ **Diploma de Honor** del Trabajo Especial de Grado — **20/20 Sobresaliente**, Rector de la ULA, 15 nov. 2004 | B.1 · §5 | ☑ |
+| **DOC-07B** | ⭐ **Cuatro Órdenes «Luis María Ribas Dávila»** (2000 · 2001 · 2002 · 2003) — más alto rendimiento académico, Escuela de Educación, ULA-Táchira · *Four rectoral distinctions* | B.1 · A.2 | ☑ |
 | **DOC-08** | Resolución del Premio Extraordinario de Máster — *hoy no procede; el premio es el de grado* | B.2 | ➖ |
 | **DOC-09** | Certificado **C1 Advanced (CAE)** — Cambridge English | B.4 · 5 % | ☐ |
 | **DOC-10** | Certificado **CELTA** — Cambridge English | B.4 · 5 % | ☐ |
 | **DOC-11** | Acreditación de **examinadora DELE** — Instituto Cervantes | B.4 · 5 % | ☐ |
-| **DOC-12** | Credencial de la **Beca de Excelencia Académica** (ULA, grado) | B.5 · 5 % | ☐ |
+| **DOC-12** | ⭐ **Constancia de Beca de Alto Rendimiento** — ULA-Táchira, Dirección de Asuntos Estudiantiles, 13 may. 2004 (jul.–dic. 2003, vigente) · *Merit scholarship certificate* | B.5 · 5 % | ☑ |
 | **DOC-13** | Resolución de concesión de la **beca del Ministerio** (máster, UPV) | B.5 · 5 % | ☐ |
 | **DOC-14** | Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* — portada + **página de agradecimientos (p. 8)** | B.6 · §5 | ☐ |
 | **DOC-15** | Evidencia de la calificación **10/10** de *Academic Writing Journey* (UPV, 2026) | A.1 · B.6 | ☐ |
@@ -66,18 +67,19 @@
 
 1. **Nota media de la licenciatura: 9,07/10**, certificada por la Administración española (DOC-05). Es el número que entra en el 70 %.
 2. **Acceso al doctorado:** el título tiene **equivalencia oficial al nivel académico de Grado** (Ministerio de Universidades, RD 967/2014, 17 jun. 2020 — DOC-05B). Sumado al **máster oficial español de la UPV**, el acceso por el art. 6 del RD 99/2011 queda completo: **no hay que pedir comprobación de nivel**.
-3. **Premio extraordinario de grado: 1.º de 56 graduandos** (DOC-06), con certificación rectoral y apostilla de La Haya.
+3. **Premio extraordinario de grado: 1.º de 56 graduandos** (DOC-06), con certificación rectoral y apostilla de La Haya, respaldado por la **Orden «Luis María Ribas Dávila» de cuatro años consecutivos** (DOC-07B).
 4. **Premio extraordinario de máster: no procede** — el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster.
 5. **Certificación académica de la licenciatura** (DOC-03) y **recorrido investigador del TFG** (DOC-07, DOC-19, DOC-24): en mano.
+6. **Beca de grado: Beca de Alto Rendimiento** de la ULA, acreditada por constancia oficial (DOC-12). Es beca de mérito, no asistencial.
 
 **Pendiente** — *outstanding:*
 
-6. 🟠 **Cadena de identidad.** Los documentos alternan **«Eslava Graterol»** (ULA, publicación) y **«Eslava de Morales»** (resolución del Ministerio, congreso 2008). Añadir al PDF una **nota de identidad** de una línea con el documento que enlaza ambos nombres, y usar un solo nombre en todo el expediente.
+7. 🟠 **Cadena de identidad.** Los documentos alternan **«Eslava Graterol»** (ULA, publicación, beca, Órdenes), **«Eslava de Morales»** (resolución del Ministerio, congreso 2008) y una errata, **«Ana Soraymi»**, en la Orden de 2003. Añadir al PDF una **nota de identidad** de una línea con el documento que enlaza ambos nombres, y usar un solo nombre en todo el expediente.
    *The documents alternate two surnames — add a one-line identity note plus the linking document, and use one name consistently.*
-7. **Elegibilidad del inglés** en el apartado de idiomas — preguntar a la comisión, dado que las titulaciones previas son de inglés.
+8. **Elegibilidad del inglés** en el apartado de idiomas — preguntar a la comisión, dado que las titulaciones previas son de inglés.
    *Eligibility of English in the languages item — ask the committee.*
-8. **Resoluciones de las dos becas** (excelencia académica ULA y beca del Ministerio) con su curso académico y denominación oficial.
-   *Award letters for both scholarships, with academic year and official name.*
+9. **Resolución de la beca del Ministerio** (máster, UPV) con su curso académico y denominación oficial de la convocatoria.
+   *Award letter for the Ministry scholarship, with academic year and official name.*
 
 ---
 

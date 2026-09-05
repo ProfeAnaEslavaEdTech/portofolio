@@ -66,6 +66,7 @@
 | Knowledge branch · ISCED | Arts and Humanities / Languages (degree resolution) · ISCED **0114**, teacher training (grade-average form) | **[DOC-05B]** · **[DOC-05]** |
 | Academic distinction | **Summa Cum Laude** | Graduation record / diploma **[DOC-04]** |
 | **Final-year dissertation** | **20 / 20 — Sobresaliente**, with a **Diploma of Honour awarded by the Rector of ULA** (Mérida, 15 Nov 2004) | Diploma of Honour **[DOC-07]** |
+| **Sustained distinction across the degree** | **Order "Luis María Ribas Dávila"** conferred by ULA in **four consecutive years — 2000, 2001, 2002 and 2003** — for the **highest academic performance** in the School of Education, Núcleo Universitario del Táchira | Four rectoral diplomas **[DOC-07B]** |
 | Research trajectory of the dissertation | Peer-reviewed and published in an indexed journal, then presented as a refereed paper at an international conference (§5.1) | **[DOC-19]** · **[DOC-24]** |
 | Degree research lines | Curriculum design and English language teaching | — |
 
@@ -84,7 +85,7 @@
 
 > ⚠️ **One administrative detail worth fixing — the identity chain.** The documents arrive under **two different names**:
 >
-> - **Ana Zoraimy Eslava Graterol** — ULA academic transcript and Academic Rank Certificate, *Kaleidoscopio* publication.
+> - **Ana Zoraimy Eslava Graterol** — ULA transcript and Academic Rank Certificate, *Kaleidoscopio* publication, scholarship certificate, "Ribas Dávila" Orders (one carrying the misspelling **"Ana Soraymi"**).
 > - **Ana Zoraimy Eslava de Morales** — Ministry equivalence resolution (2020) and the international conference letter (2008).
 >
 > It is the married surname, but **the committee has no way of knowing that** and will see two names in one file. **Action:** include a one-line **identity note** in the evidence PDF together with the document linking both names (national ID, marriage certificate, or a ULA certificate showing both forms), and use **one name consistently** across the CV and the proposal. A five-minute fix that prevents a formal-review query.
@@ -112,6 +113,17 @@
 | **International legalisation** | **Hague Apostille no. ⟨no. in the copy submitted to the committee⟩**, Ministry of Foreign Affairs, Caracas, 20-03-2026 — validatable with code **⟨code in the copy submitted to the committee⟩** at <https://consultalegalizacionve.mppre.gob.ve> |
 
 **Associated distinctions:** **Summa Cum Laude** and, for the final-year dissertation, a **Diploma of Honour awarded by the Rector of ULA** with a grade of **twenty (20) points — Sobresaliente** (Mérida, 15 November 2004) **[DOC-07]**.
+
+**First place was not a one-off result.** ULA conferred the **Order "Luis María Ribas Dávila"** — a rectoral distinction for the **highest academic performance** in the School of Education, Núcleo Universitario del Táchira — in **four consecutive years**:
+
+| Year | Distinction | Signed by |
+|---|---|---|
+| **2000** | Order "Luis María Ribas Dávila" — highest academic performance | Rector and General Secretary of ULA |
+| **2001** | Order "Luis María Ribas Dávila" — highest academic performance | Rector and General Secretary of ULA |
+| **2002** | Order "Luis María Ribas Dávila" — highest academic performance | Rector and General Secretary of ULA |
+| **2003** | Order "Luis María Ribas Dávila" — highest academic performance | Rector and General Secretary of ULA |
+
+Four consecutive rectoral diplomas **[DOC-07B]** show that ranking 1st of 56 at graduation was the culmination of a sustained record, not the result of a single year. This is the argument to lead with if the committee hesitates over the equivalence with the Spanish Extraordinary Award.
 
 > **How to word this for the committee — it matters.** The Venezuelan document is **not titled "Premio Extraordinario Fin de Carrera"**, because ULA does not issue an award under that name: it issues the **Academic Rank Certificate**, its functional equivalent, certifying exactly what the Spanish award evidences — **having ranked first in the graduating class**. Present it in those terms and attach the apostilled certificate: the committee then sees a verifiable number (1st of 56; 18.97 against 15.77) instead of a label it would have to interpret.
 >
@@ -173,19 +185,25 @@ As of this application, no second official master's degree is held besides the M
 
 ## B.5 · Scholarships and grants obtained — **5 %** ✅ EVIDENCED
 
-**Two scholarships, one per degree — one merit-based, one awarded through a ministerial call:**
+**High Academic Performance Scholarship — Universidad de Los Andes, Núcleo Táchira.** A **merit scholarship, not need-based aid**: it is awarded on academic performance, and here it follows directly from the four "Luis María Ribas Dávila" Orders (§B.1).
+
+| Certified fact | Value |
+|---|---|
+| Name | **Beca de Alto Rendimiento** (High Academic Performance Scholarship) |
+| Awarding body | Universidad de Los Andes – Táchira, **Directorate of Student Affairs**, Socio-Economic Student Assistance Office |
+| Degree | Education, English major |
+| Certified period | **July – December 2003**, and **still current** at the date of issue |
+| Document | **Certificate** signed by the ULA-Táchira Social Worker, San Cristóbal, **13 May 2004** **[DOC-12]** |
+
+**Second scholarship — Ministry grant (master's, UPV).**
 
 | # | Scholarship | Awarding body | Degree / period | Type | Document |
 |---|---|---|---|---|---|
-| 1 | **Academic Excellence Scholarship** | Universidad de Los Andes (ULA), Táchira, Venezuela | Degree in Education, English major · *[year to complete]* | **Academic excellence** (awarded on performance, not on income) | **[DOC-12]** |
 | 2 | **Ministry scholarship** (general higher-education grant) | Ministry of Education *[confirm the exact name of the call]* | Master's in Languages and Technology, UPV · *[year to complete]* | General master's-level study grant | **[DOC-13]** |
 
-**Why this merit reinforces Block A.** The **academic excellence scholarship** is not need-based aid: it is awarded on performance, so it **independently corroborates the very fact the undergraduate record states** (Summa Cum Laude, first in class). Say so explicitly in the application — it turns the 5% scholarship item into additional evidence for the 70% academic record.
+**Why this merit reinforces Block A.** The High Academic Performance Scholarship is **not income-based aid**: it is awarded on performance. It independently corroborates — from a different office than the one issuing grades — the very fact that carries the 70% academic record. Say so explicitly in the application: it turns the 5% scholarship item into a second source of proof for the record.
 
-> **Action before submission:**
-> - Locate the **award letter or resolution** for each scholarship (a payment receipt does not evidence the merit).
-> - Complete the **academic year** for each and the **exact official name** of the ministerial call.
-> - If the ULA resolution uses local Venezuelan terminology, attach a **short explanatory note** confirming the competitive nature of the call.
+> **Action before submission:** complete the **academic year** and the **exact official name** of the ministerial call, and locate its award resolution (a payment receipt does not evidence the merit).
 
 ---
 
@@ -231,11 +249,11 @@ As of this application, no second official master's degree is held besides the M
 | Item | Weight | Status | Main evidence |
 |---|---|---|---|
 | **Academic record** | **70 %** | ✅ | UPV master's **9.4/10** with 2 distinctions · Undergraduate **9.07/10** (official grade equivalence) · degree with **official equivalence to *Grado*** |
-| B.1 Extraordinary undergraduate award | 5 % | ✅ | **1st of 56 graduates** — apostilled certificate |
+| B.1 Extraordinary undergraduate award | 5 % | ✅ | **1st of 56 graduates** (apostilled) + **"Ribas Dávila" Order four years running** |
 | B.2 Extraordinary master's award | 5 % | ❌ | Not applicable — the award is the undergraduate one |
 | B.3 Second master's degree | 5 % | ❌ | Not applicable |
 | B.4 Languages beyond the degrees | 5 % | ⚠️ | C1 CAE · CELTA · DELE examiner — eligibility to confirm |
-| B.5 Scholarships | 5 % | ✅ | Academic excellence scholarship (undergraduate) · Ministry scholarship (master's) |
+| B.5 Scholarships | 5 % | ✅ | **High Academic Performance Scholarship** evidenced (ULA, 2003-04) · Ministry scholarship (master's) |
 | B.6 Professional experience in the field | 5 % | ✅ | **1,568 accredited university teaching hours** · 20+ years · ID 2019–present |
 
 **Honest reading.** Three merits are fully evidenced (B.1, B.5, B.6), one depends on the committee's interpretation (B.4) and two do not apply (B.2, B.3). That is **roughly 15–20 of the 30 points**, with the 70% academic record in the upper band (9.4 and 9.07 out of 10). The strength here is not the number of boxes ticked but the **quality of the proof**: the B.1 merit arrives apostilled with an online validation code, and the undergraduate record comes with its grade average already computed by the Spanish administration.
@@ -311,11 +329,12 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 | DOC-05 | **Grade-average equivalence declaration** — Spanish General Secretariat for Universities · **9.07/10** · CSV ⟨CSV in the copy submitted to the committee⟩ | A.2 · **70 %** | ✅ **in hand** |
 | DOC-06 | **Academic Rank Certificate** (1st of 56) + rectoral certification no. ⟨no. in the copy submitted to the committee⟩ + **Apostille ⟨no. in the copy submitted to the committee⟩** | B.1 | ✅ **in hand** |
 | DOC-07 | **Diploma of Honour** for the final-year dissertation — 20/20 Sobresaliente, Rector of ULA, 15 Nov 2004 | B.1 · §5 | ✅ **in hand** |
+| DOC-07B | ⭐ **Four "Luis María Ribas Dávila" Orders** (2000, 2001, 2002, 2003) — highest academic performance, School of Education, ULA-Táchira | B.1 · A.2 | ✅ **in hand** |
 | DOC-08 | Extraordinary Master's Award resolution *(only if UPV resolves one; not applicable today)* | B.2 | ➖ |
 | DOC-09 | C1 Advanced (CAE) certificate — Cambridge | B.4 | ⬜ |
 | DOC-10 | CELTA certificate — Cambridge | B.4 | ⬜ |
 | DOC-11 | DELE examiner accreditation — Instituto Cervantes | B.4 | ⬜ |
-| DOC-12 | Academic Excellence Scholarship credential (ULA, undergraduate) | B.5 | ⬜ |
+| DOC-12 | ⭐ **High Academic Performance Scholarship certificate** — ULA-Táchira, Directorate of Student Affairs, 13 May 2004 (period Jul–Dec 2003, still current) | B.5 | ✅ **in hand** |
 | DOC-13 | Ministry scholarship award resolution (UPV master's) | B.5 | ⬜ |
 | DOC-14 | Sotelo-Casas et al. (2019) — cover + acknowledgements page (p. 8) | B.6 · §5 | ⬜ |
 | DOC-15 | Evidence of the 10/10 grade for *Academic Writing Journey* (UPV) | A.1 · B.6 | ⬜ |
@@ -341,13 +360,14 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 - [x] Full publication details → *Kaleidoscopio* 2(3), 51–56, 2005, with the peer-review letter and the international conference paper (DOC-19, DOC-24).
 - [x] **Doctoral access** → degree officially declared equivalent to *Grado* level (Ministry, 2020) plus an official Spanish master's. No level verification needed (DOC-05B).
 - [x] Undergraduate academic transcript → in hand (DOC-03).
+- [x] **Undergraduate scholarship** → ULA **High Academic Performance Scholarship**, evidenced by official certificate (DOC-12), plus the **four "Luis María Ribas Dávila" Orders** (DOC-07B).
 
 **Outstanding:**
 
 - [ ] 🟠 **Identity note** linking "Eslava Graterol" and "Eslava de Morales", with the document evidencing it, and one name used consistently throughout the file.
 - [ ] Ask the committee whether **English counts** in the languages item → §B.4.
 - [ ] Complete the **academic year** and **official name** of both scholarships and locate their award letters → §B.5.
-- [ ] Gather the remaining certificates (DOC-01, DOC-02, DOC-04, DOC-09 to DOC-18, DOC-20 to DOC-23).
+- [ ] Gather the remaining certificates (DOC-01, DOC-02, DOC-04, DOC-09 to DOC-11, DOC-13 to DOC-18, DOC-20 to DOC-23).
 - [ ] Scan everything into a **single PDF**, in the Annex §8 order, with a cover index.
 - [ ] Attach the **MLLDE thesis proposal** (separate document, `01-propuesta/`).
 
