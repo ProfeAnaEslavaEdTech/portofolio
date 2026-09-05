@@ -16,6 +16,8 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lingü
 |---|---|---|
 | [`01-propuesta/propuesta-doctoral-MLLDE-ES.md`](01-propuesta/propuesta-doctoral-MLLDE-ES.md) | Propuesta de tesis doctoral completa — resumen, estado de la cuestión, vacío de investigación, preguntas, objetivos, hipótesis, metodología DBR en 3 ciclos, cronograma a 4 años, difusión, ética y referencias APA 7. | ES |
 | [`01-propuesta/doctoral-research-proposal-MLLDE-EN.md`](01-propuesta/doctoral-research-proposal-MLLDE-EN.md) | The same proposal in English, for international mention and for supervisors outside Spain. | EN |
+| [`02-cv-baremo/cv-academico-ES.md`](02-cv-baremo/cv-academico-ES.md) | ⭐ **CV académico breve (3 páginas)** — el que se entrega a la Comisión Académica. Siete apartados en orden cronológico inverso: datos y línea de investigación · formación · becas y distinciones · producción científica · congresos · experiencia docente e investigadora · idiomas y herramientas. | ES |
+| [`02-cv-baremo/cv-academico-EN.md`](02-cv-baremo/cv-academico-EN.md) | The same short academic CV in English. | EN |
 | [`02-cv-baremo/cv-doctorado-baremo-ES.md`](02-cv-baremo/cv-doctorado-baremo-ES.md) | **CV organizado según el baremo de la convocatoria** — Expediente académico 70 % + Otros méritos 30 % (seis apartados de 5 %), con códigos DOC-nn hacia los documentos acreditativos. | ES |
 | [`02-cv-baremo/cv-doctorado-baremo-EN.md`](02-cv-baremo/cv-doctorado-baremo-EN.md) | The same CV in English, same rubric structure. | EN |
 | [`03-anexos/indice-documentos-acreditativos.md`](03-anexos/indice-documentos-acreditativos.md) | Portada-índice bilingüe para el **PDF único** de documentación acreditativa (DOC-01 → DOC-23), con casillas de verificación. | ES/EN |
@@ -24,7 +26,18 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lingü
 
 ---
 
-## Cómo está organizado el CV (y por qué)
+## Dos CV, dos usos
+
+| | Para qué sirve | Extensión |
+|---|---|---|
+| **CV académico** (`cv-academico-*.md`) | **El que se entrega.** Formato estándar de comisión académica, siete apartados en orden cronológico inverso, sin comentarios internos. | **3 páginas** |
+| **CV por baremo** (`cv-doctorado-baremo-*.md`) | **Documento de trabajo.** Mapea cada mérito al apartado del baremo con su código DOC-nn, su estado y las notas estratégicas sobre cómo redactarlo. Sirve para preparar el expediente y para autoevaluar la puntuación; no se entrega tal cual. | ~12 páginas |
+
+Los dos comparten exactamente los mismos datos verificados. Si actualizas uno, actualiza el otro.
+
+---
+
+## Cómo está organizado el CV por baremo (y por qué)
 
 La convocatoria puntúa así:
 
