@@ -4,7 +4,9 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lingü
 
 *Admission file for the PhD Programme in Applied Linguistics (Department of Applied Linguistics, Universitat Politècnica de València) and the **MLLDE** thesis proposal.*
 
-**Propuesta / Proposal:** *MLLDE — Mobile Language Learning Design Environment: método para integrar tutores LLM y literacidad en IA en el diseño curricular CEFR.*
+**Propuesta / Proposal:** *MLLDE — Multimodal Language Learning Design & Evaluation: diseño curricular por modalidad para el aprendizaje móvil de lenguas y medición de la competencia oral con tres tiers de evidencia.*
+
+**Núcleo de la tesis.** Dos pilares. **Design:** la modalidad —texto, audio, imagen, voz— es una **variable declarada** en cada paso de la lección, no un envoltorio. **Evaluation:** *Measure ≠ Decide* — el modelo observa y describe, un **motor determinista** computa la banda; y la pronunciación se afirma por **tres tiers de evidencia**, de modo que ningún informe reclame más precisión de la que el motor tiene. Caso testigo: **TK Coach / «Capi»**, tutor de inglés de negocios por voz, con el Tier 1 **en producción** sobre un LRS.
 
 🔗 **Página del portafolio / Portfolio page:** [`doctorado.html`](../doctorado.html) · <https://profeanaeslavaedtech.github.io/portofolio/doctorado.html>
 
@@ -14,7 +16,7 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lingü
 
 | Ruta | Documento | Idioma |
 |---|---|---|
-| [`01-propuesta/propuesta-doctoral-MLLDE-ES.md`](01-propuesta/propuesta-doctoral-MLLDE-ES.md) | Propuesta de tesis doctoral completa — resumen, estado de la cuestión, vacío de investigación, preguntas, objetivos, hipótesis, metodología DBR en 3 ciclos, cronograma a 4 años, difusión, ética y referencias APA 7. | ES |
+| [`01-propuesta/propuesta-doctoral-MLLDE-ES.md`](01-propuesta/propuesta-doctoral-MLLDE-ES.md) | Propuesta de tesis completa — los dos pilares, los tres tiers, 6 preguntas, 6 objetivos, 6 hipótesis, metodología DBR con validación en producción, cronograma a 4 años, ética y referencias APA 7. Integra el documento técnico de la autora *«MLLDE y el tutor por voz»* (05-09-2026). | ES |
 | [`01-propuesta/doctoral-research-proposal-MLLDE-EN.md`](01-propuesta/doctoral-research-proposal-MLLDE-EN.md) | The same proposal in English, for international mention and for supervisors outside Spain. | EN |
 | [`02-cv-baremo/cv-academico-ES.md`](02-cv-baremo/cv-academico-ES.md) | ⭐ **CV académico breve (3 páginas)** — el que se entrega a la Comisión Académica. Siete apartados en orden cronológico inverso: datos y línea de investigación · formación · becas y distinciones · producción científica · congresos · experiencia docente e investigadora · idiomas y herramientas. | ES |
 | [`02-cv-baremo/cv-academico-EN.md`](02-cv-baremo/cv-academico-EN.md) | The same short academic CV in English. | EN |
@@ -62,7 +64,7 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 | Premio extraordinario de máster | ❌ | No procede: el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster |
 | Segundo máster | ❌ | No procede — se declara honestamente a cero |
 | Idiomas ajenos a las titulaciones | ⚠️ | C1 Advanced · CELTA · examinadora DELE — **preguntar a la comisión** si el inglés computa, dado que las titulaciones son de inglés |
-| Becas | ✅ | **Beca de Alto Rendimiento** acreditada (ULA-Táchira, jul.–dic. 2003 y vigente) · **beca del Ministerio** (máster, UPV) |
+| Becas | ✅ | **Beca de Alto Rendimiento** de la ULA, de mérito (2003–2004) · **beca general del Ministerio 2025/2026** con **componente de excelencia académica (tramo 9–9,49)** |
 | Experiencia profesional en el ámbito | ✅ | **1.568 horas de docencia universitaria acreditadas** · 20+ años · diseño instruccional 2019–actualidad |
 
 **Acceso resuelto.** El título tiene **equivalencia oficial al nivel académico de Grado** (Ministerio de Universidades, RD 967/2014, 17 jun. 2020) y a ello se suma el **máster oficial español de la UPV**: el acceso por el art. 6 del RD 99/2011 está completo y no requiere comprobación de nivel adicional.
@@ -80,6 +82,7 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 | DOC-05B | **Equivalencia del título a nivel de Grado** — Ministerio de Universidades, RD 967/2014 | 17 jun. 2020 · Artes y Humanidades / Idiomas |
 | DOC-07B | **Orden «Luis María Ribas Dávila»** — más alto rendimiento académico | **2000 · 2001 · 2002 · 2003**, cuatro diplomas rectorales |
 | DOC-12 | **Constancia de Beca de Alto Rendimiento** — ULA-Táchira | jul.–dic. 2003 y vigente · 13 may. 2004 |
+| DOC-13 | **Beca general del Ministerio** — curso 2025/2026, Orden EFD/335/25 | Excelencia académica tramo **9–9,49** + beca de matrícula |
 | DOC-06 | Constancia de Rango Académico + apostilla | **1.º de 56** · con apostilla de La Haya validable en línea |
 | DOC-07 | Diploma de Honor del TFG | **20/20 Sobresaliente**, Rector de la ULA, 15 nov. 2004 |
 | DOC-19 | Publicación arbitrada | *Kaleidoscopio* **2(3), 51–56 (2005)**, ISSN 1690-6054, CLASE–UNAM |
@@ -103,7 +106,7 @@ Si editas un `.md`, regenera el `.docx` y el `.pdf` correspondientes para que no
 
 - [ ] 🟠 **Cadena de identidad:** los documentos alternan «Eslava Graterol» (ULA), «Eslava de Morales» (Ministerio, congreso 2008) y una errata «Ana Soraymi» (Orden de 2003). Añadir una nota de identidad con el documento que los enlaza y usar un solo nombre en todo el expediente.
 - [ ] **Elegibilidad del inglés** en el apartado de idiomas (consultar a la comisión).
-- [ ] **Resolución de la beca del Ministerio** (máster), con curso académico y denominación oficial de la convocatoria.
+- [ ] ⚠️ **Tachar el número de cuenta bancaria** de la resolución del Ministerio antes de escanearla (también trae NIF y domicilio).
 - [ ] Reunir el resto de certificados (DOC-01 a DOC-04, DOC-09 a DOC-18, DOC-20 a DOC-23).
 - [ ] Verificar en la fuente original la **paginación de Casañ-Pitarch (2017), Coyle (2007) y Crawford (2001)**.
 - [ ] Ampliar §4.4 y §4.5 de la propuesta con **literatura 2024–2026 sobre tutores LLM**.

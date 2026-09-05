@@ -1,289 +1,314 @@
 <!--
-  Propuesta de tesis doctoral — MLLDE.
-  © 2026 Ana Eslava-Graterol (ProfeAnaEslavaEdTech). Todos los derechos reservados.
-  "Language Passport"™ y "Grace" son marcas de la autora. MLLDE es la metodología subyacente.
-  MCER/CEFR (Consejo de Europa), Plan curricular (Instituto Cervantes), xAPI (ADL/IEEE),
-  ESCO (Unión Europea) e IPA son estándares citados, no redistribuidos.
+  Propuesta de tesis doctoral — MLLDE, tutor por voz y tres tiers de evidencia.
+  Integra el documento de la autora «MLLDE y el tutor por voz: desarrollo y los tres tiers de
+  evidencia» (2026-09-05) como núcleo técnico, dentro del aparato completo de una propuesta doctoral.
+  © 2026 Ana Eslava-Graterol (MLLDE, UPV). TK Coach y «Capi» © Talketika.
+  MCER (Consejo de Europa), xAPI (ADL/IEEE), IPA, ESCO: estándares citados, no redistribuidos.
 -->
 
 # PROPUESTA DE TESIS DOCTORAL
 
-## MLLDE — *Mobile Language Learning Design Environment*
-### Método para integrar tutores LLM y literacidad en IA en el diseño curricular CEFR
+## MLLDE — *Multimodal Language Learning Design & Evaluation*
+### Diseño curricular por modalidad para el aprendizaje móvil de lenguas y medición de la competencia oral con tres tiers de evidencia
 
 ---
 
 | | |
 |---|---|
-| **Doctoranda** | Ana Zoraida Eslava-Graterol |
-| **Contacto** | profeanaeslava@gmail.com · https://www.linkedin.com/in/anaeslava |
+| **Doctoranda** | Ana Zoraimy Eslava Graterol |
+| **Contacto** | profeanaeslava@gmail.com · linkedin.com/in/anaeslava |
 | **Programa** | Programa de Doctorado — Lingüística Aplicada |
 | **Departamento** | Departamento de Lingüística Aplicada, Universitat Politècnica de València (UPV) |
-| **Línea de investigación** | Tecnologías del lenguaje, diseño instruccional y aprendizaje de lenguas asistido por dispositivos móviles |
+| **Línea de investigación** | Tecnologías del lenguaje, evaluación de la competencia oral y diseño instruccional anclado al MCER |
+| **Caso de aplicación** | TK Coach / «Capi» — tutor de inglés de negocios por voz (Talketika) |
 | **Modalidad propuesta** | Tiempo parcial (4 años), compatible con actividad profesional |
-| **Fecha** | Septiembre de 2026 |
-| **Versión** | 1.0 |
+| **Fecha · versión** | Septiembre de 2026 · v2.0 |
 
-> *Esta propuesta desarrolla y somete a validación empírica el método MLLDE, del que la autora es titular. «Language Passport»™ y «Grace» son marcas de la autora; MLLDE es la metodología subyacente. El MCER (Consejo de Europa), el Plan curricular del Instituto Cervantes, xAPI (ADL/IEEE), ESCO (Unión Europea) e IPA son estándares citados, no redistribuidos.*
+> **MLLDE** — *Multimodal Language Learning Design & Evaluation*. Método y marco de evaluación de la autora, del que esta propuesta desarrolla y valida el **Módulo de Medición**. «TK Coach» y «Capi» son marcas de Talketika; el MCER (Consejo de Europa), xAPI (ADL/IEEE), IPA y ESCO son estándares citados, no redistribuidos.
 
 ---
 
 ## 1. Resumen
 
-El aprendizaje de lenguas asistido por dispositivos móviles (MALL) y los tutores conversacionales basados en grandes modelos de lenguaje (LLM) se han popularizado con enorme rapidez, pero su incorporación al aula y al currículo sigue siendo **artesanal, no replicable y difícilmente evaluable**. Faltan tres cosas a la vez: (i) un **procedimiento de diseño** que convierta un descriptor «can-do» del MCER en una lección móvil jugable de forma sistemática; (ii) un tratamiento de la **literacidad en IA generativa** como *objetivo curricular explícito* del aprendiz de lenguas, y no como un efecto colateral del uso de la herramienta; y (iii) una **arquitectura de datos de aprendizaje interoperable** (xAPI/cmi5) que ancle cada evidencia de desempeño a un descriptor del MCER y permita comparar resultados entre lenguas, instituciones y plataformas.
+Un modelo generativo es **fluido por diseño**: producirá una calificación plausible se la pidamos o no, y esa fluidez es precisamente lo que lo inhabilita como evaluador. El problema que aborda esta tesis es, por tanto, metodológico antes que técnico: **cómo convertir la producción oral real de un aprendiz frente a un agente de IA en evidencia de competencia trazable al MCER, sin que el modelo invente la nota.**
 
-Esta tesis propone, formaliza y valida empíricamente el **MLLDE (*Mobile Language Learning Design Environment*)**: un método de diseño replicable, agnóstico respecto de la lengua, que articula el ciclo IPO gamificado (Casañ-Pitarch, 2017), las 4C del AICLE (Coyle, 2007), el aprendizaje contextual CTL/REACT (Johnson, 2002; Crawford, 2001), el enfoque léxico (Lewis, 1993) y los principios de diseño para móvil (Clothier, 2026), **anclados en su totalidad a los modos y competencias del MCER** (Consejo de Europa, 2020) y, para el español, al *Plan curricular del Instituto Cervantes*. Sobre ese armazón, el método incorpora dos elementos nuevos: un **tutor LLM con función pedagógica delimitada** dentro de una escalera de retroalimentación no punitiva, y un **módulo de literacidad en IA** integrado en la propia secuencia de la lección.
+La respuesta que se propone y se valida es **MLLDE** (*Multimodal Language Learning Design & Evaluation*), un método con **dos pilares inseparables**:
 
-La investigación se articula como **investigación basada en diseño (DBR)** en tres macrociclos iterativos, con metodología mixta: validación del método por panel de personas expertas (Delphi), intervención con aprendices adultos de lengua en niveles A2–B2, y medición de resultados en tres planos — progresión en descriptores MCER, competencia en IA generativa y autoeficacia. Los resultados esperados son un método formalizado y validado, una especificación abierta de perfil xAPI para datos de aprendizaje de lenguas anclados al MCER, y evidencia empírica sobre el efecto de la tutoría LLM pedagógicamente delimitada frente a su uso no estructurado.
+- **Pilar de diseño (*Design*).** Un procedimiento replicable para construir currículo de lenguas en dispositivo móvil en el que la **modalidad** —texto, audio, imagen, **voz**— no es un envoltorio sino una **variable de diseño declarada**: cada paso de una lección especifica qué modalidad porta el insumo, la práctica y la producción, y contra qué modo y descriptor del MCER se mide.
+- **Pilar de evaluación (*Evaluation*).** El **Módulo de Medición**, que convierte lo que el aprendiz produce —señaladamente su producción oral ante un agente— en evidencia trazable al MCER.
 
-**Palabras clave:** MCER · MALL · tutores LLM · literacidad en IA · diseño instruccional · investigación basada en diseño · xAPI · AICLE · gamificación · aprendizaje de lenguas.
+Ambos comparten la misma arquitectura, y el pilar de evaluación se articula sobre tres decisiones:
+
+1. **Measure ≠ Decide.** El modelo **observa y describe** lo que ocurre en la interacción; un **motor determinista** —código, no IA— **computa** la banda a partir de esas observaciones. Nada de lo que aparece en pantalla ha sido inventado por un modelo.
+2. **Motor + pack.** Las reglas de medición son agnósticas respecto del cliente; cada producto rellena un **pack** con sus tareas, niveles e inventario de sonidos. Aplicar el módulo a una segunda aplicación es **rellenar un pack, no rediseñar**: ahí reside la afirmación de replicabilidad que la tesis debe demostrar.
+3. **Tres tiers de evidencia.** La señal de voz no se mide toda con la misma precisión. Cada afirmación **declara su tier**, de modo que un informe nunca reclame más exactitud de la que el motor realmente tiene. La pronunciación —la señal más difícil— es el caso testigo, y llevarla del Tier 1 al Tier 3 constituye la contribución fonémica profunda de la tesis.
+
+Metodológicamente es una **investigación basada en diseño** con validación en producción: el Tier 1 ya está desplegado y emitiendo evidencia a un LRS, lo que permite contrastar el acuerdo entre la rúbrica aplicada por LLM y la **evaluación humana experta** sobre datos reales, no simulados.
+
+**Palabras clave:** MCER · evaluación de la competencia oral · tutores por voz · GOP y pronunciación · xAPI · honestidad de la evidencia · investigación basada en diseño · lingüística aplicada.
 
 ---
 
 ## 2. Abstract *(English)*
 
-Mobile-assisted language learning (MALL) and conversational tutors built on large language models (LLMs) have spread with remarkable speed, yet their incorporation into classrooms and curricula remains **craft-based, non-replicable and hard to evaluate**. Three things are missing at once: (i) a **design procedure** that systematically turns a CEFR can-do descriptor into a playable mobile lesson; (ii) a treatment of **generative-AI literacy** as an *explicit curricular objective* for the language learner rather than a by-product of tool use; and (iii) an **interoperable learning-data architecture** (xAPI/cmi5) that anchors every performance evidence to a CEFR descriptor and makes results comparable across languages, institutions and platforms.
+A generative model is **fluent by design**: it will produce a plausible score whether or not it is entitled to, and that fluency is precisely what disqualifies it as an assessor. The problem this thesis addresses is therefore methodological before it is technical: **how to turn a learner's real spoken production in front of an AI agent into evidence of competence traceable to the CEFR, without the model inventing the grade.**
 
-This thesis proposes, formalises and empirically validates **MLLDE (Mobile Language Learning Design Environment)**: a replicable, language-agnostic design method that articulates the gamified IPO cycle (Casañ-Pitarch, 2017), the CLIL 4Cs (Coyle, 2007), contextual teaching and learning (Johnson, 2002; Crawford, 2001), the lexical approach (Lewis, 1993) and mobile learning design principles (Clothier, 2026), **anchored throughout to the CEFR modes and competences** (Council of Europe, 2020) and, for Spanish, to the *Plan curricular del Instituto Cervantes*. On that scaffold the method adds two new elements: an **LLM tutor with a bounded pedagogical role** inside a non-punitive feedback ladder, and an **AI-literacy module** embedded in the lesson sequence itself.
+The proposed and validated answer is **MLLDE** (*Multimodal Language Learning Design & Evaluation*) and its **Measurement Module**, built on three design decisions:
 
-The research is designed as **design-based research (DBR)** across three iterative macro-cycles, using mixed methods: expert-panel validation of the method (Delphi), an intervention with adult language learners at A2–B2, and outcome measurement on three planes — CEFR descriptor progression, generative-AI competence, and self-efficacy. Expected outputs are a formalised, validated method, an open xAPI profile specification for CEFR-anchored language-learning data, and empirical evidence on the effect of pedagogically bounded LLM tutoring versus unstructured use.
+1. **Measure ≠ Decide.** The model **observes and describes** what happens in the interaction; a **deterministic engine** — code, not AI — **computes** the band from those observations. Nothing on screen is invented by a model.
+2. **Engine + pack.** The measurement rules are client-agnostic; each product fills a **pack** with its tasks, levels and sound inventory. Applying the module to a second application means **filling a pack, not redesigning**: that is the replicability claim the thesis must demonstrate.
+3. **Three tiers of evidence.** Voice signal is not measurable at uniform precision. Every claim **declares its tier**, so a report never asserts more accuracy than the engine actually has. Pronunciation — the hardest signal — is the test case, and carrying it from Tier 1 to Tier 3 is the thesis's deep phonemic contribution.
 
-**Keywords:** CEFR · MALL · LLM tutors · AI literacy · instructional design · design-based research · xAPI · CLIL · gamification · language learning.
+Methodologically it is **design-based research with validation in production**: Tier 1 is already deployed and emitting evidence to an LRS, which allows the agreement between the LLM-applied rubric and **expert human assessment** to be tested on real rather than simulated data.
+
+**Keywords:** CEFR · speaking assessment · voice tutors · GOP and pronunciation · xAPI · evidence honesty · design-based research · applied linguistics.
 
 ---
 
-## 3. Justificación y motivación
+## 3. Justificación
 
-Tres constataciones, una profesional y dos académicas, motivan esta propuesta.
+**3.1 El problema de fondo: fluidez no es validez.** Los tutores conversacionales han hecho técnicamente trivial la práctica oral ilimitada. Pero un modelo de lenguaje, colocado en el papel de evaluador, no distingue entre *describir* un desempeño y *puntuarlo*: produce una banda con la misma soltura con que produce una frase. El resultado son sistemas que muestran cifras sin trazabilidad, que no soportan una auditoría y que no pueden compararse entre sí. La respuesta de MLLDE no es un mejor prompt, sino una **separación arquitectónica de responsabilidades**.
 
-**3.1 La constatación profesional.** A lo largo de más de veinte años diseñando y ejecutando formación en lenguas — 1.568 horas acreditadas de docencia universitaria, la administración de un LMS desde 2019 y el diseño íntegro de cursos gamificados alineados al MCER — el problema recurrente no ha sido la falta de contenido ni la falta de tecnología, sino la **falta de un procedimiento**. Cada curso se rediseña desde cero; cada docente reinventa la secuencia; el conocimiento de diseño no se acumula. El proyecto *Academic Writing Journey* (calificado 10/10 por diseño inclusivo, UPV, 2026) mostró que un ciclo pedagógico explícito y documentado sí es reutilizable — y ésa es la semilla de MLLDE.
+**3.2 Por qué la pronunciación es el caso decisivo.** De todas las señales que emite el habla, la pronunciación es la que más se promete en el mercado y la que menos se sostiene metodológicamente. Medirla bien exige instrumentación acústica, y afirmarla sin ella es exactamente el tipo de sobreafirmación que esta tesis quiere hacer imposible. Por eso el modelo de tiers no es un rodeo: es la manera de decir con precisión **qué se puede medir hoy, qué se puede medir con instrumentación y qué es todavía investigación**.
 
-**3.2 La constatación sobre los tutores LLM.** Los modelos de lenguaje han hecho técnicamente trivial lo que antes era caro: una interacción conversacional ilimitada, con corrección inmediata, en la lengua meta. Pero *conversar con un modelo* no es *aprender una lengua*. Sin un contrato pedagógico explícito, el tutor LLM tiende a (a) resolver la tarea en lugar de andamiarla, (b) producir un insumo lingüístico no calibrado al nivel del aprendiz, rompiendo la condición de *i+1* (Krashen, 1985), y (c) desplazar la evaluación auténtica hacia una interacción sin evidencia registrable. La pregunta relevante ya no es *si* usar un tutor LLM, sino **con qué límites, en qué paso del ciclo de aprendizaje y bajo qué registro de evidencia**.
+**3.3 Por qué tres tiers y no «todo o nada».** Un tutor comercial no puede esperar a que termine la investigación para dar valor; y la investigación no puede quedar cautiva de una demo. Los tiers permiten **lanzar con Tier 1** —voz real, medición honesta— mientras se desarrolla y valida el Tier 2 y se investiga el Tier 3, cada uno con su propio diseño de validez. Es un modelo de madurez de la evidencia, no una excusa.
 
-**3.3 La constatación sobre la literacidad en IA.** El estudio de Carnegie Mellon sobre competencia en IA generativa identifica cuatro competencias medibles —conocimiento del funcionamiento de los LLM, habilidad de *prompting*, verificación de hechos y fuentes, y autoeficacia— y muestra que una intervención breve, asíncrona, con práctica activa y retroalimentación explicativa produce mejoras significativas y equitativas entre grupos demográficos. Sin embargo, esa literacidad se enseña hoy en cursos aparte, desconectados del contenido. En una clase de lenguas, donde el aprendiz **ya está usando** el modelo como interlocutor, existe una oportunidad singular: enseñar a evaluar críticamente la producción del modelo **es, a la vez**, una tarea de recepción, de mediación y de competencia pragmática en la lengua meta. La literacidad en IA no compite con el currículo de lenguas: se puede **anclar en él**.
-
-**3.4 El marco normativo.** El Reglamento Europeo de Inteligencia Artificial, y en particular sus obligaciones de transparencia (art. 50), junto con el RGPD y el Acta Europea de Accesibilidad, convierten la trazabilidad y la divulgación del contenido generado por IA en un requisito de diseño, no en una consideración posterior. Un método de diseño publicado hoy debe incorporar esa capa desde el origen. MLLDE lo hace.
+**3.4 La constatación profesional.** Más de veinte años diseñando y ejecutando formación en lenguas —1.568 horas de docencia universitaria acreditadas, administración de LMS desde 2019, cursos gamificados alineados al MCER— muestran que el cuello de botella no es el contenido ni la tecnología, sino la **ausencia de un procedimiento acumulable**. MLLDE nace de ahí, y TK Coach es su primera instanciación completa.
 
 ---
 
 ## 4. Estado de la cuestión
 
-### 4.1 El MCER como núcleo de competencia, no como etiqueta de nivel
+### 4.1 El MCER como especificación de medida, no como etiqueta
 
-El Marco Común Europeo de Referencia (Consejo de Europa, 2020) sustituye las cuatro destrezas tradicionales por **cuatro modos de comunicación** —recepción, producción, interacción y mediación— sostenidos por **tres competencias comunicativas** —lingüística, sociolingüística y pragmática—, y describe el progreso mediante descriptores «can-do» en seis niveles (A1–C2). En la práctica del sector, sin embargo, el MCER se usa mayoritariamente como **etiqueta comercial de nivel** («curso B1») y no como **especificación de diseño**. Muy pocos productos declaran, por tarea, qué modo y qué competencia desarrollan y contra qué descriptor se mide el resultado. Ese uso débil del estándar es la causa directa de la incomparabilidad de resultados entre plataformas.
+El *Companion Volume* (Consejo de Europa, 2020) organiza la competencia en **modos de comunicación** —recepción, producción, interacción y **mediación**— con descriptores «can-do» por escala y nivel. En la práctica del sector, sin embargo, el MCER se usa como **etiqueta comercial** («nivel B1») y rara vez como **especificación de medida**: casi ningún producto declara, por métrica, contra qué escala nombrada se mide. MLLDE impone la regla inversa: **no hay métrica sin descriptor**, y cada métrica cita su escala y su identificador (IRI) en un *registry* único.
 
-### 4.2 MALL: eficacia demostrada, diseño poco documentado
+### 4.2 Evaluación automática del habla
 
-La literatura sobre aprendizaje móvil de lenguas acredita ventajas de accesibilidad, microaprendizaje y práctica distribuida, y Clothier (2026) sistematiza los principios de diseño para móvil: diseño dirigido por el contexto, brevedad y escaneabilidad, empatía con el aprendiz, con microlearning, narrativa, gamificación y apoyo al desempeño como estrategias. Lo que la literatura documenta con menos frecuencia es **el procedimiento**: cómo se pasa de un objetivo curricular a una lección móvil concreta de manera que otro equipo pueda reproducirla. Sin ese eslabón, la evidencia sobre eficacia no es transferible.
+La evaluación asistida por máquina de la producción oral tiene dos tradiciones que rara vez se encuentran. Por un lado, la **puntuación acústica de pronunciación**, cuyo referente sigue siendo el *Goodness of Pronunciation* (Witt & Young, 2000) y su descendencia comercial. Por otro, la **valoración holística por rúbrica**, hoy accesible a un LLM sobre transcripción. La primera es precisa y estrecha; la segunda es amplia y no verificable. **Ninguna de las dos, por sí sola, sostiene una afirmación de nivel MCER auditable.** El aporte de esta tesis es articularlas en una escala de madurez explícita —los tres tiers— en lugar de elegir una y ocultar sus límites.
 
-### 4.3 Gamificación e integración de contenido y lengua
+### 4.3 Retroalimentación, *noticing* e *i+1*
 
-El modelo IPO (*Input–Processing–Output*) de Casañ-Pitarch (2017) aporta un ciclo de aprendizaje gamificado con arquitectura de anillos y una identidad narrativa disciplinar; las 4C de Coyle (2007, 2010) —contenido, comunicación, cognición y cultura— aportan la integración; ESA (Harmer, 2007) aporta la puesta en escena (*Engage–Study–Activate*); CTL y las estrategias REACT (Johnson, 2002; Crawford, 2001) aportan la autenticidad de la tarea y la transferencia; el enfoque léxico (Lewis, 1993) aporta la enseñanza por *chunks*; la teoría cognitiva del aprendizaje multimedia (Mayer, 2009) aporta la codificación dual del vocabulario; y la pragmática interlingüística (Kasper & Rose, 2001) aporta el tratamiento explícito del registro y la cortesía. **Existen todas las piezas; no existe la síntesis operacionalizada.** MLLDE es esa síntesis, y su originalidad reside en el ensamblaje replicable, no en la invención de un marco nuevo.
+La hipótesis del insumo comprensible (Krashen, 1985) y la hipótesis del *noticing* (Schmidt, 1990) fundamentan que la retroalimentación sea **dosificada por nivel** y no uniforme. MLLDE lo operacionaliza como una **escala de noticing (0–4)** que gradúa la saliencia dentro del *recast*: **modelar** en A2–B1, **elicitar** en B2+. Lo relevante metodológicamente es quién decide qué: **el código decide el nivel de feedback (0–3); el LLM detecta y redacta.**
 
-### 4.4 Tutores LLM en aprendizaje de lenguas
+### 4.4 Inteligibilidad frente a acento nativo
 
-La investigación reciente sobre tutores conversacionales basados en LLM se ha centrado en la calidad de la corrección, la percepción del aprendiz y la reducción de la ansiedad comunicativa. Persisten tres vacíos: **la calibración del insumo** al nivel MCER del aprendiz, **la delimitación funcional** del tutor dentro de la secuencia didáctica (¿corrige?, ¿explica?, ¿evalúa?, ¿sustituye a la tarea?), y **la registrabilidad** de la interacción como evidencia de aprendizaje. MLLDE aborda los tres mediante una **escalera de retroalimentación** en la que el modelo sólo interviene en el último escalón, después de las reglas deterministas y de la gramática de referencia enlazada.
+La literatura sobre inteligibilidad y la propia posición de la IPA (1999) sostienen que el objetivo defendible es el **habla inteligible y adecuada**, no la aproximación a un acento nativo. MLLDE lo convierte en regla del motor: las **variantes aceptadas** (por ejemplo *seseo* / *distinción*) **nunca** rebajan una puntuación. Es una decisión ética además de técnica, y tiene consecuencias directas sobre el diseño del inventario fonémico del Tier 3.
 
-### 4.5 Literacidad en IA generativa
+### 4.5 Datos de aprendizaje interoperables
 
-El estudio de Carnegie Mellon define un constructo medible en cuatro competencias y valida un diseño de intervención —módulos asíncronos, aprender haciendo, retroalimentación explicativa inmediata— con resultados significativos y equitativos. Trasladado a la enseñanza de lenguas, ese constructo es **enseñable dentro de la propia tarea comunicativa**, no fuera de ella: verificar la salida del modelo es una tarea de recepción crítica; reformular una instrucción es una tarea de producción; explicar a otra persona por qué la respuesta del modelo era inadecuada es, en términos del MCER, **mediación** — el modo que el propio marco sitúa en los niveles B2 y superiores.
+xAPI (IEEE Std 9274.1.1-2023) y los LRS permiten registrar experiencias fuera del LMS. Lo que no existe es un **perfil consolidado y abierto para evidencia de competencia lingüística anclada a descriptores del MCER**, con declaración explícita del modelo de medición y del tier de cada afirmación. Sin eso, dos plataformas no son comparables aunque ambas digan «B1».
 
-### 4.6 Datos de aprendizaje interoperables
+### 4.6 El vacío
 
-xAPI (ADL, 2017; IEEE 9274.1.1-2023) y cmi5 permiten registrar experiencias de aprendizaje fuera del LMS y almacenarlas en un LRS. Los perfiles xAPI publicados cubren dominios generales, pero **no existe un perfil consolidado y de acceso abierto para datos de aprendizaje de lenguas anclados a descriptores del MCER**. Esa ausencia impide comparar evidencias entre productos y convierte cada plataforma en un silo. La tesis propone y publica dicho perfil como resultado secundario, alineable además con ESCO para la portabilidad de la competencia lingüística en el mercado laboral europeo.
-
-### 4.7 Síntesis del vacío de investigación
-
-> **Vacío.** No existe un **método de diseño replicable y validado** que (a) opere sobre descriptores del MCER como unidad de entrada, (b) incorpore la tutoría LLM con una función pedagógica explícitamente delimitada, (c) trate la literacidad en IA como objetivo curricular integrado en la tarea de lengua, y (d) produzca evidencia de desempeño interoperable y anclada al estándar. Esta tesis construye ese método y lo somete a prueba.
+> No existe un **método replicable y auditable** que (a) separe explícitamente **observación de decisión** en la evaluación de la producción oral asistida por IA, (b) ancle cada métrica a una escala nombrada del MCER, (c) **declare el grado de precisión** de cada afirmación mediante un modelo de tiers, y (d) emita esa evidencia en un formato interoperable que permita comparar sesiones, modelos y productos. Esta tesis lo construye y lo somete a prueba sobre un sistema en producción.
 
 ---
 
-## 5. Preguntas de investigación, objetivos e hipótesis
+## 5. El método: MLLDE y su Módulo de Medición
 
-### 5.1 Pregunta general
+### 5.1 Principios
 
-> **PG.** ¿Cómo puede formalizarse un método de diseño replicable —MLLDE— que integre tutores LLM y la literacidad en IA en el diseño curricular anclado al MCER, y qué efectos produce sobre la progresión en descriptores del MCER, la competencia en IA generativa y la autoeficacia de aprendices adultos de lengua?
+| Principio | Qué significa operativamente |
+|---|---|
+| **Measure ≠ Decide** | El LLM describe; un motor determinista computa la banda. Ninguna cifra procede de una generación. |
+| **No hay métrica sin descriptor** | Cada métrica cita una escala nombrada del *Companion Volume* y su IRI en un registry único. |
+| **Motor + pack** | Reglas agnósticas del cliente; cada producto aporta tareas, niveles e inventario de sonidos. |
+| **Cinco destrezas** | Recepción, producción, interacción y **mediación**, todas ancladas al *Companion Volume*. |
+| **Trazabilidad** | Toda la evidencia se registra en **xAPI** sobre un LRS, con actor seudónimo. |
+| **Honestidad de la evidencia** | Cada afirmación declara su **tier** y su **modelo de medición** por sesión. |
 
-### 5.2 Preguntas específicas
+**Escala.** 0–10 (aprobado ≥ 6, pisos ≥ 4), con vista Cambridge 0–5 por redondeo y división entre 2.
 
-| # | Pregunta | Se responde en |
+### 5.2 El pilar de diseño: la modalidad como variable declarada
+
+El mismo principio que gobierna la medición gobierna el diseño: **nada implícito**. Si la medición exige que toda métrica cite su descriptor, el diseño exige que **todo paso de una lección declare su modalidad y su modo del MCER**.
+
+**Contrato de entrada de una lección.** Nivel MCER + descriptor «can-do» + escenario real + **perfil de modalidad**. Ese cuarto elemento es la aportación del pilar de diseño: el perfil declara, paso a paso, qué canal porta el insumo, cuál soporta la práctica y en cuál se exige la producción.
+
+| Paso de la lección | Modo del MCER | Modalidad del insumo | Modalidad de la producción |
+|---|---|---|---|
+| Llegada — gancho y objetivo | — | texto + imagen | — |
+| Vocabulario y *chunks* | Recepción | audio + imagen (codificación dual) | reconocimiento |
+| Diálogo modelo | Recepción | **voz** | — |
+| Práctica guiada | Procesamiento | texto o audio | texto |
+| Misión — tarea auténtica | **Interacción** | **voz** (agente) | **voz** |
+| Transferencia | Producción | libre | **voz o escritura, a elección** |
+| Cultura y pragmática | — | texto + imagen | — |
+
+**Por qué importa para una tesis y no solo para un producto.** La literatura de aprendizaje móvil describe *principios* (brevedad, contexto, microaprendizaje) pero rara vez un **procedimiento** que otro equipo pueda reproducir, y casi nunca trata la modalidad como algo que se decide y se justifica. Declararla tiene tres consecuencias comprobables: hace la lección **auditable** (se puede verificar que el modo del MCER y el canal coinciden), **replicable** (dos diseñadoras que parten del mismo descriptor y el mismo perfil deberían producir lecciones equivalentes) y **medible** (la evidencia que emite cada paso ya sabe a qué modo pertenece).
+
+**Motor + pack, también en el diseño.** El ciclo de la lección es un **motor** compartido; una lección concreta es un **objeto de datos**. Construir una lección nueva —o una lengua nueva— es **rellenar datos, no reescribir lógica**. Es la misma promesa de replicabilidad que sostiene el pilar de evaluación, y se somete a la misma prueba (PI6).
+
+**Marcos que sintetiza el pilar de diseño**, todos acreditados y ninguno inventado: el ciclo gamificado **IPO** (Casañ-Pitarch, 2017); las **4C del AICLE** (Coyle, 2007); **ESA** (Harmer, 2007); **CTL / REACT** (Johnson, 2002; Crawford, 2001) para la autenticidad de la tarea; el **enfoque léxico** (Lewis, 1993) para la enseñanza por *chunks*; y la **teoría cognitiva del aprendizaje multimedia** (Mayer, 2009), que es justamente la que fundamenta tratar la modalidad como decisión y no como adorno. La originalidad no está en ninguno de ellos, sino en **la síntesis operacionalizada y en la declaración explícita de modalidad**.
+
+### 5.3 Arquitectura del tutor por voz
+
+El aprendiz practica **hablando** situaciones reales de trabajo con «Capi». El bucle de medición es:
+
+> **Capi (role-play)** → **Evaluador MLLDE** (banda 0–10 + descriptor débil *i+1*) → **Práctica** (drills, tarjetas, mediación) → **Capi** → la banda sube **en la conversación siguiente**.
+
+- **Tres agentes que observan** (Capi · corrector · evaluador) y un **consolidador escrito en código** —no un cuarto LLM— que computa el nivel acumulativo (`Global×5 + analíticas×2 ÷ pool × 10`) y emite **una sola entrada** al LRS. Un **redactor** escribe el resumen; no mide. Los **generadores** crean contenido: el código elige el descriptor, el LLM lo redacta.
+- **Dos flujos que nunca se cruzan:** *medición* (una vez por sesión: `completed` + rúbrica) y *pedagogía* (por turno: `adapted` + `pedagogical-action` + `learning-target`). **La corrección es pedagogía y nunca puntúa** — es el cortafuegos que hace auditable el sistema.
+- **Puerta acústica (ASR 0.70).** Por debajo de esa confianza de reconocimiento el turno se registra como **incidente** y no puntúa. Es la frontera explícita entre lo medible y lo no medible.
+
+### 5.4 Los tres tiers de evidencia
+
+| Tier | Nombre | Qué mide | Cómo | Estado |
+|---|---|---|---|---|
+| **1** | **Rúbrica-voz** *(medible hoy)* | `grammar_accuracy` · `vocabulary_range` · `discourse_management` · `interaction` · `global_achievement` | Juez-rúbrica sobre la **transcripción ASR**. **No mide pronunciación.** | **En producción**, verificado sobre LRS vivo |
+| **2** | **Instrumentado** | **Pronunciación** a nivel de palabra y enunciado: inteligibilidad y adecuación | Evaluación de pronunciación de proveedor (puntuación acústica tipo GOP) | **Planificado** — capa acústica |
+| **3** | **GOP a medida** *(investigación)* | **Pronunciación fonémica**: rasgos objetivo por nivel, variantes aceptadas | **Inventario IPA** por nivel + ingeniería acústica propia (Witt & Young, 2000) | **Investigación** — contribución profunda de la tesis |
+
+**Reglas transversales.** *(i)* Un informe **declara el tier** de cada afirmación y jamás reclama la precisión de un tier superior; si una destreza carece de métrica anclada se muestra **«—»**, nunca un valor (hoy: pronunciación = «—» hasta el Tier 2). *(ii)* **Inteligibilidad, no acento nativo**: las variantes aceptadas no bajan puntuación. *(iii)* **Ganancia incremental**: cada tier añade señal sin romper los anteriores. *(iv)* **Comparabilidad**: cada sesión declara su `measure_model`, de modo que no se mezclen sesiones de tiers o modelos distintos.
+
+---
+
+## 6. Preguntas de investigación, objetivos e hipótesis
+
+### 6.1 Preguntas
+
+| # | Pregunta | Ciclo |
 |---|---|---|
-| **PE1** | ¿Qué componentes, secuencia y reglas de decisión debe contener MLLDE para convertir cualquier descriptor «can-do» del MCER en una lección móvil, de forma que personas diseñadoras distintas produzcan lecciones equivalentes? | Ciclo 1 (Delphi + análisis de replicabilidad) |
-| **PE2** | ¿Qué función pedagógica debe tener el tutor LLM dentro del ciclo de la lección, y cómo debe calibrarse su insumo al nivel MCER del aprendiz para preservar la condición *i+1*? | Ciclos 1–2 |
-| **PE3** | ¿Produce la integración curricular de la literacidad en IA dentro de la tarea de lengua mejoras significativas en las cuatro competencias de IA generativa, sin coste sobre la progresión lingüística? | Ciclo 2 |
-| **PE4** | ¿Qué efecto tiene MLLDE, frente a una condición de uso no estructurado del tutor LLM, sobre la progresión en descriptores del MCER y sobre la autoeficacia del aprendiz? | Ciclo 3 |
-| **PE5** | ¿Qué estructura mínima debe tener un perfil xAPI para que la evidencia de desempeño quede anclada a descriptores del MCER y sea comparable entre plataformas? | Transversal, consolidado en Ciclo 3 |
+| **PI1 · Validez** | ¿Una rúbrica MCER aplicada por un LLM sobre transcripción ASR (Tier 1) produce bandas **fiables y estables** frente a la evaluación humana experta? ¿Varía con el tamaño del modelo? | C1 |
+| **PI2 · Honestidad como método** | ¿Funciona la **unificación de superficies sobre una sola verdad** (el LRS) como prueba anti-alucinación? Es decir: si todas las pantallas coinciden, ¿se sostiene el margen? | C1–C2 |
+| **PI3 · Retroalimentación** | ¿La **escala de noticing** —dosificar la saliencia según el nivel— mejora la **captación (*uptake*)** (auto-reparación en B2+, registro de la forma en A2–B1) sin elevar el filtro afectivo? | C2 |
+| **PI4 · Pronunciación por tiers** | ¿Qué gana la validez al pasar de Tier 1 → 2 → 3? ¿Cuál es el **piso de inteligibilidad** defendible en cada tier? | C2–C3 |
+| **PI5 · Diseño por modalidad** | ¿Produce el **perfil de modalidad declarado** lecciones equivalentes entre diseñadoras distintas que parten del mismo descriptor? ¿Y afecta la elección de modalidad a la progresión en el modo del MCER que se pretende desarrollar? | C1–C2 |
+| **PI6 · Replicabilidad** | ¿Puede un equipo independiente instanciar **el motor de diseño y el de medición** en una segunda aplicación **rellenando un pack**, sin tocar el motor, y obtener lecciones y medidas comparables? | C3 |
 
-### 5.3 Objetivos
+### 6.2 Objetivos
 
-**Objetivo general.** Formalizar, instrumentar y validar empíricamente el método MLLDE como procedimiento replicable de diseño curricular para el aprendizaje móvil de lenguas con tutoría LLM y literacidad en IA integradas, anclado al MCER.
+1. **O1** — Formalizar el Módulo de Medición MLLDE (principios, registry de escalas, esquema de packs, reglas del consolidador) en una especificación verificable por terceros.
+2. **O2** — Establecer la **validez del Tier 1**: acuerdo con evaluación humana experta, estabilidad test-retest y sensibilidad al tamaño del modelo.
+3. **O3** — Instrumentar y validar el **Tier 2**, encendiendo la banda de pronunciación hoy declarada «—», y determinar su piso de inteligibilidad.
+4. **O4** — Desarrollar el **Tier 3**: inventario IPA por nivel con variantes aceptadas y un GOP a medida, explicable y no penalizador de variedades legítimas.
+5. **O5** — Formalizar el **pilar de diseño**: contrato de entrada con perfil de modalidad, plantilla de planificación, rúbrica de conformidad, y validarlo mediante panel de personas expertas y prueba de equivalencia entre diseñadoras.
+6. **O6** — Publicar el **perfil xAPI** de evidencia de competencia anclada al MCER, con declaración de tier y de modelo de medición, y demostrar la **replicabilidad motor + pack** —diseño y medición— en una segunda aplicación.
 
-**Objetivos específicos:**
-
-1. **O1 — Formalizar el método.** Especificar los componentes, la secuencia, el contrato de entrada (nivel + descriptor + escenario) y las reglas de decisión de MLLDE en un documento de método verificable, y validarlo mediante panel de personas expertas.
-2. **O2 — Delimitar la tutoría LLM.** Definir y probar el contrato pedagógico del tutor LLM: en qué escalón de la escalera de retroalimentación interviene, qué no debe hacer, y cómo se calibra su producción al nivel MCER del aprendiz.
-3. **O3 — Integrar la literacidad en IA.** Diseñar y evaluar el módulo de literacidad en IA embebido en la tarea comunicativa, operacionalizando las cuatro competencias del constructo (mecánica de los LLM, *prompting*, verificación de fuentes, autoeficacia) como tareas de recepción, producción y mediación en la lengua meta.
-4. **O4 — Especificar la medición.** Construir y publicar el perfil xAPI de datos de aprendizaje de lenguas anclado a descriptores del MCER, con su vocabulario, sus verbos y su mapa a cmi5, y verificar su funcionamiento sobre un LRS real.
-5. **O5 — Evaluar el efecto.** Contrastar empíricamente el método frente a una condición de uso no estructurado, en progresión MCER, competencia en IA y autoeficacia, con análisis de equidad entre subgrupos.
-
-### 5.4 Hipótesis
+### 6.3 Hipótesis
 
 | # | Hipótesis | Contraste |
 |---|---|---|
-| **H1** | Las lecciones producidas por personas diseñadoras distintas aplicando MLLDE sobre el mismo descriptor MCER presentan una concordancia alta en modo, competencia y tipo de tarea (replicabilidad del método). | Acuerdo interjueces sobre rúbrica de conformidad |
-| **H2** | La tutoría LLM delimitada dentro de la escalera de retroalimentación produce mayor progresión en descriptores del MCER que el uso no estructurado del mismo modelo. | Comparación entre condiciones, medida pre/post |
-| **H3** | La integración curricular de la literacidad en IA mejora significativamente las cuatro competencias del constructo **sin** deterioro de la progresión lingüística. | Medida pre/post + contraste de no inferioridad |
-| **H4** | La retroalimentación no punitiva (ámbar/«revisar», nunca roja; reintento y escalado a tutoría) se asocia a mayor autoeficacia y persistencia en la tarea. | Escala de autoeficacia + métricas de reintento |
-| **H5** | Los efectos de H2–H4 no difieren significativamente por edad, género ni experiencia previa con IA (equidad del diseño). | Análisis de moderación por subgrupos |
+| **H1** | El acuerdo entre la banda del Tier 1 y la evaluación humana experta alcanza una fiabilidad aceptable para uso formativo, y es **estable** en test-retest. | CCI / κ ponderado; test-retest |
+| **H2** | La banda del Tier 1 es **sensible al tamaño del modelo**, lo que obliga a declarar `measure_model` para que las sesiones sean comparables. | Comparación entre modelos sobre las mismas sesiones |
+| **H3** | La escala de noticing dosificada por nivel aumenta el ***uptake*** frente a una retroalimentación uniforme, sin aumentar el abandono. | Contraste entre condiciones + métricas de persistencia |
+| **H4** | El paso a Tier 2 mejora la validez de la afirmación de pronunciación frente a juicio humano de inteligibilidad; el Tier 3 la hace además **explicable** a nivel fonémico. | Validez concurrente por tier |
+| **H5** | Diseñadoras distintas que parten del mismo descriptor y perfil de modalidad producen lecciones con **alta concordancia** en modo, competencia y canal. | Acuerdo interjueces sobre rúbrica de conformidad |
+| **H6** | Un equipo independiente reproduce **lecciones y medidas** comparables **rellenando un pack**, sin modificar el motor. | Prueba de replicabilidad end-to-end |
 
 ---
 
-## 6. Metodología
+## 7. Metodología
 
-### 6.1 Enfoque general: investigación basada en diseño
+### 7.1 Diseño
 
-La tesis adopta la **investigación basada en diseño (DBR)** porque su objeto es simultáneamente un *artefacto* (el método) y un *conocimiento* (los principios de diseño que lo sostienen). La DBR trabaja en ciclos iterativos de diseño–implementación–análisis–rediseño en contexto real, y produce dos resultados: una intervención que funciona y una teoría local sobre por qué funciona. Internamente, cada ciclo de construcción se ejecuta con **SAM** (Allen & Sites, 2012): fase de preparación, *savvy start* de diseño iterativo y ciclos de construcción.
+**Investigación basada en diseño (DBR) con validación en producción.** El objeto es a la vez un artefacto (el módulo) y un conocimiento (los principios que lo sostienen). Que el Tier 1 esté **ya desplegado** distingue esta propuesta de un estudio de laboratorio: los datos de validez proceden de uso real, no de simulaciones.
 
-**Diseño metodológico:** mixto, con integración secuencial explicativa (cuantitativo → cualitativo) en los ciclos 2 y 3.
-
-### 6.2 Los tres macrociclos
-
-| Ciclo | Foco | Objetivos | Métodos | Salida |
-|---|---|---|---|---|
-| **C1 — Formalización** | El método | O1, O2 | Revisión sistemática de literatura; análisis documental del MCER y del *Plan curricular*; **panel Delphi** (2–3 rondas) con personas expertas en lingüística aplicada, diseño instruccional y tecnología educativa; prueba de replicabilidad con personas diseñadoras independientes | Documento de método MLLDE v1.0 validado + rúbrica de conformidad |
-| **C2 — Instrumentación** | El tutor LLM y la literacidad en IA | O2, O3, O4 | Prototipado con SAM; *think-aloud* con aprendices; análisis de la interacción con el tutor; pilotaje del módulo de literacidad en IA; construcción y prueba del perfil xAPI sobre LRS | Prototipo instrumentado + perfil xAPI v0.9 + instrumentos calibrados |
-| **C3 — Evaluación** | El efecto | O5 | Estudio cuasi-experimental con dos condiciones (MLLDE vs. uso no estructurado del tutor LLM), medidas pre/post/seguimiento; entrevistas semiestructuradas; análisis de equidad por subgrupos | Evidencia empírica + método MLLDE v2.0 + perfil xAPI v1.0 |
-
-### 6.3 Participantes y contexto
-
-- **Panel de personas expertas (C1):** 12–15 participantes con perfil de investigación en lingüística aplicada, diseño instruccional o tecnología educativa, y experiencia acreditada en alineación al MCER. Selección por criterios, con índice de competencia experta.
-- **Personas diseñadoras para la prueba de replicabilidad (C1):** 6–8, sin participación previa en el desarrollo del método; cada una produce una lección a partir del mismo descriptor de entrada.
-- **Aprendices (C2–C3):** personas adultas (≥18 años) en niveles **A2–B2**, en dos lenguas meta para verificar el carácter agnóstico del método (español como lengua extranjera e inglés). Muestra orientativa: 20–30 en C2 (pilotaje cualitativo) y **n ≈ 120–160** en C3, repartidos en dos condiciones; el tamaño definitivo se fijará mediante análisis de potencia una vez estimado el tamaño del efecto en C2.
-- **Contexto:** entornos de formación de personas adultas y aprendizaje autónomo en dispositivo móvil, con convenios de colaboración a formalizar en el primer año.
-
-> *Todos los tamaños muestrales indicados son orientativos y se ajustarán tras el análisis de potencia del ciclo 2 y la firma de los convenios.*
-
-### 6.4 Instrumentos y variables
-
-| Constructo | Instrumento | Naturaleza |
-|---|---|---|
-| Progresión lingüística | Prueba pre/post alineada a descriptores MCER (recepción, producción, interacción; mediación en B2), con rúbricas de doble corrección y acuerdo interjueces | Cuantitativa + valorada |
-| Conformidad del diseño | Rúbrica de conformidad MLLDE (modo × competencia × nivel × componentes obligatorios) | Cuantitativa |
-| Competencia en IA generativa | Instrumento adaptado del constructo de cuatro competencias (mecánica de los LLM, *prompting*, verificación de fuentes, autoeficacia), traducido y validado para el contexto | Cuantitativa |
-| Calidad del *prompting* | Rúbrica de valoración de instrucciones producidas por el aprendiz | Valorada |
-| Autoeficacia y persistencia | Escala de autoeficacia + métricas conductuales de reintento y abandono extraídas del LRS | Mixta |
-| Comportamiento de aprendizaje | Sentencias xAPI ancladas a descriptores del MCER (intentos, escalados a tutoría, tiempo en tarea, ruta de la escalera de retroalimentación) | Cuantitativa |
-| Experiencia del aprendiz | *Think-aloud* (C2) y entrevistas semiestructuradas (C3) | Cualitativa |
-| Validación del método | Cuestionarios Delphi con consenso por coeficiente de variación e IQR | Mixta |
-
-### 6.5 Análisis de datos
-
-- **Cuantitativo:** estadística descriptiva; contrastes pre/post; **ANCOVA / modelos mixtos** con la puntuación previa como covariable y el centro/grupo como efecto aleatorio; tamaños del efecto con intervalos de confianza; contraste de no inferioridad para H3; análisis de moderación por subgrupos para H5. Corrección por comparaciones múltiples.
-- **Cualitativo:** análisis temático reflexivo de *think-alouds* y entrevistas, con codificación doble en una submuestra y reporte de acuerdo.
-- **Datos de comportamiento:** análisis de secuencias sobre las sentencias xAPI para reconstruir las rutas reales por la escalera de retroalimentación y su relación con la progresión.
-- **Integración:** matriz de convergencia/divergencia entre hallazgos cuantitativos y cualitativos por cada pregunta específica.
-
-### 6.6 Criterios de calidad
-
-Fiabilidad interjueces reportada (κ / CCI) en toda medida valorada; **preinscripción** del plan analítico del ciclo 3 en un repositorio público antes de la recogida de datos; publicación de instrumentos, rúbricas y del perfil xAPI en acceso abierto; auditoría de trazabilidad entre cada afirmación empírica y su dato de origen.
-
-### 6.7 Consideraciones éticas, protección de datos y transparencia de la IA
-
-1. **Comité de ética.** Solicitud de informe favorable al comité de ética de la investigación de la UPV antes del ciclo 2.
-2. **Consentimiento informado.** Participación voluntaria, revocable, con información específica sobre el registro de la interacción con el tutor LLM. Exclusión de personas menores de edad.
-3. **RGPD.** Minimización de datos, seudonimización en origen, base jurídica de consentimiento, plazos de conservación definidos, sin transferencias no necesarias; evaluación de impacto si procede.
-4. **Reglamento Europeo de IA (art. 50).** Divulgación explícita al aprendiz de que interactúa con un sistema de IA y de que determinados contenidos han sido generados o asistidos por IA, con etiquetado dentro de la propia interfaz.
-5. **Accesibilidad.** Conformidad WCAG 2.1 AA y Acta Europea de Accesibilidad en todos los materiales de la intervención.
-6. **Gobernanza del modelo.** Registro de versiones del modelo y de las instrucciones de sistema, para garantizar la reproducibilidad del estudio pese a la evolución de los proveedores.
-7. **Propiedad intelectual.** El MCER, el *Plan curricular del Instituto Cervantes* y las especificaciones xAPI se citan y no se redistribuyen.
-
-### 6.8 Limitaciones previstas
-
-Dependencia de la evolución de los modelos comerciales (mitigada mediante registro de versiones y anclaje del contrato pedagógico a nivel de método, no de proveedor); posible efecto de novedad en la condición experimental (mitigado con medida de seguimiento); dos lenguas meta no agotan la afirmación de agnosticismo lingüístico (se reportará como límite del alcance); autoselección de las personas participantes en contextos de aprendizaje autónomo.
-
----
-
-## 7. Plan de trabajo y cronograma
-
-Modalidad a **tiempo parcial, cuatro años**, compatible con la actividad profesional de la doctoranda.
-
-| Año | Semestres | Hitos principales | Entregable |
+| Ciclo | Foco | Objetivos | Métodos |
 |---|---|---|---|
-| **Año 1** | S1–S2 | Revisión sistemática de literatura; análisis documental MCER + *Plan curricular*; formalización de MLLDE v0.9; diseño del Delphi; convenios de colaboración; formación transversal del programa | Documento de método v0.9 · protocolo Delphi · plan de investigación aprobado |
-| **Año 2** | S3–S4 | Ejecución del Delphi (2–3 rondas); prueba de replicabilidad; **MLLDE v1.0 validado**; construcción del prototipo instrumentado; perfil xAPI v0.9 sobre LRS; solicitud al comité de ética | **Artículo 1** (el método) enviado · perfil xAPI v0.9 publicado |
-| **Año 3** | S5–S6 | Ciclo 2 completo: *think-aloud*, pilotaje del módulo de literacidad en IA, calibración de instrumentos, análisis de potencia; preinscripción del ciclo 3; inicio de la recogida de datos del cuasi-experimento | **Artículo 2** (tutor LLM delimitado + literacidad en IA) enviado · estancia de investigación |
-| **Año 4** | S7–S8 | Cierre de la recogida de datos; análisis mixto; entrevistas; MLLDE v2.0; perfil xAPI v1.0; redacción y depósito de la tesis; defensa | **Artículo 3** (evidencia de efecto) enviado · tesis depositada · mención internacional |
+| **C1 — Formalización y validez del Tier 1** | El método y la medida que ya existe | O1, O2, O5 | Formalización de ambos pilares; **panel Delphi** sobre el contrato de diseño; **prueba de equivalencia** con diseñadoras independientes; muestreo de sesiones del LRS; **doble evaluación humana experta** con acuerdo interjueces; test-retest; sensibilidad al modelo; auditoría de integridad |
+| **C2 — Instrumentación y feedback** | Pronunciación Tier 2 + noticing | O3 | Integración de la capa acústica; validez concurrente frente a juicio de inteligibilidad; estudio del *uptake* con condiciones de saliencia contrastadas; *think-aloud* |
+| **C3 — Tier 3 y replicabilidad** | La contribución fonémica y la prueba del método | O4, O6 | Inventario IPA por nivel; GOP a medida; validación fonémica; **prueba de replicabilidad end-to-end** (diseño + medición) con equipo independiente rellenando un pack; publicación del perfil xAPI |
 
-**Mención internacional.** Se prevé una estancia de investigación de tres meses en el año 3 en un grupo europeo de referencia en CALL/MALL, y la redacción de al menos una parte de la tesis en inglés, para optar a la mención internacional.
+### 7.2 Datos e instrumentos
 
----
+- **Evidencia de aprendizaje:** sentencias **xAPI** en un **LRS** (Veracity), **actor seudónimo**, dos flujos separados (medición / pedagogía), puerta ASR 0.70, y las extensiones `ext/effective-time`, `ext/measure-model`, `ext/srs-schedule`, `ext/learning-target`.
+- **Criterio humano:** panel de evaluadores expertos con formación MCER, doble corrección ciega sobre una submuestra y acuerdo reportado.
+- **Pronunciación:** juicios humanos de inteligibilidad como criterio externo para los Tiers 2 y 3.
+- **Auditoría de integridad:** auditoría de medición con matriz de hallazgos, un ***«H0 watchdog»*** que verifica que **ningún descriptor se pinte como si fuera una banda**, y verificación en producción.
+- **Instrumentos de transferencia:** informes por persona (aprendiz / docente / RR. HH.) bajo marco Kirkpatrick y Phillips, con alineación **ESCO** opcional.
 
-## 8. Resultados esperados y contribución original
+### 7.3 Análisis
 
-1. **Un método formalizado y validado (MLLDE v2.0)** — publicado con su documento de especificación, su contrato de entrada, su rúbrica de conformidad y su plantilla de planificación, de modo que un tercer equipo pueda aplicarlo sin la autora.
-2. **Un contrato pedagógico para tutores LLM en aprendizaje de lenguas** — la delimitación funcional del modelo dentro de una escalera de retroalimentación, con evidencia empírica de su efecto frente al uso no estructurado.
-3. **Un modelo de literacidad en IA integrada en el currículo de lenguas** — operacionalización de las cuatro competencias del constructo como tareas MCER de recepción, producción y mediación, con evidencia de mejora sin coste lingüístico.
-4. **Un perfil xAPI abierto para datos de aprendizaje de lenguas anclados al MCER** — vocabulario, verbos y mapa a cmi5, con alineación a ESCO, publicado en acceso abierto.
-5. **Evidencia empírica** sobre progresión MCER, competencia en IA y autoeficacia, incluido el análisis de equidad entre subgrupos.
-6. **Instrumentos reutilizables** — rúbricas, escalas adaptadas y protocolo de análisis, publicados para su reutilización y réplica.
+Fiabilidad interjueces (CCI, κ ponderado) y acuerdo LLM–humano; estabilidad test-retest; modelos mixtos para el efecto de la condición de saliencia sobre el *uptake*, con el centro como efecto aleatorio; validez concurrente por tier con intervalos de confianza; análisis de secuencias sobre xAPI para reconstruir trayectorias reales; análisis temático de los *think-aloud*. **Preinscripción** del plan analítico de cada ciclo antes de la recogida.
 
-**Originalidad.** La aportación no está en proponer un marco pedagógico nuevo, sino en **la síntesis operacionalizada, replicable y medible** de marcos consolidados, con dos elementos que la literatura aún no articula conjuntamente: la delimitación funcional del tutor LLM dentro del ciclo didáctico y la integración curricular de la literacidad en IA en la propia tarea de lengua — todo ello anclado a un estándar internacional y verificable mediante datos interoperables.
+### 7.4 Ética y cumplimiento
 
----
+1. **RGPD** (Reg. UE 2016/679): datos personales fuera del modelo y del LRS; seudonimización en origen; medición sobre servicio de pago **sin entrenamiento** con los datos.
+2. **Ley de IA de la UE, art. 50** (Reg. UE 2024/1689): el agente se declara como IA ante el aprendiz; el contenido asistido o generado se etiqueta.
+3. **Inteligibilidad, no acento nativo:** decisión ética explícita — no penalizar variedades legítimas del inglés.
+4. **Comité de ética** de la UPV antes del ciclo 2. Participación voluntaria y revocable; personas menores excluidas.
+5. **Accesibilidad:** WCAG 2.1 AA en todas las superficies de la intervención.
+6. **Propiedad intelectual:** el MCER se parafrasea y se cita, no se reproduce; Cambridge, xAPI (ADL/IEEE), IPA y ESCO se citan como estándares.
 
-## 9. Plan de difusión
+### 7.5 Limitaciones previstas
 
-**Revistas objetivo (indexadas):** *ReCALL*; *Computer Assisted Language Learning*; *Language Learning & Technology*; *System*; *Journal of Computer Assisted Learning*; *Computers & Education*; *British Journal of Educational Technology*; *Educación XX1*; *RIED — Revista Iberoamericana de Educación a Distancia*; *Revista Española de Lingüística Aplicada (RESLA)*.
-
-**Congresos:** EUROCALL · WorldCALL · CALL Research Conference · AELFE · AESLA · EDULEARN / INTED · Jornadas de Innovación Educativa y Docencia en Red (UPV).
-
-**Difusión abierta y transferencia:** publicación del método, las rúbricas y el perfil xAPI en repositorio abierto; RiuNet (UPV); ORCID; seminarios de formación docente y transferencia a instituciones de enseñanza de lenguas.
-
----
-
-## 10. Recursos, viabilidad y encaje institucional
-
-**Viabilidad técnica.** La doctoranda administra un LMS (Chamilo) desde 2019, produce contenido en Moodle y Canvas LMS, empaqueta en SCORM/xAPI desde Articulate 360 (Rise) y ha construido un prototipo funcional del producto de referencia. La infraestructura de recogida de datos (LRS + perfil xAPI) es, por tanto, alcanzable con recursos modestos.
-
-**Viabilidad de acceso al campo.** Más de veinte años de docencia de lenguas a personas adultas y la acreditación como examinadora DELE del Instituto Cervantes facilitan el acceso a poblaciones de aprendices adultos y a instituciones colaboradoras.
-
-**Recursos necesarios:** acceso a un LRS (opción de código abierto autoalojado); créditos de API de un proveedor de LLM para la condición experimental; licencias de software estadístico (alternativas abiertas disponibles); financiación de la estancia de investigación y de las cuotas de publicación en acceso abierto — se concurrirá a las convocatorias de ayudas predoctorales y de movilidad.
-
-**Encaje con la UPV.** La propuesta se inscribe con naturalidad en el Departamento de Lingüística Aplicada de la UPV: continúa la formación de máster de la doctoranda en ese mismo departamento, se apoya en el modelo IPO gamificado desarrollado en él y conecta con la investigación en escritura académica y metadiscurso en la que la doctoranda ya ha participado.
+Dependencia de proveedores comerciales de ASR y de evaluación de pronunciación (mitigada declarando `measure_model` por sesión y anclando el contrato al método, no al proveedor); el caso testigo es **inglés de negocios**, de modo que la generalización a otras lenguas y dominios se apoya en la prueba de packs y debe reportarse como límite de alcance; autoselección de las personas usuarias de un producto en producción; posible efecto de novedad, mitigado con medidas de seguimiento.
 
 ---
 
-## 11. Referencias (APA 7.ª)
+## 8. Plan de trabajo
 
-Advanced Distributed Learning Initiative. (2017). *xAPI profiles specification* (Version 1.0). GitHub. https://adlnet.github.io/xapi-profiles/
+Modalidad a **tiempo parcial, cuatro años**.
 
-Allen, M. W., & Sites, R. (2012). *Leaving ADDIE for SAM: An agile model for developing the best learning experiences*. ASTD Press.
+| Año | Hitos | Entregable |
+|---|---|---|
+| **1** | Revisión sistemática; especificación formal del Módulo de Medición y del registry de escalas; diseño del estudio de validez del Tier 1; solicitud al comité de ética; convenios | Especificación v1.0 · plan de investigación aprobado |
+| **2** | Ciclo 1 completo: muestreo del LRS, doble evaluación humana experta, test-retest, sensibilidad al modelo, auditoría de integridad | **Artículo 1** — validez del Tier 1 · perfil xAPI v0.9 |
+| **3** | Ciclo 2: integración de la capa acústica (Tier 2), validez concurrente, estudio del *uptake* del noticing; estancia de investigación | **Artículo 2** — pronunciación instrumentada y noticing |
+| **4** | Ciclo 3: inventario IPA y GOP a medida (Tier 3); prueba de replicabilidad motor + pack; redacción, depósito y defensa | **Artículo 3** — GOP fonémico · tesis depositada · mención internacional |
+
+**Mención internacional:** estancia de tres meses en el año 3 en un grupo europeo de referencia en evaluación del habla o CALL, y redacción de parte de la tesis en inglés.
+
+---
+
+## 9. Resultados esperados y contribución original
+
+1. **Una especificación abierta de MLLDE en sus dos pilares** — el contrato de diseño con perfil de modalidad y su rúbrica de conformidad, y el Módulo de Medición con su registry de escalas MCER, esquema de packs y reglas del consolidador, aplicables por terceros.
+2. **Evidencia de validez del Tier 1** — acuerdo con evaluación humana experta, estabilidad y sensibilidad al modelo, sobre datos de producción.
+3. **La pronunciación, encendida y explicada** — del «—» honesto al Tier 2 instrumentado y al Tier 3 fonémico, con inventario IPA por nivel y variantes aceptadas.
+4. **Un perfil xAPI abierto** para evidencia de competencia anclada al MCER, con declaración de tier y de modelo de medición.
+5. **La prueba de replicabilidad motor + pack** en una segunda aplicación.
+6. **Una política de honestidad de la evidencia** transferible a cualquier producto educativo con IA.
+
+**Originalidad.** No está en proponer una rúbrica nueva ni un algoritmo acústico nuevo, sino en **una arquitectura de responsabilidad**: separar observación de decisión, obligar a cada afirmación a declarar su grado de precisión, y hacer ambas cosas verificables en datos interoperables. Es una aportación metodológica a la evaluación asistida por IA, con la pronunciación como caso testigo llevado hasta el nivel fonémico.
+
+---
+
+## 10. Difusión
+
+**Revistas objetivo:** *Language Testing* · *Assessing Writing / Assessing Speaking* · *ReCALL* · *Computer Assisted Language Learning* · *Language Learning & Technology* · *Speech Communication* · *System* · *Computers & Education* · *RESLA* · *Educación XX1*.
+
+**Congresos:** EUROCALL · WorldCALL · Interspeech / SLaTE · ALTE · EALTA · AESLA · AELFE · Jornadas de Innovación Educativa y Docencia en Red (UPV).
+
+**Acceso abierto:** especificación, registry, rúbricas y perfil xAPI en repositorio público; RiuNet (UPV); ORCID.
+
+---
+
+## 11. Viabilidad y encaje
+
+**Técnica.** El Tier 1 está **en producción y verificado** sobre un LRS vivo; la doctoranda administra LMS desde 2019, empaqueta SCORM/xAPI y ha construido el sistema completo. La infraestructura de recogida existe: no hay que crearla, hay que validarla.
+
+**Acceso al campo.** Población real de aprendices adultos a través de TK Coach, más veinte años de docencia y la acreditación como examinadora DELE del Instituto Cervantes.
+
+**Recursos.** LRS (Veracity, ya operativo); créditos de API de LLM y de evaluación de pronunciación de proveedor para el Tier 2; tiempo de evaluadores humanos expertos (partida principal); herramientas estadísticas abiertas; financiación para estancia y publicación en acceso abierto — se concurrirá a convocatorias predoctorales y de movilidad.
+
+**Encaje con la UPV.** La propuesta se inscribe en el **Departamento de Lingüística Aplicada**, donde la doctoranda cursó el máster y desarrolló su investigación de corpus sobre metadiscurso, y donde el modelo IPO gamificado que alimenta el diseño instruccional de MLLDE fue desarrollado.
+
+---
+
+## 12. Referencias (APA 7.ª)
+
+Advanced Distributed Learning Initiative. (2017). *xAPI profiles specification* (Version 1.0). https://adlnet.github.io/xapi-profiles/
 
 Casañ-Pitarch, R. (2017). *An approach to digital game-based learning: Video-games principles for language learning*. Journal of Language Teaching and Research.
 
-Clothier, P. (2026). *Mastering mobile learning design: A practical guide* (1st ed.). Routledge.
-
-Council of Europe. (2020). *Common European Framework of Reference for Languages: Learning, teaching, assessment — Companion volume*. Council of Europe Publishing. https://www.coe.int/lang-cefr
+Council of Europe. (2020). *Common European Framework of Reference for Languages: Learning, teaching, assessment — Companion volume*. Council of Europe Publishing.
 
 Coyle, D. (2007). Content and language integrated learning: Towards a connected research agenda for CLIL pedagogies. *International Journal of Bilingual Education and Bilingualism, 10*(5), 543–562.
 
-Coyle, D., Hood, P., & Marsh, D. (2010). *CLIL: Content and language integrated learning*. Cambridge University Press.
-
 Crawford, M. L. (2001). *Teaching contextually: Research, rationale, and techniques for improving student motivation and achievement in mathematics and science*. CCI Publishing / CORD.
 
-European Commission. (n.d.). *ESCO: European Skills, Competences, Qualifications and Occupations*. Retrieved September 5, 2026, from https://esco.ec.europa.eu/
-
-Europass. (n.d.). *Common European Framework of Reference for language skills* [Self-assessment grid]. European Union. Retrieved September 5, 2026, from https://europass.europa.eu/en/common-european-framework-reference-language-skills
-
-Harmer, J. (2007). *The practice of English language teaching* (4th ed.). Pearson Longman.
+European Commission. (n.d.). *ESCO: European Skills, Competences, Qualifications and Occupations*. Recuperado el 5 de septiembre de 2026, de https://esco.ec.europa.eu/
 
 IEEE. (2023). *IEEE standard for learning technology — JSON data model format and RESTful web service for learner experience data tracking and access (xAPI)* (IEEE Std 9274.1.1-2023). IEEE Standards Association.
 
-Instituto Cervantes. (n.d.). *Plan curricular del Instituto Cervantes. Niveles de referencia para el español*. Centro Virtual Cervantes. https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/default.htm
+International Phonetic Association. (1999). *Handbook of the International Phonetic Association: A guide to the use of the International Phonetic Alphabet*. Cambridge University Press.
+
+Harmer, J. (2007). *The practice of English language teaching* (4.ª ed.). Pearson Longman.
 
 Johnson, E. B. (2002). *Contextual teaching and learning: What it is and why it's here to stay*. Corwin Press.
-
-Kasper, G., & Rose, K. R. (2001). *Pragmatics in language teaching*. Cambridge University Press.
 
 Kirkpatrick, J. D., & Kirkpatrick, W. K. (2016). *Kirkpatrick's four levels of training evaluation*. ATD Press.
 
@@ -291,16 +316,20 @@ Krashen, S. D. (1985). *The input hypothesis: Issues and implications*. Longman.
 
 Lewis, M. (1993). *The lexical approach: The state of ELT and a way forward*. Language Teaching Publications.
 
-Mayer, R. E. (2009). *Multimedia learning* (2nd ed.). Cambridge University Press.
+Mayer, R. E. (2009). *Multimedia learning* (2.ª ed.). Cambridge University Press.
 
-Phillips, J. J., & Phillips, P. P. (2016). *Handbook of training evaluation and measurement methods* (4th ed.). Routledge.
+Phillips, J. J., & Phillips, P. P. (2016). *Handbook of training evaluation and measurement methods* (4.ª ed.). Routledge.
 
-Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. *American Psychologist, 55*(1), 68–78.
+Schmidt, R. W. (1990). The role of consciousness in second language learning. *Applied Linguistics, 11*(2), 129–158. https://doi.org/10.1093/applin/11.2.129
+
+Unión Europea. (2016). *Reglamento (UE) 2016/679, General de Protección de Datos*. DOUE L 119.
+
+Unión Europea. (2024). *Reglamento (UE) 2024/1689, Ley de Inteligencia Artificial*. DOUE.
 
 Witt, S. M., & Young, S. J. (2000). Phone-level pronunciation scoring and assessment for interactive language learning. *Speech Communication, 30*(2–3), 95–108. https://doi.org/10.1016/S0167-6393(99)00044-8
 
-> **Nota sobre las referencias.** Las entradas de esta lista proceden de la base bibliográfica verificada del proyecto MLLDE. Antes del depósito formal de la propuesta debe **verificarse en la fuente original** la paginación y el año exactos de Casañ-Pitarch (2017), Coyle (2007) y Crawford (2001), y ampliarse el estado de la cuestión (§4.4 y §4.5) con la literatura sobre tutores LLM publicada entre 2024 y 2026, que evoluciona con rapidez.
+> **Nota.** Antes del depósito conviene ampliar §4.2 con la literatura 2024–2026 sobre evaluación automática del habla con modelos de lenguaje, y §4.3 con los trabajos recientes sobre *uptake* y retroalimentación correctiva en interacción con agentes.
 
 ---
 
-*© 2026 Ana Eslava-Graterol (ProfeAnaEslavaEdTech). Marca y web: profeanaeslava · GitHub: profeanaeslavaedtech · Universitat Politècnica de València. Este documento aplica la metodología MLLDE; «Language Passport»™ y «Grace» son marcas de la autora. Elaborado con asistencia de IA (Claude Code, Anthropic) bajo supervisión, verificación y autoría intelectual humana, conforme a las obligaciones de transparencia del Reglamento Europeo de Inteligencia Artificial.*
+*© 2026 Ana Eslava-Graterol — MLLDE (Universitat Politècnica de València). TK Coach y «Capi» © Talketika. El MCER (Consejo de Europa) se parafrasea y se cita, no se reproduce; Cambridge, xAPI (ADL/IEEE), IPA y ESCO se citan como estándares. Elaborado con asistencia de IA; revisado y aprobado por la autora, en el espíritu del art. 50 de la Ley de IA de la UE.*

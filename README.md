@@ -5,7 +5,7 @@ My EdTech portfolio.
 ## Doctoral Project — MLLDE
 
 **[`doctorado.html`](doctorado.html)** — the doctoral project page (bilingual ES/EN, light and dark
-themes) for the thesis proposal *"MLLDE — Mobile Language Learning Design Environment: a method for
+themes) for the thesis proposal *"MLLDE — Multimodal Language Learning Design & Evaluation: a method for
 integrating LLM tutors and AI literacy into CEFR curriculum design"* (PhD Programme in Applied
 Linguistics, Department of Applied Linguistics, Universitat Politècnica de València).
 

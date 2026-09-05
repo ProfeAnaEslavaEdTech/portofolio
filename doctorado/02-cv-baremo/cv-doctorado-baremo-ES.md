@@ -11,9 +11,9 @@
 
 **Departamento de Lingüística Aplicada · Universitat Politècnica de València (UPV)**
 
-**Línea de investigación:** Tecnologías del lenguaje y diseño instruccional para el aprendizaje de lenguas
+**Línea de investigación:** Tecnologías del lenguaje, evaluación de la competencia oral y diseño instruccional anclado al MCER
 
-**Propuesta de tesis:** *MLLDE — Mobile Language Learning Design Environment: método para integrar tutores LLM y literacidad en IA en el diseño curricular CEFR*
+**Propuesta de tesis:** *MLLDE — Multimodal Language Learning Design & Evaluation: diseño curricular por modalidad para el aprendizaje móvil de lenguas y medición de la competencia oral con tres tiers de evidencia*
 
 > **Nota de estructura.** Este CV está organizado **exactamente según el baremo de la convocatoria** (Expediente académico 70% + Otros méritos 30%, con seis méritos de 5% cada uno), de modo que la comisión pueda puntuar cada apartado sin buscar la información. Cada mérito remite a su documento acreditativo mediante un código **[DOC-nn]** que corresponde al índice del Anexo (§8) y al orden del PDF de documentación.
 
@@ -195,15 +195,27 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 | Periodo acreditado | **Julio – diciembre de 2003**, y **vigente** en la fecha de expedición |
 | Documento | **Constancia** firmada por la Trabajadora Social de la ULA-Táchira, San Cristóbal, **13 de mayo de 2004** **[DOC-12]** |
 
-**Segunda beca — beca del Ministerio (máster, UPV).**
+**Beca general del Ministerio de Educación, Formación Profesional y Deportes — curso 2025/2026.**
 
-| # | Beca | Entidad convocante | Titulación / periodo | Tipo | Documento |
-|---|---|---|---|---|---|
-| 2 | **Beca del Ministerio** (beca general de estudios universitarios) | Ministerio de Educación *[confirmar denominación exacta de la convocatoria]* | Máster Universitario en Lenguas y Tecnología, UPV · *[curso a completar]* | Beca general de estudios de máster | **[DOC-13]** |
+Concedida para el **Máster Universitario en Lenguas y Tecnología (UPV, Departamento de Lingüística Aplicada)** al amparo de la convocatoria general de becas, **Orden EFD/335/25, de 3 de abril** (BOE de 7 de abril). Unidad de trámite: Universitat Politècnica de València. Resolución de concesión de cuantía variable **[DOC-13]**.
 
-**Por qué este mérito refuerza el bloque A.** La Beca de Alto Rendimiento **no es una ayuda por renta**: se otorga por rendimiento académico. Acredita por vía independiente —y desde una oficina distinta de la que emite las calificaciones— el mismo hecho que sostiene el 70 % del expediente. Conviene decirlo así de forma explícita en la solicitud: convierte el 5 % de becas en una segunda fuente de prueba del expediente.
+| Componente concedido | Importe |
+|---|---|
+| Cuantía fija ligada a la renta | 1.700,00 € |
+| **Excelencia académica — tramo de nota media entre 9 y 9,49** | **100,00 €** |
+| Cuantía variable | 2.131,72 € |
+| **Beca de matrícula** | Compensada directamente a la universidad |
 
-> **Acción antes de enviar:** completar el **curso académico** y la **denominación oficial exacta** de la convocatoria ministerial y localizar su resolución de concesión (el justificante de pago no acredita el mérito).
+> ⭐ **El detalle que hay que señalar a la comisión.** La resolución incluye un **componente específico de «Excelencia Académica» para el tramo de nota media entre 9 y 9,49**. Es decir: **el propio Ministerio certifica, en un acto administrativo independiente, que el expediente del máster está en ese tramo.** Confirma el 9,4/10 desde una fuente distinta de la certificación académica de la UPV. Cítalo explícitamente en la solicitud —«beca general del Ministerio con componente de excelencia académica»— y no como una beca genérica.
+
+**Por qué este apartado vale más que su 5 %.** Las dos becas acreditan rendimiento, cada una en un extremo de la trayectoria y **cada una desde una administración distinta de la que emite las calificaciones**:
+
+- La **Beca de Alto Rendimiento** de la ULA (2003–2004) certifica el rendimiento en el grado desde la Dirección de Asuntos Estudiantiles.
+- La **beca del Ministerio** (2025/2026) certifica, con su componente de excelencia académica, que la nota del máster está en el tramo **9–9,49**.
+
+Es decir: el 70 % del expediente —9,07 en el grado y 9,4 en el máster— queda respaldado **dos veces**, por dos administraciones y con veinte años de diferencia. Conviene decirlo así de forma explícita en la solicitud.
+
+> ⚠️ **Antes de escanear la resolución del Ministerio:** el documento incluye tu **NIF, tu domicilio y tu número de cuenta bancaria completo**. **Tacha el número de cuenta** antes de adjuntarlo — la comisión no lo necesita y no debe circular en un expediente que pasa por varias manos.
 
 ---
 
@@ -222,7 +234,7 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 **Diseñadora Instruccional y Arquitecta de eLearning** — profesional autónoma (España) · **octubre 2019 – actualidad** · remoto
 - **Academic Writing Journey (AWJ):** curso gamificado de 6 niveles de inglés académico B2→C1, **calificado 10/10 por diseño inclusivo (UPV, 2026)**. **[DOC-15]**
 - Guionización íntegra de módulos y documento de diseño de alto nivel (HDD).
-- **Modelo documentado de gobernanza humano–IA** para la generación de contenido y de código — antecedente directo del componente de *literacidad en IA* de la tesis.
+- **Modelo documentado de gobernanza humano–IA** para la generación de contenido y de código — antecedente directo del principio ***Measure ≠ Decide*** de la tesis: quién observa, quién decide y qué queda registrado.
 - Capa nativa de accesibilidad (dictado por voz, alto contraste, lectura en audio) conforme a **WCAG** y al **Acta Europea de Accesibilidad**.
 - Migración de AWJ de Canva a **Articulate 360 (Rise)** con empaquetado **SCORM / xAPI** — competencia técnica directamente reutilizable en el módulo de medición de la tesis.
 
@@ -240,7 +252,7 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 
 **Acreditación:** certificados de servicio UDO **[DOC-16]** · vida laboral / certificado de actividad como autónoma **[DOC-17]** · acreditación de tutoría AVE Global **[DOC-18]** · portafolio en línea (enlace en §0).
 
-> **Encaje con la tesis.** Los cuatro bloques de experiencia se corresponden uno a uno con los componentes de la propuesta MLLDE: docencia MCER → anclaje CEFR; diseño instruccional → método MLLDE; gobernanza humano–IA → literacidad en IA; SCORM/xAPI y administración de LMS → módulo de medición y arquitectura de datos de aprendizaje.
+> **Encaje con la tesis.** Los cuatro bloques de experiencia se corresponden uno a uno con los componentes de MLLDE: docencia alineada al MCER → anclaje al estándar y criterio humano de evaluación; diseño instruccional → el pilar de diseño por modalidad; gobernanza humano–IA documentada → el principio *Measure ≠ Decide*; SCORM/xAPI y administración de LMS → el Módulo de Medición y su trazabilidad.
 
 ---
 

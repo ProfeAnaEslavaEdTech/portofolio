@@ -21,7 +21,7 @@
 | **LinkedIn** | linkedin.com/in/anaeslava |
 | **Research portfolio** | profeanaeslavaedtech.github.io/portofolio |
 
-**Principal research line.** Applied linguistics in technology-mediated language teaching: **CEFR-anchored curriculum design**, mobile-assisted language learning (MALL), the pedagogical integration of large-language-model tutors, and **AI literacy** as a curricular objective, with interoperable performance measurement (xAPI/cmi5).
+**Principal research line.** Applied linguistics in technology-mediated language teaching and **assessment**. Own framework **MLLDE** (*Multimodal Language Learning Design & Evaluation*), with two pillars: **mobile curriculum design with modality as a declared variable** (text, audio, image, voice), and **speaking assessment** anchored to the CEFR under the principle *Measure ≠ Decide* — the model observes, a deterministic engine decides — with a **three-tier evidence model** for pronunciation and xAPI traceability.
 
 ---
 
@@ -59,7 +59,9 @@ Own average **18.97/20** against the cohort's **15.77/20** (+3.20 points). Evide
 
 A **merit scholarship, not need-based aid**, awarded on academic performance. Certified period July–December 2003, still current at the date of the certificate (13 May 2004).
 
-**Ministry scholarship** — general higher-education grant for the Master's in Languages and Technology, UPV. *[Official name and academic year to complete.]*
+**General scholarship, Spanish Ministry of Education, Vocational Training and Sport — 2025/2026**
+
+Awarded for the Master's in Languages and Technology (UPV) under the general call, Order EFD/335/25 of 3 April. Includes a **tuition scholarship** and an **academic excellence component for the grade-average band 9–9.49**: the Ministry thereby certifies, in an independent act, that the master's record falls in that band.
 
 **Diploma of Honour from the Rector of ULA** — final-year dissertation graded **20/20, Sobresaliente** (15 November 2004).
 

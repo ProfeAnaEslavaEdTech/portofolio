@@ -21,7 +21,7 @@
 | **LinkedIn** | linkedin.com/in/anaeslava |
 | **Portafolio de investigación** | profeanaeslavaedtech.github.io/portofolio |
 
-**Línea de investigación principal.** Lingüística aplicada a la enseñanza de lenguas mediada por tecnología: **diseño curricular anclado al MCER**, aprendizaje móvil de lenguas (MALL), integración pedagógica de tutores basados en modelos de lenguaje y **literacidad en IA** como objetivo curricular, con medición interoperable del desempeño (xAPI/cmi5).
+**Línea de investigación principal.** Lingüística aplicada a la enseñanza y **evaluación** de lenguas mediada por tecnología. Marco propio **MLLDE** (*Multimodal Language Learning Design & Evaluation*), con dos pilares: **diseño curricular móvil con la modalidad como variable declarada** (texto, audio, imagen, voz), y **medición de la competencia oral** anclada al MCER bajo el principio *Measure ≠ Decide* — el modelo observa, un motor determinista decide — con un modelo de pronunciación por **tres tiers de evidencia** y trazabilidad en xAPI.
 
 ---
 
@@ -56,7 +56,9 @@ Promedio propio **18,97/20** frente al **15,77/20** de la promoción (+3,20 punt
 **Beca de Alto Rendimiento Académico — Dirección de Asuntos Estudiantiles, ULA-Táchira**
 Beca **de mérito, no asistencial**, concedida por rendimiento académico. Periodo acreditado julio–diciembre de 2003, vigente a la fecha de expedición de la constancia (13 de mayo de 2004).
 
-**Beca del Ministerio** — beca general de estudios universitarios para el Máster en Lenguas y Tecnología, UPV. *[Completar denominación oficial y curso académico.]*
+**Beca general del Ministerio de Educación, Formación Profesional y Deportes — curso 2025/2026**
+
+Concedida para el Máster en Lenguas y Tecnología (UPV), convocatoria general Orden EFD/335/25 de 3 de abril. Incluye **beca de matrícula** y un **componente de excelencia académica correspondiente al tramo de nota media 9–9,49**: el Ministerio certifica así, en un acto independiente, que el expediente del máster se sitúa en ese tramo.
 
 **Diploma de Honor del Rector de la ULA** — Trabajo Especial de Grado calificado **20/20, Sobresaliente** (15 de noviembre de 2004).
 

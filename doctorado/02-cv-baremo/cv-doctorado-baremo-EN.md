@@ -11,9 +11,9 @@
 
 **Department of Applied Linguistics · Universitat Politècnica de València (UPV), Spain**
 
-**Research line:** Language technologies and instructional design for language learning
+**Research line:** Language technologies, speaking assessment and CEFR-anchored instructional design
 
-**Thesis proposal:** *MLLDE — Mobile Language Learning Design Environment: a method for integrating LLM tutors and AI literacy into CEFR curriculum design*
+**Thesis proposal:** *MLLDE — Multimodal Language Learning Design & Evaluation: modality-declared curriculum design for mobile language learning, and speaking assessment with three tiers of evidence*
 
 > **Note on structure.** This CV is organised **exactly according to the call's scoring rubric** (Academic record 70% + Other merits 30%, six merits worth 5% each), so the admissions committee can score each item without searching for the information. Every merit points to its supporting document through a **[DOC-nn]** code matching the index in the Annex (§8) and the order of the evidence PDF.
 
@@ -195,15 +195,27 @@ As of this application, no second official master's degree is held besides the M
 | Certified period | **July – December 2003**, and **still current** at the date of issue |
 | Document | **Certificate** signed by the ULA-Táchira Social Worker, San Cristóbal, **13 May 2004** **[DOC-12]** |
 
-**Second scholarship — Ministry grant (master's, UPV).**
+**General scholarship, Spanish Ministry of Education, Vocational Training and Sport — academic year 2025/2026.**
 
-| # | Scholarship | Awarding body | Degree / period | Type | Document |
-|---|---|---|---|---|---|
-| 2 | **Ministry scholarship** (general higher-education grant) | Ministry of Education *[confirm the exact name of the call]* | Master's in Languages and Technology, UPV · *[year to complete]* | General master's-level study grant | **[DOC-13]** |
+Awarded for the **Master's Degree in Languages and Technology (UPV, Department of Applied Linguistics)** under the general scholarship call, **Order EFD/335/25 of 3 April** (BOE, 7 April). Processing unit: Universitat Politècnica de València. Variable-amount award resolution **[DOC-13]**.
 
-**Why this merit reinforces Block A.** The High Academic Performance Scholarship is **not income-based aid**: it is awarded on performance. It independently corroborates — from a different office than the one issuing grades — the very fact that carries the 70% academic record. Say so explicitly in the application: it turns the 5% scholarship item into a second source of proof for the record.
+| Component awarded | Amount |
+|---|---|
+| Fixed income-linked amount | €1,700.00 |
+| **Academic excellence — grade-average band 9 to 9.49** | **€100.00** |
+| Variable amount | €2,131.72 |
+| **Tuition scholarship** | Settled directly with the university |
 
-> **Action before submission:** complete the **academic year** and the **exact official name** of the ministerial call, and locate its award resolution (a payment receipt does not evidence the merit).
+> ⭐ **The detail to point out to the committee.** The resolution includes a specific **"Academic Excellence" component for the grade-average band 9 to 9.49**. In other words, **the Ministry itself certifies, in an independent administrative act, that the master's record falls in that band.** It confirms the 9.4/10 from a source other than the UPV transcript. Cite it explicitly as a "general Ministry scholarship with an academic excellence component", not as a generic grant.
+
+**Why this item is worth more than its 5%.** Both scholarships evidence performance, one at each end of the trajectory, and **each from an administration other than the one issuing the grades**:
+
+- The ULA **High Academic Performance Scholarship** (2003–04) certifies undergraduate performance, from the Directorate of Student Affairs.
+- The **Ministry scholarship** (2025/26), through its academic excellence component, certifies that the master's average falls in the **9–9.49** band.
+
+So the 70% academic record — 9.07 in the undergraduate degree and 9.4 in the master's — is corroborated **twice**, by two administrations, twenty years apart. Say so explicitly in the application.
+
+> ⚠️ **Before scanning the Ministry resolution:** the document carries your **national ID number, home address and full bank account number**. **Redact the account number** before attaching it — the committee does not need it and it should not circulate in a file that passes through several hands.
 
 ---
 
@@ -222,7 +234,7 @@ As of this application, no second official master's degree is held besides the M
 **Instructional Designer & eLearning Architect** — self-employed (Spain) · **October 2019 – present** · remote
 - **Academic Writing Journey (AWJ):** 6-level gamified course in academic English B2→C1, **rated 10/10 for inclusive design (UPV, 2026)**. **[DOC-15]**
 - Full module scripting and a professional High-Level Design Document (HDD).
-- **Documented human–AI governance model** for content and code generation — the direct antecedent of the thesis's *AI literacy* component.
+- **Documented human–AI governance model** for content and code generation — the direct antecedent of the thesis's ***Measure ≠ Decide*** principle: who observes, who decides, and what gets recorded.
 - Native accessibility layer (voice dictation, high contrast, audio read-back) compliant with **WCAG** and the **European Accessibility Act**.
 - Migrated AWJ from Canva to **Articulate 360 (Rise)** with **SCORM / xAPI** packaging — technical competence directly reusable in the thesis's measurement module.
 
@@ -240,7 +252,7 @@ As of this application, no second official master's degree is held besides the M
 
 **Evidence:** UDO service certificates **[DOC-16]** · Spanish employment history / self-employment certificate **[DOC-17]** · AVE Global tutoring accreditation **[DOC-18]** · online portfolio (link in §0).
 
-> **Fit with the thesis.** The four experience blocks map one-to-one onto the components of the MLLDE proposal: CEFR teaching → CEFR anchoring; instructional design → the MLLDE method; human–AI governance → AI literacy; SCORM/xAPI and LMS administration → the measurement module and learning-data architecture.
+> **Fit with the thesis.** The four experience blocks map one-to-one onto MLLDE's components: CEFR-aligned teaching → standard anchoring and the human assessment criterion; instructional design → the modality-declared design pillar; documented human–AI governance → the *Measure ≠ Decide* principle; SCORM/xAPI and LMS administration → the Measurement Module and its traceability.
 
 ---
 

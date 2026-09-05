@@ -5,7 +5,7 @@
 ### *Supporting-evidence annex — PhD admission application*
 
 **Programa / Programme:** Doctorado en Lingüística Aplicada — Universitat Politècnica de València
-**Propuesta de tesis / Thesis proposal:** MLLDE — *Mobile Language Learning Design Environment*
+**Propuesta de tesis / Thesis proposal:** MLLDE — *Multimodal Language Learning Design & Evaluation*
 **Fecha / Date:** ______________________
 
 > **Cómo usar esta portada.** Imprímela como **primera página del PDF único** de documentación. Cada documento va detrás, en el orden de la tabla, con el código DOC-nn escrito a mano o sellado en la esquina superior derecha. La comisión debe poder ir del mérito del CV al documento en un solo salto.
@@ -37,7 +37,7 @@
 | **DOC-10** | Certificado **CELTA** — Cambridge English | B.4 · 5 % | ☐ |
 | **DOC-11** | Acreditación de **examinadora DELE** — Instituto Cervantes | B.4 · 5 % | ☐ |
 | **DOC-12** | ⭐ **Constancia de Beca de Alto Rendimiento** — ULA-Táchira, Dirección de Asuntos Estudiantiles, 13 may. 2004 (jul.–dic. 2003, vigente) · *Merit scholarship certificate* | B.5 · 5 % | ☑ |
-| **DOC-13** | Resolución de concesión de la **beca del Ministerio** (máster, UPV) | B.5 · 5 % | ☐ |
+| **DOC-13** | ⭐ **Resolución de la beca general del Ministerio** — curso 2025/2026, Orden EFD/335/25 · incluye **componente de excelencia académica (tramo 9–9,49)** y beca de matrícula · ⚠️ **tachar el nº de cuenta antes de escanear** | B.5 · 5 % | ☑ |
 | **DOC-14** | Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* — portada + **página de agradecimientos (p. 8)** | B.6 · §5 | ☐ |
 | **DOC-15** | Evidencia de la calificación **10/10** de *Academic Writing Journey* (UPV, 2026) | A.1 · B.6 | ☐ |
 | **DOC-16** | Certificados de servicio docente — UDO Núcleo Nueva Esparta (2005–2015), **1.568 horas acreditadas** | B.6 · 5 % | ☐ |
@@ -70,7 +70,7 @@
 3. **Premio extraordinario de grado: 1.º de 56 graduandos** (DOC-06), con certificación rectoral y apostilla de La Haya, respaldado por la **Orden «Luis María Ribas Dávila» de cuatro años consecutivos** (DOC-07B).
 4. **Premio extraordinario de máster: no procede** — el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster.
 5. **Certificación académica de la licenciatura** (DOC-03) y **recorrido investigador del TFG** (DOC-07, DOC-19, DOC-24): en mano.
-6. **Beca de grado: Beca de Alto Rendimiento** de la ULA, acreditada por constancia oficial (DOC-12). Es beca de mérito, no asistencial.
+6. **Las dos becas, acreditadas.** Grado: **Beca de Alto Rendimiento** de la ULA, de mérito (DOC-12). Máster: **beca general del Ministerio 2025/2026** con **componente de excelencia académica del tramo 9–9,49** (DOC-13) — el Ministerio confirma así el 9,4 desde una fuente independiente.
 
 **Pendiente** — *outstanding:*
 
@@ -78,8 +78,8 @@
    *The documents alternate two surnames — add a one-line identity note plus the linking document, and use one name consistently.*
 8. **Elegibilidad del inglés** en el apartado de idiomas — preguntar a la comisión, dado que las titulaciones previas son de inglés.
    *Eligibility of English in the languages item — ask the committee.*
-9. **Resolución de la beca del Ministerio** (máster, UPV) con su curso académico y denominación oficial de la convocatoria.
-   *Award letter for the Ministry scholarship, with academic year and official name.*
+9. **Tachar el número de cuenta bancaria** de la resolución del Ministerio (DOC-13) antes de escanearla. El documento incluye también NIF y domicilio: la comisión no necesita ninguno de los tres.
+   *Redact the bank account number from the Ministry resolution before scanning it.*
 
 ---
 
