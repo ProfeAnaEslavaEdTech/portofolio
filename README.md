@@ -2,6 +2,26 @@
 
 My EdTech portfolio.
 
+## Doctoral Project — MLLDE
+
+**[`doctorado.html`](doctorado.html)** — the doctoral project page (bilingual ES/EN, light and dark
+themes) for the thesis proposal *"MLLDE — Mobile Language Learning Design Environment: a method for
+integrating LLM tutors and AI literacy into CEFR curriculum design"* (PhD Programme in Applied
+Linguistics, Department of Applied Linguistics, Universitat Politècnica de València).
+
+The full file lives under [`doctorado/`](doctorado/):
+
+| Path | Contents |
+|------|----------|
+| `doctorado/README.md` | Guide to the file — how the CV maps to the programme's scoring rubric and what is still pending. |
+| `doctorado/01-propuesta/propuesta-doctoral-MLLDE-ES.md` | Doctoral proposal in Spanish — state of the art, research gap, questions, objectives, hypotheses, design-based methodology in three cycles, four-year timeline, ethics and APA 7 references. |
+| `doctorado/01-propuesta/doctoral-research-proposal-MLLDE-EN.md` | The same proposal in English. |
+| `doctorado/02-cv-baremo/cv-doctorado-baremo-ES.md` | CV structured to the call's rubric — academic record 70% + six merits at 5% each — with `DOC-nn` codes to the supporting evidence. |
+| `doctorado/02-cv-baremo/cv-doctorado-baremo-EN.md` | The same CV in English. |
+| `doctorado/03-anexos/indice-documentos-acreditativos.md` | Bilingual cover-index for the single supporting-evidence PDF (DOC-01 → DOC-23). |
+
+---
+
 ## Interactive Corpus Data Book
 
 **`metadiscourse-visualization.html`** — an interactive data book for the master's

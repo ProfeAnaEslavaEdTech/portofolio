@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctorado — MLLDE · Ana Eslava-Graterol</title>
+<meta name="description" content="Propuesta de tesis doctoral MLLDE — Mobile Language Learning Design Environment: método para integrar tutores LLM y literacidad en IA en el diseño curricular CEFR. Ana Eslava-Graterol, Universitat Politècnica de València.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+  /* ═══════════ OCEAN INK TOKENS — LIGHT ═══════════ */
+  :root {
+    --ink: #1C1E2E;
+    --canvas: #F7F8FC;
+    --surface: #FFFFFF;
+    --line: #E6E8F2;
+    --muted: #5B5F77;
+    --primary: #3B5BD6;
+    --primary-deep: #22307C;
+    --on-primary: #FFFFFF;
+    --accent: #E8A33D;
+    --accent-text: #9A5B00;
+    --rose: #8B3A52;
+    --focus-ring: #3B5BD6;
+    --tint: #EEF1FD;
+
+    --cefr-a1: #DCE4FB; --cefr-a2: #B9C8F6; --cefr-b1: #6480E3;
+    --cefr-b2: #3B5BD6; --cefr-c1: #3049AE; --cefr-c2: #22307C;
+
+    --r-lg: 18px; --r-md: 12px; --r-pill: 999px;
+    --maxw: 1080px;
+  }
+
+  /* ═══════════ OCEAN INK TOKENS — DARK ═══════════ */
+  :root[data-theme="dark"] {
+    --ink: #EEF0F8;
+    --canvas: #0F1120;
+    --surface: #171A2B;
+    --line: #2A2D44;
+    --muted: #A6ADC8;
+    --primary: #9DB2FF;
+    --primary-deep: #B9C8F6;
+    --on-primary: #131A44;
+    --accent: #EEC272;
+    --accent-text: #EEC272;
+    --rose: #E0A6B8;
+    --focus-ring: #9DB2FF;
+    --tint: #1E2237;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--canvas);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  }
+
+  *:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 2px; border-radius: 4px; }
+
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 700; line-height: 1.15; color: var(--primary-deep); letter-spacing: -0.01em; }
+  h4 { font-family: 'Inter', sans-serif; font-weight: 700; color: var(--ink); }
+  p { max-width: 68ch; }
+  a { color: var(--primary); }
+
+  .skip-link { position: absolute; left: -9999px; }
+  .skip-link:focus { left: 12px; top: 12px; z-index: 200; background: var(--primary); color: #fff; padding: 10px 16px; border-radius: 8px; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+  /* ═══════════ TOP BAR ═══════════ */
+  .topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--canvas); border-bottom: 1px solid var(--line);
+    padding: 12px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  }
+  .topbar-name { font-weight: 700; font-size: 14px; color: var(--ink); text-decoration: none; }
+  .topbar-name span { color: var(--muted); font-weight: 500; }
+  .topbar-tools { display: flex; gap: 8px; align-items: center; }
+
+  .ctrl {
+    font: inherit; font-size: 13px; font-weight: 600;
+    background: var(--surface); color: var(--ink);
+    border: 1px solid var(--line); border-radius: var(--r-pill);
+    padding: 7px 14px; cursor: pointer; min-height: 40px;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .ctrl:hover { border-color: var(--primary); color: var(--primary); }
+  .ctrl[aria-pressed="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+  /* ═══════════ HERO — the one gradient band on this page ═══════════ */
+  .hero { background: linear-gradient(135deg, #3B5BD6, #E8A33D); color: #fff; padding: 56px 0 52px; }
+  .hero h1 { color: #fff; font-size: clamp(30px, 5.2vw, 46px); margin-bottom: 14px; max-width: 20ch; }
+  .hero .eyebrow { font-size: 12.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 16px; opacity: .95; }
+  .hero .lede { font-size: 17px; max-width: 62ch; opacity: .97; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+  .hero-chip {
+    background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.42);
+    border-radius: var(--r-pill); padding: 7px 15px; font-size: 13px; font-weight: 600;
+  }
+
+  /* ═══════════ SECTIONS ═══════════ */
+  section.block { padding: 52px 0; border-bottom: 1px solid var(--line); }
+  section.block:last-of-type { border-bottom: 0; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); margin-bottom: 10px; }
+  section.block > .wrap > h2 { font-size: clamp(22px, 3.4vw, 30px); margin-bottom: 16px; }
+  section.block p + p { margin-top: 12px; }
+  .lead { font-size: 17px; color: var(--muted); }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 20px 22px; }
+  .card h4 { font-size: 15px; margin-bottom: 8px; }
+  .card p { font-size: 14.5px; color: var(--muted); max-width: none; }
+  .card .num { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .1em; color: var(--primary); margin-bottom: 8px; }
+
+  .callout {
+    background: var(--tint); border: 1px solid var(--line);
+    border-left: 5px solid var(--accent);
+    border-radius: var(--r-md); padding: 20px 24px; margin-top: 24px;
+  }
+  .callout h4 { font-size: 15px; margin-bottom: 8px; color: var(--accent-text); }
+  .callout p { max-width: none; font-size: 15px; }
+
+  .layers { margin-top: 24px; display: grid; gap: 10px; }
+  .layer {
+    display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: baseline;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 20px;
+  }
+  .layer .lname { font-weight: 700; font-size: 14px; color: var(--primary-deep); }
+  .layer .ldesc { font-size: 14.5px; color: var(--muted); }
+  .layer.is-method { border-left: 5px solid var(--primary); }
+  @media (max-width: 640px) { .layer { grid-template-columns: 1fr; gap: 4px; } }
+
+  .tablewrap { overflow-x: auto; margin-top: 22px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14.5px; }
+  th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { background: var(--tint); color: var(--primary-deep); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; }
+  tbody tr:last-child td { border-bottom: 0; }
+  td strong { color: var(--ink); }
+
+  .status { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: 13px; white-space: nowrap; }
+  .status.ok { color: var(--rose); }
+  .status.check { color: var(--accent-text); }
+  .status.no { color: var(--muted); }
+
+  .cefr-scale { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .cefr-step { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 6px 14px 6px 8px; }
+  .cefr-dot { width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(0,0,0,.18); }
+
+  .timeline { margin-top: 24px; display: grid; gap: 12px; }
+  .tl-item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 18px 22px; border-left: 5px solid var(--primary); }
+  .tl-year { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--primary); }
+  .tl-item h4 { font-size: 15.5px; margin: 6px 0 6px; }
+  .tl-item p { font-size: 14.5px; color: var(--muted); max-width: none; }
+
+  .docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 24px; }
+  .doc {
+    display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: 18px 20px; text-decoration: none; color: var(--ink);
+  }
+  .doc:hover { border-color: var(--primary); }
+  .doc .dtitle { font-weight: 700; font-size: 15px; color: var(--primary); margin-bottom: 5px; }
+  .doc .dmeta { font-size: 13.5px; color: var(--muted); }
+
+  .ai-note { margin-top: 34px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 18px 22px; font-size: 14px; color: var(--muted); }
+  .ai-note strong { color: var(--ink); }
+
+  footer.site { padding: 34px 0 48px; font-size: 13.5px; color: var(--muted); }
+  footer.site a { font-weight: 600; }
+
+  /* ═══════════ BILINGUAL TOGGLE ═══════════ */
+  [data-lang] { display: none; }
+  html[lang="es"] [data-lang="es"], html[lang="en"] [data-lang="en"] { display: revert; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <a class="topbar-name" href="index.html">← Ana Eslava-Graterol <span data-lang="es">· Portafolio</span><span data-lang="en">· Portfolio</span></a>
+  <div class="topbar-tools">
+    <button class="ctrl" id="langBtn" type="button" aria-pressed="false">
+      <span aria-hidden="true">🌐</span>
+      <span data-lang="es">English</span><span data-lang="en">Español</span>
+    </button>
+    <button class="ctrl" id="themeBtn" type="button" aria-pressed="false">
+      <span aria-hidden="true" id="themeIcon">🌙</span>
+      <span data-lang="es">Tema</span><span data-lang="en">Theme</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow" data-lang="es">Proyecto de doctorado · Propuesta de tesis</p>
+      <p class="eyebrow" data-lang="en">Doctoral project · Thesis proposal</p>
+
+      <h1>MLLDE — Mobile Language Learning Design Environment</h1>
+
+      <p class="lede" data-lang="es">Método para integrar tutores LLM y literacidad en IA en el diseño curricular CEFR.</p>
+      <p class="lede" data-lang="en">A method for integrating LLM tutors and AI literacy into CEFR-anchored curriculum design.</p>
+
+      <div class="hero-meta">
+        <span class="hero-chip" data-lang="es">Lingüística Aplicada · UPV</span>
+        <span class="hero-chip" data-lang="en">Applied Linguistics · UPV</span>
+        <span class="hero-chip" data-lang="es">Investigación basada en diseño</span>
+        <span class="hero-chip" data-lang="en">Design-based research</span>
+        <span class="hero-chip" data-lang="es">3 ciclos · 4 años</span>
+        <span class="hero-chip" data-lang="en">3 cycles · 4 years</span>
+        <span class="hero-chip">MCER / CEFR · xAPI · AICLE / CLIL</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ 1 · EL PROBLEMA ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">01 · El problema</p>
+      <p class="kicker" data-lang="en">01 · The problem</p>
+      <h2 data-lang="es">Hay tecnología y hay contenido. Lo que falta es un procedimiento.</h2>
+      <h2 data-lang="en">There is technology and there is content. What is missing is a procedure.</h2>
+
+      <p class="lead" data-lang="es">El aprendizaje móvil de lenguas y los tutores conversacionales basados en grandes modelos de lenguaje se han popularizado a enorme velocidad. Su incorporación al currículo, en cambio, sigue siendo artesanal: cada curso se rediseña desde cero, cada docente reinventa la secuencia y el conocimiento de diseño no se acumula.</p>
+      <p class="lead" data-lang="en">Mobile language learning and LLM-based conversational tutors have spread at remarkable speed. Their incorporation into the curriculum, however, remains craft-based: every course is redesigned from scratch, every teacher reinvents the sequence, and design knowledge does not accumulate.</p>
+
+      <div class="cards">
+        <div class="card">
+          <span class="num">01</span>
+          <h4 data-lang="es">Sin procedimiento replicable</h4>
+          <h4 data-lang="en">No replicable procedure</h4>
+          <p data-lang="es">No existe un método que convierta sistemáticamente un descriptor «can-do» del MCER en una lección móvil que otro equipo pueda reproducir.</p>
+          <p data-lang="en">No method systematically turns a CEFR can-do descriptor into a mobile lesson another team could reproduce.</p>
+        </div>
+        <div class="card">
+          <span class="num">02</span>
+          <h4 data-lang="es">Tutor LLM sin contrato pedagógico</h4>
+          <h4 data-lang="en">LLM tutor without a pedagogical contract</h4>
+          <p data-lang="es">Sin límites explícitos, el modelo resuelve la tarea en lugar de andamiarla, produce insumo no calibrado al nivel del aprendiz y desplaza la evaluación auténtica.</p>
+          <p data-lang="en">Without explicit bounds, the model solves the task instead of scaffolding it, produces input uncalibrated to the learner's level, and displaces authentic assessment.</p>
+        </div>
+        <div class="card">
+          <span class="num">03</span>
+          <h4 data-lang="es">Literacidad en IA fuera del currículo</h4>
+          <h4 data-lang="en">AI literacy outside the curriculum</h4>
+          <p data-lang="es">Se enseña en cursos aparte, desconectada del contenido — cuando en una clase de lenguas el aprendiz ya está usando el modelo como interlocutor.</p>
+          <p data-lang="en">It is taught in separate courses, disconnected from content — when in a language class the learner is already using the model as an interlocutor.</p>
+        </div>
+        <div class="card">
+          <span class="num">04</span>
+          <h4 data-lang="es">Datos de aprendizaje en silos</h4>
+          <h4 data-lang="en">Learning data in silos</h4>
+          <p data-lang="es">No existe un perfil xAPI abierto que ancle la evidencia de desempeño a descriptores del MCER, así que los resultados no son comparables entre plataformas.</p>
+          <p data-lang="en">No open xAPI profile anchors performance evidence to CEFR descriptors, so results are not comparable across platforms.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h4 data-lang="es">⬦ El vacío de investigación</h4>
+        <h4 data-lang="en">⬦ The research gap</h4>
+        <p data-lang="es">No existe un <strong>método de diseño replicable y validado</strong> que opere sobre descriptores del MCER como unidad de entrada, incorpore la tutoría LLM con una función pedagógica explícitamente delimitada, trate la literacidad en IA como objetivo curricular integrado en la tarea de lengua y produzca evidencia de desempeño interoperable y anclada al estándar. <strong>Esta tesis construye ese método y lo somete a prueba.</strong></p>
+        <p data-lang="en">No <strong>replicable, validated design method</strong> operates on CEFR descriptors as its input unit, incorporates LLM tutoring with an explicitly bounded pedagogical role, treats AI literacy as a curricular objective embedded in the language task, and produces interoperable, standard-anchored performance evidence. <strong>This thesis builds that method and puts it to the test.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 2 · EL MÉTODO ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">02 · El método</p>
+      <p class="kicker" data-lang="en">02 · The method</p>
+      <h2 data-lang="es">MLLDE es el vehículo, no el destino</h2>
+      <h2 data-lang="en">MLLDE is the vehicle, not the destination</h2>
+
+      <p class="lead" data-lang="es">El MCER da el destino; los datos de cada lengua son la carga; MLLDE es el vehículo repetible que lleva a cualquier aprendiz hasta allí, en cualquier lengua. Por eso el método es agnóstico respecto de la lengua: lo único que cambia es el relleno.</p>
+      <p class="lead" data-lang="en">The CEFR gives the destination; each language's data is the cargo; MLLDE is the repeatable vehicle that gets any learner there, in any language. That is why the method is language-agnostic: only the filling changes.</p>
+
+      <div class="layers">
+        <div class="layer">
+          <span class="lname" data-lang="es">Estándar</span><span class="lname" data-lang="en">Standard</span>
+          <span class="ldesc" data-lang="es"><strong>MCER</strong> (Consejo de Europa) — <em>qué</em> se aprende y <em>hasta dónde</em> (descriptores «can-do» A1→C2).</span>
+          <span class="ldesc" data-lang="en"><strong>CEFR</strong> (Council of Europe) — <em>what</em> to learn and <em>how far</em> (can-do descriptors A1→C2).</span>
+        </div>
+        <div class="layer is-method">
+          <span class="lname" data-lang="es">Método</span><span class="lname" data-lang="en">Method</span>
+          <span class="ldesc" data-lang="es"><strong>MLLDE</strong> — <em>cómo</em> convertir cualquier objetivo en una lección móvil jugable. Es la aportación de esta tesis.</span>
+          <span class="ldesc" data-lang="en"><strong>MLLDE</strong> — <em>how</em> to turn any target into a playable mobile lesson. This is the thesis's contribution.</span>
+        </div>
+        <div class="layer">
+          <span class="lname" data-lang="es">Datos</span><span class="lname" data-lang="en">Data</span>
+          <span class="ldesc" data-lang="es">Contenido por lengua — <em>qué</em> palabras, <em>chunks</em>, gramática, funciones y cultura. Para el español, el <em>Plan curricular del Instituto Cervantes</em>.</span>
+          <span class="ldesc" data-lang="en">Per-language content — <em>which</em> words, chunks, grammar, functions and culture. For Spanish, the <em>Plan curricular del Instituto Cervantes</em>.</span>
+        </div>
+        <div class="layer">
+          <span class="lname" data-lang="es">Producto</span><span class="lname" data-lang="en">Product</span>
+          <span class="ldesc" data-lang="es">La primera aplicación construida con el método — una instancia, no el método mismo.</span>
+          <span class="ldesc" data-lang="en">The first application built with the method — an instance, not the method itself.</span>
+        </div>
+      </div>
+
+      <h3 style="font-size:19px; margin:34px 0 4px;" data-lang="es">Anclaje al núcleo de competencia del MCER</h3>
+      <h3 style="font-size:19px; margin:34px 0 4px;" data-lang="en">Anchoring to the CEFR competence core</h3>
+      <p data-lang="es">Cada paso de cada lección declara su <strong>modo</strong> (recepción · producción · interacción · mediación), su <strong>competencia</strong> (lingüística · sociolingüística · pragmática) y su <strong>nivel</strong>. La mediación se introduce a partir de B2.</p>
+      <p data-lang="en">Every step of every lesson declares its <strong>mode</strong> (reception · production · interaction · mediation), its <strong>competence</strong> (linguistic · sociolinguistic · pragmatic) and its <strong>level</strong>. Mediation is introduced from B2 onward.</p>
+
+      <div class="cefr-scale" role="list" aria-label="CEFR levels">
+        <span class="cefr-step" role="listitem"><span class="cefr-dot" style="background:var(--cefr-a1)"></span>A1</span>
+        <span class="cefr-step" role="listitem"><span class="cefr-dot" style="background:var(--cefr-a2)"></span>A2</span>
+        <span class="cefr-step" role="listitem"><span class="cefr-dot" style="background:var(--cefr-b1)"></span>B1</span>
+        <span class="cefr-step" role="listitem"><span class="cefr-dot" style="background:var(--cefr-b2)"></span>B2</span>
+        <span class="cefr-step" role="listitem"><span class="cefr-dot" style="background:var(--cefr-c1)"></span>C1</span>
+        <span class="cefr-step" role="listitem"><span class="cefr-dot" style="background:var(--cefr-c2)"></span>C2</span>
+      </div>
+
+      <div class="callout">
+        <h4 data-lang="es">⬦ Los dos elementos nuevos</h4>
+        <h4 data-lang="en">⬦ The two new elements</h4>
+        <p data-lang="es"><strong>1 · Tutor LLM delimitado.</strong> El modelo interviene sólo en el último escalón de una escalera de retroalimentación: primero las reglas deterministas, después la gramática de referencia enlazada, y sólo entonces la tutoría abierta. Los errores se marcan en ámbar («revisar»), nunca en rojo.<br><br><strong>2 · Literacidad en IA integrada.</strong> Verificar la salida del modelo es una tarea de recepción crítica; reformular una instrucción es producción; explicar a otra persona por qué la respuesta era inadecuada es, en términos del MCER, <strong>mediación</strong>.</p>
+        <p data-lang="en"><strong>1 · Bounded LLM tutor.</strong> The model intervenes only at the last rung of a feedback ladder: deterministic rules first, then the deep-linked reference grammar, and only then open tutoring. Errors are flagged in amber ("needs review"), never in red.<br><br><strong>2 · Embedded AI literacy.</strong> Verifying the model's output is a critical-reception task; reformulating an instruction is production; explaining to someone else why the answer was inadequate is, in CEFR terms, <strong>mediation</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 3 · METODOLOGÍA ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">03 · Metodología</p>
+      <p class="kicker" data-lang="en">03 · Methodology</p>
+      <h2 data-lang="es">Investigación basada en diseño, en tres macrociclos</h2>
+      <h2 data-lang="en">Design-based research, in three macro-cycles</h2>
+
+      <p class="lead" data-lang="es">El objeto de la tesis es a la vez un artefacto (el método) y un conocimiento (los principios que lo sostienen). La DBR produce ambos: una intervención que funciona y una teoría local de por qué funciona.</p>
+      <p class="lead" data-lang="en">The object of the thesis is at once an artefact (the method) and a body of knowledge (the principles sustaining it). DBR yields both: an intervention that works and a local theory of why.</p>
+
+      <div class="tablewrap">
+        <table>
+          <caption class="sr-only" style="position:absolute;left:-9999px;">Macro-cycles</caption>
+          <thead>
+            <tr>
+              <th><span data-lang="es">Ciclo</span><span data-lang="en">Cycle</span></th>
+              <th><span data-lang="es">Foco</span><span data-lang="en">Focus</span></th>
+              <th><span data-lang="es">Métodos</span><span data-lang="en">Methods</span></th>
+              <th><span data-lang="es">Salida</span><span data-lang="en">Output</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>C1</strong><br><span data-lang="es">Formalización</span><span data-lang="en">Formalisation</span></td>
+              <td><span data-lang="es">El método</span><span data-lang="en">The method</span></td>
+              <td><span data-lang="es">Revisión sistemática · análisis documental del MCER · panel <strong>Delphi</strong> (2–3 rondas) · prueba de replicabilidad con diseñadoras independientes</span><span data-lang="en">Systematic review · CEFR documentary analysis · <strong>Delphi</strong> panel (2–3 rounds) · replicability test with independent designers</span></td>
+              <td><span data-lang="es">MLLDE v1.0 validado + rúbrica de conformidad</span><span data-lang="en">Validated MLLDE v1.0 + conformance rubric</span></td>
+            </tr>
+            <tr>
+              <td><strong>C2</strong><br><span data-lang="es">Instrumentación</span><span data-lang="en">Instrumentation</span></td>
+              <td><span data-lang="es">Tutor LLM y literacidad en IA</span><span data-lang="en">LLM tutor and AI literacy</span></td>
+              <td><span data-lang="es">Prototipado con SAM · <em>think-aloud</em> · análisis de la interacción · pilotaje del módulo de IA · perfil xAPI sobre LRS</span><span data-lang="en">SAM prototyping · think-alouds · interaction analysis · AI-module pilot · xAPI profile on an LRS</span></td>
+              <td><span data-lang="es">Prototipo instrumentado + perfil xAPI v0.9</span><span data-lang="en">Instrumented prototype + xAPI profile v0.9</span></td>
+            </tr>
+            <tr>
+              <td><strong>C3</strong><br><span data-lang="es">Evaluación</span><span data-lang="en">Evaluation</span></td>
+              <td><span data-lang="es">El efecto</span><span data-lang="en">The effect</span></td>
+              <td><span data-lang="es">Cuasi-experimento en dos condiciones · medidas pre/post/seguimiento · entrevistas · análisis de equidad por subgrupos</span><span data-lang="en">Two-condition quasi-experiment · pre/post/follow-up · interviews · subgroup equity analysis</span></td>
+              <td><span data-lang="es">Evidencia empírica + MLLDE v2.0 + perfil xAPI v1.0</span><span data-lang="en">Empirical evidence + MLLDE v2.0 + xAPI profile v1.0</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h4 data-lang="es">Participantes</h4><h4 data-lang="en">Participants</h4>
+          <p data-lang="es">Panel de 12–15 personas expertas · 6–8 diseñadoras para la prueba de replicabilidad · aprendices adultos A2–B2 en dos lenguas meta (n ≈ 120–160 en C3, sujeto a análisis de potencia).</p>
+          <p data-lang="en">12–15 expert panellists · 6–8 designers for the replicability test · adult learners at A2–B2 in two target languages (n ≈ 120–160 in C3, subject to power analysis).</p>
+        </div>
+        <div class="card">
+          <h4 data-lang="es">Análisis</h4><h4 data-lang="en">Analysis</h4>
+          <p data-lang="es">ANCOVA / modelos mixtos con la puntuación previa como covariable; contraste de no inferioridad; análisis temático reflexivo; análisis de secuencias sobre las sentencias xAPI.</p>
+          <p data-lang="en">ANCOVA / mixed models with baseline as covariate; non-inferiority testing; reflexive thematic analysis; sequence analysis over xAPI statements.</p>
+        </div>
+        <div class="card">
+          <h4 data-lang="es">Calidad</h4><h4 data-lang="en">Quality</h4>
+          <p data-lang="es">Fiabilidad interjueces reportada; <strong>preinscripción</strong> del plan analítico antes de recoger datos; instrumentos, rúbricas y perfil xAPI en acceso abierto.</p>
+          <p data-lang="en">Reported inter-rater reliability; <strong>pre-registration</strong> of the analysis plan before data collection; instruments, rubrics and xAPI profile released openly.</p>
+        </div>
+        <div class="card">
+          <h4 data-lang="es">Ética y transparencia</h4><h4 data-lang="en">Ethics and transparency</h4>
+          <p data-lang="es">Comité de ética de la UPV; RGPD con seudonimización en origen; divulgación de IA conforme al art. 50 del Reglamento Europeo de IA; WCAG 2.1 AA en todos los materiales.</p>
+          <p data-lang="en">UPV ethics committee; GDPR with pseudonymisation at source; AI disclosure under Art. 50 of the European AI Act; WCAG 2.1 AA across all materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 4 · CRONOGRAMA ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">04 · Plan de trabajo</p>
+      <p class="kicker" data-lang="en">04 · Work plan</p>
+      <h2 data-lang="es">Cuatro años, a tiempo parcial</h2>
+      <h2 data-lang="en">Four years, part-time</h2>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <p class="tl-year" data-lang="es">Año 1</p><p class="tl-year" data-lang="en">Year 1</p>
+          <h4 data-lang="es">Formalizar el método</h4><h4 data-lang="en">Formalise the method</h4>
+          <p data-lang="es">Revisión sistemática; análisis documental del MCER y del <em>Plan curricular</em>; MLLDE v0.9; diseño del Delphi; convenios de colaboración. <strong>Entregable:</strong> documento de método v0.9 y plan de investigación aprobado.</p>
+          <p data-lang="en">Systematic review; documentary analysis of the CEFR and the <em>Plan curricular</em>; MLLDE v0.9; Delphi design; collaboration agreements. <strong>Deliverable:</strong> method document v0.9 and approved research plan.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-year" data-lang="es">Año 2</p><p class="tl-year" data-lang="en">Year 2</p>
+          <h4 data-lang="es">Validar y construir</h4><h4 data-lang="en">Validate and build</h4>
+          <p data-lang="es">Delphi; prueba de replicabilidad; MLLDE v1.0 validado; prototipo instrumentado; perfil xAPI v0.9; solicitud al comité de ética. <strong>Entregable:</strong> artículo 1 enviado y perfil xAPI publicado.</p>
+          <p data-lang="en">Delphi; replicability test; validated MLLDE v1.0; instrumented prototype; xAPI profile v0.9; ethics submission. <strong>Deliverable:</strong> paper 1 submitted and xAPI profile published.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-year" data-lang="es">Año 3</p><p class="tl-year" data-lang="en">Year 3</p>
+          <h4 data-lang="es">Instrumentar y pilotar</h4><h4 data-lang="en">Instrument and pilot</h4>
+          <p data-lang="es"><em>Think-aloud</em>; pilotaje del módulo de literacidad en IA; calibración de instrumentos; análisis de potencia; preinscripción; inicio del cuasi-experimento. <strong>Entregable:</strong> artículo 2 y estancia de investigación.</p>
+          <p data-lang="en">Think-alouds; AI-literacy module pilot; instrument calibration; power analysis; pre-registration; quasi-experiment begins. <strong>Deliverable:</strong> paper 2 and research stay.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-year" data-lang="es">Año 4</p><p class="tl-year" data-lang="en">Year 4</p>
+          <h4 data-lang="es">Evaluar y defender</h4><h4 data-lang="en">Evaluate and defend</h4>
+          <p data-lang="es">Cierre de la recogida de datos; análisis mixto; entrevistas; MLLDE v2.0; perfil xAPI v1.0; redacción, depósito y defensa. <strong>Entregable:</strong> artículo 3, tesis depositada y mención internacional.</p>
+          <p data-lang="en">Close data collection; mixed analysis; interviews; MLLDE v2.0; xAPI profile v1.0; writing, deposit and viva. <strong>Deliverable:</strong> paper 3, thesis deposited, international mention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 5 · RESULTADOS ESPERADOS ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">05 · Resultados esperados</p>
+      <p class="kicker" data-lang="en">05 · Expected outcomes</p>
+      <h2 data-lang="es">Qué queda cuando la tesis termina</h2>
+      <h2 data-lang="en">What remains when the thesis ends</h2>
+
+      <div class="cards">
+        <div class="card"><span class="num">01</span>
+          <h4 data-lang="es">Método formalizado</h4><h4 data-lang="en">A formalised method</h4>
+          <p data-lang="es">MLLDE v2.0 con su especificación, su contrato de entrada, su rúbrica de conformidad y su plantilla — aplicable por un tercer equipo sin la autora.</p>
+          <p data-lang="en">MLLDE v2.0 with its specification, input contract, conformance rubric and template — applicable by a third-party team without the author.</p>
+        </div>
+        <div class="card"><span class="num">02</span>
+          <h4 data-lang="es">Contrato pedagógico para tutores LLM</h4><h4 data-lang="en">A pedagogical contract for LLM tutors</h4>
+          <p data-lang="es">La delimitación funcional del modelo dentro de la escalera de retroalimentación, con evidencia de su efecto frente al uso no estructurado.</p>
+          <p data-lang="en">Functional bounding of the model within the feedback ladder, with evidence of its effect against unstructured use.</p>
+        </div>
+        <div class="card"><span class="num">03</span>
+          <h4 data-lang="es">Literacidad en IA en el currículo de lenguas</h4><h4 data-lang="en">AI literacy in the language curriculum</h4>
+          <p data-lang="es">Las cuatro competencias del constructo operacionalizadas como tareas MCER de recepción, producción y mediación.</p>
+          <p data-lang="en">The four construct competencies operationalised as CEFR reception, production and mediation tasks.</p>
+        </div>
+        <div class="card"><span class="num">04</span>
+          <h4 data-lang="es">Perfil xAPI abierto</h4><h4 data-lang="en">An open xAPI profile</h4>
+          <p data-lang="es">Vocabulario, verbos y mapa a cmi5 para datos de aprendizaje de lenguas anclados al MCER, alineable con ESCO.</p>
+          <p data-lang="en">Vocabulary, verbs and cmi5 mapping for CEFR-anchored language-learning data, ESCO-alignable.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h4 data-lang="es">⬦ Dónde está la originalidad</h4>
+        <h4 data-lang="en">⬦ Where the originality lies</h4>
+        <p data-lang="es">No en proponer un marco pedagógico nuevo, sino en <strong>la síntesis operacionalizada, replicable y medible</strong> de marcos ya consolidados — con dos elementos que la literatura todavía no articula conjuntamente: la delimitación funcional del tutor LLM dentro del ciclo didáctico y la integración curricular de la literacidad en IA en la propia tarea de lengua.</p>
+        <p data-lang="en">Not in proposing a new pedagogical framework, but in <strong>the operationalised, replicable and measurable synthesis</strong> of established ones — with two elements the literature has not yet articulated together: the functional bounding of the LLM tutor inside the didactic cycle, and the curricular integration of AI literacy into the language task itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 6 · EXPEDIENTE ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">06 · Expediente de la candidata</p>
+      <p class="kicker" data-lang="en">06 · Candidate's file</p>
+      <h2 data-lang="es">El CV, organizado según el baremo de la convocatoria</h2>
+      <h2 data-lang="en">The CV, organised to the call's scoring rubric</h2>
+
+      <p class="lead" data-lang="es">La convocatoria puntúa el expediente académico al 70 % y seis méritos adicionales al 5 % cada uno. El CV reproduce ese orden exacto, para que la comisión pueda puntuar apartado por apartado sin buscar nada.</p>
+      <p class="lead" data-lang="en">The call scores the academic record at 70% and six further merits at 5% each. The CV reproduces that exact order, so the committee can score item by item without searching.</p>
+
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th><span data-lang="es">Apartado</span><span data-lang="en">Item</span></th>
+              <th><span data-lang="es">Peso</span><span data-lang="en">Weight</span></th>
+              <th><span data-lang="es">Estado</span><span data-lang="en">Status</span></th>
+              <th><span data-lang="es">Evidencia</span><span data-lang="en">Evidence</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><span data-lang="es">Expediente académico</span><span data-lang="en">Academic record</span></strong></td>
+              <td><strong>70 %</strong></td>
+              <td><span class="status ok">✓ <span data-lang="es">Acreditado</span><span data-lang="en">Evidenced</span></span></td>
+              <td><span data-lang="es">Máster UPV <strong>9,4/10</strong> con <strong>2 Matrículas de Honor</strong> · Licenciatura <strong>Summa Cum Laude</strong>, primer rango de promoción</span><span data-lang="en">UPV master's <strong>9.4/10</strong> with <strong>2 distinctions</strong> · Undergraduate <strong>Summa Cum Laude</strong>, first in class</span></td>
+            </tr>
+            <tr>
+              <td><span data-lang="es">Premio extraordinario de grado</span><span data-lang="en">Extraordinary undergraduate award</span></td>
+              <td>5 %</td>
+              <td><span class="status ok">✓ <span data-lang="es">Acreditado</span><span data-lang="en">Evidenced</span></span></td>
+              <td><span data-lang="es">Premio Extraordinario Fin de Carrera (ULA, 2004)</span><span data-lang="en">Extraordinary Graduation Award (ULA, 2004)</span></td>
+            </tr>
+            <tr>
+              <td><span data-lang="es">Premio extraordinario de máster</span><span data-lang="en">Extraordinary master's award</span></td>
+              <td>5 %</td>
+              <td><span class="status check">! <span data-lang="es">Verificar</span><span data-lang="en">Verify</span></span></td>
+              <td><span data-lang="es">2 Matrículas de Honor (UPV) — confirmar la resolución del premio en Secretaría</span><span data-lang="en">2 distinctions (UPV) — confirm the award resolution with the registrar</span></td>
+            </tr>
+            <tr>
+              <td><span data-lang="es">Segundo máster</span><span data-lang="en">Second master's degree</span></td>
+              <td>5 %</td>
+              <td><span class="status no">○ <span data-lang="es">No procede</span><span data-lang="en">Not applicable</span></span></td>
+              <td><span data-lang="es">Se declara honestamente a cero</span><span data-lang="en">Honestly declared at zero</span></td>
+            </tr>
+            <tr>
+              <td><span data-lang="es">Idiomas ajenos a las titulaciones</span><span data-lang="en">Languages beyond the degrees</span></td>
+              <td>5 %</td>
+              <td><span class="status check">! <span data-lang="es">Verificar</span><span data-lang="en">Verify</span></span></td>
+              <td><span data-lang="es">C1 Advanced · CELTA · examinadora DELE — consultar si el inglés computa</span><span data-lang="en">C1 Advanced · CELTA · DELE examiner — ask whether English counts</span></td>
+            </tr>
+            <tr>
+              <td><span data-lang="es">Becas</span><span data-lang="en">Scholarships</span></td>
+              <td>5 %</td>
+              <td><span class="status ok">✓ <span data-lang="es">Acreditado</span><span data-lang="en">Evidenced</span></span></td>
+              <td><span data-lang="es">Beca de Excelencia Académica (grado) · beca del Ministerio (máster)</span><span data-lang="en">Academic Excellence Scholarship (undergraduate) · Ministry scholarship (master's)</span></td>
+            </tr>
+            <tr>
+              <td><span data-lang="es">Experiencia en el ámbito</span><span data-lang="en">Experience in the field</span></td>
+              <td>5 %</td>
+              <td><span class="status ok">✓ <span data-lang="es">Acreditado</span><span data-lang="en">Evidenced</span></span></td>
+              <td><span data-lang="es"><strong>1.568 h de docencia universitaria acreditadas</strong> · 20+ años · diseño instruccional 2019–actualidad</span><span data-lang="en"><strong>1,568 accredited university teaching hours</strong> · 20+ years · instructional design 2019–present</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <h4 data-lang="es">⬦ Por qué el expediente encaja con la propuesta</h4>
+        <h4 data-lang="en">⬦ Why the file fits the proposal</h4>
+        <p data-lang="es">Los cuatro bloques de experiencia se corresponden uno a uno con los componentes de MLLDE: docencia alineada al MCER → anclaje al estándar; diseño instruccional → el método; gobernanza humano–IA documentada → literacidad en IA; SCORM/xAPI y administración de LMS → arquitectura de datos de aprendizaje. El TFG, además, fue calificado <em>Summa Cum Laude</em> y llevado a publicación en revista indexada.</p>
+        <p data-lang="en">The four experience blocks map one-to-one onto MLLDE's components: CEFR-aligned teaching → standard anchoring; instructional design → the method; documented human–AI governance → AI literacy; SCORM/xAPI and LMS administration → learning-data architecture. The final-year dissertation was also awarded <em>Summa Cum Laude</em> and taken through to publication in an indexed journal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 7 · DOCUMENTOS ═══════════ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker" data-lang="es">07 · Documentos</p>
+      <p class="kicker" data-lang="en">07 · Documents</p>
+      <h2 data-lang="es">Expediente completo</h2>
+      <h2 data-lang="en">The full file</h2>
+
+      <div class="docs">
+        <a class="doc" href="doctorado/01-propuesta/propuesta-doctoral-MLLDE-ES.md">
+          <p class="dtitle" data-lang="es">Propuesta de tesis doctoral</p><p class="dtitle" data-lang="en">Doctoral proposal (Spanish)</p>
+          <p class="dmeta" data-lang="es">Español · resumen, estado de la cuestión, preguntas, objetivos, hipótesis, metodología, cronograma, ética y referencias APA 7</p>
+          <p class="dmeta" data-lang="en">Spanish · abstract, state of the art, questions, objectives, hypotheses, methodology, timeline, ethics, APA 7 references</p>
+        </a>
+        <a class="doc" href="doctorado/01-propuesta/doctoral-research-proposal-MLLDE-EN.md">
+          <p class="dtitle" data-lang="es">Propuesta de tesis (inglés)</p><p class="dtitle" data-lang="en">Doctoral research proposal</p>
+          <p class="dmeta" data-lang="es">English · misma propuesta, para mención internacional y dirección fuera de España</p>
+          <p class="dmeta" data-lang="en">English · the same proposal, for the international mention and non-Spanish supervisors</p>
+        </a>
+        <a class="doc" href="doctorado/02-cv-baremo/cv-doctorado-baremo-ES.md">
+          <p class="dtitle" data-lang="es">CV según el baremo</p><p class="dtitle" data-lang="en">CV to the scoring rubric (Spanish)</p>
+          <p class="dmeta" data-lang="es">Español · 70 % expediente + 30 % méritos, con códigos DOC-nn</p>
+          <p class="dmeta" data-lang="en">Spanish · 70% record + 30% merits, with DOC-nn codes</p>
+        </a>
+        <a class="doc" href="doctorado/02-cv-baremo/cv-doctorado-baremo-EN.md">
+          <p class="dtitle" data-lang="es">CV según el baremo (inglés)</p><p class="dtitle" data-lang="en">CV to the scoring rubric</p>
+          <p class="dmeta" data-lang="es">English · misma estructura de baremo</p>
+          <p class="dmeta" data-lang="en">English · same rubric structure</p>
+        </a>
+        <a class="doc" href="doctorado/03-anexos/indice-documentos-acreditativos.md">
+          <p class="dtitle" data-lang="es">Índice de documentos acreditativos</p><p class="dtitle" data-lang="en">Supporting-evidence index</p>
+          <p class="dmeta" data-lang="es">Bilingüe · portada del PDF único, DOC-01 → DOC-23, con casillas de verificación</p>
+          <p class="dmeta" data-lang="en">Bilingual · cover sheet for the single evidence PDF, DOC-01 → DOC-23, with checkboxes</p>
+        </a>
+        <a class="doc" href="doctorado/README.md">
+          <p class="dtitle" data-lang="es">Guía del expediente</p><p class="dtitle" data-lang="en">File guide</p>
+          <p class="dmeta" data-lang="es">Cómo está organizado todo y qué queda pendiente antes de enviar</p>
+          <p class="dmeta" data-lang="en">How everything is organised and what remains before submission</p>
+        </a>
+        <a class="doc" href="doctorado/05-pdf/">
+          <p class="dtitle" data-lang="es">Versiones en PDF (A4)</p><p class="dtitle" data-lang="en">PDF versions (A4)</p>
+          <p class="dmeta" data-lang="es">Propuesta, CV e índice de anexos listos para adjuntar a la solicitud</p>
+          <p class="dmeta" data-lang="en">Proposal, CV and evidence index, ready to attach to the application</p>
+        </a>
+        <a class="doc" href="doctorado/04-docx/">
+          <p class="dtitle" data-lang="es">Versiones en Word (.docx)</p><p class="dtitle" data-lang="en">Word versions (.docx)</p>
+          <p class="dmeta" data-lang="es">Los mismos documentos, editables, para los formularios que piden .docx</p>
+          <p class="dmeta" data-lang="en">The same documents, editable, for forms that require .docx</p>
+        </a>
+      </div>
+
+      <div class="ai-note">
+        <p data-lang="es"><strong>Nota de transparencia (Reglamento Europeo de IA, art. 50).</strong> Estos documentos han sido elaborados con asistencia de IA (Claude Code, Anthropic) bajo supervisión, verificación y autoría intelectual humana. Todos los datos biográficos y académicos proceden del perfil profesional verificado de la autora; ningún mérito ha sido inferido ni generado.</p>
+        <p data-lang="en"><strong>Transparency note (European AI Act, Art. 50).</strong> These documents were prepared with AI assistance (Claude Code, Anthropic) under human supervision, verification and intellectual authorship. All biographical and academic data comes from the author's verified professional profile; no merit has been inferred or generated.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p data-lang="es">© 2026 Ana Eslava-Graterol (ProfeAnaEslavaEdTech) · Universitat Politècnica de València. «Language Passport»™ y «Grace» son marcas de la autora; MLLDE es la metodología subyacente. El MCER (Consejo de Europa), el <em>Plan curricular</em> (Instituto Cervantes) y xAPI (ADL/IEEE) son estándares citados, no redistribuidos. — <a href="index.html">Volver al portafolio</a></p>
+    <p data-lang="en">© 2026 Ana Eslava-Graterol (ProfeAnaEslavaEdTech) · Universitat Politècnica de València. "Language Passport"™ and "Grace" are marks of the author; MLLDE is the underlying methodology. The CEFR (Council of Europe), the <em>Plan curricular</em> (Instituto Cervantes) and xAPI (ADL/IEEE) are cited standards, not redistributed. — <a href="index.html">Back to the portfolio</a></p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var langBtn = document.getElementById('langBtn');
+    var themeBtn = document.getElementById('themeBtn');
+    var themeIcon = document.getElementById('themeIcon');
+
+    function readStore(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+    function writeStore(key, val) { try { localStorage.setItem(key, val); } catch (e) { /* private mode */ } }
+
+    function setLang(lang) {
+      root.setAttribute('lang', lang);
+      langBtn.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+      langBtn.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
+      writeStore('ae-doctorado-lang', lang);
+    }
+
+    function setTheme(theme) {
+      root.setAttribute('data-theme', theme);
+      themeBtn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      writeStore('ae-doctorado-theme', theme);
+    }
+
+    setLang(readStore('ae-doctorado-lang') === 'en' ? 'en' : 'es');
+
+    var storedTheme = readStore('ae-doctorado-theme');
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      storedTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    setTheme(storedTheme);
+
+    langBtn.addEventListener('click', function () {
+      setLang(root.getAttribute('lang') === 'es' ? 'en' : 'es');
+    });
+    themeBtn.addEventListener('click', function () {
+      setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>
+</body>
+</html>
