@@ -7,9 +7,11 @@
 # CURRICULUM VITAE — PhD ADMISSION
 ## Ana Eslava-Graterol
 
-**Programme applied for:** PhD Programme — Applied Linguistics
+**Programme applied for:** PhD Programme in **Languages, Literatures and Cultures, and their Applications**
 
 **Department of Applied Linguistics · Universitat Politècnica de València (UPV), Spain**
+
+**Supervision:** Prof. Mª Luisa Carrió-Pastor (supervisor) · Prof. Ricardo Casañ-Pitarch (co-supervisor)
 
 **Research line:** Language technologies, speaking assessment and CEFR-anchored instructional design
 
@@ -88,7 +90,13 @@
 > - **Ana Zoraimy Eslava Graterol** — ULA transcript and Academic Rank Certificate, *Kaleidoscopio* publication, scholarship certificate, "Ribas Dávila" Orders (one carrying the misspelling **"Ana Soraymi"**).
 > - **Ana Zoraimy Eslava de Morales** — Ministry equivalence resolution (2020) and the international conference letter (2008).
 >
-> It is the married surname, but **the committee has no way of knowing that** and will see two names in one file. **Action:** include a one-line **identity note** in the evidence PDF together with the document linking both names (national ID, marriage certificate, or a ULA certificate showing both forms), and use **one name consistently** across the CV and the proposal. A five-minute fix that prevents a formal-review query.
+> These are the **maiden** and **married** surnames, and "Soraymi" is a **typographical error** on the 2003 diploma. The committee has no way of knowing that and will see three forms in one file.
+>
+> **Identity note — ready to paste** as the first page of the evidence PDF, alongside the document linking both names (national ID or marriage certificate):
+>
+> > **Note on name variants.** The documents in this file appear under **Ana Zoraimy Eslava Graterol** (maiden surnames: academic transcript, Academic Rank Certificate, scholarship certificate, "Luis María Ribas Dávila" Orders and the *Kaleidoscopio* publication) and **Ana Zoraimy Eslava de Morales** (married surname: the Ministry of Universities equivalence resolution of 2020, the 2008 conference letter, and the acknowledgement in Sotelo-Casas et al., 2019). Both forms refer to the same person, as evidenced by the attached document. The 2003 Order additionally carries a **typographical error** in the given name ("Ana Soraymi" for "Ana Zoraimy").
+>
+> And use **one name consistently** in the CV and the research plan — **Ana Zoraimy Eslava Graterol** is recommended, being the form on most academic documents and on the publication.
 
 ---
 
@@ -164,22 +172,19 @@ As of this application, no second official master's degree is held besides the M
 
 ---
 
-## B.4 · Knowledge of languages other than those of the previous degrees — **5 %** ⚠️ INTERPRETATION
+## B.4 · Knowledge of languages other than those of the previous degrees — **5 %** ✅ EVIDENCED
 
-**Credentials supplied:**
+**Confirmed with the committee: English does count in this item.**
 
-| Credential | Awarding body | Level / status |
-|---|---|---|
-| **C1 Advanced (CAE)** | Cambridge English | **C1** — official certificate **[DOC-09]** |
-| **CELTA** | Cambridge English | English teaching qualification **[DOC-10]** |
-| **Accredited DELE examiner** | Instituto Cervantes | Current accreditation **[DOC-11]** |
+| Credential | Awarding body | Level / status | Doc. |
+|---|---|---|---|
+| **C1 Advanced (CAE)** | Cambridge English Assessment | **C1** — official proficiency certificate | **[DOC-09]** |
+| **CELTA** | Cambridge English Assessment | International certificate qualifying the holder to teach English | **[DOC-10]** |
+| **Accredited DELE examiner** | Instituto Cervantes | Current accreditation as an official Spanish examiner | **[DOC-11]** |
 
-> **Honest warning.** The call scores languages **other than those of the previous degrees**. Since the undergraduate degree is an *English major* and the master's is in *Languages and Technology*, the committee may consider English **already contained** in the degrees and not count it here. Recommended strategy:
-> 1. **Submit them anyway** — the C1 Advanced, the CELTA and the DELE accreditation strengthen Block A and merit B.6 even if they do not score here.
-> 2. **Argue** in the application that the Instituto Cervantes DELE accreditation and the Cambridge CELTA are **external professional qualifications**, not competences derived from the degree syllabi.
-> 3. **Genuine improvement route (recommended for the next call):** obtain an official certificate in a **third language**. In the Valencian context the most cost-effective is **Valencian** (JQCV / CIEACOVA, levels A2–B2, regular sittings, low cost), followed by **French** or **Italian** through the official language schools (EOI). A certified A2–B1 would be enough to activate this 5%.
+**How to present it.** These are not three certificates of the same kind, and the committee should see that: **C1 Advanced** evidences **command of the language**; **CELTA** evidences a **teaching qualification** from a body outside the degree syllabus; and the **DELE accreditation** evidences the **capacity to assess others** against the CEFR. That third level — assessing — bears directly on a thesis whose object is CEFR-anchored assessment: it is not merely a languages merit, it is expert criterion for the validity study itself.
 
-**Action:** confirm with the committee, before the deadline, whether English counts in this item. If not, treat it like B.3.
+> **Future improvement.** A certificate in a third language (Valencian A2–B1 through JQCV or CIEACOVA is the quickest and cheapest route in the Valencian context) would reinforce this item independently of any interpretation.
 
 ---
 
@@ -264,13 +269,13 @@ So the 70% academic record — 9.07 in the undergraduate degree and 9.4 in the m
 | B.1 Extraordinary undergraduate award | 5 % | ✅ | **1st of 56 graduates** (apostilled) + **"Ribas Dávila" Order four years running** |
 | B.2 Extraordinary master's award | 5 % | ❌ | Not applicable — the award is the undergraduate one |
 | B.3 Second master's degree | 5 % | ❌ | Not applicable |
-| B.4 Languages beyond the degrees | 5 % | ⚠️ | C1 CAE · CELTA · DELE examiner — eligibility to confirm |
+| B.4 Languages beyond the degrees | 5 % | ✅ | **English confirmed as eligible** · C1 CAE · CELTA · DELE examiner |
 | B.5 Scholarships | 5 % | ✅ | **High Academic Performance Scholarship** evidenced (ULA, 2003-04) · Ministry scholarship (master's) |
 | B.6 Professional experience in the field | 5 % | ✅ | **1,568 accredited university teaching hours** · 20+ years · ID 2019–present |
 
-**Honest reading.** Three merits are fully evidenced (B.1, B.5, B.6), one depends on the committee's interpretation (B.4) and two do not apply (B.2, B.3). That is **roughly 15–20 of the 30 points**, with the 70% academic record in the upper band (9.4 and 9.07 out of 10). The strength here is not the number of boxes ticked but the **quality of the proof**: the B.1 merit arrives apostilled with an online validation code, and the undergraduate record comes with its grade average already computed by the Spanish administration.
+**Honest reading.** **Four of the six merits are fully evidenced** (B.1, B.4, B.5, B.6) and two do not apply (B.2, B.3): **20 of the 30 points**, with the 70% academic record in the upper band (9.4 and 9.07 out of 10). The strength here is not the number of boxes ticked but the **quality of the proof**: the B.1 merit arrives apostilled with an online validation code, and the undergraduate record comes with its grade average already computed by the Spanish administration.
 
-**Where the remaining margin is.** The only item improvable in the short term is B.4: an official certificate in a third language (Valencian A2–B1 through JQCV/CIEACOVA is the fastest and cheapest route) would activate that 5% without depending on anyone's interpretation.
+**Where margin remains.** The two items at zero — the extraordinary master's award and a second master's — are not within short-term reach. The record compensates: 9.4 and 9.07 out of 10, with **four separate administrations** certifying that performance (the home university, the Ministry of Universities, ULA's Directorate of Student Affairs and the Ministry of Education).
 
 ---
 
@@ -289,7 +294,9 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 
 **Full citation:**
 
-> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexed in CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexed in **CLASE (UNAM)**. https://hdl.handle.net/20.500.14330/CLA01000260594 · https://ru.dgb.unam.mx/items/94cebd9c-65de-4d95-b948-637ae2fcdd43/full
+
+> ℹ️ ***Kaleidoscopio* ceased publication in 2015**, so the journal no longer has a site of its own. The **CLASE (UNAM) indexed record** is the permanent evidence of publication and peer review: always cite it alongside the ISSN and attach the article pages (DOC-19). Stating this up front prevents anyone reading the absence of a journal website as an unverifiable reference.
 
 **Relevance to the thesis proposal.** The object of that study — the graduate's profile measured against the teaching functions and linguistic competences set out in the curriculum reform — is, at bottom, the same problem MLLDE addresses twenty years later: **how to align a curriculum design with a verifiable competence framework**. The continuity of the research line is real, not rhetorical.
 
@@ -372,12 +379,14 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 - [x] Full publication details → *Kaleidoscopio* 2(3), 51–56, 2005, with the peer-review letter and the international conference paper (DOC-19, DOC-24).
 - [x] **Doctoral access** → degree officially declared equivalent to *Grado* level (Ministry, 2020) plus an official Spanish master's. No level verification needed (DOC-05B).
 - [x] Undergraduate academic transcript → in hand (DOC-03).
+- [x] **Programme and supervision** → PhD in Languages, Literatures and Cultures, and their Applications; Prof. Carrió-Pastor and Prof. Casañ-Pitarch.
+- [x] **ORCID** → https://orcid.org/0000-0002-8076-1189 *(still to be updated with the master's, the publication and the thesis)*.
 - [x] **Undergraduate scholarship** → ULA **High Academic Performance Scholarship**, evidenced by official certificate (DOC-12), plus the **four "Luis María Ribas Dávila" Orders** (DOC-07B).
 
 **Outstanding:**
 
-- [ ] 🟠 **Identity note** linking "Eslava Graterol" and "Eslava de Morales", with the document evidencing it, and one name used consistently throughout the file.
-- [ ] Ask the committee whether **English counts** in the languages item → §B.4.
+- [ ] 🟠 **Identity note**: paste the text from §A.2 as the first page of the PDF and attach the national ID or marriage certificate linking both surnames.
+- [x] **English counts** in the languages item → confirmed with the committee (§B.4).
 - [ ] Complete the **academic year** and **official name** of both scholarships and locate their award letters → §B.5.
 - [ ] Gather the remaining certificates (DOC-01, DOC-02, DOC-04, DOC-09 to DOC-11, DOC-13 to DOC-18, DOC-20 to DOC-23).
 - [ ] Scan everything into a **single PDF**, in the Annex §8 order, with a cover index.

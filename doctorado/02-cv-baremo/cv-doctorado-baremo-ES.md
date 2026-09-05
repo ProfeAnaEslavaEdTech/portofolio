@@ -7,9 +7,11 @@
 # CURRÍCULUM VITAE — ADMISIÓN A DOCTORADO
 ## Ana Eslava-Graterol
 
-**Programa solicitado:** Programa de Doctorado — Lingüística Aplicada
+**Programa solicitado:** Programa de Doctorado en **Lenguas, Literaturas y Culturas, y sus Aplicaciones**
 
 **Departamento de Lingüística Aplicada · Universitat Politècnica de València (UPV)**
+
+**Dirección de tesis:** Prof.ª Mª Luisa Carrió-Pastor (directora) · Prof. Ricardo Casañ-Pitarch (codirector)
 
 **Línea de investigación:** Tecnologías del lenguaje, evaluación de la competencia oral y diseño instruccional anclado al MCER
 
@@ -88,7 +90,13 @@
 > - **Ana Zoraimy Eslava Graterol** — certificación académica y Constancia de Rango Académico de la ULA, publicación en *Kaleidoscopio*, constancia de beca, Órdenes «Ribas Dávila» (una de ellas con la errata **«Ana Soraymi»**).
 > - **Ana Zoraimy Eslava de Morales** — resolución de equivalencia del Ministerio (2020) y carta del congreso internacional (2008).
 >
-> Es el apellido de casada, pero **la comisión no tiene por qué saberlo** y verá dos nombres en el mismo expediente. **Acción:** incluir en el PDF de documentación una **nota de identidad** de una línea junto con el documento que enlaza ambos nombres (DNI/NIE, acta de matrimonio o certificado de la ULA que recoja las dos formas), y usar **un solo nombre de manera consistente** en el CV y en la propuesta. Es un trámite de cinco minutos que evita una incidencia en la revisión formal.
+> Son el **apellido de soltera** y el **de casada**, y «Soraymi» es una **errata** del diploma de 2003. La comisión no tiene por qué saberlo y verá tres formas en el mismo expediente.
+>
+> **Nota de identidad — texto listo para pegar** como primera página del PDF de documentación, junto al documento que enlaza ambos nombres (DNI/NIE o acta de matrimonio):
+>
+> > **Nota sobre las variantes del nombre.** Los documentos de este expediente aparecen a nombre de **Ana Zoraimy Eslava Graterol** (apellidos de soltera: certificación académica, Constancia de Rango Académico, constancia de beca, Órdenes «Luis María Ribas Dávila» y la publicación en *Kaleidoscopio*) y de **Ana Zoraimy Eslava de Morales** (apellido de casada: resolución de equivalencia del Ministerio de Universidades de 2020, carta del II Congreso Internacional de Educación Superior de 2008 y agradecimiento en Sotelo-Casas et al., 2019). Ambas formas corresponden a la misma persona, según acredita el documento adjunto. La Orden de 2003 contiene además una **errata tipográfica** en el nombre propio («Ana Soraymi» por «Ana Zoraimy»).
+>
+> Y usa **un solo nombre de forma consistente** en el CV y en el plan de investigación: se recomienda **Ana Zoraimy Eslava Graterol**, que es la forma de la mayoría de los documentos académicos y de la publicación.
 
 ---
 
@@ -164,22 +172,19 @@ No se posee, a fecha de esta solicitud, un segundo título de máster universita
 
 ---
 
-## B.4 · Conocimiento de idiomas diferentes a los de las titulaciones previas — **5 %** ⚠️ INTERPRETACIÓN
+## B.4 · Conocimiento de idiomas diferentes a los de las titulaciones previas — **5 %** ✅ ACREDITADO
 
-**Acreditaciones que se aportan:**
+**Confirmado con la comisión: el inglés computa en este apartado.**
 
-| Credencial | Entidad | Nivel / estado |
-|---|---|---|
-| **C1 Advanced (CAE)** | Cambridge English | **C1** — acreditación oficial **[DOC-09]** |
-| **CELTA** | Cambridge English | Certificado de habilitación docente en inglés **[DOC-10]** |
-| **Examinadora acreditada DELE** | Instituto Cervantes | Acreditación vigente **[DOC-11]** |
+| Credencial | Entidad | Nivel / estado | Doc. |
+|---|---|---|---|
+| **C1 Advanced (CAE)** | Cambridge English Assessment | **C1** — acreditación oficial de dominio | **[DOC-09]** |
+| **CELTA** | Cambridge English Assessment | Certificado internacional de habilitación para la enseñanza del inglés | **[DOC-10]** |
+| **Examinadora acreditada DELE** | Instituto Cervantes | Acreditación vigente como examinadora oficial de español | **[DOC-11]** |
 
-> **Advertencia honesta.** La convocatoria puntúa idiomas **distintos de los de las titulaciones previas**. Como la licenciatura es *mención Inglés* y el máster es en *Lenguas y Tecnología*, la comisión podría considerar que el inglés **ya está contenido** en las titulaciones y no computarlo en este apartado. Estrategia recomendada:
-> 1. **Presentar igualmente** el C1 Advanced, el CELTA y la acreditación DELE: aunque no puntúen aquí, refuerzan el bloque A y el mérito B.6.
-> 2. **Argumentar** en la solicitud que la acreditación DELE del Instituto Cervantes y el CELTA de Cambridge son **habilitaciones profesionales externas al plan de estudios**, no competencias derivadas de las titulaciones.
-> 3. **Vía de mejora real (recomendada para la próxima convocatoria):** obtener una acreditación oficial de un **tercer idioma** — la más rentable en el contexto valenciano es el **valenciano** (JQCV / CIEACOVA, niveles A2–B2, convocatorias periódicas y coste bajo), seguida del **francés** o el **italiano** por EOI. Un A2–B1 acreditado bastaría para activar este 5 %.
+**Cómo presentarlo.** No son tres certificados del mismo tipo, y conviene que la comisión lo vea: el **C1 Advanced** acredita **dominio de la lengua**; el **CELTA** acredita **habilitación docente** por una entidad externa al plan de estudios; y la **acreditación DELE** del Instituto Cervantes acredita **capacidad de evaluar** a otras personas conforme al MCER. Ese tercer nivel —evaluar— es directamente pertinente para una tesis cuyo objeto es la evaluación anclada al MCER: no es solo un mérito de idiomas, es criterio experto para el propio estudio de validez.
 
-**Acción:** confirmar con la comisión, antes del cierre del plazo, si el inglés computa en este apartado. Si la respuesta es negativa, este mérito queda como B.3.
+> **Vía de mejora para el futuro.** Una acreditación de un tercer idioma (valenciano A2–B1 por JQCV o CIEACOVA es la vía más rápida y económica en el contexto valenciano) reforzaría el apartado sin depender de ninguna interpretación.
 
 ---
 
@@ -264,13 +269,13 @@ Es decir: el 70 % del expediente —9,07 en el grado y 9,4 en el máster— qued
 | B.1 Premio extraordinario de grado | 5 % | ✅ | **1.º de 56 graduandos** (constancia apostillada) + **Orden «Ribas Dávila» 4 años seguidos** |
 | B.2 Premio extraordinario de máster | 5 % | ❌ | No procede — el premio es el de grado |
 | B.3 Segundo máster | 5 % | ❌ | No procede |
-| B.4 Idiomas ajenos a las titulaciones | 5 % | ⚠️ | C1 CAE · CELTA · examinadora DELE — verificar si computa |
+| B.4 Idiomas ajenos a las titulaciones | 5 % | ✅ | **Confirmado que el inglés computa** · C1 CAE · CELTA · examinadora DELE |
 | B.5 Becas | 5 % | ✅ | **Beca de Alto Rendimiento** acreditada (ULA, 2003-2004) · beca del Ministerio (máster) |
 | B.6 Experiencia profesional en el ámbito | 5 % | ✅ | **1.568 h de docencia universitaria acreditadas** · 20+ años · ID 2019-actualidad |
 
-**Lectura honesta.** Tres méritos están plenamente acreditados (B.1, B.5, B.6), uno depende de la interpretación de la comisión (B.4) y dos no proceden (B.2, B.3). Es decir: **entre 15 % y 20 % de los 30 %**, con el 70 % del expediente en el tramo alto (9,4 y 9,07 sobre 10). El punto fuerte no es el número de casillas marcadas, sino la **calidad de la prueba**: el mérito de B.1 llega apostillado y con código de validación en línea, y el expediente de grado trae la nota media ya calculada por la Administración española.
+**Lectura honesta.** **Cuatro de los seis méritos están plenamente acreditados** (B.1, B.4, B.5, B.6) y dos no proceden (B.2, B.3): **20 % de los 30 %**, con el 70 % del expediente en el tramo alto (9,4 y 9,07 sobre 10). El punto fuerte no es el número de casillas marcadas, sino la **calidad de la prueba**: el mérito de B.1 llega apostillado y con código de validación en línea, y el expediente de grado trae la nota media ya calculada por la Administración española.
 
-**Dónde se gana el margen que falta.** El único apartado mejorable a corto plazo es B.4: una acreditación oficial de un tercer idioma (valenciano A2–B1 por JQCV/CIEACOVA es la vía más rápida y barata) activaría ese 5 % sin depender de la interpretación de nadie.
+**Dónde queda margen.** Los dos apartados a cero (premio extraordinario de máster y segundo máster) no dependen de ti a corto plazo. El expediente compensa: 9,4 y 9,07 sobre 10, con **cuatro fuentes administrativas distintas** certificando ese rendimiento (universidad de origen, Ministerio de Universidades, Dirección de Asuntos Estudiantiles de la ULA y Ministerio de Educación).
 
 ---
 
@@ -289,7 +294,9 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 
 **Cita completa:**
 
-> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexada en CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexada en **CLASE (UNAM)**. https://hdl.handle.net/20.500.14330/CLA01000260594 · https://ru.dgb.unam.mx/items/94cebd9c-65de-4d95-b948-637ae2fcdd43/full
+
+> ℹ️ ***Kaleidoscopio* dejó de publicarse en 2015**, de modo que la revista ya no tiene sitio propio. El **registro indexado en CLASE (UNAM)** es la evidencia permanente de la publicación y del arbitraje: cítalo siempre junto al ISSN, y adjunta las páginas del artículo (DOC-19). Conviene anticiparlo así en la solicitud para que nadie interprete la ausencia de web como una referencia no verificable.
 
 **Relevancia para la propuesta de tesis.** El objeto de aquel estudio — el perfil del egresado medido contra las funciones docentes y las competencias lingüísticas previstas en la reforma curricular — es, en el fondo, el mismo problema que aborda MLLDE veinte años después: **cómo alinear un diseño curricular con un marco de competencias verificable**. La continuidad de línea de investigación es real, no retórica.
 
@@ -372,12 +379,14 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 - [x] Datos completos de la publicación → *Kaleidoscopio* 2(3), 51–56, 2005, con carta de arbitraje y ponencia en congreso internacional (DOC-19, DOC-24).
 - [x] **Acceso al doctorado** → título con **equivalencia oficial a nivel de Grado** (Ministerio, 2020) + máster oficial español. No hace falta comprobación de nivel (DOC-05B).
 - [x] Certificación académica de la licenciatura → en mano (DOC-03).
+- [x] **Programa, dirección y codirección** → Doctorado en Lenguas, Literaturas y Culturas, y sus Aplicaciones; Prof.ª Carrió-Pastor y Prof. Casañ-Pitarch.
+- [x] **ORCID** → https://orcid.org/0000-0002-8076-1189 *(pendiente de actualizar con el máster, la publicación y el TFM)*.
 - [x] **Beca de grado** → **Beca de Alto Rendimiento** de la ULA, acreditada por constancia oficial (DOC-12), más las **cuatro Órdenes «Luis María Ribas Dávila»** (DOC-07B).
 
 **Pendiente:**
 
-- [ ] 🟠 **Nota de identidad** que enlace «Eslava Graterol» y «Eslava de Morales», con el documento que lo acredite, y uso de un solo nombre en todo el expediente.
-- [ ] Consultar a la comisión si el **inglés computa** en el apartado de idiomas → §B.4.
+- [ ] 🟠 **Nota de identidad**: pegar el texto de §A.2 como primera página del PDF y adjuntar el DNI/NIE o el acta de matrimonio que enlaza ambos apellidos.
+- [x] **El inglés computa** en el apartado de idiomas → confirmado con la comisión (§B.4).
 - [ ] Completar el **curso académico** y la **denominación oficial** de las dos becas y localizar sus resoluciones → §B.5.
 - [ ] Reunir el resto de certificados (DOC-01, DOC-02, DOC-04, DOC-09 a DOC-11, DOC-13 a DOC-18, DOC-20 a DOC-23).
 - [ ] Escanear todo en un **PDF único**, en el orden del Anexo §8, con portada-índice.

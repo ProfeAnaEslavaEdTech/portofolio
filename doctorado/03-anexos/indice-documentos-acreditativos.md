@@ -4,7 +4,8 @@
 ## Ana Eslava-Graterol — Solicitud de admisión al Programa de Doctorado
 ### *Supporting-evidence annex — PhD admission application*
 
-**Programa / Programme:** Doctorado en Lingüística Aplicada — Universitat Politècnica de València
+**Programa / Programme:** Doctorado en **Lenguas, Literaturas y Culturas, y sus Aplicaciones** — Dept. de Lingüística Aplicada, Universitat Politècnica de València
+**Dirección / Supervision:** Prof.ª Mª Luisa Carrió-Pastor · Prof. Ricardo Casañ-Pitarch
 **Propuesta de tesis / Thesis proposal:** MLLDE — *Multimodal Language Learning Design & Evaluation*
 **Fecha / Date:** ______________________
 
@@ -48,7 +49,7 @@
 
 | Código | Documento / Document | Acredita / Supports | ☑ |
 |---|---|---|---|
-| **DOC-19** | ⭐ **Kaleidoscopio 2(3), 51–56 (2005)** — primera y última página + carta de aceptación tras arbitraje (UNEG, 09-03-2005). ISSN 1690-6054, indexada en CLASE–UNAM | §5 | ☑ |
+| **DOC-19** | ⭐ **Kaleidoscopio 2(3), 51–56 (2005)** — primera y última página + carta de aceptación tras arbitraje (UNEG, 09-03-2005). ISSN 1690-6054, indexada en **CLASE–UNAM** · la revista cerró en 2015, así que el registro indexado es la evidencia permanente | §5 | ☑ |
 | **DOC-24** | ⭐ **II Congreso Internacional de Educación Superior** (Cumaná, 31 jul.–2 ago. 2008) — carta de aceptación de la ponencia, ref. CIES/P 048 | §5 | ☑ |
 | **DOC-20** | Certificado *Instructional Design: Course Planning and Pedagogy* — UC Irvine (ene. 2025) | §6 | ☐ |
 | **DOC-21** | Certificado *Instructional Design Fundamentals* — University of Cambridge (mar. 2025) | §6 | ☐ |

@@ -17,7 +17,7 @@
 | **Email** | profeanaeslava@gmail.com |
 | **Phone** | *[to complete]* |
 | **Location** | Valencia, Spain — immediate availability |
-| **ORCID** | *[create before submitting — orcid.org, free, 5 minutes]* |
+| **ORCID** | https://orcid.org/0000-0002-8076-1189 |
 | **LinkedIn** | linkedin.com/in/anaeslava |
 | **Research portfolio** | profeanaeslavaedtech.github.io/portofolio |
 
@@ -33,6 +33,7 @@
 - **Grade-point average: 9.4 / 10** · **2 Matrículas de Honor** (highest distinction)
 - **Master's thesis:** *Disciplinary variation in metadiscourse use across master's thesis abstracts* — a corpus of 180 abstracts from six disciplines (18,000 words, 920 markers), analysed with METOOL under Hyland's (2005) framework.
 - **Supervisor:** Prof. Mª Luisa Carrió-Pastor, Department of Applied Linguistics, UPV.
+- **Doctoral supervision:** Prof. Mª Luisa Carrió-Pastor (supervisor) and Prof. Ricardo Casañ-Pitarch (co-supervisor) — PhD Programme in **Languages, Literatures and Cultures, and their Applications**, UPV.
 
 **Licenciada en Educación, mención Inglés** (Degree in Education, English major)
 
@@ -75,9 +76,9 @@ Awarded for the Master's in Languages and Technology (UPV) under the general cal
 
 **Peer-reviewed article in an indexed journal**
 
-> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexed in CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexed in CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594 · https://ru.dgb.unam.mx/items/94cebd9c-65de-4d95-b948-637ae2fcdd43/full
 
-Derived from the final-year dissertation (20/20, Diploma of Honour). Received 13-06-2004, **accepted after peer review** 19-07-2004. Published with a bilingual Spanish/English abstract.
+Derived from the final-year dissertation (20/20, Diploma of Honour). Received 13-06-2004, **accepted after peer review** 19-07-2004. Published with a bilingual Spanish/English abstract. *Kaleidoscopio* ceased publication in 2015; the CLASE (UNAM) indexed record is the permanent evidence.
 
 **Acknowledgement**
 

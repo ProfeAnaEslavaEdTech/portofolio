@@ -17,7 +17,7 @@
 | **Correo** | profeanaeslava@gmail.com |
 | **Teléfono** | *[completar]* |
 | **Residencia** | Valencia, España — disponibilidad inmediata |
-| **ORCID** | *[crear antes de enviar — orcid.org, gratuito, 5 minutos]* |
+| **ORCID** | https://orcid.org/0000-0002-8076-1189 |
 | **LinkedIn** | linkedin.com/in/anaeslava |
 | **Portafolio de investigación** | profeanaeslavaedtech.github.io/portofolio |
 
@@ -33,6 +33,7 @@
 - **Nota media: 9,4 / 10** · **2 Matrículas de Honor**
 - **TFM:** *Variación disciplinar en el uso del metadiscurso en resúmenes de trabajos de fin de máster* — corpus de 180 resúmenes de seis disciplinas (18.000 palabras, 920 marcadores), analizado con METOOL bajo el marco de Hyland (2005).
 - **Directora:** Prof.ª Mª Luisa Carrió-Pastor, Departamento de Lingüística Aplicada, UPV.
+- **Dirección de tesis doctoral:** Prof.ª Mª Luisa Carrió-Pastor (directora) y Prof. Ricardo Casañ-Pitarch (codirector) — Programa de Doctorado en **Lenguas, Literaturas y Culturas, y sus Aplicaciones**, UPV.
 
 **Licenciada en Educación, mención Inglés**
 
@@ -72,9 +73,9 @@ Concedida para el Máster en Lenguas y Tecnología (UPV), convocatoria general O
 
 **Artículo en revista arbitrada e indexada**
 
-> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexada en CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594
+> Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexada en CLASE (UNAM). https://hdl.handle.net/20.500.14330/CLA01000260594 · https://ru.dgb.unam.mx/items/94cebd9c-65de-4d95-b948-637ae2fcdd43/full
 
-Derivado del Trabajo Especial de Grado (20/20, Diploma de Honor). Recibido 13-06-2004, **aceptado tras arbitraje** 19-07-2004. Publicado con resumen bilingüe español/inglés.
+Derivado del Trabajo Especial de Grado (20/20, Diploma de Honor). Recibido 13-06-2004, **aceptado tras arbitraje** 19-07-2004. Publicado con resumen bilingüe español/inglés. *Kaleidoscopio* dejó de publicarse en 2015; el registro indexado en CLASE (UNAM) es la evidencia permanente.
 
 **Reconocimiento en agradecimientos**
 

@@ -1,10 +1,12 @@
 # Proyecto DOCTORADO · *PhD Project*
 
-Documentación de la solicitud de admisión al **Programa de Doctorado en Lingüística Aplicada** (Departamento de Lingüística Aplicada, Universitat Politècnica de València) y de la propuesta de tesis **MLLDE**.
+Documentación de la solicitud de admisión al **Programa de Doctorado en Lenguas, Literaturas y Culturas, y sus Aplicaciones** (Departamento de Lingüística Aplicada, Universitat Politècnica de València) y del **Plan de Investigación MLLDE**.
 
-*Admission file for the PhD Programme in Applied Linguistics (Department of Applied Linguistics, Universitat Politècnica de València) and the **MLLDE** thesis proposal.*
+**Dirección:** Prof.ª Mª Luisa Carrió-Pastor · **Codirección:** Prof. Ricardo Casañ-Pitarch
 
-**Propuesta / Proposal:** *MLLDE — Multimodal Language Learning Design & Evaluation: diseño curricular por modalidad para el aprendizaje móvil de lenguas y medición de la competencia oral con tres tiers de evidencia.*
+*Admission file for the PhD Programme in Languages, Literatures and Cultures, and their Applications (Department of Applied Linguistics, UPV) and the **MLLDE** research plan.*
+
+**Plan de Investigación / Research Plan:** *MLLDE — Multimodal Language Learning Design & Evaluation: diseño curricular por modalidad para el aprendizaje móvil de lenguas y medición de la competencia oral con tres tiers de evidencia.*
 
 **Núcleo de la tesis.** Dos pilares. **Design:** la modalidad —texto, audio, imagen, voz— es una **variable declarada** en cada paso de la lección, no un envoltorio. **Evaluation:** *Measure ≠ Decide* — el modelo observa y describe, un **motor determinista** computa la banda; y la pronunciación se afirma por **tres tiers de evidencia**, de modo que ningún informe reclame más precisión de la que el motor tiene. Caso testigo: **TK Coach / «Capi»**, tutor de inglés de negocios por voz, con el Tier 1 **en producción** sobre un LRS.
 
@@ -16,12 +18,14 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lingü
 
 | Ruta | Documento | Idioma |
 |---|---|---|
-| [`01-propuesta/propuesta-doctoral-MLLDE-ES.md`](01-propuesta/propuesta-doctoral-MLLDE-ES.md) | Propuesta de tesis completa — los dos pilares, los tres tiers, 6 preguntas, 6 objetivos, 6 hipótesis, metodología DBR con validación en producción, cronograma a 4 años, ética y referencias APA 7. Integra el documento técnico de la autora *«MLLDE y el tutor por voz»* (05-09-2026). | ES |
-| [`01-propuesta/doctoral-research-proposal-MLLDE-EN.md`](01-propuesta/doctoral-research-proposal-MLLDE-EN.md) | The same proposal in English, for international mention and for supervisors outside Spain. | EN |
+| [`01-propuesta/oficial/MLLDE-Plan-de-Investigacion-ES.pdf`](01-propuesta/oficial/) | ⭐ **Plan de Investigación oficial** (08/08/2026) — plantilla de nueve apartados de la UPV. **Es el documento que se presenta.** También en `.docx` y en inglés. | ES/EN |
+| [`01-propuesta/oficial/componente-tutor-voz-3-tiers-ES.md`](01-propuesta/oficial/componente-tutor-voz-3-tiers-ES.md) | Componente técnico *«MLLDE y el tutor por voz: los tres tiers de evidencia»* (05/09/2026) — desarrolla el Módulo de Medición que el plan resume. | ES |
+| [`01-propuesta/REVISION-plan-de-investigacion.md`](01-propuesta/REVISION-plan-de-investigacion.md) | **Revisión del plan** — incoherencias que un tribunal detectaría, méritos documentados que el §3.3 omite, y el riesgo de alcance. Con lista de comprobación. | ES |
 | [`02-cv-baremo/cv-academico-ES.md`](02-cv-baremo/cv-academico-ES.md) | ⭐ **CV académico breve (3 páginas)** — el que se entrega a la Comisión Académica. Siete apartados en orden cronológico inverso: datos y línea de investigación · formación · becas y distinciones · producción científica · congresos · experiencia docente e investigadora · idiomas y herramientas. | ES |
 | [`02-cv-baremo/cv-academico-EN.md`](02-cv-baremo/cv-academico-EN.md) | The same short academic CV in English. | EN |
 | [`02-cv-baremo/cv-doctorado-baremo-ES.md`](02-cv-baremo/cv-doctorado-baremo-ES.md) | **CV organizado según el baremo de la convocatoria** — Expediente académico 70 % + Otros méritos 30 % (seis apartados de 5 %), con códigos DOC-nn hacia los documentos acreditativos. | ES |
 | [`02-cv-baremo/cv-doctorado-baremo-EN.md`](02-cv-baremo/cv-doctorado-baremo-EN.md) | The same CV in English, same rubric structure. | EN |
+| [`06-orcid/GUIA-actualizar-ORCID.md`](06-orcid/GUIA-actualizar-ORCID.md) | **Guía para completar el ORCID** (`0000-0002-8076-1189`, hoy vacío) — valores listos para pegar en cada campo: titulaciones, empleo, 7 distinciones, 2 becas, 6 obras. Resuelve además la cadena de nombres vía `Also known as`. | ES |
 | [`03-anexos/indice-documentos-acreditativos.md`](03-anexos/indice-documentos-acreditativos.md) | Portada-índice bilingüe para el **PDF único** de documentación acreditativa (DOC-01 → DOC-23), con casillas de verificación. | ES/EN |
 | [`04-docx/`](04-docx/) | Los cinco documentos en **.docx** (Ocean Ink, tema claro, listos para editar y enviar). | ES/EN |
 | [`05-pdf/`](05-pdf/) | Los mismos documentos en **PDF A4** listos para adjuntar a la solicitud. | ES/EN |
