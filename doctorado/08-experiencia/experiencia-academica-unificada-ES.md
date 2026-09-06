@@ -21,6 +21,8 @@
 | Años de docencia universitaria | **10** (2005–2015) | UDO, Núcleo Nueva Esparta |
 | Años de docencia de lenguas a adultos | **20+** (2004–actualidad) | Trayectoria continuada |
 | Instituciones universitarias | **3** — ULA (formación y práctica docente), UDO (docencia), UPV (investigación) | — |
+| Práctica profesional en el ámbito de la tesis | **6+ años** (2019–actualidad) — diseño instruccional y *language learning experience design* | §2.4 |
+| Organizaciones y clientes | *[pendiente de completar — §2.4]* | — |
 | Publicación arbitrada e indexada | **1** — *Kaleidoscopio* 2(3), 51–56 (2005), CLASE–UNAM | **[DOC-19]** |
 | Ponencia arbitrada en congreso internacional | **1** — II CIES, Cumaná, 2008 | **[DOC-24]** |
 | Reconocimiento en agradecimientos | **1** — Elsevier, 2019 | **[DOC-14]** |
@@ -74,18 +76,46 @@
 
 ---
 
-### 2.4 · Práctica profesional en diseño instruccional · octubre 2019 – actualidad
-**Diseño de aprendizaje con evaluación académica**
+### 2.4 · Diseño instruccional y *Language Learning Experience Design* · octubre 2019 – actualidad
+**Práctica profesional con clientes y organizaciones — el ámbito exacto del doctorado**
 
-Diseñadora instruccional y arquitecta de eLearning, profesional autónoma (España). Aunque es actividad profesional, produce artefactos **evaluados académicamente** y es el banco de pruebas del método doctoral:
+> **Por qué este bloque pesa en el baremo, y no poco.** El apartado del baremo se llama «**experiencia profesional en el ámbito del doctorado**». El ámbito de esta tesis no es la docencia en general: es el **diseño y la medición de productos de aprendizaje de lenguas**. Por tanto, el trabajo de diseño instruccional y *language learning experience design* para clientes y organizaciones **no es un complemento del mérito: es el mérito en su acepción más literal**. Es, además, lo que sostiene la afirmación metodológica del plan —investigación basada en diseño en **contextos auténticos**— y el origen documentado del requisito de voz medible en xAPI, que nació de una petición real de un cliente.
+
+#### Clientes y organizaciones
+
+> ⚠️ **Pendiente de completar — necesito los datos.** No figuran en el perfil verificado, así que no los invento. Rellena una fila por cada organización con la que hayas trabajado. Con eso lo redacto en las tres versiones.
+
+| # | Organización / cliente | Sector | Rol | Periodo | Alcance del encargo | Evidencia |
+|---|---|---|---|---|---|---|
+| 1 | *[nombre]* | *[EdTech · idiomas · corporativo · universidad · editorial…]* | *[diseñadora instruccional / LX designer / consultora…]* | *[mm-aaaa – mm-aaaa]* | *[qué diseñaste: nº de módulos, horas de formación, idiomas, niveles MCER, plataforma]* | *[contrato, factura, certificado, URL pública, testimonio]* |
+| 2 | | | | | | |
+| 3 | | | | | | |
+| 4 | | | | | | |
+
+**Qué conviene registrar de cada uno** — por orden de peso ante la comisión:
+
+1. **Si el producto es de lenguas** y a qué **nivel MCER** — es lo que lo sitúa en el ámbito de la tesis.
+2. **Volumen**: número de módulos, horas de formación resultantes, número de aprendices alcanzados.
+3. **Si hubo medición**: SCORM, xAPI, LRS, informes de resultados. Es lo que conecta con el Módulo de Medición.
+4. **Si hubo accesibilidad** como requisito (WCAG, DUA).
+5. **Si el encargo dio lugar a una decisión de diseño** que después se generalizó en MLLDE — como el modo voz.
+
+#### Proyecto propio — Talkétika
+
+**Fundadora y diseñadora de contenidos eLearning** · 2019 – actualidad · remoto
+Administradora de **Chamilo (LMS)** desde 2019; contenido gamificado en **Moodle, Canvas LMS y Chamilo**; producción de audiolibros en Adobe Podcast. Sitio de evaluación de productos EdTech (*TK Coach Review*): <https://profeanaeslava.my.canva.site/tkcoachreview>
+
+**TK Coach («Capi»)** — tutor de inglés de negocios por voz, con el **Módulo de Medición en producción**: Tier 1 de extremo a extremo, tres agentes LLM que observan, consolidador determinista, y evidencia **xAPI** emitida a un **LRS conformante**. Es la instancia industrial que da soporte empírico a la segunda aportación del plan.
+
+#### Artefactos con evaluación académica
 
 - **Academic Writing Journey (AWJ)** — curso gamificado de inglés académico B2→C1, seis niveles, alineado al MCER. **Calificado 10/10 por diseño inclusivo (UPV, 2026)**, con cero errores de navegación del alumnado. Agnóstico de plataforma: reconstruido de Canva a Articulate 360 Rise con SCORM/xAPI y desplegado en cuatro familias de LMS. **[DOC-15]**
-- **Prototipo mobile-native** (PWA sin conexión, WCAG-AA, mentor de IA que andamia sin dar respuestas) — demo funcional de la fase *Output* del modelo IPO en móvil.
-- **Módulo de Medición en producción** — TK Coach («Capi», Talkétika), tutor de inglés de negocios por voz: Tier 1 de extremo a extremo, emitiendo evidencia xAPI a un **LRS conformante**.
-- **Modelo documentado de gobernanza humano–IA**, formalizado en un *High-Level Design Document* — el antecedente directo del principio ***Measure ≠ Decide*** de la tesis.
-- **Administradora de Chamilo (LMS) desde 2019**; contenido gamificado en Moodle, Canvas LMS y Chamilo.
+- **Prototipo mobile-native** — PWA sin conexión, WCAG-AA, mentor de IA que andamia sin dar respuestas. Demo funcional de la fase *Output* del modelo IPO en móvil.
+- **Modelo documentado de gobernanza humano–IA**, formalizado en un *High-Level Design Document* — antecedente directo del principio ***Measure ≠ Decide*** de la tesis.
 
----
+#### Competencias aplicadas en estos encargos
+
+Diseño instruccional (ADDIE, SAM) · *language learning experience design* · guionización y narrativa didáctica · gamificación y microlearning · diseño curricular alineado al MCER · evaluación por competencias · accesibilidad (DUA, WCAG 2.1 AA, Acta Europea de Accesibilidad) · empaquetado **SCORM / xAPI / cmi5** · administración de LMS (Chamilo, Moodle, Canvas LMS) · autoría en Articulate 360 Rise y Canva · producción de audio (Adobe Podcast) · gobernanza humano–IA.
 
 ### 2.5 · Universitat Politècnica de València · hasta julio de 2026
 **Investigación de corpus en lingüística aplicada**
@@ -108,6 +138,7 @@ Cuatro rasgos que conviene que una comisión vea de un golpe:
 2. **Investigación en los dos extremos de la trayectoria.** Un TFG que llegó a revista indexada y a congreso internacional (2004–2008) y un estudio de corpus dirigido en la UPV (2026). No es una vuelta a la investigación después de un paréntesis: es una línea con dos momentos documentados y el mismo objeto de fondo —cómo alinear formación y competencia con un marco verificable.
 3. **Escritura científica desde dentro.** Diez años produciendo y revisando texto científico en inglés para revistas de alto impacto, con reconocimiento en Elsevier. Para una tesis sobre escritura académica asistida por LLM, es experiencia de campo.
 4. **Evaluación acreditada conforme al MCER.** Examinadora DELE del Instituto Cervantes: el criterio experto que la propia tesis usará para validar la medición automática.
+5. **Práctica profesional en el ámbito exacto de la tesis.** Seis años diseñando y midiendo productos de aprendizaje de lenguas para clientes y organizaciones. No es experiencia «relacionada»: es el objeto de estudio ejercido profesionalmente, y es de donde salen los contextos auténticos que la investigación basada en diseño exige.
 
 ---
 
@@ -118,6 +149,7 @@ Cuatro rasgos que conviene que una comisión vea de un golpe:
 - [ ] **Categoría docente** en la UDO (profesora contratada, instructora, asistente…) — la comisión lo suele pedir.
 - [ ] Si hubo **docencia en la ULA** más allá de las Prácticas Profesionales (preparaduría, ayudantía), acreditarla.
 - [ ] **Curso de inicio** del máster en la UPV.
+- [ ] 🔴 **Lista de organizaciones y clientes** de diseño instruccional y *language learning experience design* (§2.4), con periodo, rol y alcance. Es el dato que más refuerza el apartado B.6 del baremo y hoy es el único hueco grande del expediente.
 
 ---
 

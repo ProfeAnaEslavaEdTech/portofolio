@@ -104,6 +104,7 @@ El plan sostiene **dos aportaciones** (escritura/alfabetización en IA **y** hab
 - [ ] 🟠 Corregir denominación del título, campus, y usar «1.ª de 56» y «20/20 con Diploma de Honor».
 - [ ] 🟡 Añadir al §3.3 los méritos apostillados, las 1.568 h, el congreso de 2008 y las dos becas.
 - [ ] 🟡 Añadir el enlace del repositorio UNAM a la publicación de 2005.
+- [ ] 🟡 **Talkétika lleva acento.** El documento técnico de los tres tiers lo escribe «Talketika» en dos sitios (encabezado y aviso de copyright). Corregir antes de circularlo.
 - [ ] ⚠️ Decidir y declarar el **núcleo** de la tesis y marcar **T6 como contingente**.
 
 ---
