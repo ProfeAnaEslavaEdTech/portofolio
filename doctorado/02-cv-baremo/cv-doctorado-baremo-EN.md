@@ -226,14 +226,41 @@ So the 70% academic record — 9.07 in the undergraduate degree and 9.4 in the m
 
 ## B.6 · Professional experience in the field of the doctorate — **5 %** ✅ EVIDENCED — STRONGEST MERIT
 
-**More than 20 years of continuous experience in the exact field of the thesis, including 1,568 accredited university teaching hours:** CEFR-aligned language teaching, curriculum and instructional design, and educational technology for language learning.
+**More than 20 years of continuous experience in the exact field of the thesis, evidenced through three independent channels: 1,568 university teaching hours, 12 years of classroom teaching certified by the State, and professional instructional-design practice since 2019:** CEFR-aligned language teaching, curriculum and instructional design, and educational technology for language learning.
 
-### B.6.1 · University teaching and research
-**Scientific English Lecturer & Scientific Content Writer** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2005 – 2015**
-- **1,568 accredited university teaching hours** (service certificate, **[DOC-16]**).
-- Taught scientific English within science degree programmes.
-- Wrote and reviewed scientific content in English (dentistry, marine biology) for high-impact peer-reviewed journals.
-- **Named in the acknowledgements** of Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8, for the manuscript's English and scientific content. **[DOC-14]**
+### B.6.1 · University teaching — Universidad de Oriente (UDO), Núcleo Nueva Esparta · 2007 – 2010
+**1,568 certified teaching hours of English for specific purposes**
+
+Contracted lecturer, subsequently **transferred to a full-time established post**, in the Unidad de Estudios Básicos.
+
+| Certified fact | Value |
+|---|---|
+| **Total teaching hours** | **1,568 h** — seven semesters of 192 h and one of 224 h |
+| Semesters | **8 consecutive** (I-2007 to II-2010), 12–14 hours per week |
+| Departments | Social Sciences and Humanities · Hospitality and Tourism · **Applied Marine Sciences** |
+| Degree programmes served | Tourism · Accountancy · Tourism Services · **Marine Biology** · **Aquaculture** |
+| Courses | Instrumental English · English I · English II · English I for Administrative Sciences · **Technical English** |
+| Evidence | Sealed **Academic Load Certificate**, Unidad de Estudios Básicos, 25 May 2026 **[DOC-16]** · teaching-load breakdown with totals **[DOC-25]** |
+
+> ⭐ **The specialism this evidences.** She taught **Technical and Instrumental English to Marine Biology and Aquaculture** while, over the same period, writing and reviewing **marine biology** research articles in English for high-impact journals — work acknowledged in Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* (Elsevier) **[DOC-14]**. That is **English for the sciences taught at university and practised for international publication**: one specialism evidenced two ways, and precisely the terrain of the thesis.
+
+**Dissemination.** Refereed paper accepted and presented, under UDO affiliation, at the **2nd International Conference on Higher Education**, Cumaná, 2008 (ref. CIES/P 048) **[DOC-24]**.
+
+### B.6.1b · Secondary teaching — Ministry of Education · Oct 2006 – Jan 2019
+**12 years and 3 months, 36 weekly hours of English**
+
+**Teacher grade III (classroom)**, post code **1133DH**, at **L.N. Santa Rosalía de Palermo** (formerly E.B. Antonio Díaz), Nueva Esparta State Education Authority.
+
+| Fact | Value | Document |
+|---|---|---|
+| Start | **01/10/2006** | Education Authority provisional certificate · Ministry employment certificate **[DOC-26]** |
+| End | **01/01/2019** | Social security individual account **[DOC-27]** |
+| Continuity | **52–53 weeks contributed each year, 2011–2018** | Social security individual account **[DOC-27]** |
+| Verification | Ministry certificate with an **online verification code** | Ministry self-service portal |
+
+> **These are two simultaneous posts, not one.** Between 2007 and 2010 she combined university teaching at UDO with classroom teaching for the Ministry. Fee-based university contracting **generates no social-security contributions**, which is why the social security record shows only the Ministry: the absence is what that contractual form produces, not a gap. Declaring them separately adds up and prevents a reviewer from finding an apparent inconsistency when cross-checking.
+
+> ℹ️ **On exhaustive certification.** UDO's archives suffered documented vandalism and fires between 2018 and 2020, so the available certification covers the periods whose records could be recovered. An explanatory note and a press reference are attached as context **[DOC-28]**. The Ministry block is unaffected by that loss: it is certified by the State, not by the employer.
 
 ### B.6.2 · Instructional design and eLearning architecture
 **Instructional Designer & eLearning Architect** — self-employed (Spain) · **October 2019 – present** · remote
@@ -271,7 +298,7 @@ So the 70% academic record — 9.07 in the undergraduate degree and 9.4 in the m
 | B.3 Second master's degree | 5 % | ❌ | Not applicable |
 | B.4 Languages beyond the degrees | 5 % | ✅ | **English confirmed as eligible** · C1 CAE · CELTA · DELE examiner |
 | B.5 Scholarships | 5 % | ✅ | **High Academic Performance Scholarship** evidenced (ULA, 2003-04) · Ministry scholarship (master's) |
-| B.6 Professional experience in the field | 5 % | ✅ | **1,568 accredited university teaching hours** · 20+ years · ID 2019–present |
+| B.6 Professional experience in the field | 5 % | ✅ | **1,568 university teaching hours** (ESP in the sciences) · **12 years of classroom teaching** verifiable against State records · instructional design 2019–present |
 
 **Honest reading.** **Four of the six merits are fully evidenced** (B.1, B.4, B.5, B.6) and two do not apply (B.2, B.3): **20 of the 30 points**, with the 70% academic record in the upper band (9.4 and 9.07 out of 10). The strength here is not the number of boxes ticked but the **quality of the proof**: the B.1 merit arrives apostilled with an online validation code, and the undergraduate record comes with its grade average already computed by the Spanish administration.
 
@@ -357,7 +384,11 @@ The dissertation did not stay in the file: it ran the full research cycle — **
 | DOC-13 | Ministry scholarship award resolution (UPV master's) | B.5 | ⬜ |
 | DOC-14 | Sotelo-Casas et al. (2019) — cover + acknowledgements page (p. 8) | B.6 · §5 | ⬜ |
 | DOC-15 | Evidence of the 10/10 grade for *Academic Writing Journey* (UPV) | A.1 · B.6 | ⬜ |
-| DOC-16 | UDO Núcleo Nueva Esparta teaching service certificates (2005–2015), **1,568 accredited hours** | B.6 | ⬜ |
+| DOC-16 | ⭐ **Sealed Academic Load Certificate** — UDO Núcleo Nueva Esparta, 25 May 2026 (8 semesters, 12–14 weekly hours) | B.6 | ✅ **in hand** |
+| DOC-25 | ⭐ **UDO teaching-load sheet 2007–2011** — breakdown by section, department and programme · **total 1,568 h** | B.6 | ✅ **in hand** ⚠️ seal to request |
+| DOC-26 | ⭐ **Ministry of Education certificates** — provisional (06/10/2006) and employment (05/03/2018, Teacher III, code 1133DH) | B.6 | ✅ **in hand** |
+| DOC-27 | ⭐ **Social security individual account** — 12/09/2005 to 01/01/2019, continuous contributions 2011–2018 | B.6 | ✅ **in hand** |
+| DOC-28 | Press reference on the destruction of UDO archives (2018–2020) — **contextual** | B.6 | ✅ **in hand** |
 | DOC-17 | Spanish employment history / professional activity certificate | B.6 | ⬜ |
 | DOC-18 | AVE Global tutoring accreditation — Instituto Cervantes | B.6 | ⬜ |
 | DOC-19 | **Kaleidoscopio 2(3), 51–56 (2005)** — first and last page + peer-review acceptance letter (UNEG, 09-03-2005) | §5 | ✅ **in hand** |

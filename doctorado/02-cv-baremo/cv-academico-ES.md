@@ -101,8 +101,13 @@ Resumen **aceptado por la comisión de arbitraje** del congreso (ref. CIES/P 048
 **Diseñadora instruccional y arquitecta de eLearning** — profesional autónoma, España · **oct. 2019 – actualidad**
 Diseño de itinerarios de inglés académico B2→C1 alineados al MCER; guionización y documento de diseño de alto nivel; capa de accesibilidad conforme a WCAG y al Acta Europea de Accesibilidad; empaquetado SCORM/xAPI en Articulate 360 (Rise). Modelo documentado de gobernanza humano–IA para la generación de contenido.
 
-**Profesora de Inglés Científico y redactora de contenido científico** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2005 – 2015**
-**1.568 horas de docencia universitaria acreditadas.** Docencia de inglés científico en titulaciones de ciencias; redacción y revisión de artículos en inglés para revistas revisadas por pares de alto impacto (odontología, biología marina).
+**Profesora de inglés para fines específicos** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2007 – 2010**
+
+**1.568 horas de docencia universitaria certificadas** en 8 semestres consecutivos. Contratada, con posterior pase a cargo a tiempo completo. Inglés Instrumental, Inglés I y II, Inglés para Ciencias Administrativas e **Inglés Técnico**, en tres departamentos y cinco titulaciones — entre ellas **Biología Marina y Acuacultura**. En el mismo periodo, redacción y revisión de artículos científicos en inglés (biología marina, odontología) para revistas de alto impacto.
+
+**Docente III de Aula (Inglés)** — Ministerio del Poder Popular para la Educación, Venezuela · **oct. 2006 – ene. 2019**
+
+36 horas semanales de Inglés en la L.N. Santa Rosalía de Palermo, Zona Educativa de Nueva Esparta. Doce años y tres meses de servicio continuado, verificables ante el Ministerio y la seguridad social.
 
 **Fundadora y diseñadora de contenidos — Talkétika** · **2019 – actualidad**
 

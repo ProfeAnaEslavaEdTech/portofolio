@@ -226,14 +226,41 @@ Es decir: el 70 % del expediente —9,07 en el grado y 9,4 en el máster— qued
 
 ## B.6 · Experiencia profesional en el ámbito del doctorado — **5 %** ✅ ACREDITADO — MÉRITO MÁS FUERTE
 
-**Más de 20 años de experiencia continuada en el ámbito exacto de la tesis, con 1.568 horas de docencia universitaria acreditadas:** enseñanza de lenguas alineada al MCER, diseño curricular e instruccional, y tecnologías educativas para el aprendizaje de idiomas.
+**Más de 20 años de experiencia continuada en el ámbito exacto de la tesis, acreditada por tres vías independientes: 1.568 horas de docencia universitaria, 12 años de docencia de aula certificados por el Estado, y práctica profesional en diseño instruccional desde 2019:** enseñanza de lenguas alineada al MCER, diseño curricular e instruccional, y tecnologías educativas para el aprendizaje de idiomas.
 
-### B.6.1 · Docencia e investigación universitaria
-**Profesora de Inglés Científico y redactora de contenido científico** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2005 – 2015**
-- **1.568 horas acreditadas de docencia universitaria** (certificación de servicio docente, **[DOC-16]**).
-- Docencia de inglés científico en titulaciones de ciencias.
-- Redacción y revisión de contenido científico en inglés (odontología, biología marina) para revistas revisadas por pares de alto impacto.
-- **Reconocimiento en los agradecimientos** de Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8, por el contenido científico y la revisión en inglés del manuscrito. **[DOC-14]**
+### B.6.1 · Docencia universitaria — Universidad de Oriente (UDO), Núcleo Nueva Esparta · 2007 – 2010
+**1.568 horas docentes certificadas de inglés para fines específicos**
+
+Profesora **contratada**, con posterior **pase a código de cargo a Tiempo Completo**, en la Unidad de Estudios Básicos.
+
+| Dato certificado | Valor |
+|---|---|
+| **Total de horas docentes** | **1.568 h** — siete semestres de 192 h y uno de 224 h |
+| Semestres | **8 consecutivos** (I-2007 a II-2010), 12–14 horas semanales |
+| Departamentos | Socio-Humanidades · Hotelería y Turismo · **Ciencias Aplicadas al Mar** |
+| Titulaciones servidas | Turismo · Contaduría · Servicios Turísticos · **Biología Marina** · **Acuacultura** |
+| Asignaturas | Inglés Instrumental · Inglés I · Inglés II · Inglés I para Ciencias Administrativas · **Inglés Técnico** |
+| Acreditación | **Constancia de Carga Académica** sellada, Unidad de Estudios Básicos, 25 may. 2026 **[DOC-16]** · hoja de carga docente con desglose y total **[DOC-25]** |
+
+> ⭐ **La especialización que acredita, y que conviene señalar.** Impartió **Inglés Técnico e Inglés Instrumental a Biología Marina y Acuacultura** mientras, en el mismo periodo, redactaba y revisaba artículos científicos de **biología marina** en inglés para revistas de alto impacto — trabajo reconocido en los agradecimientos de Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* (Elsevier) **[DOC-14]**. Es **inglés para las ciencias enseñado en la universidad y ejercido para publicación internacional**: la misma especialización por dos vías, y el terreno exacto de la tesis.
+
+**Difusión.** Ponencia aceptada por arbitraje y presentada, con afiliación a la UDO, en el **II Congreso Internacional de Educación Superior**, Cumaná, 2008 (ref. CIES/P 048) **[DOC-24]**.
+
+### B.6.1b · Docencia en educación media — Ministerio del Poder Popular para la Educación · oct. 2006 – ene. 2019
+**12 años y 3 meses, 36 horas semanales de Inglés**
+
+**Docente III de Aula**, código de cargo **1133DH**, en la **L.N. Santa Rosalía de Palermo** (antes E.B. Antonio Díaz), Zona Educativa del Estado Nueva Esparta.
+
+| Dato | Valor | Documento |
+|---|---|---|
+| Ingreso | **01/10/2006** | Constancia provisional de la Zona Educativa · constancia de trabajo del Ministerio **[DOC-26]** |
+| Egreso | **01/01/2019** | Cuenta Individual del IVSS **[DOC-27]** |
+| Continuidad | **52–53 semanas cotizadas cada año, 2011–2018** | Cuenta Individual del IVSS **[DOC-27]** |
+| Verificación | Constancia ministerial con **código de verificación en línea** | Portal de autogestión del Ministerio |
+
+> **Son dos empleos simultáneos, no uno.** Entre 2007 y 2010 compaginó la docencia universitaria en la UDO con la docencia de aula en el Ministerio. La contratación universitaria por honorarios **no genera cotización**, y por eso el IVSS solo refleja el Ministerio: la ausencia es lo esperable en esa figura contractual, no una laguna. Declararlos por separado suma y evita que un revisor detecte una inconsistencia al cruzar los documentos.
+
+> ℹ️ **Sobre la acreditación exhaustiva.** Los archivos de la UDO sufrieron vandalismo e incendios documentados entre 2018 y 2020, por lo que la certificación disponible cubre los periodos cuyos registros pudieron recuperarse. Se adjunta nota explicativa y referencia de prensa a título contextual **[DOC-28]**. El bloque del Ministerio es ajeno a esa pérdida: lo certifica el Estado, no el empleador.
 
 ### B.6.2 · Diseño instruccional y arquitectura de eLearning
 **Diseñadora Instruccional y Arquitecta de eLearning** — profesional autónoma (España) · **octubre 2019 – actualidad** · remoto
@@ -271,7 +298,7 @@ Es decir: el 70 % del expediente —9,07 en el grado y 9,4 en el máster— qued
 | B.3 Segundo máster | 5 % | ❌ | No procede |
 | B.4 Idiomas ajenos a las titulaciones | 5 % | ✅ | **Confirmado que el inglés computa** · C1 CAE · CELTA · examinadora DELE |
 | B.5 Becas | 5 % | ✅ | **Beca de Alto Rendimiento** acreditada (ULA, 2003-2004) · beca del Ministerio (máster) |
-| B.6 Experiencia profesional en el ámbito | 5 % | ✅ | **1.568 h de docencia universitaria acreditadas** · 20+ años · ID 2019-actualidad |
+| B.6 Experiencia profesional en el ámbito | 5 % | ✅ | **1.568 h de docencia universitaria** (ESP en ciencias) · **12 años de docencia de aula** verificables ante el Estado · diseño instruccional 2019–actualidad |
 
 **Lectura honesta.** **Cuatro de los seis méritos están plenamente acreditados** (B.1, B.4, B.5, B.6) y dos no proceden (B.2, B.3): **20 % de los 30 %**, con el 70 % del expediente en el tramo alto (9,4 y 9,07 sobre 10). El punto fuerte no es el número de casillas marcadas, sino la **calidad de la prueba**: el mérito de B.1 llega apostillado y con código de validación en línea, y el expediente de grado trae la nota media ya calculada por la Administración española.
 
@@ -357,8 +384,13 @@ El TFG no se quedó en el expediente: recorrió el ciclo completo de investigaci
 | DOC-13 | Resolución de concesión de la **beca del Ministerio** (máster UPV) | B.5 | ⬜ |
 | DOC-14 | Sotelo-Casas et al. (2019) — portada + página de agradecimientos (p. 8) | B.6 · §5 | ⬜ |
 | DOC-15 | Evidencia de la calificación 10/10 de *Academic Writing Journey* (UPV) | A.1 · B.6 | ⬜ |
-| DOC-16 | Certificados de servicio docente — UDO Núcleo Nueva Esparta (2005–2015), **1.568 h acreditadas** | B.6 | ⬜ |
+| DOC-16 | ⭐ **Constancia de Carga Académica** sellada — UDO Núcleo Nueva Esparta, 25 may. 2026 (8 semestres, 12–14 h semanales) | B.6 | ✅ **en mano** |
+| DOC-25 | ⭐ **Hoja de carga docente UDO 2007–2011** — desglose por sección, departamento y titulación · **total 1.568 h** | B.6 | ✅ **en mano** ⚠️ pedir sello |
+| DOC-26 | ⭐ **Constancias del Ministerio de Educación** — provisional (06/10/2006, 36 h Inglés) y de trabajo (05/03/2018, Docente III/Aula, cód. 1133DH) | B.6 | ✅ **en mano** |
+| DOC-27 | ⭐ **Cuenta Individual (IVSS)** — ingreso 12/09/2005, egreso 01/01/2019, cotización continua 2011–2018 | B.6 | ✅ **en mano** |
+| DOC-28 | Referencia de prensa sobre la destrucción de archivos de la UDO (2018–2020) — documento **contextual**, no probatorio del servicio | B.6 | ✅ **en mano** |
 | DOC-17 | Vida laboral / certificado de actividad profesional en España | B.6 | ⬜ |
+| — | *Nota explicativa sobre la acreditación de la docencia en Venezuela* — ver `09-evidencia-docencia/` | B.6 | ✅ |
 | DOC-18 | Acreditación de tutoría en AVE Global — Instituto Cervantes | B.6 | ⬜ |
 | DOC-19 | **Kaleidoscopio 2(3), 51–56 (2005)** — primera y última página + carta de aceptación tras arbitraje (UNEG, 09-03-2005) | §5 | ✅ **en mano** |
 | DOC-20 | Certificado UC Irvine | §6 | ⬜ |

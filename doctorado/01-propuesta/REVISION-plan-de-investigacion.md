@@ -61,7 +61,7 @@ El §3.3 es el apartado donde la comisión juzga si la doctoranda puede llevar e
 
 - **Primer puesto de la promoción, apostillado.** 1.º de 56 (18,97 frente a 15,77), Constancia de Rango Académico con certificación rectoral y **Apostilla de La Haya**. Es el mérito mejor documentado de todo tu expediente y no aparece.
 - **Orden «Luis María Ribas Dávila», cuatro años consecutivos** (2000–2003) al más alto rendimiento académico de la Escuela de Educación. Convierte «primera de promoción» en excelencia sostenida.
-- **1.568 horas de docencia universitaria acreditadas** (UDO, 2005–2015). El plan dice «más de 20 años»; la cifra certificada es más persuasiva.
+- **1.568 horas de docencia universitaria certificadas** (UDO Nueva Esparta, 8 semestres, 2007–2010), incluida la docencia de **Inglés Técnico a Biología Marina y Acuacultura** — el mismo dominio en que redactabas y revisabas artículos para publicación. Y **12 años de docencia de aula** en el Ministerio de Educación (2006–2019), verificables ante el Estado. El plan dice «más de 20 años»: las cifras certificadas son mucho más persuasivas.
 - **Ponencia arbitrada en congreso internacional** (II CIES, Cumaná, 2008), derivada del mismo TFG que ya citas publicado. Cierra el ciclo investigador: defensa → publicación → congreso.
 - **Dos becas de mérito**: Beca de Alto Rendimiento de la ULA (2003–04) y **beca del Ministerio 2025/26 con componente de excelencia académica del tramo 9–9,49** — esta última es, además, una certificación independiente de tu nota del máster.
 

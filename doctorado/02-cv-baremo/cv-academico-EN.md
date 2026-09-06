@@ -106,9 +106,13 @@ Abstract **accepted by the conference refereeing committee** (ref. CIES/P 048).
 
 Design of CEFR-aligned academic English pathways (B2→C1); scripting and high-level design documentation; accessibility layer compliant with WCAG and the European Accessibility Act; SCORM/xAPI packaging in Articulate 360 (Rise). Documented human–AI governance model for content generation.
 
-**Scientific English Lecturer & Scientific Content Writer** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2005 – 2015**
+**Lecturer in English for Specific Purposes** — Universidad de Oriente (UDO), Núcleo Nueva Esparta, Venezuela · **2007 – 2010**
 
-**1,568 accredited university teaching hours.** Taught scientific English within science degree programmes; wrote and reviewed English-language articles for high-impact peer-reviewed journals (dentistry, marine biology).
+**1,568 certified university teaching hours** across 8 consecutive semesters. Contracted lecturer, subsequently transferred to a full-time established post. Instrumental English, English I and II, English for Administrative Sciences and **Technical English**, across three departments and five degree programmes — including **Marine Biology and Aquaculture**. Over the same period, wrote and reviewed English-language research articles (marine biology, dentistry) for high-impact journals.
+
+**Teacher grade III, English (classroom)** — Ministry of Education, Venezuela · **Oct 2006 – Jan 2019**
+
+36 weekly hours of English at L.N. Santa Rosalía de Palermo, Nueva Esparta State Education Authority. Twelve years and three months of continuous service, verifiable against Ministry and social security records.
 
 **Founder & content designer — Talkétika** · **2019 – present**
 

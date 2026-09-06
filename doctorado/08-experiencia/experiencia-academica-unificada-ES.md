@@ -17,10 +17,11 @@
 
 | Indicador | Valor | Fuente |
 |---|---|---|
-| **Docencia universitaria acreditada** | **1.568 horas** | Certificación de servicio docente, UDO **[DOC-16]** |
-| Años de docencia universitaria | **10** (2005–2015) | UDO, Núcleo Nueva Esparta |
+| **Docencia universitaria acreditada** | **1.568 horas** en 8 semestres (I-2007 a II-2010) | Constancia de Carga Académica + hoja de carga docente, UDO **[DOC-16]** |
+| Departamentos y titulaciones servidas | **3 departamentos · 5 titulaciones** — incluida Biología Marina y Acuacultura | UDO, Núcleo Nueva Esparta |
+| Docencia de aula en educación media | **12 años y 3 meses** (oct. 2006 – ene. 2019), 36 h semanales de Inglés | Ministerio de Educación **[DOC-16b]** · IVSS |
 | Años de docencia de lenguas a adultos | **20+** (2004–actualidad) | Trayectoria continuada |
-| Instituciones universitarias | **3** — ULA (formación y práctica docente), UDO (docencia), UPV (investigación) | — |
+| Instituciones | **4** — ULA (formación y práctica docente), UDO (docencia universitaria), Ministerio de Educación (docencia media), UPV (investigación) | — |
 | Práctica profesional en el ámbito de la tesis | **6+ años** (2019–actualidad) — diseño instruccional y *language learning experience design* | §2.4 |
 | Organizaciones y clientes | *[pendiente de completar — §2.4]* | — |
 | Publicación arbitrada e indexada | **1** — *Kaleidoscopio* 2(3), 51–56 (2005), CLASE–UNAM | **[DOC-19]** |
@@ -45,26 +46,50 @@
 
 ---
 
-### 2.2 · Universidad de Oriente (UDO), Núcleo Nueva Esparta · 2005 – 2015
-**Docencia universitaria y escritura científica**
+### 2.2 · Universidad de Oriente (UDO), Núcleo Nueva Esparta · 2007 – 2010
+**Docencia universitaria de inglés para fines específicos — 1.568 horas**
 
-**Docencia — 1.568 horas acreditadas.** Profesora de **Inglés Científico** en titulaciones de ciencias. Docencia de inglés con fines específicos (ESP/EAP) para alumnado de grado en áreas científicas.
+**Cargo.** Profesora **contratada**, con posterior **pase a código de cargo a Tiempo Completo**, en la Unidad de Estudios Básicos.
 
-**Investigación y escritura científica.** Redacción y revisión de contenido científico en inglés para revistas revisadas por pares de alto impacto, en **odontología** y **biología marina**. Este trabajo se reconoce en los agradecimientos de:
+**Volumen certificado: 1.568 horas docentes** en **8 semestres consecutivos** (I-2007 a II-2010): siete semestres de 192 h y uno de 224 h, equivalentes a 12–14 horas semanales.
 
-> Sotelo-Casas, R. C., Rodríguez-Troncoso, A. P., Rodríguez-Zaragoza, F. A., Solís-Marín, F. A., Godínez-Domínguez, E., & Cupul-Magaña, A. L. (2019). Spatial-temporal variations in echinoderm diversity within coral communities in a transitional region of the northeast of the eastern Pacific. *Estuarine, Coastal and Shelf Science, 227*, 106346 — agradecida por «*valuable comments on the manuscript's English and scientific content*» (p. 8, como A. Z. Eslava de Morales). **[DOC-14]**
+**Alcance — tres departamentos, cinco titulaciones:**
+
+| Departamento | Titulaciones | Asignaturas |
+|---|---|---|
+| Socio-Humanidades | Turismo · Contaduría | Inglés Instrumental · Inglés II · Inglés I para Ciencias Administrativas |
+| Hotelería y Turismo | Turismo · Servicios Turísticos | Inglés I · Inglés II |
+| **Ciencias Aplicadas al Mar** | **Biología Marina · Acuacultura** | **Inglés Técnico · Inglés Instrumental** |
+
+> ⭐ **La especialización que esto acredita.** Enseñó **Inglés Técnico e Inglés Instrumental a Biología Marina y Acuacultura**, y en el mismo periodo redactaba y revisaba artículos científicos en inglés de **biología marina** para publicación internacional — trabajo reconocido en los agradecimientos de Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* (Elsevier), p. 8, como A. Z. Eslava de Morales. **[DOC-14]**
+>
+> No son dos méritos separados: son **inglés para las ciencias, enseñado en la universidad y ejercido para publicación**. Para una tesis sobre escritura académica y evaluación de la competencia lingüística, es la credencial más pertinente del expediente.
 
 **Difusión.** Ponencia **aceptada por arbitraje** y presentada, con afiliación a la UDO Núcleo Nueva Esparta, en el **II Congreso Internacional de Educación Superior — «Tendencias y Perspectivas de la Educación Superior en América Latina»** (Asociación de Educadores de Latinoamérica y del Caribe · Universidad de Oriente), Cumaná, 31 jul. – 2 ago. 2008 (ref. CIES/P 048). **[DOC-24]**
 
-**Publicación del periodo previo, arbitrada e indexada:**
+**Publicación arbitrada e indexada del periodo previo:**
 
 > Eslava Graterol, A. Z. (2005). Estudio sobre el perfil del alumno en Educación Mención Inglés de la ULA-Táchira. *Kaleidoscopio, 2*(3), 51–56. Universidad Nacional Experimental de Guayana. ISSN 1690-6054. Indexada en **CLASE (UNAM)**. <https://hdl.handle.net/20.500.14330/CLA01000260594> · <https://ru.dgb.unam.mx/items/94cebd9c-65de-4d95-b948-637ae2fcdd43/full> **[DOC-19]**
 >
 > *La revista dejó de publicarse en 2015; el registro indexado en CLASE es la evidencia permanente del arbitraje y la publicación.*
 
-> **Cómo leer este periodo.** Docencia de inglés científico **y** producción de contenido científico en inglés para publicación internacional, a la vez y durante diez años. Es exactamente el perfil que una tesis sobre escritura académica y evaluación de la competencia lingüística necesita: no solo has enseñado el género, lo has producido y revisado para revistas indexadas.
-
 ---
+
+### 2.2b · Ministerio del Poder Popular para la Educación · octubre 2006 – enero 2019
+**Docencia de inglés en educación media — 12 años y 3 meses**
+
+**Docente III de Aula**, código de cargo **1133DH**, en la **L.N. Santa Rosalía de Palermo** (antes E.B. Antonio Díaz), Zona Educativa del Estado Nueva Esparta. **36 horas semanales de Inglés** desde el nombramiento.
+
+| Dato | Valor | Documento |
+|---|---|---|
+| Fecha de ingreso | **01/10/2006** | Constancia provisional de la Zona Educativa (06/10/2006) y constancia de trabajo del Ministerio (05/03/2018) |
+| Fecha de egreso | **01/01/2019** | Cuenta Individual del IVSS |
+| Continuidad cotizada | **52–53 semanas cada año, de 2011 a 2018** | Cuenta Individual del IVSS |
+| Verificación | Constancia ministerial con **código de verificación en línea** | Portal de autogestión del Ministerio |
+
+> **Por qué conviene declararlo aparte y no fundirlo con la UDO.** Son dos relaciones laborales distintas, simultáneas entre 2007 y 2010, con empleador, nivel educativo y régimen diferentes. Fundirlas confunde y expone a que un revisor detecte la inconsistencia. Separadas, **suman**: docencia universitaria certificada por horas, y docencia de aula certificada por años y verificable ante el Estado.
+>
+> Es también la parte del expediente **inmune a la pérdida de archivos de la UDO**: la cuenta individual del IVSS la emite la seguridad social, no el empleador.
 
 ### 2.3 · Instituto Cervantes · desde *[año a confirmar]*
 **Tutoría en aula virtual y evaluación oficial**
@@ -136,7 +161,7 @@ Cuatro rasgos que conviene que una comisión vea de un golpe:
 
 1. **Docencia universitaria certificada, no estimada.** 1.568 horas con certificación de servicio, no «más de veinte años» sin más.
 2. **Investigación en los dos extremos de la trayectoria.** Un TFG que llegó a revista indexada y a congreso internacional (2004–2008) y un estudio de corpus dirigido en la UPV (2026). No es una vuelta a la investigación después de un paréntesis: es una línea con dos momentos documentados y el mismo objeto de fondo —cómo alinear formación y competencia con un marco verificable.
-3. **Escritura científica desde dentro.** Diez años produciendo y revisando texto científico en inglés para revistas de alto impacto, con reconocimiento en Elsevier. Para una tesis sobre escritura académica asistida por LLM, es experiencia de campo.
+3. **Inglés para las ciencias, enseñado y ejercido a la vez.** Docencia universitaria de **Inglés Técnico e Instrumental a Biología Marina y Acuacultura**, en el mismo periodo en que redactaba y revisaba artículos de biología marina para revistas de alto impacto, con reconocimiento en Elsevier. Es la misma especialización por dos vías, no dos méritos sueltos.
 4. **Evaluación acreditada conforme al MCER.** Examinadora DELE del Instituto Cervantes: el criterio experto que la propia tesis usará para validar la medición automática.
 5. **Práctica profesional en el ámbito exacto de la tesis.** Seis años diseñando y midiendo productos de aprendizaje de lenguas para clientes y organizaciones. No es experiencia «relacionada»: es el objeto de estudio ejercido profesionalmente, y es de donde salen los contextos auténticos que la investigación basada en diseño exige.
 
@@ -145,9 +170,9 @@ Cuatro rasgos que conviene que una comisión vea de un golpe:
 ## 4 · Lo que falta confirmar
 
 - [ ] **Año de inicio** de la tutoría en AVE Global y de la acreditación DELE.
-- [ ] **Asignaturas concretas** impartidas en la UDO y titulaciones en que se impartieron (el certificado da las horas; el detalle refuerza).
-- [ ] **Categoría docente** en la UDO (profesora contratada, instructora, asistente…) — la comisión lo suele pedir.
+- [ ] **Fecha del pase a Tiempo Completo** en la UDO, y sello de la hoja de carga docente (ver `09-evidencia-docencia/`).
 - [ ] Si hubo **docencia en la ULA** más allá de las Prácticas Profesionales (preparaduría, ayudantía), acreditarla.
+- [ ] ¿Hubo semestres en la UDO en **2011**? La hoja de carga titula «2007 al 2011»; el certificado sellado llega a II-2010.
 - [ ] **Curso de inicio** del máster en la UPV.
 - [ ] 🔴 **Lista de organizaciones y clientes** de diseño instruccional y *language learning experience design* (§2.4), con periodo, rol y alcance. Es el dato que más refuerza el apartado B.6 del baremo y hoy es el único hueco grande del expediente.
 

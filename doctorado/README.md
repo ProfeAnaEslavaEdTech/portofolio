@@ -25,6 +25,7 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lengua
 | [`02-cv-baremo/cv-academico-EN.md`](02-cv-baremo/cv-academico-EN.md) | The same short academic CV in English. | EN |
 | [`02-cv-baremo/cv-doctorado-baremo-ES.md`](02-cv-baremo/cv-doctorado-baremo-ES.md) | **CV organizado según el baremo de la convocatoria** — Expediente académico 70 % + Otros méritos 30 % (seis apartados de 5 %), con códigos DOC-nn hacia los documentos acreditativos. | ES |
 | [`02-cv-baremo/cv-doctorado-baremo-EN.md`](02-cv-baremo/cv-doctorado-baremo-EN.md) | The same CV in English, same rubric structure. | EN |
+| [`09-evidencia-docencia/dossier-docencia-venezuela-ES.md`](09-evidencia-docencia/dossier-docencia-venezuela-ES.md) | ⭐ **Dossier de evidencia — docencia en Venezuela.** Los dos empleos (UDO y Ministerio), qué prueba cada documento, cómo plantear la pérdida de archivos de la UDO sin sobreafirmar, y **nota explicativa lista para el expediente**. | ES |
 | [`08-experiencia/experiencia-academica-unificada-ES.md`](08-experiencia/experiencia-academica-unificada-ES.md) | ⭐ **Experiencia académica unificada** — docencia universitaria e investigación en una sola fuente, por periodos, con las cifras certificadas. De aquí salen las versiones para el CV académico, el CV por baremo, el §3.3 del plan y el ORCID. | ES |
 | [`07-correspondencia/REVISION-correo-direccion-tesis.md`](07-correspondencia/REVISION-correo-direccion-tesis.md) | **Revisión del correo a la Prof.ª Carrió-Pastor** solicitando la dirección, con versión revisada lista para enviar. | ES |
 | [`06-orcid/GUIA-actualizar-ORCID.md`](06-orcid/GUIA-actualizar-ORCID.md) | **Guía para completar el ORCID** (`0000-0002-8076-1189`, hoy vacío) — valores listos para pegar en cada campo: titulaciones, empleo, 7 distinciones, 2 becas, 6 obras. Resuelve además la cadena de nombres vía `Also known as`. | ES |
@@ -71,7 +72,7 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 | Segundo máster | ❌ | No procede — se declara honestamente a cero |
 | Idiomas ajenos a las titulaciones | ⚠️ | C1 Advanced · CELTA · examinadora DELE — **preguntar a la comisión** si el inglés computa, dado que las titulaciones son de inglés |
 | Becas | ✅ | **Beca de Alto Rendimiento** de la ULA, de mérito (2003–2004) · **beca general del Ministerio 2025/2026** con **componente de excelencia académica (tramo 9–9,49)** |
-| Experiencia profesional en el ámbito | ✅ | **1.568 horas de docencia universitaria acreditadas** · 20+ años · diseño instruccional 2019–actualidad |
+| Experiencia profesional en el ámbito | ✅ | **1.568 h de docencia universitaria** (ESP en ciencias, UDO 2007–2010) · **12 años de docencia de aula** verificables ante el Estado (Ministerio 2006–2019) · diseño instruccional 2019–actualidad |
 
 **Acceso resuelto.** El título tiene **equivalencia oficial al nivel académico de Grado** (Ministerio de Universidades, RD 967/2014, 17 jun. 2020) y a ello se suma el **máster oficial español de la UPV**: el acceso por el art. 6 del RD 99/2011 está completo y no requiere comprobación de nivel adicional.
 
@@ -89,6 +90,8 @@ El CV reproduce **exactamente ese orden y esa redacción**, de modo que la comis
 | DOC-07B | **Orden «Luis María Ribas Dávila»** — más alto rendimiento académico | **2000 · 2001 · 2002 · 2003**, cuatro diplomas rectorales |
 | DOC-12 | **Constancia de Beca de Alto Rendimiento** — ULA-Táchira | jul.–dic. 2003 y vigente · 13 may. 2004 |
 | DOC-13 | **Beca general del Ministerio** — curso 2025/2026, Orden EFD/335/25 | Excelencia académica tramo **9–9,49** + beca de matrícula |
+| DOC-16 · DOC-25 | **Carga académica UDO** — constancia sellada + hoja de desglose | 8 semestres · **1.568 h** · 3 departamentos · 5 titulaciones |
+| DOC-26 · DOC-27 | **Ministerio de Educación + IVSS** | Docente III de Aula, 36 h/sem · **01/10/2006 – 01/01/2019** |
 | DOC-06 | Constancia de Rango Académico + apostilla | **1.º de 56** · con apostilla de La Haya validable en línea |
 | DOC-07 | Diploma de Honor del TFG | **20/20 Sobresaliente**, Rector de la ULA, 15 nov. 2004 |
 | DOC-19 | Publicación arbitrada | *Kaleidoscopio* **2(3), 51–56 (2005)**, ISSN 1690-6054, CLASE–UNAM |
