@@ -1,0 +1,22 @@
+Asunto: Propuesta de tesis doctoral — dirección (convocatoria 2026-27)
+
+Estimada Marisa:
+
+Espero que hayas tenido un buen verano.
+
+Te escribo porque estoy preparando mi solicitud al programa de doctorado en Lenguas, Literaturas y Culturas y sus Aplicaciones para la convocatoria 2026-27, y me encantaría proponerte la dirección de la tesis.
+
+La línea es MLLDE (Mobile Language Learning Design Environment): un entorno de diseño y medición, anclado al MCER, para aplicaciones de lenguas mobile-native, que integra tutoría conversacional responsable con LLM en el diseño curricular y trata la alfabetización en IA como un resultado de aprendizaje. Nace directamente del trabajo que hice contigo en el máster: su primera aportación —escritura y alfabetización en IA— continúa la línea de metadiscurso de mi TFM (el Objetivo 4), de donde viene la dimensión pragmático-discursiva del marco.
+
+Durante el doctorado, el artefacto que se construiría y evaluaría sería una app mobile-native de inglés académico —Academic Writing Journey llevado a móvil— con un modo voz y un sistema de evaluación de la pronunciación medible en xAPI y alineado al MCER (la segunda aportación: Architecture Voice Design + Measurement Module). Para el testeo contaría con una cohorte amplia de estudiantes de inglés (a la que tendría acceso a través del Prof. Casañ-Pitarch, ~300 al año), lo que ofrece una muestra ecológicamente válida; el español (Language Passport) quedaría para la fase de replicación. El marco ya cuenta con instancias funcionales y con una aplicación en industria validada de extremo a extremo en un LRS real.
+
+Te adjunto el plan de investigación por si quieres verlo antes de hablar. Aprovecho también para reenviarte el TFM con las correcciones que me indicaste ya incorporadas (numeración arábiga, referencias a las figuras, reordenación del marco teórico y alineación de objetivos y preguntas con los resultados), por si te viene bien tenerlo cerrado.
+
+Comenté también la idea con Ricardo Casañ-Pitarch, porque el ciclo IPO y el CLIL gamificado sostienen la estructura de las lecciones —y, además, facilitaría el acceso a esa cohorte de inglés para el testeo—. Me ha respondido que le encantaría participar, pero que lo hable contigo primero y que él necesitaría codirección, remitiéndome a ti para decidirlo. Así que la decisión sobre la dirección —en solitario o en codirección— la dejo enteramente en tus manos.
+
+¿Podríamos vernos en septiembre para comentarlo? La preinscripción cierra el 15 de octubre, así que me vendría bien una primera conversación pronto, sin ninguna prisa por tu parte.
+
+Muchas gracias por tu tiempo.
+
+Un cordial saludo,
+Ana Eslava-Graterol
