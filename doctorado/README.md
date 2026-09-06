@@ -21,6 +21,7 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lengua
 | [`01-propuesta/oficial/MLLDE-Plan-de-Investigacion-ES.pdf`](01-propuesta/oficial/) | ⭐ **Plan de Investigación oficial** (08/08/2026) — plantilla de nueve apartados de la UPV. **Es el documento que se presenta.** También en `.docx` y en inglés. | ES/EN |
 | [`01-propuesta/oficial/componente-tutor-voz-3-tiers-ES.md`](01-propuesta/oficial/componente-tutor-voz-3-tiers-ES.md) | Componente técnico *«MLLDE y el tutor por voz: los tres tiers de evidencia»* (05/09/2026) — desarrolla el Módulo de Medición que el plan resume. | ES |
 | [`01-propuesta/REVISION-plan-de-investigacion.md`](01-propuesta/REVISION-plan-de-investigacion.md) | **Revisión del plan** — incoherencias que un tribunal detectaría, méritos documentados que el §3.3 omite, y el riesgo de alcance. Con lista de comprobación. | ES |
+| [`02-cv-baremo/CV-propuesta-doctoral-ES.md`](02-cv-baremo/CV-propuesta-doctoral-ES.md) | ⭐ **CV para la propuesta doctoral** — el definitivo. Funde el CV académico de la autora con toda la documentación acreditativa verificada: línea de investigación y su aplicación, formación, becas y distinciones, producción, congresos, docencia e investigación, clientes, certificaciones y competencias. | ES |
 | [`02-cv-baremo/cv-academico-ES.md`](02-cv-baremo/cv-academico-ES.md) | ⭐ **CV académico breve (3 páginas)** — el que se entrega a la Comisión Académica. Siete apartados en orden cronológico inverso: datos y línea de investigación · formación · becas y distinciones · producción científica · congresos · experiencia docente e investigadora · idiomas y herramientas. | ES |
 | [`02-cv-baremo/cv-academico-EN.md`](02-cv-baremo/cv-academico-EN.md) | The same short academic CV in English. | EN |
 | [`02-cv-baremo/cv-doctorado-baremo-ES.md`](02-cv-baremo/cv-doctorado-baremo-ES.md) | **CV organizado según el baremo de la convocatoria** — Expediente académico 70 % + Otros méritos 30 % (seis apartados de 5 %), con códigos DOC-nn hacia los documentos acreditativos. | ES |
@@ -39,7 +40,8 @@ Documentación de la solicitud de admisión al **Programa de Doctorado en Lengua
 
 | | Para qué sirve | Extensión |
 |---|---|---|
-| **CV académico** (`cv-academico-*.md`) | **El que se entrega.** Formato estándar de comisión académica, siete apartados en orden cronológico inverso, sin comentarios internos. | **3 páginas** |
+| **CV para la propuesta** (`CV-propuesta-doctoral-ES.md`) | ⭐ **El definitivo.** Todo el expediente verificado, en formato de comisión académica. | **5 páginas** |
+| **CV académico** (`cv-academico-*.md`) | Versión **breve**, por si la convocatoria limita la extensión a 2–3 páginas. | **3 páginas** |
 | **CV por baremo** (`cv-doctorado-baremo-*.md`) | **Documento de trabajo.** Mapea cada mérito al apartado del baremo con su código DOC-nn, su estado y las notas estratégicas sobre cómo redactarlo. Sirve para preparar el expediente y para autoevaluar la puntuación; no se entrega tal cual. | ~12 páginas |
 
 Los dos comparten exactamente los mismos datos verificados. Si actualizas uno, actualiza el otro.

@@ -29,11 +29,11 @@ Está en el **título del apartado 1**, en la guía de lectura, en el resumen, e
 
 > Enseñar lenguas en la era de los LLM — El **Multimodal Language Learning Design & Evaluation (MLLDE)**: un marco ético de diseño y medición, con alfabetización en IA, para apps de lenguas **mobile-native** que desarrollan la escritura y el habla.
 
-### 1.2 Modalidad y duración siguen en corchetes
+### 1.2 Modalidad y duración — ✅ decidido: tiempo completo, 3 años
 
-El encabezado dice `[tiempo completo 3 años / parcial 5 años — a confirmar]` y el cronograma del §8 está construido a **3 años**, con un paréntesis que lo extiende a ~5.
+**Decisión tomada: tiempo completo, tres años.** Hay que sustituir el corchete `[tiempo completo 3 años / parcial 5 años — a confirmar]` del encabezado por la modalidad definitiva, y **quitar el paréntesis del §8** que extendía el cronograma a ~5 años: el calendario de tres años que ya tienes construido pasa a ser el compromiso, sin alternativa.
 
-Hay que **decidirlo** antes de presentar: el tribunal lee el cronograma como un compromiso. Y una vez decidido, **el CV tiene que decir lo mismo** — hoy los documentos del expediente hablaban de 4 años, que no es ninguna de las dos opciones de la UPV. Ya está corregido en el CV; falta fijarlo aquí.
+> ⚠️ **Consecuencia directa sobre §4 de esta revisión.** Con tiempo completo desaparece el colchón que hacía defendible el alcance actual. Dos aportaciones, ocho objetivos, siete tareas y una replicación entre lenguas en tres años es mucho. **Ahora sí es necesario** nombrar el núcleo en el resumen y marcar **T6 (replicación al español) como contingente**. No es cosmética: es lo que evita que el tribunal lea el cronograma como poco realista.
 
 ### 1.3 Dos enlaces sin resolver en §3.3
 
@@ -81,7 +81,7 @@ El plan sostiene **dos aportaciones** (escritura/alfabetización en IA **y** hab
 
 1. **Nombrar el núcleo en el resumen**, no solo en la metodología: la aportación central es el **Measurement Module y los tres tiers**, con el Tier 3 como contribución profunda. La escritura / alfabetización en IA es la **base empírica heredada del TFM** que da contexto y la primera instanciación (AWJ).
 2. **Marcar T6 (replicación al español) como contingente**, sujeto a que T1–T5 se cierren en plazo. Declararlo tú misma como ampliación deseable, no como compromiso, protege el cronograma sin restar ambición.
-3. Si eliges **tiempo parcial (5 años)**, el alcance actual es defendible tal cual y esta preocupación desaparece. Es un argumento a favor de esa modalidad.
+3. ~~Si eliges tiempo parcial (5 años), el alcance actual es defendible tal cual.~~ **Descartado: la modalidad es tiempo completo, 3 años.** Los puntos 1 y 2 pasan de recomendables a necesarios.
 
 ---
 
@@ -99,13 +99,13 @@ El plan sostiene **dos aportaciones** (escritura/alfabetización en IA **y** hab
 ## Lista de comprobación
 
 - [ ] 🔴 Unificar **MLLDE = Multimodal Language Learning Design & Evaluation** en título, guía de lectura, resumen y §3.4.
-- [ ] 🔴 Fijar **modalidad y duración** (3 años completo / 5 parcial) y alinear el cronograma del §8 y el CV.
+- [x] **Modalidad decidida: tiempo completo, 3 años.** Falta sustituir el corchete del encabezado y quitar el paréntesis de los ~5 años en el §8.
 - [ ] 🔴 Resolver el enlace de **RiuNet** y dar acceso evaluable al **prototipo**.
 - [ ] 🟠 Corregir denominación del título, campus, y usar «1.ª de 56» y «20/20 con Diploma de Honor».
 - [ ] 🟡 Añadir al §3.3 los méritos apostillados, las 1.568 h, el congreso de 2008 y las dos becas.
 - [ ] 🟡 Añadir el enlace del repositorio UNAM a la publicación de 2005.
 - [ ] 🟡 **Talkétika lleva acento.** El documento técnico de los tres tiers lo escribe «Talketika» en dos sitios (encabezado y aviso de copyright). Corregir antes de circularlo.
-- [ ] ⚠️ Decidir y declarar el **núcleo** de la tesis y marcar **T6 como contingente**.
+- [ ] 🔴 ⚠️ **Ahora es prioritario:** declarar el **núcleo** de la tesis en el resumen y marcar **T6 como contingente**. Con tiempo completo, el alcance actual necesita ese acotamiento.
 
 ---
 
