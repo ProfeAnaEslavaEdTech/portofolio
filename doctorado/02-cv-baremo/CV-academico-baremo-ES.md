@@ -16,7 +16,7 @@
 
 - **Nota media:** 9,40 / 10 (Sobresaliente).
 - **Menciones especiales:** 2 Matrículas de Honor.
-- **Trabajo de Fin de Máster:** *Variación disciplinar en el uso del metadiscurso en resúmenes de trabajos de fin de máster* — estudio de corpus (180 resúmenes, seis disciplinas, 920 marcadores) etiquetado con METOOL bajo el marco de Hyland. Dirigido por la Prof.ª Mª Luisa Carrió-Pastor. Calificación: ⟨consignar la nota oficial del acta⟩.
+- **Trabajo de Fin de Máster:** *Variación disciplinar en el uso del metadiscurso en resúmenes de trabajos de fin de máster* — estudio de corpus (180 resúmenes, seis disciplinas, 920 marcadores) etiquetado con METOOL bajo el marco de Hyland. Dirigido por la Prof.ª Mª Luisa Carrió-Pastor. **Calificación: 10 / 10.**
 
 ### Licenciatura en Educación, mención Inglés
 **Universidad de Los Andes (ULA), Venezuela** | Título conferido en 2004

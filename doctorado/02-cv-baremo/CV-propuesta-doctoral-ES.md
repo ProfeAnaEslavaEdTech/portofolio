@@ -55,7 +55,7 @@
 *Universitat Politècnica de València (UPV)* · **sep. 2025 – jul. 2026**
 
 - **Nota media: 9,4 / 10** · **2 Matrículas de Honor**
-- **TFM:** estudio de corpus sobre **variación disciplinar del metadiscurso en resúmenes de TFM** — 180 resúmenes de seis disciplinas (18.000 palabras, 920 marcadores), etiquetado con **METOOL** (Carrió-Pastor, 2020) bajo el marco de Hyland (2005). **Directora:** Prof.ª Mª Luisa Carrió-Pastor.
+- **TFM:** estudio de corpus sobre **variación disciplinar del metadiscurso en resúmenes de TFM** — 180 resúmenes de seis disciplinas (18.000 palabras, 920 marcadores), etiquetado con **METOOL** (Carrió-Pastor, 2020) bajo el marco de Hyland (2005). **Directora:** Prof.ª Mª Luisa Carrió-Pastor. **Calificación: 10/10.**
 - Proyecto de asignatura *Academic Writing Journey* valorado **10/10** por diseño inclusivo.
 
 **Licenciada en Educación, mención Inglés** — especialización en currículo
