@@ -129,10 +129,14 @@ Resumen **aceptado por la comisión de arbitraje** del congreso (ref. CIES/P 048
 
 ### Docencia universitaria — Universidad de Oriente (UDO), Núcleo Nueva Esparta
 
-**Profesora de inglés para fines específicos** — Unidad de Estudios Básicos · **2005 – 2015**
-Contratada, con posterior **pase a código de cargo a Tiempo Completo**.
+**Profesora de inglés para fines específicos** · **2007 – 2010** (vinculación 2005 – 2015)
+Progresión acreditada por la propia institución:
 
-**Carga docente certificada: 1.568 horas** en **8 semestres consecutivos** (I-2007 a II-2010) — siete semestres de 192 h y uno de 224 h, equivalentes a 12–14 horas semanales.
+- **I-2007 a X-2008** — profesora contratada por honorarios profesionales, **Departamento de Socio-Humanidades**, Unidad de Estudios Básicos.
+- **Desde el 01/11/2008** — **pase a código de cargo**: Profesora Contratada Instructora a **Tiempo Completo**, adscrita a Gerencia y Coordinación Académica de la Enseñanza en Carreras Largas (Áreas Interdisciplinarias). *Constancia de trabajo sellada por la Delegación de Personal, 15 de enero de 2010.*
+- **12 de marzo de 2009** — **carta rectoral RC N.º 0682**, firmada por la Rectora Dra. Milena Bravo de Romero, que reconoce la asignación del código-cargo y su estatus de **docente-investigadora** de la Universidad de Oriente.
+
+**Carga docente certificada: 1.568 horas** en **8 semestres consecutivos** (I-2007 a II-2010), de 12 a 14 horas semanales. *Constancia de Carga Académica sellada por la Dirección de la Unidad de Estudios Básicos, 25 de mayo de 2026.*
 
 | Departamento | Titulaciones | Asignaturas |
 |---|---|---|
@@ -140,10 +144,14 @@ Contratada, con posterior **pase a código de cargo a Tiempo Completo**.
 | Hotelería y Turismo | Turismo · Servicios Turísticos | Inglés I · Inglés II |
 | **Ciencias Aplicadas al Mar** | **Biología Marina · Acuacultura** | **Inglés Técnico · Inglés Instrumental** |
 
-- **Unidad Académica del Componente Docente** — formación pedagógica de profesorado universitario procedente de ámbitos no educativos.
-- **Redacción y revisión de contenido científico en inglés** (biología marina, odontología) para revistas revisadas por pares de alto impacto — en el mismo dominio y periodo en que impartía Inglés Técnico a Biología Marina y Acuacultura.
+**Formación de profesorado universitario — Centro de Tecnología Educativa (CTEUDONE)**
+Impartió el **Módulo III, «Estrategias Didácticas»**, del *Curso de Formación y Actualización Docente* dirigido a profesionales de la Educación Superior · 28 de septiembre – 11 de noviembre de 2009 · **48 horas** · constancia sellada por el Delegado del Centro.
 
-> **La especialización que esto acredita:** inglés para las ciencias, **enseñado en la universidad y ejercido para publicación internacional**. Es el terreno exacto de la tesis.
+**Unidad Académica del Componente Docente** — formación pedagógica de profesorado universitario procedente de ámbitos no educativos.
+
+**Redacción y revisión de contenido científico en inglés** (biología marina, odontología) para revistas revisadas por pares de alto impacto — en el mismo dominio y periodo en que impartía Inglés Técnico a Biología Marina y Acuacultura.
+
+> **La especialización que esto acredita:** inglés para las ciencias, **enseñado en la universidad y ejercido para publicación internacional**, y **formación didáctica de profesorado universitario desde un centro de tecnología educativa**. Es el terreno exacto de la tesis.
 
 ### Docencia en educación media — Ministerio del Poder Popular para la Educación (Venezuela)
 

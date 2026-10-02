@@ -42,7 +42,11 @@
 | **DOC-14** | Sotelo-Casas et al. (2019), *Estuarine, Coastal and Shelf Science* — portada + **página de agradecimientos (p. 8)** | B.6 · §5 | ☐ |
 | **DOC-15** | Evidencia de la calificación **10/10** de *Academic Writing Journey* (UPV, 2026) | A.1 · B.6 | ☐ |
 | **DOC-16** | ⭐ **Constancia de Carga Académica** sellada — UDO Núcleo Nueva Esparta, 25 may. 2026 · 8 semestres, 12–14 h semanales · *Sealed academic load certificate* | B.6 · 5 % | ☑ |
-| **DOC-25** | ⭐ **Hoja de carga docente UDO 2007–2011** — desglose por sección, departamento y titulación · **total 1.568 h** · ⚠️ pedir sello y firma | B.6 · 5 % | ☑ |
+| **DOC-29** | ⭐ **Carta rectoral RC N.º 0682** — UDO, Despacho Rectoral, 12 mar. 2009, firmada por la Rectora Dra. Milena Bravo de Romero: asignación de **código-cargo** y reconocimiento del estatus de **docente-investigadora** · *Rectoral letter recognising researcher-lecturer status* | B.6 · 5 % | ☑ |
+| **DOC-30** | ⭐ **Constancia de trabajo** — UDO Núcleo Nueva Esparta, Delegación de Personal, 15 ene. 2010, sellada y firmada: **Profesora Contratada Instructora a Tiempo Completo**, ingreso 01/11/2008, Áreas Interdisciplinarias · *Sealed employment certificate, full-time* | B.6 · 5 % | ☑ |
+| **DOC-31** | ⭐ **Constancia CTEUDONE** — Centro de Tecnología Educativa, UDO Nueva Esparta, 12 nov. 2009: impartió el **Módulo III «Estrategias Didácticas»** del Curso de Formación y Actualización Docente para profesionales de Educación Superior, **48 h** · *Faculty-development teaching certificate* | B.6 · 5 % | ☑ |
+| **DOC-32** | ⭐ **Constancia Electrónica de Cotizaciones (IVSS)** — 3 jun. 2018: **642 semanas cotizadas**, primera afiliación 12/09/2005, con código de verificación en línea · *State social-security contribution record* | B.6 · 5 % | ☑ |
+| **DOC-25** | ⭐ **Hoja de carga docente UDO 2007–2011** — desglose por sección, departamento y titulación · **total 1.568 h** · desglose interno del departamento; el documento sellado es DOC-16 | B.6 · 5 % | ☑ |
 | **DOC-26** | ⭐ **Constancias del Ministerio de Educación** — provisional (06/10/2006, 36 h Inglés) y de trabajo (05/03/2018, Docente III/Aula, cód. 1133DH), con código de verificación en línea | B.6 · 5 % | ☑ |
 | **DOC-27** | ⭐ **Cuenta Individual (IVSS)** — afiliación 12/09/2005, egreso 01/01/2019, 52–53 semanas cotizadas cada año 2011–2018 | B.6 · 5 % | ☑ |
 | **DOC-28** | Referencia de prensa sobre la destrucción de archivos de la UDO (2018–2020) — **contextual**, no probatoria del servicio | B.6 | ☑ |
@@ -75,7 +79,7 @@
 3. **Premio extraordinario de grado: 1.º de 56 graduandos** (DOC-06), con certificación rectoral y apostilla de La Haya, respaldado por la **Orden «Luis María Ribas Dávila» de cuatro años consecutivos** (DOC-07B).
 4. **Premio extraordinario de máster: no procede** — el premio es el de grado. Se declaran las 2 Matrículas de Honor como distinción del máster.
 5. **Certificación académica de la licenciatura** (DOC-03) y **recorrido investigador del TFG** (DOC-07, DOC-19, DOC-24): en mano.
-6. **Docencia en Venezuela: dos empleos, no uno.** Docencia universitaria en la UDO (1.568 h, 8 semestres) y docencia de aula en el Ministerio (12 años, 36 h semanales). Adjuntar la **nota explicativa** de `09-evidencia-docencia/` antes de los documentos DOC-16 y DOC-25 a DOC-28.
+6. **Docencia en Venezuela: dos empleos, no uno.** Docencia universitaria en la UDO (1.568 h, 8 semestres) y docencia de aula en el Ministerio (12 años, 36 h semanales). Adjuntar la **nota explicativa** de `09-evidencia-docencia/` antes de los documentos DOC-16 y DOC-25 a DOC-32.
 7. **Las dos becas, acreditadas.** Grado: **Beca de Alto Rendimiento** de la ULA, de mérito (DOC-12). Máster: **beca general del Ministerio 2025/2026** con **componente de excelencia académica del tramo 9–9,49** (DOC-13) — el Ministerio confirma así el 9,4 desde una fuente independiente.
 
 **Pendiente** — *outstanding:*
