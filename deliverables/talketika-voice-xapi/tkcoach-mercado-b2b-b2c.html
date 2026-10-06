@@ -1,0 +1,199 @@
+<title>TK Coach para tu equipo</title>
+<meta name="description" content="Inglés de negocios por voz con progreso medible — argumentario para empresas (RRHH) y para profesionales.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ink:#122019; --canvas:#F3F8F5; --surface:#FFFFFF; --line:#E0ECE6;
+    --muted:#4F6358; --green:#17916A; --green-deep:#0C5A43; --on-green:#FFFFFF;
+    --blue:#2563EB; --gold:#C9872B; --tintg:#E6F3EC; --tintb:#E8F0FE;
+    --focus:#17916A;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ink:#E9F2ED; --canvas:#0C1512; --surface:#13201B; --line:#213029;
+    --muted:#9FB6AA; --green:#49C79A; --green-deep:#9FE7CB; --on-green:#07251A;
+    --blue:#8FB2FF; --gold:#E6B771; --tintg:#15271F; --tintb:#161E2E; --focus:#49C79A;
+  }}
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --ink:#E9F2ED; --canvas:#0C1512; --surface:#13201B; --line:#213029;
+    --muted:#9FB6AA; --green:#49C79A; --green-deep:#9FE7CB; --on-green:#07251A;
+    --blue:#8FB2FF; --gold:#E6B771; --tintg:#15271F; --tintb:#161E2E; --focus:#49C79A;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--canvas);color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding-inline:20px}
+  h1,h2,h3{font-family:"Poppins",system-ui,sans-serif;color:var(--green-deep);line-height:1.18;text-wrap:balance}
+  p{margin:.4em 0}
+  .kick{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--green)}
+
+  /* hero */
+  .hero{background:linear-gradient(135deg,#0C5A43,#17916A 55%,#2563EB);color:#fff;padding:52px 20px 58px;position:relative}
+  .hero .wrap{padding-inline:0}
+  .hero .kick{color:rgba(255,255,255,.9)}
+  .logo{display:inline-flex;align-items:center;gap:10px;font-family:"Poppins";font-weight:700;font-size:15px;
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:10px}
+  .hero h1{color:#fff;font-size:clamp(28px,5vw,46px);margin:.4em 0 .25em;max-width:18ch}
+  .hero p.sub{color:rgba(255,255,255,.95);font-size:clamp(16px,2vw,20px);max-width:52ch;margin:0}
+  .toggle{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);
+    color:#fff;border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+
+  /* tested strip */
+  .tested{background:var(--surface);border-bottom:1px solid var(--line)}
+  .tested .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-block:16px}
+  .tested b{font-family:"Poppins";color:var(--green-deep);font-size:14px}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:var(--tintg);color:var(--green-deep);
+    border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-weight:600;font-size:13.5px}
+
+  section{padding-block:38px}
+  h2{font-size:clamp(22px,3.2vw,30px);margin:0 0 6px}
+  .lead{color:var(--muted);max-width:68ch;margin:0 0 22px}
+
+  /* audience switch */
+  nav.aud{display:flex;gap:8px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;
+    background:var(--canvas);padding-block:12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  nav.aud a{flex:1;min-width:150px;text-align:center;text-decoration:none;border:1px solid var(--line);
+    background:var(--surface);color:var(--ink);border-radius:12px;padding:11px 14px;font-weight:600;font-family:"Poppins"}
+  nav.aud a .s{display:block;font-size:12px;font-weight:500;color:var(--muted);font-family:"Inter"}
+  nav.aud a:hover{border-color:var(--green)}
+
+  .band{background:var(--tintg);border:1px solid var(--line);border-left:4px solid var(--green);
+    border-radius:12px;padding:16px 18px;margin:0 0 22px}
+  .band.b2c{background:var(--tintb);border-left-color:var(--blue)}
+  .band h3{margin:0 0 4px;color:var(--green-deep)}
+  .band.b2c h3{color:var(--blue)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h3{font-size:16.5px;margin:0 0 6px;display:flex;align-items:center;gap:9px}
+  .ic{width:30px;height:30px;flex:none;border-radius:8px;background:var(--tintg);color:var(--green);
+    display:grid;place-items:center;font-size:16px}
+  .card p{font-size:14.5px;color:var(--ink);margin:0}
+  .card .why{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
+
+  ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  ul.clean li{position:relative;padding-left:28px;font-size:15px}
+  ul.clean li::before{content:"✓";position:absolute;left:0;top:0;color:var(--green);font-weight:700}
+  ul.clean.b2c li::before{color:var(--blue)}
+
+  .close{background:linear-gradient(135deg,#17916A,#2563EB);color:#fff;border-radius:16px;padding:26px 22px;text-align:center}
+  .close h2{color:#fff}
+  .close p{color:rgba(255,255,255,.95);max-width:54ch;margin:6px auto 0}
+
+  footer{border-top:1px solid var(--line);padding:22px 20px 56px;color:var(--muted);font-size:12.5px}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<header class="hero">
+  <button class="toggle" id="themeBtn" type="button" aria-label="Cambiar tema">◐ Tema</button>
+  <div class="wrap">
+    <span class="logo">🟢 TK Coach · Talketika</span>
+    <p class="kick" style="margin-top:18px">Inglés de negocios por voz</p>
+    <h1>Práctica diaria corta, grandes avances profesionales</h1>
+    <p class="sub">Tu equipo practica inglés hablando situaciones reales de su trabajo, con un tutor de IA y feedback al instante — y tú ves el progreso de verdad, no las horas de pantalla.</p>
+  </div>
+</header>
+
+<div class="tested">
+  <div class="wrap">
+    <b>Probado en escenarios reales de:</b>
+    <span class="chip">💻 Tecnología / IA</span>
+    <span class="chip">📊 Contabilidad</span>
+    <span class="chip">🎧 Atención al cliente</span>
+    <span class="chip">🏨 Hostelería</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <nav class="aud">
+    <a href="#empresas">Para empresas<span class="s">Recursos Humanos / Formación</span></a>
+    <a href="#personas">Para profesionales<span class="s">Aprendizaje individual</span></a>
+    <a href="#fuerte">Puntos fuertes<span class="s">Qué lo hace distinto</span></a>
+  </nav>
+</div>
+
+<!-- ============ PUNTOS FUERTES (compartidos) ============ -->
+<section id="fuerte"><div class="wrap">
+  <p class="kick">Qué lo hace distinto</p>
+  <h2>Seis razones para elegir TK Coach</h2>
+  <p class="lead">En lenguaje claro, sin tecnicismos. Lo mismo que de verdad cambia los resultados.</p>
+  <div class="grid">
+    <div class="card"><h3><span class="ic">🗣️</span>Se aprende hablando</h3>
+      <p>Nada de gramática suelta: se practican conversaciones reales (una reunión, una llamada, una queja de cliente) con un tutor que responde en el momento.</p>
+      <span class="why">Lo que de verdad cuesta — hablar — es lo que más se practica.</span></div>
+    <div class="card"><h3><span class="ic">📚</span>Currículo y método propio</h3>
+      <p>Método MLLDE anclado al <strong>MCER</strong> (el estándar europeo de niveles A1–C2) y a los criterios de Cambridge. Cada actividad tiene un objetivo claro de aprendizaje.</p>
+      <span class="why">Un marco reconocido, no contenido improvisado.</span></div>
+    <div class="card"><h3><span class="ic">📈</span>Progreso medible y honesto</h3>
+      <p>Mide el <strong>nivel real demostrado al hablar</strong>, no las horas conectadas. Y solo marca avance cuando hay evidencia: nunca infla la nota.</p>
+      <span class="why">«Medir ≠ Decidir»: la nota se gana hablando, con evidencia.</span></div>
+    <div class="card"><h3><span class="ic">🎯</span>Personalización real</h3>
+      <p>El tutor detecta el punto débil de cada persona y sube el reto un escalón; repasa el vocabulario en el momento justo para fijarlo.</p>
+      <span class="why">El camino se adapta a cada quien, por su sector.</span></div>
+    <div class="card"><h3><span class="ic">📊</span>Panel claro</h3>
+      <p>Para RRHH: el progreso del equipo por competencia y las horas efectivas, de un vistazo. Para el alumno: su nivel y qué reforzar hoy.</p>
+      <span class="why">Datos entendibles, sin jerga técnica.</span></div>
+    <div class="card"><h3><span class="ic">🔒</span>Privacidad y cumplimiento</h3>
+      <p>Sin datos personales hacia la IA (se usan códigos), conforme a GDPR; la IA <strong>no se entrena</strong> con los datos del alumno y el uso de IA se declara con transparencia.</p>
+      <span class="why">Tranquilidad para compliance y para las personas.</span></div>
+  </div>
+</div></section>
+
+<!-- ============ B2B ============ -->
+<section id="empresas"><div class="wrap">
+  <p class="kick">Para empresas · Recursos Humanos y Formación</p>
+  <h2>Mejora el inglés de tu equipo según tu negocio</h2>
+  <div class="band">
+    <h3>La decisión, en una frase</h3>
+    <p>No es «un curso de inglés más»: es inglés que impacta el trabajo real de tu equipo — reuniones con clientes, informes, atención — con progreso que puedes <strong>ver y defender</strong> ante dirección.</p>
+  </div>
+  <ul class="clean">
+    <li><strong>Relevante a tu sector.</strong> Las prácticas usan situaciones del día a día de cada puesto (lo probamos en Tecnología/IA, Contabilidad, Atención al cliente y Hostelería).</li>
+    <li><strong>Progreso que se demuestra.</strong> Niveles alineados al MCER/Cambridge, no «clics» ni horas de vídeo. Reportes listos para presentar resultados.</li>
+    <li><strong>Visibilidad para RRHH.</strong> Un panel con el avance por competencia y las horas efectivas del equipo; cada persona identificada por un código (privacidad por diseño).</li>
+    <li><strong>Poca gestión.</strong> Práctica diaria corta; el sistema mide y genera los informes. Tú no corriges exámenes.</li>
+    <li><strong>Reduce riesgos.</strong> Menos malentendidos en inglés con clientes y proveedores; más seguridad del equipo al comunicarse.</li>
+    <li><strong>Cumplimiento.</strong> GDPR, sin PII hacia la IA, IA responsable declarada — importa a legal y a tu gente.</li>
+    <li><strong>Escalable.</strong> De un equipo a toda la plantilla, con escenarios por área.</li>
+  </ul>
+</div></section>
+
+<!-- ============ B2C ============ -->
+<section id="personas"><div class="wrap">
+  <p class="kick">Para profesionales · Aprendizaje individual</p>
+  <h2>El inglés que te mueve la carrera</h2>
+  <div class="band b2c">
+    <h3>La promesa, en una frase</h3>
+    <p>Hablas inglés desde el primer día, sin vergüenza, con un tutor paciente disponible 24/7 — y ves tu nivel subir de verdad, no las horas que le dedicas.</p>
+  </div>
+  <ul class="clean b2c">
+    <li><strong>Habla sin miedo.</strong> Practicas en voz alta con un tutor que no juzga y te corrige en el momento, sin cortarte.</li>
+    <li><strong>Situaciones de tu trabajo.</strong> Negociar, presentar, atender a un cliente, llevar una reunión — lo que necesitas de verdad.</li>
+    <li><strong>Ves tu avance real.</strong> Tu nivel (A1→C2) sube cuando lo demuestras hablando; feedback claro de qué mejorar.</li>
+    <li><strong>Se adapta a ti.</strong> Trabaja tus puntos flojos y te reta un poco más cada vez; repaso inteligente del vocabulario.</li>
+    <li><strong>Poco tiempo, constancia.</strong> Sesiones cortas diarias con pequeños retos que enganchan.</li>
+    <li><strong>Tu ventaja profesional.</strong> El inglés que abre puertas: mejores proyectos, clientes y oportunidades.</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <div class="close">
+    <h2>¿Listos para que tu equipo hable inglés con seguridad?</h2>
+    <p>Práctica diaria corta, progreso medible y un panel claro para RRHH. Te mostramos cómo se vería con los escenarios de tu sector.</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><strong>TK Coach</strong> — tu coach de inglés de negocios, cada día · Talketika. Medición anclada al MCER (Marco Común Europeo). Interacción con un sistema de inteligencia artificial; uso de IA declarado con transparencia. Tratamiento de datos conforme a GDPR.</p>
+</div></footer>
+
+<script>
+  (function(){
+    var b=document.getElementById('themeBtn');
+    function cur(){var a=document.documentElement.getAttribute('data-theme');return a||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+    b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('tk-theme',n)}catch(e){}});
+    try{var s=localStorage.getItem('tk-theme');if(s)document.documentElement.setAttribute('data-theme',s);}catch(e){}
+  })();
+</script>
