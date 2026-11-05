@@ -77,12 +77,20 @@ main{padding:16px 0 10px;flex:1 0 auto}
 
 /* ===== SECTORS ===== */
 .sectors{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.sbtn{background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--primary);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .15s,box-shadow .15s,transform .15s;color:var(--ink);min-height:64px;box-shadow:var(--sbtn-sh)}
-.sbtn:hover{border-color:var(--primary);box-shadow:var(--sbtn-sh-hi);transform:translateY(-2px)}
+.sbtn{--c:var(--primary);background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--c);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;color:var(--ink);min-height:64px;box-shadow:var(--sbtn-sh)}
+/* each sector card samples a colour across the footer band: blue -> indigo -> violet -> amber -> gold */
+.sbtn:nth-child(1){--c:#3B5BD6}
+.sbtn:nth-child(2){--c:#5246C0}
+.sbtn:nth-child(3){--c:#7E4FA6}
+.sbtn:nth-child(4){--c:#D08A3A}
+.sbtn:nth-child(5){--c:#E8A33D}
+.sbtn:hover{border-color:var(--c);background:color-mix(in srgb,var(--c) 8%,var(--surface));box-shadow:0 12px 28px -8px var(--c);transform:translateY(-2px)}
+.sbtn:hover .n{color:var(--c)}
 .sbtn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-.sbtn .n{font:700 9px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sbtn .n{font:700 9px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .18s}
 .sbtn h3{font-family:var(--fd);font-weight:600;font-size:13px;color:var(--primary-deep);line-height:1.15;margin-top:4px}
-.sbtn[aria-selected="true"]{border-color:var(--primary);border-top-color:var(--primary);background:var(--chip);box-shadow:var(--sbtn-sh-hi)}
+.sbtn[aria-selected="true"]{border-color:var(--c);border-top-color:var(--c);background:color-mix(in srgb,var(--c) 11%,var(--surface));box-shadow:0 12px 28px -8px var(--c)}
+.sbtn[aria-selected="true"] .n{color:var(--c)}
 
 .flowline{display:flex;flex-direction:column;align-items:center;margin:14px 0 4px}
 .flowline .c{width:2px;height:16px;background:var(--line)}
