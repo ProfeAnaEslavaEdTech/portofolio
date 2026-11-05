@@ -248,6 +248,9 @@ var DATA={
     Dv:"Reusable statement sender; triggers",Dv_es:"Statement sender reutilizable; triggers",I:"LMS/LRS launch URL",I_es:"URL de lanzamiento LMS/LRS",E:"Data verified in the LRS",E_es:"Datos verificados en el LRS"}
  ]},
  acad:{name:"Academia / Languages",name_es:"Academia / Idiomas", pain:"“Learners finish the course but can't transfer the skill.”",pain_es:"“Los alumnos terminan el curso pero no transfieren la habilidad.”", cases:[
+   {t:"Language eLearning portfolio",t_es:"Portafolio de eLearning de idiomas", s:"Published · full portfolio",s_es:"Publicado · portafolio completo", link:"https://profeanaeslavaedtech.github.io/eLearningportfolio/",
+    A:"Academic-English & language-learning needs across courses, video and demo classes",A_es:"Necesidades de inglés académico y de idiomas en cursos, vídeo y clases demo",D:"CEFR-anchored objectives; SAM + IPO; CLIL 4Cs",D_es:"Objetivos anclados al MCER; SAM + IPO; CLIL 4Cs",
+    Dv:"Gamified courses, from-scratch video, web apps, guides",Dv_es:"Cursos gamificados, vídeo desde cero, web apps y guías",I:"Published portfolio; Canva, Articulate, Synthesia",I_es:"Portafolio publicado; Canva, Articulate, Synthesia",E:"Inclusive design 10/10; usability-tested",E_es:"Diseño inclusivo 10/10; probado con usuarios"},
    {t:"Academic Writing Journey",t_es:"Academic Writing Journey", s:"Published · 10/10 inclusive design (UPV)",s_es:"Publicado · 10/10 diseño inclusivo (UPV)", link:"https://profeanaeslavaedtech.github.io/Gamification/",
     A:"B2→C1 academic-English gap; audience analysis",A_es:"Brecha inglés académico B2→C1; análisis de audiencia",D:"Bloom + SLA objectives; 6 levels on the IPO cycle",D_es:"Objetivos Bloom + SLA; 6 niveles en el ciclo IPO",
     Dv:"Gamified (XP, escape room); Canva → Articulate",Dv_es:"Gamificado (XP, escape room); Canva → Articulate",I:"SCORM / xAPI; async self-paced",I_es:"SCORM / xAPI; asíncrono a tu ritmo",E:"Mastery + badges; 10/10 inclusive design",E_es:"Dominio + insignias; 10/10 diseño inclusivo"},
@@ -304,7 +307,7 @@ function buildSectors(){
     var label=(i<9?'0':'')+(i+1);
     var nm=lang==='es'?o[2]:o[1];
     b.innerHTML='<div class="n">'+T[lang].branch+' '+label+'</div><h3>'+esc(nm)+'</h3>';
-    b.addEventListener('click',function(){select(o[0]);});
+    b.addEventListener('click',function(){ if(current===o[0]){showIntro();} else {select(o[0]);} });
     sec.appendChild(b);
   });
 }
