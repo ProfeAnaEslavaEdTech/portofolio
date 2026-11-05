@@ -28,7 +28,7 @@
 }}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{font-family:var(--fb);background:var(--canvas);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--fb);background:var(--canvas);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;display:flex;flex-direction:column;min-height:100dvh}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 
 /* language visibility */
@@ -69,7 +69,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offs
 .about-panel .contact{font-size:13px;color:var(--muted);margin:14px 0 0;border-top:1px solid var(--line);padding-top:12px}
 .about-panel a{color:var(--primary)}
 
-main{padding:16px 0 10px}
+main{padding:16px 0 10px;flex:1 0 auto}
 .step1{font:700 10px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--primary);text-align:center;margin:20px 0 12px}
 
 /* ===== SECTORS ===== */
@@ -186,7 +186,7 @@ footer.band p.ai b{font-weight:700}
     <h2 id="work-h" class="work-title"><span class="lang-en">Working together</span><span class="lang-es">Trabajar juntos</span></h2>
     <div class="work-actions">
       <a class="btn-primary" href="D1-engagement.html"><span class="lang-en">Services &amp; pricing</span><span class="lang-es">Servicios y tarifas</span></a>
-      <a class="btn-ghost" href="mailto:profeanaeslava@gmail.com"><span class="lang-en">Let's talk &rarr;</span><span class="lang-es">Hablemos &rarr;</span></a>
+      <a class="btn-primary" href="mailto:profeanaeslava@gmail.com"><span class="lang-en">Let's talk &rarr;</span><span class="lang-es">Hablemos &rarr;</span></a>
     </div>
   </section>
 </main>
