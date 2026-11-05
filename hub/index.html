@@ -12,18 +12,21 @@
   --primary:#3B5BD6; --primary-deep:#22307C; --accent:#E8A33D; --accent-text:#9A5B00;
   --ink:#1C1E2E; --muted:#5B5F77; --canvas:#F7F8FC; --surface:#FFFFFF; --line:#E6E8F2;
   --bar:#22307C; --bar-sub:#B9C2E8; --chip:#EEF1FB; --chip-text:#2C3A86; --shadow:0 8px 24px rgba(30,32,70,.06);
+  --sbtn-sh:0 2px 5px rgba(34,48,124,.10),0 12px 22px rgba(34,48,124,.08); --sbtn-sh-hi:0 4px 10px rgba(34,48,124,.18),0 16px 30px rgba(34,48,124,.13);
   --band:linear-gradient(120deg,#3B5BD6 0%,#312A8C 52%,#E8A33D 128%); --focus:#9A5B00;
 }
 :root[data-theme="dark"]{
   --ink:#EDEFFA; --muted:#A7ADCB; --canvas:#12131C; --surface:#1B1D2B; --line:#2C3049;
   --primary:#7E96F0; --primary-deep:#B9C8F6; --accent:#F0B45C; --accent-text:#F0B45C;
   --bar:#0E1430; --bar-sub:#8FA0DE; --chip:#242945; --chip-text:#B9C4F5; --shadow:0 8px 24px rgba(0,0,0,.35);
+  --sbtn-sh:0 6px 18px rgba(0,0,0,.30); --sbtn-sh-hi:0 10px 26px rgba(0,0,0,.44);
   --band:linear-gradient(120deg,#2A3EA0 0%,#1B1746 52%,#9A5B00 132%); --focus:#F0B45C;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --ink:#EDEFFA; --muted:#A7ADCB; --canvas:#12131C; --surface:#1B1D2B; --line:#2C3049;
   --primary:#7E96F0; --primary-deep:#B9C8F6; --accent:#F0B45C; --accent-text:#F0B45C;
   --bar:#0E1430; --bar-sub:#8FA0DE; --chip:#242945; --chip-text:#B9C4F5; --shadow:0 8px 24px rgba(0,0,0,.35);
+  --sbtn-sh:0 6px 18px rgba(0,0,0,.30); --sbtn-sh-hi:0 10px 26px rgba(0,0,0,.44);
   --band:linear-gradient(120deg,#2A3EA0 0%,#1B1746 52%,#9A5B00 132%); --focus:#F0B45C;
 }}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -74,11 +77,12 @@ main{padding:16px 0 10px;flex:1 0 auto}
 
 /* ===== SECTORS ===== */
 .sectors{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.sbtn{background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--line);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .15s,box-shadow .15s;color:var(--ink);min-height:64px}
-.sbtn:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.sbtn{background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--primary);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .15s,box-shadow .15s,transform .15s;color:var(--ink);min-height:64px;box-shadow:var(--sbtn-sh)}
+.sbtn:hover{border-color:var(--primary);box-shadow:var(--sbtn-sh-hi);transform:translateY(-2px)}
+.sbtn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .sbtn .n{font:700 9px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .sbtn h3{font-family:var(--fd);font-weight:600;font-size:13px;color:var(--primary-deep);line-height:1.15;margin-top:4px}
-.sbtn[aria-selected="true"]{border-color:var(--primary);border-top-color:var(--primary);background:var(--chip);box-shadow:var(--shadow)}
+.sbtn[aria-selected="true"]{border-color:var(--primary);border-top-color:var(--primary);background:var(--chip);box-shadow:var(--sbtn-sh-hi)}
 
 .flowline{display:flex;flex-direction:column;align-items:center;margin:14px 0 4px}
 .flowline .c{width:2px;height:16px;background:var(--line)}
@@ -146,7 +150,7 @@ footer.band p.ai b{font-weight:700}
   <h3 class="tagline"><span class="lang-en">I design learning that people finish and that can be measured.</span><span class="lang-es">Diseño aprendizaje que la gente termina y que se puede medir.</span></h3>
   <p class="role"><span class="lang-en">Independent · sole proprietor / freelance consultant · First-Stage Researcher (PhD, UPV)</span><span class="lang-es">Independiente · autónoma / consultora freelance · Investigadora en Formación Inicial (Doctorado, UPV)</span></p>
   <div class="about">
-    <button class="about-toggle" id="aboutBtn" type="button" aria-expanded="false" aria-controls="about-panel"><span class="lang-en">Who are you?</span><span class="lang-es">¿Quién eres?</span><span class="caret" aria-hidden="true"></span></button>
+    <button class="about-toggle" id="aboutBtn" type="button" aria-expanded="false" aria-controls="about-panel"><span class="lang-en">About me</span><span class="lang-es">Sobre mí</span><span class="caret" aria-hidden="true"></span></button>
     <div class="about-panel" id="about-panel" hidden>
       <div class="lang-en">
         <p>I design learning experiences that people actually finish — engaging and easy to measure. For 20+ years I've turned complex, highly technical topics into clear, structured courses for universities, large companies and product teams alike. Native Spanish with C1 English, I design and deliver full corporate eLearning in English, aligned to the client's style guide and official accessibility guidelines.</p>
@@ -157,7 +161,7 @@ footer.band p.ai b{font-weight:700}
           <li><b>Accessible to everyone.</b> Web accessibility and Universal Design for Learning from the first sketch, not a late compliance fix.</li>
           <li><b>Human + AI teamwork.</b> Humans make every teaching decision; AI only speeds up production, without sacrificing quality.</li>
         </ul>
-        <p class="contact">Contact: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · Full portfolio: <a href="https://profeanaeslavaedtech.github.io/eLearningportfolio" target="_blank" rel="noopener">profeanaeslavaedtech.github.io/eLearningportfolio</a></p>
+        <p class="contact">Contact: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://profeanaeslavaedtech.github.io/eLearningportfolio" target="_blank" rel="noopener">Portfolio</a></p>
       </div>
       <div class="lang-es">
         <p>Diseño experiencias de aprendizaje que la gente realmente termina: interesantes y fáciles de medir. Durante más de 20 años he transformado temas complejos y altamente técnicos en cursos claros y estructurados, para universidades, grandes empresas y equipos de producto. Hablante nativa de español con inglés C1, diseño y entrego proyectos corporativos completos de eLearning en inglés, alineados con la guía de estilo del cliente y las directrices oficiales de accesibilidad.</p>
@@ -168,7 +172,7 @@ footer.band p.ai b{font-weight:700}
           <li><b>Accesible para todos.</b> Accesibilidad web y Diseño Universal para el Aprendizaje desde el primer boceto, no como un parche de cumplimiento al final.</li>
           <li><b>Equipo humano + IA.</b> Las personas toman cada decisión pedagógica; la IA solo acelera la producción, sin sacrificar la calidad.</li>
         </ul>
-        <p class="contact">Contacto: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · Portafolio: <a href="https://profeanaeslavaedtech.github.io/eLearningportfolio" target="_blank" rel="noopener">profeanaeslavaedtech.github.io/eLearningportfolio</a></p>
+        <p class="contact">Contacto: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://profeanaeslavaedtech.github.io/eLearningportfolio" target="_blank" rel="noopener">Portafolio</a></p>
       </div>
     </div>
   </div>
