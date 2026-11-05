@@ -13,6 +13,9 @@ but are **not** part of the Ocean Ink design system and must be left exactly as-
 - **mllde-xapi** repo (`ProfeAnaEslavaEdTech/mllde-xapi`), published at
   https://profeanaeslavaedtech.github.io/mllde-xapi/ — the **appendix of an article being
   published**. Off-limits.
+- **Gamification** repo (`ProfeAnaEslavaEdTech/Gamification`), the *Academic Writing
+  Journey* course, published at https://profeanaeslavaedtech.github.io/Gamification/ —
+  **part of the TFM**. Off-limits (link to it, never modify or redesign it).
 
 ## Everything else
 
