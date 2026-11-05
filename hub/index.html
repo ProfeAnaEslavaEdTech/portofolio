@@ -100,19 +100,38 @@ main{padding:16px 0 10px;flex:1 0 auto}
 .panelsub{text-align:center;color:var(--muted);font-size:12.5px;margin-bottom:16px;padding:0 6px}
 
 /* ===== CASES ===== */
-.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
-.case{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow)}
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;--c:var(--primary);--cfill:var(--primary);--cline:var(--primary)}
+/* per-sector palette, sampled across the footer band. --c=top accent, --cfill=solid (white text), --cline=outline/text (theme-aware) */
+.cases[data-sector="reg"]{--c:#3B5BD6;--cfill:#3B5BD6;--cline:#3B5BD6}
+.cases[data-sector="corp"]{--c:#5246C0;--cfill:#4A3EB4;--cline:#4A3EB4}
+.cases[data-sector="acad"]{--c:#7E4FA6;--cfill:#6E4291;--cline:#6E4291}
+.cases[data-sector="res"]{--c:#D08A3A;--cfill:#9A5B00;--cline:#9A5B00}
+.cases[data-sector="ai"]{--c:#E8A33D;--cfill:#946100;--cline:#946100}
+:root[data-theme="dark"] .cases[data-sector="reg"]{--cline:#8EA2F5}
+:root[data-theme="dark"] .cases[data-sector="corp"]{--cline:#9A8CF0}
+:root[data-theme="dark"] .cases[data-sector="acad"]{--cline:#C79BE0}
+:root[data-theme="dark"] .cases[data-sector="res"]{--cline:#EBB46A}
+:root[data-theme="dark"] .cases[data-sector="ai"]{--cline:#F0B45C}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cases[data-sector="reg"]{--cline:#8EA2F5}
+:root:not([data-theme="light"]) .cases[data-sector="corp"]{--cline:#9A8CF0}
+:root:not([data-theme="light"]) .cases[data-sector="acad"]{--cline:#C79BE0}
+:root:not([data-theme="light"]) .cases[data-sector="res"]{--cline:#EBB46A}
+:root:not([data-theme="light"]) .cases[data-sector="ai"]{--cline:#F0B45C}}
+.case{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow);transition:border-color .18s,background .18s,box-shadow .18s,transform .18s}
+.case:hover{border-color:var(--c);background:color-mix(in srgb,var(--c) 5%,var(--surface));box-shadow:var(--sbtn-sh-hi);transform:translateY(-1px)}
 .case .status{font:700 9px var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);margin-bottom:5px}
 .case h4{font-family:var(--fd);font-weight:600;font-size:15.5px;color:var(--primary-deep);line-height:1.15;margin-bottom:10px}
 .addie-mini{list-style:none;margin:0 0 12px}
 .addie-mini li{display:flex;gap:9px;font-size:12px;color:var(--ink);padding:4px 0;border-bottom:1px dashed var(--line);line-height:1.3}
 .addie-mini li:last-child{border-bottom:0}
-.addie-mini .k{flex:0 0 18px;height:18px;border-radius:5px;background:var(--primary);color:#fff;font:800 10px/18px var(--fb);text-align:center}
-.case .pm{font-size:10.5px;color:var(--muted);border-left:2px solid var(--primary);padding-left:9px;margin:0 0 12px;line-height:1.4}
+.addie-mini .k{flex:0 0 18px;height:18px;border-radius:5px;background:var(--cfill);color:#fff;font:800 10px/18px var(--fb);text-align:center}
+.case .pm{font-size:10.5px;color:var(--muted);border-left:2px solid var(--cline);padding-left:9px;margin:0 0 12px;line-height:1.4}
 .case .pm b{color:var(--accent-text);font-weight:700}
-.case a.open{display:inline-flex;align-items:center;min-height:44px;font:700 13px var(--fb);color:#fff;background:#3B5BD6;border-radius:999px;padding:10px 18px;text-decoration:none}
-.case a.open:hover{background:#3149B4}
-.case .nolink{font-size:11px;color:var(--muted);font-style:italic}
+.case a.open{display:inline-flex;align-items:center;min-height:44px;font:700 13px var(--fb);color:#fff;background:var(--cfill);border-radius:999px;padding:10px 18px;text-decoration:none;transition:filter .15s,background .15s}
+.case a.open:hover{filter:brightness(.92)}
+.case a.open:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.case a.open.ghost{background:transparent;color:var(--cline);border:1.5px solid var(--cline)}
+.case a.open.ghost:hover{filter:none;background:color-mix(in srgb,var(--cline) 10%,var(--surface))}
 
 .legend{margin-top:22px;text-align:center;font-size:12px;color:var(--muted);line-height:1.5}
 .legend b{color:var(--accent-text)}
@@ -269,8 +288,8 @@ var DATA={
  ]}
 };
 var ORDER=[["reg","Regulated / MedTech","Regulado / MedTech"],["corp","Corporate / Technical","Corporativo / Técnico"],["acad","Academia / Languages","Academia / Idiomas"],["res","Research & Method","Investigación y Método"],["ai","Responsible AI & Agentic Systems","IA Responsable y Sistemas Agénticos"]];
-var T={en:{branch:"Branch",choose:"Choose a sector to begin",intro:"Select a sector above. Each one opens its real cases — and the exact A·D·D·I·E steps behind each.",suffix:" — real cases where ADDIE was applied",open:"Open case →",nolink:"Shown on request (private / in development)",dlabel:"Delivery:",delivery:"SAM — a scoped 2–3 month cycle; a minimum viable product first, then improved with tester feedback and audits."},
-        es:{branch:"Rama",choose:"Elige un sector para empezar",intro:"Elige un sector arriba. Cada uno abre sus casos reales — y los pasos A·D·D·I·E detrás de cada uno.",suffix:" — casos reales donde se aplicó ADDIE",open:"Abrir caso →",nolink:"Bajo petición (privado / en desarrollo)",dlabel:"Entrega:",delivery:"SAM — ciclo acotado de 2–3 meses; primero un producto mínimo viable, luego mejoras con feedback de testers y auditorías."}};
+var T={en:{branch:"Branch",choose:"Choose a sector to begin",intro:"Select a sector above. Each one opens its real cases — and the exact A·D·D·I·E steps behind each.",suffix:" — real cases where ADDIE was applied",open:"Open case →",request:"On request →",nolink:"Shown on request (private / in development)",dlabel:"Delivery:",delivery:"SAM — a scoped 2–3 month cycle; a minimum viable product first, then improved with tester feedback and audits."},
+        es:{branch:"Rama",choose:"Elige un sector para empezar",intro:"Elige un sector arriba. Cada uno abre sus casos reales — y los pasos A·D·D·I·E detrás de cada uno.",suffix:" — casos reales donde se aplicó ADDIE",open:"Abrir caso →",request:"Bajo petición →",nolink:"Bajo petición (privado / en desarrollo)",dlabel:"Entrega:",delivery:"SAM — ciclo acotado de 2–3 meses; primero un producto mínimo viable, luego mejoras con feedback de testers y auditorías."}};
 var root=document.documentElement;
 var lang=root.getAttribute('data-lang')||'en';
 var sec=document.getElementById('sectors'),cases=document.getElementById('cases'),pH=document.getElementById('panelHead'),pS=document.getElementById('panelSub');
@@ -300,13 +319,17 @@ function select(k){
   var d=DATA[k];
   pH.textContent=(lang==='es'?d.name_es:d.name)+T[lang].suffix;
   pS.textContent=(lang==='es'?d.pain_es:d.pain);
+  cases.setAttribute('data-sector',k);
   cases.innerHTML='';
   d.cases.forEach(function(c){
     var el=document.createElement('article');el.className='case';
     var rows=[['A',LC(c,'A')],['D',LC(c,'D')],['D',LC(c,'Dv')],['I',LC(c,'I')],['E',LC(c,'E')]].map(function(r){
       return '<li><span class="k">'+r[0]+'</span><span>'+esc(r[1])+'</span></li>';}).join('');
     var pm='<p class="pm"><b>'+T[lang].dlabel+'</b> '+esc(T[lang].delivery)+'</p>';
-    var cta=c.link? '<a class="open" href="'+c.link+'" target="_blank" rel="noopener">'+T[lang].open+'</a>' : '<span class="nolink">'+esc(LC(c,'nl')||T[lang].nolink)+'</span>';
+    var title=LC(c,'t');
+    var cta= c.link
+      ? '<a class="open" data-kind="open" data-case="'+esc(title)+'" href="'+c.link+'" target="_blank" rel="noopener">'+T[lang].open+'</a>'
+      : '<a class="open ghost" data-kind="request" data-case="'+esc(title)+'" href="mailto:profeanaeslava@gmail.com?subject='+encodeURIComponent((lang==='es'?'Solicitud de caso: ':'Case request: ')+title)+'">'+T[lang].request+'</a>';
     el.innerHTML='<div class="status">'+esc(LC(c,'s'))+'</div><h4>'+esc(LC(c,'t'))+'</h4><ul class="addie-mini">'+rows+'</ul>'+pm+cta;
     cases.appendChild(el);
   });
