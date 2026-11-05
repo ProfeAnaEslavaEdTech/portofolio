@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How a D1 engagement works — Ana Eslava-Graterol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fd:'Fraunces',Georgia,serif; --fb:'Inter',-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  --primary:#3B5BD6; --primary-deep:#22307C; --accent:#E8A33D; --accent-text:#9A5B00;
+  --ink:#1C1E2E; --muted:#5B5F77; --canvas:#F7F8FC; --surface:#FFFFFF; --line:#E6E8F2;
+  --bar:#22307C; --bar-sub:#B9C2E8; --chip:#EEF1FB; --chip-text:#2C3A86; --shadow:0 8px 24px rgba(30,32,70,.06);
+  --band:linear-gradient(120deg,#3B5BD6 0%,#312A8C 52%,#E8A33D 128%); --warnbg:#FDF4E3; --warntx:#9A5B00;
+}
+:root[data-theme="dark"]{
+  --ink:#EDEFFA; --muted:#A7ADCB; --canvas:#12131C; --surface:#1B1D2B; --line:#2C3049;
+  --primary:#7E96F0; --primary-deep:#B9C8F6; --accent:#F0B45C; --accent-text:#F0B45C;
+  --bar:#0E1430; --bar-sub:#8FA0DE; --chip:#242945; --chip-text:#B9C4F5; --shadow:0 8px 24px rgba(0,0,0,.35);
+  --band:linear-gradient(120deg,#2A3EA0 0%,#1B1746 52%,#9A5B00 132%); --warnbg:#2A2310; --warntx:#F0B45C;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ink:#EDEFFA; --muted:#A7ADCB; --canvas:#12131C; --surface:#1B1D2B; --line:#2C3049;
+  --primary:#7E96F0; --primary-deep:#B9C8F6; --accent:#F0B45C; --accent-text:#F0B45C;
+  --bar:#0E1430; --bar-sub:#8FA0DE; --chip:#242945; --chip-text:#B9C4F5; --shadow:0 8px 24px rgba(0,0,0,.35);
+  --band:linear-gradient(120deg,#2A3EA0 0%,#1B1746 52%,#9A5B00 132%); --warnbg:#2A2310; --warntx:#F0B45C;
+}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--fb);background:var(--canvas);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+.bar{background:var(--bar);color:#fff;position:sticky;top:0;z-index:50}
+.bar .wrap{display:flex;align-items:center;gap:12px;min-height:52px}
+.bar .brand{font-family:var(--fd);font-weight:700;font-size:16px}
+.bar .brand span{display:block;font:600 9px/1.2 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--bar-sub);margin-top:2px}
+.bar .spacer{flex:1}
+.bar button{font:600 12px var(--fb);color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 12px;cursor:pointer}
+
+.head{padding:32px 0 6px}
+.eyebrow{font:800 11px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--primary);margin-bottom:8px}
+.head h1{font-family:var(--fd);font-weight:700;color:var(--primary-deep);font-size:clamp(24px,3.8vw,34px);line-height:1.1;letter-spacing:-.3px}
+.head p{color:var(--muted);font-size:15px;margin-top:10px;max-width:72ch}
+
+.pricing{background:var(--warnbg);border:1px solid var(--accent);border-radius:14px;padding:16px 18px;margin:20px 0 6px}
+.pricing h3{font-family:var(--fd);font-weight:600;font-size:15px;color:var(--warntx);margin-bottom:6px}
+.pricing p{font-size:13.5px;color:var(--ink);margin:0}
+.pricing b{color:var(--warntx)}
+
+h2{font-family:var(--fd);font-weight:600;font-size:19px;color:var(--ink);margin:30px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:4px 0 8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font:700 10.5px var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--chip)}
+td .ph{display:inline-block;font:700 9.5px var(--fb);letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--chip-text)}
+td .free{background:var(--warnbg);color:var(--warntx)}
+td .paid{background:#E6EDFB;color:#22307C}
+:root[data-theme="dark"] td .paid{background:#22307C;color:#CFD9FB}
+.out{color:var(--accent-text);font-weight:600}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:6px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:var(--surface);box-shadow:var(--shadow)}
+.card b{display:block;font-size:13px;color:var(--primary-deep);margin-bottom:5px}
+.card span{font-size:12.5px;color:var(--muted)}
+
+.gantt{display:flex;flex-direction:column;gap:8px;margin:8px 0}
+.row{display:grid;grid-template-columns:148px 1fr;gap:12px;align-items:center}
+.row .lab{font-size:12.5px;color:var(--ink);font-weight:600}
+.track{position:relative;height:24px;background:var(--canvas);border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.fill{position:absolute;top:0;bottom:0;border-radius:7px;background:var(--primary);opacity:.9}
+.fill.free{background:var(--accent)}
+.wk{display:grid;grid-template-columns:148px 1fr;gap:12px;font:700 9.5px var(--fb);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.wk .scale{display:flex;justify-content:space-between}
+
+.note{border-left:3px solid var(--accent);background:var(--canvas);border-radius:0 10px 10px 0;padding:11px 14px;font-size:12.5px;color:var(--muted);margin:10px 0}
+.note b{color:var(--accent-text)}
+
+footer.band{background:var(--band);color:#fff;padding:30px 0 36px;margin-top:34px}
+footer.band p{font-size:12px;opacity:.94;margin:0 0 8px;max-width:100ch;color:#fff}
+footer.band b{font-weight:700}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.row,.wk{grid-template-columns:96px 1fr}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="brand">Ana Eslava-Graterol<span>How a D1 engagement works</span></div>
+  <div class="spacer"></div><button id="themeBtn" type="button">Dark</button>
+</div></div>
+
+<header class="head"><div class="wrap">
+  <div class="eyebrow">Independent instructional design · sole proprietor · D1 — Strategy &amp; Stakeholder Agreement</div>
+  <h1>How I take a client from "a vague need" to a signed training strategy</h1>
+  <p>A real engagement, anonymised. I work as a freelance Learning Experience Designer (sole proprietor): I run the whole cycle myself — analysis, design, stakeholder consulting, vendor coordination and delivery. Understanding the client's true pain took several conversations — not one. This is how a D1 actually unfolds: a first meeting, a short discovery call, a no-charge needs analysis, and only then a written service proposal.</p>
+</div></header>
+
+<main class="wrap">
+
+  <div class="pricing">
+    <h3>How I charge — discovery is free, pricing is custom</h3>
+    <p>The <b>first meeting</b>, the <b>needs analysis</b>, and the <b>initial "here's what you need" deliverable</b> are <b>not charged</b>. Work begins to be billed <b>only after the client accepts the written service proposal</b> — so the client sees real value before committing. <b>Price is set per project</b> and depends on its scope, sector and complexity; there is no fixed rate.</p>
+  </div>
+
+  <h2>Meetings &amp; chronology (real engagement, anonymised)</h2>
+  <table>
+    <tr><th>When</th><th>Format</th><th>What happened</th><th>Outcome</th></tr>
+    <tr><td>Day 1</td><td><span class="ph free">Intro · free</span></td><td>Client (an AI English-coaching product for companies) shares a first demo. I review it hands-on to understand what it really is and where it falls short.</td><td class="out">First read of the need</td></tr>
+    <tr><td>Day 1–3</td><td><span class="ph free">Discovery call · 15 min · free</span></td><td>Short call to surface the real pain — not "we want an AI", but <i>"we must prove to HR that employees actually improve"</i> and <i>"we need to scale to new industries"</i>.</td><td class="out">Real pain identified</td></tr>
+    <tr><td>Week 1</td><td><span class="ph free">Needs analysis · free</span></td><td>I analyse learners, stakeholders (HR vs learner) and the measurement gap. It took iteration to separate the surface ask from the underlying need.</td><td class="out">Problem reframed</td></tr>
+    <tr><td>Week 1–2</td><td><span class="ph free">Value deliverable · free</span></td><td>I design and hand over a first concrete thing: an <b>HR dashboard</b> + a <b>simplified learner view</b> + a <b>declared-vs-evidenced measurement model</b> — so they see what "good" looks like.</td><td class="out">Trust earned</td></tr>
+    <tr><td>Week 2</td><td><span class="ph paid">Written proposal</span></td><td>I present a written service proposal: scope, modality, success metrics, roles, timeline and price. The client agrees in writing.</td><td class="out">Engagement signed</td></tr>
+    <tr><td>Weeks 2–10</td><td><span class="ph paid">Build &amp; iterate · SAM</span></td><td>MVP first, then improved with tester feedback and audits. Measurement evaluator goes live; weekly review calls agree each next build.</td><td class="out">Shipped &amp; measured</td></tr>
+    <tr><td>Ongoing</td><td><span class="ph paid">Scale</span></td><td>Per-sector packs on demand (e.g. hospitality, finance): each new industry is a knowledge-base pack, not a rebuild.</td><td class="out">In production</td></tr>
+  </table>
+
+  <h2>What the discovery revealed (the real pain)</h2>
+  <div class="cards">
+    <div class="card"><b>Surface ask</b><span>"Give feedback with an AI coach."</span></div>
+    <div class="card"><b>Real need</b><span>Prove to HR that employees improve — credible, CEFR-anchored evidence, not vanity metrics.</span></div>
+    <div class="card"><b>Second need</b><span>Scale to new industries fast, without rebuilding the course each time.</span></div>
+  </div>
+
+  <h2>The service proposal (what I committed to)</h2>
+  <div class="cards">
+    <div class="card"><b>Pedagogy &amp; measurement</b><span>MLLDE method; declared-vs-evidenced CEFR model; dual-ledger attainment; xAPI/LRS telemetry.</span></div>
+    <div class="card"><b>Stakeholder products</b><span>HR dashboard + simplified learner view — same data, two audiences.</span></div>
+    <div class="card"><b>Scalable content</b><span>Per-sector knowledge bases (vocabulary + can-do statements) as packs.</span></div>
+    <div class="card"><b>Success metrics</b><span>Agreed before build: evidenced-level confirmation, mastery gate, session/error telemetry.</span></div>
+    <div class="card"><b>Delivery model</b><span>SAM — MVP first, iterate with tester feedback and audits.</span></div>
+    <div class="card"><b>Governance</b><span>Human-in-the-loop; EU AI Act transparency; GDPR-safe, de-identified data.</span></div>
+  </div>
+
+  <h2>Cronograma (project schedule)</h2>
+  <div class="wk"><span>Phase</span><span class="scale"><span>Wk 1</span><span>Wk 3</span><span>Wk 5</span><span>Wk 7</span><span>Wk 9</span><span>Wk 12</span></span></div>
+  <div class="gantt">
+    <div class="row"><span class="lab">Discovery (free)</span><div class="track"><span class="fill free" style="left:0%;width:10%"></span></div></div>
+    <div class="row"><span class="lab">Needs analysis (free)</span><div class="track"><span class="fill free" style="left:8%;width:12%"></span></div></div>
+    <div class="row"><span class="lab">Written proposal</span><div class="track"><span class="fill" style="left:18%;width:7%"></span></div></div>
+    <div class="row"><span class="lab">MVP design &amp; build</span><div class="track"><span class="fill" style="left:24%;width:30%"></span></div></div>
+    <div class="row"><span class="lab">Test &amp; iterate / audit</span><div class="track"><span class="fill" style="left:50%;width:28%"></span></div></div>
+    <div class="row"><span class="lab">Measurement live</span><div class="track"><span class="fill" style="left:52%;width:6%"></span></div></div>
+    <div class="row"><span class="lab">Scale (per-sector packs)</span><div class="track"><span class="fill" style="left:74%;width:26%"></span></div></div>
+  </div>
+  <div class="note"><b>Cadence:</b> a full cycle runs ~2–3 months (SAM). Gold = no-charge discovery; blue = billed after written acceptance. Each new sector reuses the engine and adds only its pack.</div>
+
+</main>
+
+<footer class="band"><div class="wrap">
+  <p><b>AI transparency note (EU AI Act, Art. 50).</b> AI-assisted document, reviewed by a human expert; every pedagogical and measurement decision is human-directed and accountable.</p>
+  <p><b>Confidential &amp; anonymised.</b> © 2026 Ana Eslava-Graterol. Real engagement shown without client identity, personal names, emails or learner data. No company or individual is identified.</p>
+</div></footer>
+
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('themeBtn');
+function d(){var t=r.getAttribute('data-theme');if(t==='dark')return true;if(t==='light')return false;return matchMedia('(prefers-color-scheme:dark)').matches;}
+function p(){b.textContent=d()?'Light':'Dark';}
+b.addEventListener('click',function(){r.setAttribute('data-theme',d()?'light':'dark');p();});
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',p);p();})();
+</script>
+</body>
+</html>
