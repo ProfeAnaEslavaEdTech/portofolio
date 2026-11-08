@@ -52,7 +52,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offs
 
 /* ===== HEAD ===== */
 .head{padding:34px 0 6px;text-align:center}
-.head h1{font-family:var(--fd);font-weight:700;color:var(--primary-deep);font-size:clamp(24px,5vw,38px);letter-spacing:-.3px;line-height:1.1}
+.head h1{font-family:var(--fd);font-weight:700;color:var(--primary-deep);font-size:clamp(18px,3.8vw,32px);letter-spacing:-.2px;line-height:1.2}
 .head .name{font-family:var(--fd);font-weight:600;color:var(--ink);font-size:clamp(17px,3.2vw,22px);margin-top:6px;line-height:1.2}
 .head .tagline{font-family:var(--fd);font-weight:400;font-style:italic;color:var(--muted);font-size:clamp(15px,2.6vw,18px);margin-top:10px}
 .head .role{font:600 12px var(--fb);letter-spacing:.03em;color:var(--primary);margin-top:8px}
@@ -152,6 +152,9 @@ footer.band p.s{font-size:12px;opacity:.94}
 footer.band p.ai{font-size:11.5px;opacity:.9;margin-top:12px;border-top:1px solid rgba(255,255,255,.22);padding-top:12px;line-height:1.5}
 footer.band p.ai b{font-weight:700}
 
+.design-govern{margin-top:18px;padding:14px 18px;border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--surface));border-radius:0 8px 8px 0;line-height:1.6}
+.design-govern b{color:var(--accent-text);font-size:1.05em;letter-spacing:.01em}
+
 /* ===== MOBILE (iOS / Android) ===== */
 @media(max-width:820px){.sectors{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){
@@ -165,41 +168,33 @@ footer.band p.ai b{font-weight:700}
 </head>
 <body>
 <div class="bar"><div class="wrap">
-  <div class="brand">Ana Eslava-Graterol<span class="lang-en">Learning Experience Designer</span><span class="lang-es">Diseñadora de Experiencias de Aprendizaje</span></div>
+  <div class="brand">Ana Eslava-Graterol<span class="lang-en">LXD · LQA · AI Governance</span><span class="lang-es">DEA · CCA · Gobernanza IA</span></div>
   <div class="spacer"></div>
   <button id="langBtn" type="button" aria-label="Switch language / Cambiar idioma">ES</button>
   <button id="themeBtn" type="button" aria-label="Toggle theme / Cambiar tema">Dark</button>
 </div></div>
 
 <header class="head"><div class="wrap">
-  <h1><span class="lang-en">Learning Experience Designer</span><span class="lang-es">Diseñadora de Experiencias de Aprendizaje</span></h1>
+  <h1><span class="lang-en">Learning Experience Designer · Learning Quality Assurance · AI Governance</span><span class="lang-es">Diseñadora de Experiencias de Aprendizaje · Aseguramiento de la Calidad del Aprendizaje · Gobernanza de la IA</span></h1>
   <h2 class="name">Ana Eslava-Graterol</h2>
-  <h3 class="tagline"><span class="lang-en">I design learning experiences that answer real needs, with verifiable results.</span><span class="lang-es">Diseño experiencias de aprendizaje que responden a necesidades reales, con resultados verificables.</span></h3>
+  <h3 class="tagline"><span class="lang-en">I design learning experiences, integrate AI governance, and assure their quality.</span><span class="lang-es">Diseño experiencias de aprendizaje, integro la gobernanza de la IA y aseguro su calidad.</span></h3>
   <p class="role"><span class="lang-en">Independent · sole proprietor / freelance consultant · First-Stage Researcher (PhD, UPV)</span><span class="lang-es">Independiente · autónoma / consultora freelance · Investigadora en Formación Inicial (Doctorado, UPV)</span></p>
   <div class="about">
     <button class="about-toggle" id="aboutBtn" type="button" aria-expanded="false" aria-controls="about-panel"><span class="lang-en">About me</span><span class="lang-es">Sobre mí</span><span class="caret" aria-hidden="true"></span></button>
     <div class="about-panel" id="about-panel" hidden>
       <div class="lang-en">
-        <p>I design learning experiences that people actually finish — engaging and easy to measure. For 20+ years I've turned complex, highly technical topics into clear, structured courses for universities, large companies and product teams alike. Native Spanish with C1 English, I design and deliver full corporate eLearning in English, aligned to the client's style guide and official accessibility guidelines.</p>
-        <h3>What I bring to a team</h3>
-        <ul>
-          <li><b>Solid learning structures.</b> ADDIE, SAM and Agile, with gamification, microlearning and realistic problem-solving that keep learners engaged start to finish.</li>
-          <li><b>Decisions based on data.</b> SCORM and xAPI embedded in the lessons, connecting LMS data with learning analytics to improve from real results.</li>
-          <li><b>Accessible to everyone.</b> Web accessibility and Universal Design for Learning from the first sketch, not a late compliance fix.</li>
-          <li><b>Human + AI teamwork.</b> Humans make every teaching decision; AI only speeds up production, without sacrificing quality.</li>
-        </ul>
-        <p class="contact">Contact: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">LinkedIn</a> · <a href="cv/Ana-Eslava-Graterol-CV.pdf" download>Download CV (PDF)</a></p>
+        <p>I am a Learning Experience Designer, Instructional Designer, and Learning Quality Assurance professional, with a specialisation in Language Acquisition, Second Language Acquisition (SLA), and Mobile Language Learning Design. I bring 20+ years of language teaching and learning design experience—from university classrooms and corporate teams to AI-powered mobile tutors. My work is grounded in CEFR-anchored methodology, evidence-based instructional design, and responsible AI integration.</p>
+        <p>Learning quality, to me, is a holistic responsibility. It is not only about whether the content is accurate or the course is SCORM-compliant. It encompasses the instructional quality of the experience, its technical integrity, the pedagogical design, accessibility and inclusion, learner privacy and data rights, the responsible and transparent use of AI, and meaningful human oversight at every decision point.</p>
+        <p>The principles that underpin good learning experience design—accessibility, transparency, evidence-based decision-making, and human accountability—are not sector-specific. I carry them across regulated industries, corporate teams, language learning environments, and research contexts. Whether the product is a compliance course, a governed AI tutor, or a university curriculum, the question is the same: Does this learning experience deliver what it promises, to every learner, without harm?</p>
+        <p class="design-govern"><b>Design. Govern. Assure.</b><br>Design meaningful learning experiences. Govern the use of AI responsibly. Assure the quality of the entire learning experience.</p>
+        <p class="contact">Contact: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">LinkedIn (opens in a new tab)</a> · <a href="cv/Ana-Eslava-Graterol-CV.pdf" download>Download CV (PDF)</a></p>
       </div>
       <div class="lang-es">
-        <p>Diseño experiencias de aprendizaje que la gente realmente termina: interesantes y fáciles de medir. Durante más de 20 años he transformado temas complejos y altamente técnicos en cursos claros y estructurados, para universidades, grandes empresas y equipos de producto. Hablante nativa de español con inglés C1, diseño y entrego proyectos corporativos completos de eLearning en inglés, alineados con la guía de estilo del cliente y las directrices oficiales de accesibilidad.</p>
-        <h3>Lo que aporto a un equipo</h3>
-        <ul>
-          <li><b>Buenas estructuras de aprendizaje.</b> ADDIE, SAM y Agile, con gamificación, microlearning y resolución realista de problemas que mantienen la motivación de principio a fin.</li>
-          <li><b>Decisiones basadas en datos.</b> SCORM y xAPI integrados en las lecciones, conectando los datos del LMS con la analítica de aprendizaje para mejorar con resultados reales.</li>
-          <li><b>Accesible para todos.</b> Accesibilidad web y Diseño Universal para el Aprendizaje desde el primer boceto, no como un parche de cumplimiento al final.</li>
-          <li><b>Equipo humano + IA.</b> Las personas toman cada decisión pedagógica; la IA solo acelera la producción, sin sacrificar la calidad.</li>
-        </ul>
-        <p class="contact">Contacto: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">LinkedIn</a> · <a href="cv/Ana-Eslava-Graterol-CV.pdf" download>Descargar CV (PDF)</a></p>
+        <p>Soy Diseñadora de Experiencias de Aprendizaje, Diseñadora Instruccional y profesional de Aseguramiento de la Calidad del Aprendizaje, con especialización en Adquisición de Lenguas, Adquisición de Segundas Lenguas (ASL) y Diseño de Aprendizaje Móvil de Idiomas. Aporto más de 20 años de experiencia en docencia de idiomas y diseño del aprendizaje—desde aulas universitarias y equipos corporativos hasta tutores móviles con IA. Mi trabajo se fundamenta en metodología anclada al MCER, diseño instruccional basado en evidencia e integración responsable de la IA.</p>
+        <p>La calidad del aprendizaje es, para mí, una responsabilidad holística. No se trata únicamente de que el contenido sea correcto o de que el curso cumpla con SCORM. Abarca la calidad instruccional de la experiencia, su integridad técnica, el diseño pedagógico, la accesibilidad e inclusión, la privacidad del alumnado y sus derechos sobre los datos, el uso responsable y transparente de la IA, y una supervisión humana significativa en cada punto de decisión.</p>
+        <p>Los principios que sostienen un buen diseño de experiencias de aprendizaje—accesibilidad, transparencia, toma de decisiones basada en evidencia y responsabilidad humana—no son específicos de un sector. Los aplico en sectores regulados, equipos corporativos, entornos de aprendizaje de idiomas y contextos de investigación. Tanto si el producto es un curso de compliance, un tutor de IA gobernado o un currículo universitario, la pregunta es siempre la misma: ¿Esta experiencia de aprendizaje cumple lo que promete, para cada estudiante, sin causar daño?</p>
+        <p class="design-govern"><b>Diseña. Gobierna. Asegura.</b><br>Diseña experiencias de aprendizaje significativas. Gobierna el uso de la IA de forma responsable. Asegura la calidad de la experiencia de aprendizaje completa.</p>
+        <p class="contact">Contacto: <a href="mailto:profeanaeslava@gmail.com">profeanaeslava@gmail.com</a> · <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">LinkedIn (abre en pestaña nueva)</a> · <a href="cv/Ana-Eslava-Graterol-CV.pdf" download>Descargar CV (PDF)</a></p>
       </div>
     </div>
   </div>
