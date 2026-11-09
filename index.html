@@ -84,6 +84,15 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offs
 main{padding:16px 0 10px;flex:1 0 auto}
 .step1{font:700 10px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--primary);text-align:center;margin:20px 0 12px}
 
+/* ===== FEATURED BOOTCAMP BAND ===== */
+.featured-band{margin:16px 0 6px;background:color-mix(in srgb,var(--primary) 7%,var(--surface));border:1.5px solid color-mix(in srgb,var(--primary) 35%,var(--line));border-left:4px solid var(--primary);border-radius:10px;padding:13px 17px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+.featured-band .fb-label{font:800 10px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);white-space:nowrap;padding-top:3px;flex-shrink:0}
+.featured-band .fb-body{font:400 13.5px var(--fb);color:var(--ink)}
+.featured-band a{font-weight:700;color:var(--primary);text-decoration:none}
+.featured-band a:hover{text-decoration:underline}
+.featured-band a:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.featured-band .ntn{font-size:11px;font-weight:400;color:var(--muted)}
+
 /* ===== SECTORS ===== */
 .sectors{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .sbtn{--c:var(--primary);background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--c);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;color:var(--ink);min-height:64px;box-shadow:var(--sbtn-sh)}
@@ -172,6 +181,8 @@ footer.band p.ai b{font-weight:700}
   .bar .brand span{display:none}
   .head{padding:26px 0 4px}
   .about-panel{padding:18px 16px}
+  .featured-band{flex-direction:column;gap:4px}
+  .featured-band .fb-label{padding-top:0}
 }
 </style>
 </head>
@@ -210,6 +221,12 @@ footer.band p.ai b{font-weight:700}
 </div></header>
 
 <main class="wrap">
+  <div class="featured-band" role="note" aria-label="Featured project / Proyecto destacado">
+    <span class="fb-label lang-en">Featured</span>
+    <span class="fb-label lang-es">Destacado</span>
+    <span class="fb-body lang-en"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20-module interview-ready curriculum <span class="ntn">(opens in a new tab)</span> →</a></span>
+    <span class="fb-body lang-es"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20 módulos listos para la entrevista <span class="ntn">(abre en pestaña nueva)</span> →</a></span>
+  </div>
   <div class="step1"><span class="lang-en">Step 1 — what is your sector?</span><span class="lang-es">Paso 1 — ¿cuál es tu sector?</span></div>
   <div class="sectors" id="sectors" role="tablist"></div>
   <div class="flowline"><div class="c"></div><div class="a"></div></div>
