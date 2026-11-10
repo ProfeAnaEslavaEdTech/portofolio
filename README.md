@@ -6,7 +6,7 @@ My EdTech portfolio.
 
 **`metadiscourse-visualization.html`** — an interactive data book for the master's
 thesis *"Disciplinary Variation in Metadiscourse Use across Master's Thesis
-Abstracts"* (Prof. Mª Luisa Carrió-Pastor & Prof. Ana Eslava-Graterol, Department
+Abstracts"* (by Ana Eslava-Graterol; director: Prof. Mª Luisa Carrió-Pastor, Department
 of Applied Linguistics, Universitat Politècnica de València).
 
 It renders the corpus results live from the source workbook:
