@@ -26,3 +26,14 @@ bilingual EN/ES, light/dark, sober minimal layout, band-palette facet funnel, no
 ## Git
 
 Commit with `ProfeAnaEslavaEdTech@users.noreply.github.com` (private email is blocked).
+
+## Audit principle — no claim without its proof (Ana Eslava-Graterol, 10 Nov 2026)
+
+> **Principio de auditoría:** cotejar cada afirmación con los datos es lo que destapó los fallos de TK CoachAI. Si se hubiera aceptado lo que se decía sin comprobarlo, seguiríamos con cifras falsas. Cotejar no es lentitud: es la auditoría. Para la gobernanza, ninguna afirmación se da por buena sin su prueba (IDs de sentencias en el LRS, extracto de código y fecha desde la que se cumple).
+
+How agents working for Ana apply it:
+- Treat every "implemented", "done", "fixed" or "verified" from a developer, a vendor, a document or another AI agent as a **claim**, not a fact.
+- Accept it only with its three proofs: **(a)** statement IDs in the LRS, **(b)** the code excerpt, **(c)** the date from which it holds. Until then, mark it **pending**.
+- Check against **independent data** (the external LRS export), not only against the reporter's own summary or a second model's review.
+- Apply it to your own output too: before a document, slide or email states a figure or a fact, check it against the data, and correct it if the data say otherwise.
+
