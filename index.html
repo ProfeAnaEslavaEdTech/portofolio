@@ -88,6 +88,15 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offs
 main{padding:16px 0 10px;flex:1 0 auto}
 .step1{font:700 10px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--primary);text-align:center;margin:20px 0 12px}
 
+/* ===== FEATURED BOOTCAMP BAND ===== */
+.featured-band{margin:14px 0 0;background:color-mix(in srgb,var(--primary) 7%,var(--surface));border:1.5px solid color-mix(in srgb,var(--primary) 35%,var(--line));border-left:4px solid var(--primary);border-radius:10px;padding:13px 17px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+.featured-band .fb-label{font:800 10px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);white-space:nowrap;padding-top:3px;flex-shrink:0}
+.featured-band .fb-body{font:400 13.5px var(--fb);color:var(--ink)}
+.featured-band a{font-weight:700;color:var(--primary);text-decoration:none}
+.featured-band a:hover{text-decoration:underline}
+.featured-band a:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.featured-band .ntn{font-size:11px;font-weight:400;color:var(--muted)}
+
 /* ===== SECTORS ===== */
 .sectors{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .sbtn{--c:var(--primary);background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--c);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;color:var(--ink);min-height:64px;box-shadow:var(--sbtn-sh)}
@@ -178,6 +187,8 @@ footer.band p.ai b{font-weight:700}
   .about-panel{padding:18px 16px}
   .case a.open{align-self:stretch;width:100%;justify-content:center}
   .work .btn-primary,.work .btn-ghost{flex:1 1 auto;text-align:center;justify-content:center}
+  .featured-band{flex-direction:column;gap:4px}
+  .featured-band .fb-label{padding-top:0}
 }
 @media(max-width:400px){
   .sectors{grid-template-columns:1fr}
@@ -224,6 +235,12 @@ footer.band p.ai b{font-weight:700}
 <main id="main-content" class="wrap">
   <div class="step1"><span class="lang-en">Step 1 — what is your sector?</span><span class="lang-es">Paso 1 — ¿cuál es tu sector?</span></div>
   <div class="sectors" id="sectors" role="tablist"></div>
+  <div class="featured-band" role="note" aria-label="Featured project / Proyecto destacado">
+    <span class="fb-label lang-en">Featured</span>
+    <span class="fb-label lang-es">Destacado</span>
+    <span class="fb-body lang-en"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20-module interview-ready curriculum <span class="ntn">(opens in a new tab)</span> →</a></span>
+    <span class="fb-body lang-es"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20 módulos listos para la entrevista <span class="ntn">(abre en pestaña nueva)</span> →</a></span>
+  </div>
   <div class="flowline"><div class="c"></div><div class="a"></div></div>
   <div id="panelHead" class="panelhead" aria-live="polite" aria-atomic="true"></div>
   <div id="panelSub" class="panelsub"></div>
@@ -253,6 +270,12 @@ var DATA={
     Dv:"Interactive decision levels",Dv_es:"Niveles de decisión interactivos",I:"Web-deployed",I_es:"Desplegado en web",E:"Checkpoint mastery",E_es:"Dominio por checkpoints"}
  ]},
  corp:{name:"Corporate / Technical",name_es:"Corporativo / Técnico", pain:"“Scattered content, weak LMS data, no shared standard across teams.”",pain_es:"“Contenido disperso, datos del LMS débiles, sin estándar común entre equipos.”", cases:[
+   {t:"L&D Bootcamp — 20-module interview-ready curriculum",t_es:"L&D Bootcamp — 20 módulos listos para la entrevista", s:"Published · 20 tracks",s_es:"Publicado · 20 módulos",link:"https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/",
+    A:"20-role job-description gap analysis across regulated, corporate and language-learning sectors",A_es:"Análisis de brechas de 20 descripciones de puestos en sectores regulados, corporativos y de idiomas",
+    D:"CEFR-anchored objectives; MLLDE method; ADDIE + SAM; Ocean Ink design system",D_es:"Objetivos anclados al MCER; método MLLDE; ADDIE + SAM; sistema de diseño Ocean Ink",
+    Dv:"20 self-contained HTML5 modules; xAPI, SCORM, gamification, accessibility (WCAG 2.1 AA)",Dv_es:"20 módulos HTML5 autocontenidos; xAPI, SCORM, gamificación, accesibilidad (WCAG 2.1 AA)",
+    I:"GitHub Pages; no build step; dark-first responsive design; EN/ES",I_es:"GitHub Pages; sin paso de compilación; diseño responsivo dark-first; EN/ES",
+    E:"Task-based portfolio artifacts per module; mastery gates; interview-ready deliverables",E_es:"Artefactos de portafolio por tarea por módulo; gates de dominio; entregables listos para la entrevista"},
    {t:"Teacher Dashboard / Lesson Builder Pro",t_es:"Teacher Dashboard / Lesson Builder Pro", s:"Published · in production",s_es:"Publicado · en producción", link:"https://profeanaeslavaedtech.github.io/businesslanguage/",
     A:"Stakeholder needs across three roles: Teacher, IT, Product owner",A_es:"Necesidades de 3 roles: docente, IT y product owner",D:"72-unit CEFR A1–C2 curriculum; planning model",D_es:"Currículo MCER A1–C2 de 72 unidades; modelo de planificación",
     Dv:"Role-based dashboard; lesson plans pre-filled from the curriculum",Dv_es:"Panel por rol; planes de clase precargados del currículo",I:"Integrated into an open-source LMS",I_es:"Integrado en un LMS open-source",E:"Three validation cycles; ≥2-sample rule",E_es:"Tres ciclos de validación; regla de ≥2 muestras"},
@@ -283,7 +306,7 @@ var DATA={
  res:{name:"Research & Method",name_es:"Investigación y Método", pain:"“Claims need rigorous, measurable, defensible evidence.”",pain_es:"“Las afirmaciones necesitan evidencia rigurosa, medible y defendible.”", cases:[
    {t:"MLLDE Curriculum Master Document",t_es:"MLLDE Curriculum Master Document", s:"Published · sole author & lead",s_es:"Publicado · autora y líder única", link:"https://profeanaeslavaedtech.github.io/mobilelanguagelearningdesingenviroment/",
     A:"No replicable method bridging CEFR → a lesson",A_es:"No existía método replicable que uniera el MCER con la lección",D:"4-layer model; ~10 frameworks synthesised",D_es:"Modelo de 4 capas; ~10 marcos sintetizados",
-    Dv:"Lesson blueprint + planning template",Dv_es:"Blueprint de lección + plantilla de planificación",I:"Language Passport instances (Barcelona, Sevilla)",I_es:"Instancias Language Passport (Barcelona, Sevilla)",E:"Immediate Assessment “Don't give up!” standard",E_es:"Estándar de evaluación inmediata «Don't give up!»"},
+    Dv:"Lesson blueprint + planning template",Dv_es:"Blueprint de lección + plantilla de planificación",I:"Language Passport instances (Barcelona, Sevilla)",I_es:"Instancias Language Passport (Barcelona, Sevilla)",E:"Immediate Assessment \"Don't give up!\" standard",E_es:"Estándar de evaluación inmediata «Don't give up!»"},
    {t:"Interactive Corpus Data Book",t_es:"Data Book interactivo de corpus", s:"Published · thesis 10/10",s_es:"Publicado · tesis 10/10", link:"https://profeanaeslavaedtech.github.io/Databook/",
     A:"6-corpus comparative study, diachronic 2024–2026",A_es:"Estudio comparativo de 6 corpus, diacrónico 2024–2026",D:"Hyland taxonomy; statistical design",D_es:"Taxonomía de Hyland; diseño estadístico",
     Dv:"Manual corpus tagging (METOOL); Chart.js data book",Dv_es:"Etiquetado manual del corpus (METOOL); data book en Chart.js",I:"Public interactive data book",I_es:"Data book interactivo público",E:"Chi-square, effect sizes, Bayes; 10/10 method & statistics",E_es:"Chi-cuadrado, tamaños de efecto, Bayes; 10/10 método y estadística"},
