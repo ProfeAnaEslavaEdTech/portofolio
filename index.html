@@ -50,6 +50,10 @@ body{font-family:var(--fb);background:var(--canvas);color:var(--ink);line-height
 /* universal visible focus (WCAG 2.4.7) */
 a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
+/* ===== SKIP LINK (WCAG 2.4.1) ===== */
+.skip-link{position:absolute;top:-100%;left:16px;z-index:200;background:var(--primary);color:#fff;padding:10px 18px;border-radius:0 0 10px 10px;font:700 14px var(--fb);text-decoration:none;transition:top .1s}
+.skip-link:focus,.skip-link:focus-visible{top:env(safe-area-inset-top,0px);outline:3px solid var(--focus);outline-offset:2px}
+
 /* ===== BAR ===== */
 .bar{background:var(--bar);color:#fff;position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top)}
 .bar .wrap{display:flex;align-items:center;gap:10px;min-height:56px;flex-wrap:wrap}
@@ -106,7 +110,7 @@ main{padding:16px 0 10px;flex:1 0 auto}
 .sbtn:hover .n{color:var(--c)}
 .sbtn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .sbtn .n{font:700 9px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .18s}
-.sbtn h3{font-family:var(--fd);font-weight:600;font-size:13px;color:var(--primary-deep);line-height:1.15;margin-top:4px}
+.sbtn .sbtn-label{font-family:var(--fd);font-weight:600;font-size:13px;color:var(--primary-deep);line-height:1.15;margin-top:4px;display:block}
 .sbtn[aria-selected="true"]{border-color:var(--c);border-top-color:var(--c);background:color-mix(in srgb,var(--c) 8%,var(--surface));box-shadow:var(--sbtn-sh-hi)}
 .sbtn[aria-selected="true"] .n{color:var(--c)}
 
@@ -187,6 +191,7 @@ footer.band p.ai b{font-weight:700}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link"><span class="lang-en">Skip to main content</span><span class="lang-es">Ir al contenido principal</span></a>
 <div class="bar"><div class="wrap">
   <div class="brand">Ana Eslava-Graterol<span class="lang-en">LXD · LQA · AI Governance</span><span class="lang-es">DEA · CCA · Gobernanza IA</span></div>
   <div class="spacer"></div>
@@ -220,7 +225,7 @@ footer.band p.ai b{font-weight:700}
   </div>
 </div></header>
 
-<main class="wrap">
+<main id="main-content" class="wrap">
   <div class="step1"><span class="lang-en">Step 1 — what is your sector?</span><span class="lang-es">Paso 1 — ¿cuál es tu sector?</span></div>
   <div class="sectors" id="sectors" role="tablist"></div>
   <div class="featured-band" role="note" aria-label="Featured project / Proyecto destacado">
@@ -230,7 +235,7 @@ footer.band p.ai b{font-weight:700}
     <span class="fb-body lang-es"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20 módulos listos para la entrevista <span class="ntn">(abre en pestaña nueva)</span> →</a></span>
   </div>
   <div class="flowline"><div class="c"></div><div class="a"></div></div>
-  <div id="panelHead" class="panelhead"></div>
+  <div id="panelHead" class="panelhead" aria-live="polite" aria-atomic="true"></div>
   <div id="panelSub" class="panelsub"></div>
   <div class="cases" id="cases"></div>
 
@@ -333,7 +338,7 @@ function buildSectors(){
     b.setAttribute('aria-selected', current===o[0]?'true':'false');
     var label=(i<9?'0':'')+(i+1);
     var nm=lang==='es'?o[2]:o[1];
-    b.innerHTML='<div class="n">'+T[lang].branch+' '+label+'</div><h3>'+esc(nm)+'</h3>';
+    b.innerHTML='<div class="n">'+T[lang].branch+' '+label+'</div><span class="sbtn-label">'+esc(nm)+'</span>';
     b.addEventListener('click',function(){ if(current===o[0]){showIntro();} else {select(o[0]);} });
     sec.appendChild(b);
   });
