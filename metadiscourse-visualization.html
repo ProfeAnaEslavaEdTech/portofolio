@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Interactive Corpus Data Book — Metadiscourse in Master's Thesis Abstracts: Disciplinary Variation and AI Literacy</title>
 <meta name="description" content="Interactive data book for the master's thesis 'Metadiscourse in Master's Thesis Abstracts: Disciplinary Variation and AI Literacy' (UPV): corpus metadata, lexical profiles and metadiscourse-marker visualisations across six disciplinary subcorpora.">
 <script>
@@ -59,14 +59,14 @@
   a { color:var(--indigo); }
   .skip-link { position:absolute; left:-9999px; }
   .skip-link:focus { left:12px; top:12px; background:var(--indigo); color:#fff; padding:8px 14px; border-radius:8px; z-index:200; }
-  .wrap { max-width:1160px; margin:0 auto; padding:0 24px; }
+  .wrap { max-width:1160px; margin:0 auto; padding-left:max(24px,env(safe-area-inset-left,0px)); padding-right:max(24px,env(safe-area-inset-right,0px)); }
 
   /* ============ TOP BAR ============ */
   .topbar {
     position:sticky; top:0; z-index:100; background:color-mix(in srgb,var(--paper) 88%,transparent);
     backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line);
   }
-  .topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 24px; max-width:1160px; margin:0 auto; flex-wrap:wrap; }
+  .topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 0; padding-left:max(24px,env(safe-area-inset-left,0px)); padding-right:max(24px,env(safe-area-inset-right,0px)); max-width:1160px; margin:0 auto; flex-wrap:wrap; }
   .brand { font-weight:800; font-size:14px; letter-spacing:-.01em; display:flex; align-items:center; gap:9px; }
   .brand-badge { background:var(--indigo); color:#fff; border-radius:8px; font-size:11px; font-weight:700; padding:3px 8px; letter-spacing:.02em; }
   .navlinks { display:flex; gap:16px; font-size:13px; font-weight:600; flex-wrap:wrap; }
