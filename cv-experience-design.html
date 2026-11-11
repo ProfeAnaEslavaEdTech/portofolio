@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana Eslava-Graterol — Experience Design & AI UX</title>
+<meta name="description" content="CV visual de Ana Eslava-Graterol — Experience Designer · AI Experience Design (AI UX) · Design Governance y sistemas de diseño. Diseño Ocean Ink.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1C1E2E; --canvas:#F7F8FC; --surface:#FFFFFF; --line:#E6E8F2; --muted:#5B5F77;
+  --primary:#3B5BD6; --primary-deep:#22307C; --on-primary:#FFFFFF;
+  --accent:#E8A33D; --accent-text:#9A5B00; --focus-ring:#3B5BD6;
+  --hero-gradient:linear-gradient(135deg,#3B5BD6,#E8A33D);
+  --font-display:'Fraunces',Georgia,serif; --font-body:'Inter',system-ui,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --ink:#EEF0F8; --canvas:#0F1120; --surface:#171A2B; --line:#2A2D44; --muted:#A6ADC8;
+  --primary:#9DB2FF; --primary-deep:#B9C8F6; --on-primary:#131A44;
+  --accent:#EEC272; --accent-text:#EEC272; --focus-ring:#9DB2FF;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme]){
+    --ink:#EEF0F8; --canvas:#0F1120; --surface:#171A2B; --line:#2A2D44; --muted:#A6ADC8;
+    --primary:#9DB2FF; --primary-deep:#B9C8F6; --on-primary:#131A44;
+    --accent:#EEC272; --accent-text:#EEC272; --focus-ring:#9DB2FF; color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 56px;}
+a{color:var(--primary);text-decoration:none;border-bottom:1px solid transparent;}
+a:hover{border-bottom-color:currentColor;}
+.nt{font-size:.74em;color:var(--muted);font-weight:500;white-space:nowrap;}
+:focus-visible{outline:3px solid var(--focus-ring);outline-offset:2px;border-radius:4px;}
+
+.controls{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-bottom:12px;}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface);}
+.seg button{min-height:38px;padding:6px 16px;border:0;background:transparent;color:var(--muted);font:600 14px/1 var(--font-body);cursor:pointer;}
+.seg button[aria-pressed="true"]{background:var(--primary);color:var(--on-primary);}
+.toggle{min-height:38px;padding:6px 16px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 14px/1 var(--font-body);cursor:pointer;display:inline-flex;align-items:center;gap:7px;}
+
+header{padding-top:4px;}
+h1{font-family:var(--font-display);font-weight:700;color:var(--primary-deep);font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0 0 6px;letter-spacing:-.01em;}
+.role{font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--primary);font-size:12.5px;line-height:1.5;margin:0 0 14px;}
+.contact{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:var(--muted);margin:0 0 18px;}
+.contact a{color:var(--primary);}
+.rule{height:4px;border-radius:4px;background:var(--hero-gradient);margin:0 0 28px;}
+
+section{margin:0 0 28px;}
+.kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-size:12px;margin:0 0 4px;}
+h2{font-family:var(--font-display);font-weight:600;color:var(--primary-deep);font-size:21px;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.lead{font-size:16.5px;margin:0;max-width:68ch;}
+
+.entry{margin:0 0 18px;}
+.entry-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap;}
+.entry-title{font-family:var(--font-body);font-weight:700;color:var(--ink);font-size:16px;margin:0;}
+.entry-org{font-weight:600;color:var(--primary);}
+.entry-date{font-size:13px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.entry ul{margin:7px 0 0;padding:0 0 0 18px;}
+.entry li{margin:0 0 4px;max-width:70ch;}
+.entry li::marker{color:var(--accent-text);}
+
+.block{margin:0 0 14px;}
+.block-title{font-weight:700;color:var(--ink);margin:0;}
+.block-sub{color:var(--muted);font-size:14px;margin:2px 0 4px;}
+.refs{margin:0;padding:0 0 0 18px;}
+.refs li{margin:0 0 7px;font-size:14.5px;max-width:72ch;}
+.refs li::marker{color:var(--primary);}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font:600 13.5px/1.3 var(--font-body);background:var(--surface);border:1px solid var(--line);color:var(--ink);}
+.chip-lang{background:#DCE4FB;color:#22307C;border-color:transparent;}
+:root[data-theme="dark"] .chip-lang{background:#22307C;color:#DCE4FB;}
+.skillgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px;}
+.skillgrid .cat{font-weight:700;color:var(--primary-deep);font-size:13.5px;margin:10px 0 2px;}
+.skillgrid p{margin:0;font-size:14px;color:var(--ink);max-width:none;}
+
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;}
+.cols2 .cat{font-weight:700;color:var(--primary-deep);font-size:13.5px;margin:8px 0 2px;}
+.cols2 ul{margin:0;padding:0 0 0 18px;}
+.cols2 li{margin:0 0 3px;font-size:13.5px;}
+.cols2 li::marker{color:var(--primary);}
+
+footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+[hidden]{display:none!important;}
+@media (max-width:620px){.skillgrid,.cols2{grid-template-columns:1fr;}}
+
+@media print{
+  :root{--canvas:#FFFFFF;}
+  .controls{display:none!important;}
+  .wrap{max-width:none;padding:0;}
+  body{font-size:9.7pt;line-height:1.42;}
+  h1{font-size:23pt;margin-bottom:3px;}
+  .role{font-size:8.2pt;margin-bottom:7px;}
+  .contact{font-size:8.9pt;margin-bottom:9px;}
+  .rule{margin-bottom:13px;height:3px;}
+  section{margin-bottom:11px;}
+  .kicker{display:none;}
+  h2{font-size:12.5pt;margin-bottom:7px;padding-bottom:4px;break-after:avoid;}
+  .lead{font-size:9.7pt;max-width:none;}
+  .entry{margin-bottom:9px;break-inside:avoid;}
+  .entry li{margin-bottom:3px;max-width:none;}
+  .entry ul{margin-top:4px;}
+  .entry-title,.entry li{font-size:9.6pt;}
+  .block{margin-bottom:7px;break-inside:avoid;}
+  .block-sub{font-size:9pt;}
+  .refs li{font-size:9.1pt;margin-bottom:4px;max-width:none;}
+  .cols2 li,.skillgrid p{font-size:9.1pt;}
+  .skillgrid{gap:6px 24px;}
+  .skillgrid p{margin-bottom:3px;}
+  .skillgrid .cat{margin:6px 0 1px;}
+  .chip{font-size:9pt;padding:4px 11px;}
+  .chips{gap:6px;}
+  a{color:var(--primary-deep);border:0;}
+  .nt{display:none;}
+  footer{margin-top:16px;}
+}
+@page{margin:11mm 13mm;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Language / Idioma">
+      <button id="btn-es" aria-pressed="true" onclick="setLang('es')">ES</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">EN</button>
+    </div>
+    <button class="toggle" id="themebtn" onclick="toggleTheme()" aria-label="Cambiar tema">
+      <span id="themeicon">☾</span> <span data-es="Oscuro" data-en="Dark">Oscuro</span>
+    </button>
+  </div>
+
+  <header>
+    <h1>Ana Eslava-Graterol</h1>
+    <p class="role" data-es="Experience Designer · Diseño de experiencias con IA (AI UX) · Design governance y sistemas de diseño" data-en="Experience Designer · AI Experience Design (AI UX) · Design governance &amp; design systems">Experience Designer · Diseño de experiencias con IA (AI UX) · Design governance y sistemas de diseño</p>
+    <div class="contact">
+      <span>profeanaeslava@gmail.com</span>
+      <span data-es="España · 100% remoto" data-en="Spain · 100% remote">España · 100% remoto</span>
+      <a href="https://www.linkedin.com/in/anaeslava" target="_blank" rel="noopener">linkedin.com/in/anaeslava <span class="nt" data-es="(abre en pestaña nueva)" data-en="(opens in a new tab)">(abre en pestaña nueva)</span></a>
+      <a href="https://profeanaeslavaedtech.github.io/portofolio/hub/" target="_blank" rel="noopener"><span data-es="Portafolio" data-en="Portfolio">Portafolio</span> <span class="nt" data-es="(abre en pestaña nueva)" data-en="(opens in a new tab)">(abre en pestaña nueva)</span></a>
+    </div>
+  </header>
+  <div class="rule"></div>
+
+  <section>
+    <p class="kicker" data-es="Perfil" data-en="Profile">Perfil</p>
+    <h2 data-es="Perfil profesional" data-en="Professional profile">Perfil profesional</h2>
+    <p class="lead" data-es="Diseñadora de experiencias con más de 20 años. Diseño la UI y la UX de las apps que desarrollo, y cómo las personas viven el producto de principio a fin: journeys, flujos de interacción y múltiples touchpoints. En los últimos años me he especializado en experiencias con IA. Diseñé de punta a punta un tutor de voz con IA: seis agentes, flujos de conversación, guardrails y un modelo de gobernanza human-in-the-loop alineado a la Ley de IA de la UE. Mantengo la consistencia a escala con mi propio sistema de diseño, Ocean Ink (tokens, temas claro y oscuro, componentes con significado fijo, verificado WCAG 2.1 AA). Trabajo con stakeholders en contextos complejos, desde el descubrimiento hasta la propuesta. 100% remota. Bilingüe español (nativo) / inglés (C1)." data-en="Experience designer with 20+ years. I design the UI and UX of the apps I build, and how people live the product end to end: journeys, interaction flows and multiple touchpoints. In recent years I have specialised in AI experiences. I designed an AI voice tutor end to end: six agents, conversation flows, guardrails and a human-in-the-loop governance model aligned to the EU AI Act. I keep consistency at scale with my own design system, Ocean Ink (tokens, light and dark themes, components with fixed meaning, verified WCAG 2.1 AA). I work with stakeholders in complex contexts, from discovery to proposal. 100% remote. Bilingual Spanish (native) / English (C1).">Diseñadora de experiencias con más de 20 años. Diseño la UI y la UX de las apps que desarrollo, y cómo las personas viven el producto de principio a fin: journeys, flujos de interacción y múltiples touchpoints. En los últimos años me he especializado en experiencias con IA. Diseñé de punta a punta un tutor de voz con IA: seis agentes, flujos de conversación, guardrails y un modelo de gobernanza human-in-the-loop alineado a la Ley de IA de la UE. Mantengo la consistencia a escala con mi propio sistema de diseño, Ocean Ink (tokens, temas claro y oscuro, componentes con significado fijo, verificado WCAG 2.1 AA). Trabajo con stakeholders en contextos complejos, desde el descubrimiento hasta la propuesta. 100% remota. Bilingüe español (nativo) / inglés (C1).</p>
+  </section>
+
+  <section>
+    <h2 data-es="Competencias clave" data-en="Core competencies">Competencias clave</h2>
+    <div class="chips">
+      <span class="chip" data-es="Diseño de experiencias con IA (AI UX)" data-en="AI experience design (AI UX)">Diseño de experiencias con IA (AI UX)</span>
+      <span class="chip" data-es="Diseño de UI y UX (apps propias)" data-en="UI &amp; UX design (own apps)">Diseño de UI y UX (apps propias)</span>
+      <span class="chip" data-es="Experience design estratégico" data-en="Strategic experience design">Experience design estratégico</span>
+      <span class="chip" data-es="Journeys y múltiples touchpoints" data-en="Journeys &amp; multiple touchpoints">Journeys y múltiples touchpoints</span>
+      <span class="chip" data-es="Design governance · consistencia a escala" data-en="Design governance · consistency at scale">Design governance · consistencia a escala</span>
+      <span class="chip" data-es="Sistemas de diseño (Ocean Ink)" data-en="Design systems (Ocean Ink)">Sistemas de diseño (Ocean Ink)</span>
+      <span class="chip" data-es="Gestión de stakeholders en contextos complejos" data-en="Stakeholder management in complex contexts">Gestión de stakeholders en contextos complejos</span>
+      <span class="chip" data-es="Gobernanza de IA (human-in-the-loop · Ley de IA UE)" data-en="AI governance (human-in-the-loop · EU AI Act)">Gobernanza de IA (human-in-the-loop · Ley de IA UE)</span>
+      <span class="chip" data-es="Accesibilidad (WCAG 2.1 AA · DUA)" data-en="Accessibility (WCAG 2.1 AA · UDL)">Accesibilidad (WCAG 2.1 AA · DUA)</span>
+      <span class="chip" data-es="Bilingüe ES/EN · 100% remoto" data-en="Bilingual ES/EN · 100% remote">Bilingüe ES/EN · 100% remoto</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title"><span data-es="Experience Designer y Diseñadora de Experiencias de Aprendizaje" data-en="Experience Designer &amp; Learning Experience Designer">Experience Designer y Diseñadora de Experiencias de Aprendizaje</span> — <span class="entry-org" data-es="Autónoma, España (remoto)" data-en="Self-employed, Spain (remote)">Autónoma, España (remoto)</span></p>
+        <span class="entry-date">2019 – <span data-es="presente" data-en="present">presente</span></span>
+      </div>
+      <ul>
+        <li data-es="&lt;b&gt;AI experience design — TK CoachAI&lt;/b&gt; (en desarrollo, privado) para Talketika · jul 2026–presente. Diseñé la experiencia completa de un tutor de voz con IA: flujos de conversación, seis agentes, guardrails y el modelo de gobernanza human-in-the-loop. Bajo el principio «Measure, Not Decide», la IA aporta evidencia, el código calcula y una persona decide. Piloto: 2.536 eventos (xAPI), 147 sesiones; la lógica se validó en 106 de 106." data-en="&lt;b&gt;AI experience design — TK CoachAI&lt;/b&gt; (in development, private) for Talketika · Jul 2026–present. I designed the full experience of an AI voice tutor: conversation flows, six agents, guardrails and the human-in-the-loop governance model. Under &quot;Measure, Not Decide&quot;, AI returns evidence, code computes and a person decides. Pilot: 2,536 events (xAPI), 147 sessions; the logic was validated in 106 of 106."><b>AI experience design — TK CoachAI</b> (en desarrollo, privado) para Talketika · jul 2026–presente. Diseñé la experiencia completa de un tutor de voz con IA: flujos de conversación, seis agentes, guardrails y el modelo de gobernanza human-in-the-loop. Bajo el principio «Measure, Not Decide», la IA aporta evidencia, el código calcula y una persona decide. Piloto: 2.536 eventos (xAPI), 147 sesiones; la lógica se validó en 106 de 106.</li>
+        <li data-es="&lt;b&gt;Diseño de UI y UX de las apps que desarrollo.&lt;/b&gt; Diseño la interfaz y la experiencia completa de mis productos: arquitectura de pantallas, flujos de interacción, estados y feedback. Del concepto al prototipo navegable, probado con personas usuarias reales." data-en="&lt;b&gt;UI and UX design of the apps I build.&lt;/b&gt; I design the interface and the full experience of my products: screen architecture, interaction flows, states and feedback. From concept to navigable prototype, tested with real users."><b>Diseño de UI y UX de las apps que desarrollo.</b> Diseño la interfaz y la experiencia completa de mis productos: arquitectura de pantallas, flujos de interacción, estados y feedback. Del concepto al prototipo navegable, probado con personas usuarias reales.</li>
+        <li data-es="&lt;b&gt;Sistema de diseño Ocean Ink — design governance a escala.&lt;/b&gt; Identidad visual única para web, portafolio, cursos y producto: tokens, temas claro y oscuro emparejados, componentes con significado fijo y reglas de uso. Todo verificado contra WCAG 2.1 AA, para que el diseño sea consistente aunque cambien los equipos o el idioma." data-en="&lt;b&gt;Ocean Ink design system — design governance at scale.&lt;/b&gt; One visual identity across web, portfolio, courses and product: tokens, paired light and dark themes, components with fixed meaning and usage rules. All verified against WCAG 2.1 AA, so design stays consistent across teams and languages."><b>Sistema de diseño Ocean Ink — design governance a escala.</b> Identidad visual única para web, portafolio, cursos y producto: tokens, temas claro y oscuro emparejados, componentes con significado fijo y reglas de uso. Todo verificado contra WCAG 2.1 AA, para que el diseño sea consistente aunque cambien los equipos o el idioma.</li>
+        <li data-es="&lt;b&gt;Journeys y touchpoints multi-rol.&lt;/b&gt; Business English Curriculum (72 unidades) con experiencias y paneles por rol (persona usuaria, IT, product owner). Diseño el journey de principio a fin, no pantallas sueltas." data-en="&lt;b&gt;Multi-role journeys and touchpoints.&lt;/b&gt; Business English Curriculum (72 units) with role-based experiences and dashboards (end user, IT, product owner). I design the journey end to end, not isolated screens."><b>Journeys y touchpoints multi-rol.</b> Business English Curriculum (72 unidades) con experiencias y paneles por rol (persona usuaria, IT, product owner). Diseño el journey de principio a fin, no pantallas sueltas.</li>
+        <li data-es="&lt;b&gt;Stakeholders y descubrimiento.&lt;/b&gt; Modelo D1 (del descubrimiento a la propuesta escrita). Proyectos de cliente: Netex Learning (2025) y Madarina Spanish (2024)." data-en="&lt;b&gt;Stakeholders and discovery.&lt;/b&gt; D1 model (from discovery to written proposal). Client projects: Netex Learning (2025) and Madarina Spanish (2024)."><b>Stakeholders y descubrimiento.</b> Modelo D1 (del descubrimiento a la propuesta escrita). Proyectos de cliente: Netex Learning (2025) y Madarina Spanish (2024).</li>
+        <li data-es="&lt;b&gt;Experiencia gamificada.&lt;/b&gt; Academic Writing Journey (2026): 6 niveles con mecánicas de juego; 10/10 en diseño inclusivo (UPV) y cero errores de navegación en pruebas de usabilidad." data-en="&lt;b&gt;Gamified experience.&lt;/b&gt; Academic Writing Journey (2026): six levels with game mechanics; 10/10 for inclusive design (UPV) and zero navigation errors in usability testing."><b>Experiencia gamificada.</b> Academic Writing Journey (2026): 6 niveles con mecánicas de juego; 10/10 en diseño inclusivo (UPV) y cero errores de navegación en pruebas de usabilidad.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title"><span data-es="Tutora de español (AVE Global) y Examinadora DELE acreditada" data-en="Spanish Tutor (AVE Global) &amp; accredited DELE Examiner">Tutora de español (AVE Global) y Examinadora DELE acreditada</span> — <span class="entry-org">Instituto Cervantes</span></p>
+        <span class="entry-date">2021 – <span data-es="presente · remoto" data-en="present · remote">presente · remoto</span></span>
+      </div>
+      <ul><li data-es="Itinerarios personalizados y recursos alineados al MCER; evaluación normalizada. Experiencia diseñando para personas usuarias reales a distancia." data-en="Personalised paths and CEFR-aligned resources; standardised assessment. Experience designing for real remote users.">Itinerarios personalizados y recursos alineados al MCER; evaluación normalizada. Experiencia diseñando para personas usuarias reales a distancia.</li></ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title"><span data-es="Docente de idiomas (adultos y profesionales) — presencial y en línea" data-en="Language teacher (adults &amp; professionals) — in person and online">Docente de idiomas (adultos y profesionales) — presencial y en línea</span> — <span class="entry-org" data-es="CBS Seville · UDO (Venezuela) · diversas instituciones" data-en="CBS Seville · UDO (Venezuela) · various institutions">CBS Seville · UDO (Venezuela) · diversas instituciones</span></p>
+        <span class="entry-date">2004 – 2024</span>
+      </div>
+      <ul><li data-es="Más de 20 años enseñando a adultos. Inglés para fines específicos a profesionales (hostelería, biología marina, contaduría) y redacción científica en inglés para revistas de alto impacto (Universidad de Oriente). Mención en los agradecimientos de Sotelo-Casas et al. (2019), Elsevier." data-en="20+ years teaching adults. English for specific purposes to professionals (hospitality, marine biology, accounting) and English scientific writing for high-impact journals (Universidad de Oriente). Acknowledged in Sotelo-Casas et al. (2019), Elsevier.">Más de 20 años enseñando a adultos. Inglés para fines específicos a profesionales (hostelería, biología marina, contaduría) y redacción científica en inglés para revistas de alto impacto (Universidad de Oriente). Mención en los agradecimientos de Sotelo-Casas et al. (2019), Elsevier.</li></ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-es="Formación" data-en="Education">Formación</h2>
+    <div class="block">
+      <p class="block-title" data-es="Doctorado en Lenguas, Literaturas y Culturas y sus Aplicaciones (en curso)" data-en="PhD, Languages, Literatures and Cultures and their Applications (in progress)">Doctorado en Lenguas, Literaturas y Culturas y sus Aplicaciones (en curso)</p>
+      <p class="block-sub" data-es="Universitat Politècnica de València (UPV) · inscrita 2026–2027 · investigación sobre uso responsable de la IA en el aprendizaje" data-en="Universitat Politècnica de València (UPV) · enrolled 2026–2027 · research on responsible AI use in learning">Universitat Politècnica de València (UPV) · inscrita 2026–2027 · investigación sobre uso responsable de la IA en el aprendizaje</p>
+    </div>
+    <div class="block">
+      <p class="block-title" data-es="Máster en Lenguas y Tecnología, especialidad Didáctica · Nota media 9,53/10" data-en="Master's in Languages and Technology, Didactics · GPA 9.53/10">Máster en Lenguas y Tecnología, especialidad Didáctica · Nota media 9,53/10</p>
+      <p class="block-sub" data-es="UPV · sept 2025–jul 2026 · TFM calificado 10/10" data-en="UPV · Sept 2025–Jul 2026 · thesis graded 10/10">UPV · sept 2025–jul 2026 · TFM calificado 10/10</p>
+    </div>
+    <div class="block">
+      <p class="block-title" data-es="Licenciatura en Educación, mención Inglés · Summa Cum Laude" data-en="Bachelor's in Education, English · Summa Cum Laude">Licenciatura en Educación, mención Inglés · Summa Cum Laude</p>
+      <p class="block-sub" data-es="Universidad de Los Andes (ULA), Venezuela · 1999–2004 · homologada en España (2018–2020)" data-en="Universidad de Los Andes (ULA), Venezuela · 1999–2004 · recognised in Spain (2018–2020)">Universidad de Los Andes (ULA), Venezuela · 1999–2004 · homologada en España (2018–2020)</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-es="Aptitudes y herramientas" data-en="Skills &amp; tools">Aptitudes y herramientas</h2>
+    <div class="skillgrid">
+      <div>
+        <p class="cat" data-es="Experiencia e IA" data-en="Experience &amp; AI">Experiencia e IA</p>
+        <p data-es="Diseño de UI y UX (apps propias) · AI experience design (AI UX) · diseño de interacción y flujos conversacionales · prototipado navegable · diseño de agentes y prompts · guardrails · human-in-the-loop · journeys · touchpoints · experiencia gamificada" data-en="UI &amp; UX design (own apps) · AI experience design (AI UX) · interaction &amp; conversational flow design · navigable prototyping · agent &amp; prompt design · guardrails · human-in-the-loop · journeys · touchpoints · gamified experience">Diseño de UI y UX (apps propias) · AI experience design (AI UX) · diseño de interacción y flujos conversacionales · prototipado navegable · diseño de agentes y prompts · guardrails · human-in-the-loop · journeys · touchpoints · experiencia gamificada</p>
+        <p class="cat" data-es="Sistemas y gobernanza" data-en="Systems &amp; governance">Sistemas y gobernanza</p>
+        <p data-es="Sistema de diseño Ocean Ink · tokens · temas claro/oscuro · componentes · consistencia a escala · modelo de gobernanza humano+IA · Ley de IA de la UE (Art. 50)" data-en="Ocean Ink design system · tokens · light/dark themes · components · consistency at scale · human+AI governance model · EU AI Act (Art. 50)">Sistema de diseño Ocean Ink · tokens · temas claro/oscuro · componentes · consistencia a escala · modelo de gobernanza humano+IA · Ley de IA de la UE (Art. 50)</p>
+      </div>
+      <div>
+        <p class="cat" data-es="Método y stakeholders" data-en="Method &amp; stakeholders">Método y stakeholders</p>
+        <p data-es="Descubrimiento y análisis de necesidades · gestión de stakeholders · propuestas escritas · ADDIE · SAM · Agile · diseño de evaluación y feedback (xAPI · SCORM · Kirkpatrick)" data-en="Discovery &amp; needs analysis · stakeholder management · written proposals · ADDIE · SAM · Agile · assessment &amp; feedback design (xAPI · SCORM · Kirkpatrick)">Descubrimiento y análisis de necesidades · gestión de stakeholders · propuestas escritas · ADDIE · SAM · Agile · diseño de evaluación y feedback (xAPI · SCORM · Kirkpatrick)</p>
+        <p class="cat" data-es="Herramientas y accesibilidad" data-en="Tools &amp; accessibility">Herramientas y accesibilidad</p>
+        <p data-es="Canva · Articulate 360 (Storyline, Rise) · Synthesia · HTML/CSS (prototipos y portafolios en GitHub Pages) · GitHub · Google Workspace · Microsoft Office · WCAG 2.1/2.2 AA · DUA" data-en="Canva · Articulate 360 (Storyline, Rise) · Synthesia · HTML/CSS (prototypes &amp; portfolios on GitHub Pages) · GitHub · Google Workspace · Microsoft Office · WCAG 2.1/2.2 AA · UDL">Canva · Articulate 360 (Storyline, Rise) · Synthesia · HTML/CSS (prototipos y portafolios en GitHub Pages) · GitHub · Google Workspace · Microsoft Office · WCAG 2.1/2.2 AA · DUA</p>
+      </div>
+    </div>
+    <div class="chips" style="margin-top:14px">
+      <span class="chip chip-lang" data-es="Español — lengua materna" data-en="Spanish — native">Español — lengua materna</span>
+      <span class="chip chip-lang" data-es="Inglés — C1 (Cambridge C1 Advanced + CELTA)" data-en="English — C1 (Cambridge C1 Advanced + CELTA)">Inglés — C1 (Cambridge C1 Advanced + CELTA)</span>
+    </div>
+  </section>
+
+  <footer>
+    <span data-es="Actualizado: 11 de noviembre de 2026" data-en="Updated: 11 November 2026">Actualizado: 11 de noviembre de 2026</span>
+    <span>© Ana Eslava-Graterol · Ocean Ink</span>
+  </footer>
+
+</div>
+
+<script>
+function applyLang(l){
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-'+l+']').forEach(function(el){
+    el.innerHTML = el.getAttribute('data-'+l);
+  });
+  document.getElementById('btn-es').setAttribute('aria-pressed', l==='es');
+  document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+  try{localStorage.setItem('cv-lang', l);}catch(e){}
+}
+function setLang(l){ applyLang(l); }
+function toggleTheme(){
+  var r = document.documentElement;
+  var cur = r.getAttribute('data-theme');
+  var next = cur === 'dark' ? 'light' : 'dark';
+  r.setAttribute('data-theme', next);
+  document.getElementById('themeicon').textContent = next === 'dark' ? '☀' : '☾';
+  var lab = document.querySelector('#themebtn [data-es]');
+  if(next==='dark'){ lab.setAttribute('data-es','Claro'); lab.setAttribute('data-en','Light'); }
+  else { lab.setAttribute('data-es','Oscuro'); lab.setAttribute('data-en','Dark'); }
+  lab.textContent = lab.getAttribute('data-'+document.documentElement.lang);
+  try{localStorage.setItem('cv-theme', next);}catch(e){}
+}
+(function(){
+  var l='es'; try{ l = localStorage.getItem('cv-lang') || 'es'; }catch(e){}
+  var t=null; try{ t = localStorage.getItem('cv-theme'); }catch(e){}
+  if(t){ document.documentElement.setAttribute('data-theme', t);
+    document.getElementById('themeicon').textContent = t==='dark'?'☀':'☾'; }
+  applyLang(l);
+})();
+</script>
+</body>
+</html>
