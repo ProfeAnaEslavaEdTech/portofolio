@@ -40,3 +40,21 @@ How agents working for Ana apply it:
 - Check against **independent data** (the external LRS export), not only against the reporter's own summary or a second model's review.
 - Apply it to your own output too: before a document, slide or email states a figure or a fact, check it against the data, and correct it if the data say otherwise.
 
+
+## Decisions propagate at once (Ana Eslava-Graterol, 10 Nov 2026)
+
+> «Todos los cambios hay que hacerlos actualizados a medida que vamos tomando las decisiones, para que nada quede por fuera y desactualizado.»
+
+How agents working for Ana apply it:
+- When Ana takes a decision, update **every** affected document in the same session. That covers norms, specifications, agent cards, the agent registry, the question script, the decision register, the deck and the video script. Then say which ones you changed.
+- Never leave yesterday's version of a document contradicting today's decision. Write a new dated version, or mark the old text as replaced and give the date.
+- In `mllde-xapi`, the changes still go to a branch only (see the exception above).
+
+## Role-invariance principle (Ana Eslava-Graterol, 10 Nov 2026)
+
+> Ningún agente decide, y todos se apegan a su rol, sea cual sea el modelo, se llame como se llame, y sea cual sea la temperatura que aplique el sistema.
+
+When you design or review an AI agent for Ana:
+- **Code and tests enforce the role,** not model parameters: a validated output schema, ids from the base, the common block, the R-ID checks A1–A4 and a repeated-input stability test.
+- **Record the exact model identifier,** to audit it, not to trust it.
+- **A change of model is a new version,** and it repeats the tests.
