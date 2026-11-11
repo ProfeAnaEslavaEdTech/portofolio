@@ -41,7 +41,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{font-family:var(--fb);background:var(--canvas);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;display:flex;flex-direction:column;min-height:100dvh}
-.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1100px;margin:0 auto;padding-top:0;padding-bottom:0;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 
 /* language visibility */
 [data-lang="en"] .lang-es{display:none !important}
@@ -50,13 +50,17 @@ body{font-family:var(--fb);background:var(--canvas);color:var(--ink);line-height
 /* universal visible focus (WCAG 2.4.7) */
 a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
 
+/* ===== SKIP LINK (WCAG 2.4.1) ===== */
+.skip-link{position:absolute;top:-100%;left:16px;z-index:200;background:var(--primary);color:#fff;padding:10px 18px;border-radius:0 0 10px 10px;font:700 14px var(--fb);text-decoration:none;transition:top .1s}
+.skip-link:focus,.skip-link:focus-visible{top:env(safe-area-inset-top,0px);outline:3px solid var(--focus);outline-offset:2px}
+
 /* ===== BAR ===== */
 .bar{background:var(--bar);color:#fff;position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top)}
 .bar .wrap{display:flex;align-items:center;gap:10px;min-height:56px;flex-wrap:wrap}
 .bar .brand{font-family:var(--fd);font-weight:700;font-size:16px;line-height:1.1}
 .bar .brand span{display:block;font:600 9.5px/1.2 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--bar-sub);margin-top:2px}
 .bar .spacer{flex:1}
-.bar button{font:700 12.5px var(--fb);color:#fff;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:8px 14px;cursor:pointer;min-height:40px;transition:background .15s}
+.bar button{font:700 12.5px var(--fb);color:#fff;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:8px 14px;cursor:pointer;min-height:44px;transition:background .15s}
 .bar button:hover{background:rgba(255,255,255,.28)}
 
 /* ===== HEAD ===== */
@@ -97,7 +101,7 @@ main{padding:16px 0 10px;flex:1 0 auto}
 .sbtn:hover .n{color:var(--c)}
 .sbtn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .sbtn .n{font:700 9px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .18s}
-.sbtn h3{font-family:var(--fd);font-weight:600;font-size:13px;color:var(--primary-deep);line-height:1.15;margin-top:4px}
+.sbtn .sbtn-label{font-family:var(--fd);font-weight:600;font-size:13px;color:var(--primary-deep);line-height:1.15;margin-top:4px;display:block}
 .sbtn[aria-selected="true"]{border-color:var(--c);border-top-color:var(--c);background:color-mix(in srgb,var(--c) 8%,var(--surface));box-shadow:var(--sbtn-sh-hi)}
 .sbtn[aria-selected="true"] .n{color:var(--c)}
 
@@ -168,14 +172,22 @@ footer.band p.ai b{font-weight:700}
 @media(max-width:820px){.sectors{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){
   .sectors{grid-template-columns:1fr}
-  .wrap{padding:0 16px}
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
   .bar .brand span{display:none}
   .head{padding:26px 0 4px}
   .about-panel{padding:18px 16px}
+  .case a.open{align-self:stretch;width:100%;justify-content:center}
+  .work .btn-primary,.work .btn-ghost{flex:1 1 auto;text-align:center;justify-content:center}
+}
+@media(max-width:400px){
+  .sectors{grid-template-columns:1fr}
+  .sbtn .sbtn-label{font-size:12px}
+  .head h1{font-size:16px}
 }
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link"><span class="lang-en">Skip to main content</span><span class="lang-es">Ir al contenido principal</span></a>
 <div class="bar"><div class="wrap">
   <div class="brand">Ana Eslava-Graterol<span class="lang-en">LXD · LQA · AI Governance</span><span class="lang-es">DEA · CCA · Gobernanza IA</span></div>
   <div class="spacer"></div>
@@ -209,11 +221,11 @@ footer.band p.ai b{font-weight:700}
   </div>
 </div></header>
 
-<main class="wrap">
+<main id="main-content" class="wrap">
   <div class="step1"><span class="lang-en">Step 1 — what is your sector?</span><span class="lang-es">Paso 1 — ¿cuál es tu sector?</span></div>
   <div class="sectors" id="sectors" role="tablist"></div>
   <div class="flowline"><div class="c"></div><div class="a"></div></div>
-  <div id="panelHead" class="panelhead"></div>
+  <div id="panelHead" class="panelhead" aria-live="polite" aria-atomic="true"></div>
   <div id="panelSub" class="panelsub"></div>
   <div class="cases" id="cases"></div>
 
@@ -295,8 +307,8 @@ var DATA={
  ]}
 };
 var ORDER=[["reg","Regulated / MedTech","Regulado / MedTech"],["corp","Corporate / Technical","Corporativo / Técnico"],["acad","Academia / Languages","Academia / Idiomas"],["res","Research & Method","Investigación y Método"],["ai","Responsible AI & Agentic Systems","IA Responsable y Sistemas Agénticos"]];
-var T={en:{branch:"Branch",choose:"Choose a sector to begin",intro:"Select a sector above. Each one opens its real cases — and the exact A·D·D·I·E steps behind each.",suffix:" — real cases where ADDIE was applied",open:"Open case →",request:"On request →",nolink:"Shown on request (private / in development)",dlabel:"Delivery:",delivery:"SAM — a scoped 2–3 month cycle; a minimum viable product first, then improved with tester feedback and audits."},
-        es:{branch:"Rama",choose:"Elige un sector para empezar",intro:"Elige un sector arriba. Cada uno abre sus casos reales — y los pasos A·D·D·I·E detrás de cada uno.",suffix:" — casos reales donde se aplicó ADDIE",open:"Abrir caso →",request:"Bajo petición →",nolink:"Bajo petición (privado / en desarrollo)",dlabel:"Entrega:",delivery:"SAM — ciclo acotado de 2–3 meses; primero un producto mínimo viable, luego mejoras con feedback de testers y auditorías."}};
+var T={en:{branch:"Branch",choose:"Choose a sector to begin",intro:"Select a sector above. Each one opens its real cases — and the exact A·D·D·I·E steps behind each.",suffix:" — real cases where ADDIE was applied",open:"Open case → (opens in a new tab)",request:"On request →",nolink:"Shown on request (private / in development)",dlabel:"Delivery:",delivery:"SAM — a scoped 2–3 month cycle; a minimum viable product first, then improved with tester feedback and audits."},
+        es:{branch:"Rama",choose:"Elige un sector para empezar",intro:"Elige un sector arriba. Cada uno abre sus casos reales — y los pasos A·D·D·I·E detrás de cada uno.",suffix:" — casos reales donde se aplicó ADDIE",open:"Abrir caso → (abre en pestaña nueva)",request:"Bajo petición →",nolink:"Bajo petición (privado / en desarrollo)",dlabel:"Entrega:",delivery:"SAM — ciclo acotado de 2–3 meses; primero un producto mínimo viable, luego mejoras con feedback de testers y auditorías."}};
 var root=document.documentElement;
 var lang=root.getAttribute('data-lang')||'en';
 var sec=document.getElementById('sectors'),cases=document.getElementById('cases'),pH=document.getElementById('panelHead'),pS=document.getElementById('panelSub');
@@ -310,7 +322,7 @@ function buildSectors(){
     b.setAttribute('aria-selected', current===o[0]?'true':'false');
     var label=(i<9?'0':'')+(i+1);
     var nm=lang==='es'?o[2]:o[1];
-    b.innerHTML='<div class="n">'+T[lang].branch+' '+label+'</div><h3>'+esc(nm)+'</h3>';
+    b.innerHTML='<div class="n">'+T[lang].branch+' '+label+'</div><span class="sbtn-label">'+esc(nm)+'</span>';
     b.addEventListener('click',function(){ if(current===o[0]){showIntro();} else {select(o[0]);} });
     sec.appendChild(b);
   });
