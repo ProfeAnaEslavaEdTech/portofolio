@@ -49,6 +49,7 @@ How agents working for Ana apply it:
 - When Ana takes a decision, update **every** affected document in the same session. That covers norms, specifications, agent cards, the agent registry, the question script, the decision register, the deck and the video script. Then say which ones you changed.
 - Never leave yesterday's version of a document contradicting today's decision. Write a new dated version, or mark the old text as replaced and give the date.
 - In `mllde-xapi`, the changes still go to a branch only (see the exception above).
+- **Errors already corrected stay off the correction list** (Ana, 11 Nov 2026). An error counts as corrected when the independent LRS data show it no longer happens, or when it has its three proofs. If the old data or screen still affect learners or teachers today, it is not corrected.
 
 ## Role-invariance principle (Ana Eslava-Graterol, 10 Nov 2026)
 
