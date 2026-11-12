@@ -26,6 +26,14 @@ The rest of the portfolio follows the **Ocean Ink hub model** (the hub at
 `/portofolio/` is the canonical reference). See the `ocean-ink-design-system` skill:
 bilingual EN/ES, light/dark, sober minimal layout, band-palette facet funnel, no emojis.
 
+**Design rule for every deliverable (Ana Eslava-Graterol, 12 Nov 2026):**
+- Always use the `ocean-ink-design-system` skill.
+- Always write in plain language.
+- Always meet WCAG 2.1 AA.
+- Always make it switchable ES/EN.
+- Always keep it minimalist, like the portfolio hub. This includes the governance viewers and the governance documents published as HTML.
+- **The only exception is the TK CoachAI UX/UI demo.** It keeps its own design (Talketika). Anything added to it follows that design.
+
 ## Git
 
 Commit with `ProfeAnaEslavaEdTech@users.noreply.github.com` (private email is blocked).
