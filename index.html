@@ -153,11 +153,8 @@ main{padding:16px 0 10px;flex:1 0 auto}
 .case a.open.ghost{background:transparent;color:var(--cline);border:1.5px solid var(--cline)}
 .case a.open.ghost:hover{filter:none;background:color-mix(in srgb,var(--cline) 10%,var(--surface))}
 
-.legend{margin-top:22px;text-align:center;font-size:12px;color:var(--muted);line-height:1.5}
-.legend b{color:var(--accent-text)}
-
 /* ===== ID MODEL CARDS ===== */
-.id-section{margin:32px 0 0;border-top:1px solid var(--line);padding-top:28px}
+.id-section{margin:0 0 32px;padding-bottom:28px;border-bottom:1px solid var(--line)}
 .id-section-title{font-family:var(--fd);font-weight:700;font-size:clamp(18px,2.6vw,24px);color:var(--primary-deep);text-align:center;margin:0 0 20px;line-height:1.2}
 .id-intro{max-width:720px;margin:0 auto 24px;background:color-mix(in srgb,var(--primary) 5%,var(--surface));border:1px solid var(--line);border-left:3px solid var(--primary);border-radius:0 10px 10px 0;padding:16px 20px}
 .id-intro-q{font-family:var(--fd);font-weight:600;font-size:16px;color:var(--primary-deep);margin-bottom:7px}
@@ -197,8 +194,6 @@ main{padding:16px 0 10px;flex:1 0 auto}
 .work .btn-ghost:hover{background:var(--chip)}
 
 footer.band{background:var(--band);color:#fff;padding:32px 0 calc(38px + env(safe-area-inset-bottom));margin-top:38px}
-footer.band .big{font-family:var(--fd);font-weight:700;font-size:clamp(16px,2.3vw,21px);margin-bottom:6px}
-footer.band p.s{font-size:12px;opacity:.94}
 footer.band p.ai{font-size:11.5px;opacity:.9;margin-top:12px;border-top:1px solid rgba(255,255,255,.22);padding-top:12px;line-height:1.5}
 footer.band p.ai b{font-weight:700}
 
@@ -262,27 +257,15 @@ footer.band p.ai b{font-weight:700}
 </div></header>
 
 <main id="main-content" class="wrap">
-  <div class="step1"><span class="lang-en">Step 1 — what is your sector?</span><span class="lang-es">Paso 1 — ¿cuál es tu sector?</span></div>
-  <div class="sectors" id="sectors" role="tablist"></div>
-  <div class="featured-band" role="note" aria-label="Featured project / Proyecto destacado">
-    <span class="fb-label lang-en">Featured</span>
-    <span class="fb-label lang-es">Destacado</span>
-    <span class="fb-body lang-en"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20-module interview-ready curriculum <span class="ntn">(opens in a new tab)</span> →</a></span>
-    <span class="fb-body lang-es"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20 módulos listos para la entrevista <span class="ntn">(abre en pestaña nueva)</span> →</a></span>
-  </div>
-  <div class="flowline"><div class="c"></div><div class="a"></div></div>
-  <div id="panelHead" class="panelhead" aria-live="polite" aria-atomic="true"></div>
-  <div id="panelSub" class="panelsub"></div>
-  <div class="cases" id="cases"></div>
 
   <!-- ===== INSTRUCTIONAL DESIGN MODEL REFERENCE ===== -->
   <section class="id-section" aria-labelledby="id-models-h">
+    <div class="step1"><span class="lang-en">Step 1 — choose the model that fits your need</span><span class="lang-es">Paso 1 — elige el modelo que se adapta a tu necesidad</span></div>
     <h2 id="id-models-h" class="id-section-title"><span class="lang-en">Instructional Design Models</span><span class="lang-es">Modelos de Diseño Instruccional</span></h2>
     <div class="id-intro">
       <h3 class="id-intro-q"><span class="lang-en">What is instructional design?</span><span class="lang-es">¿Qué es el diseño instruccional?</span></h3>
       <p class="id-intro-body"><span class="lang-en">Instructional design is the systematic process of creating learning experiences that achieve specific, measurable outcomes. It moves from analysing a performance gap to designing, developing, implementing and evaluating a solution — always connecting business or academic goals to what a learner needs to be able to do.</span><span class="lang-es">El diseño instruccional es el proceso sistemático de crear experiencias de aprendizaje que logran resultados específicos y medibles. Va desde el análisis de una brecha de desempeño hasta el diseño, desarrollo, implementación y evaluación de una solución — conectando siempre los objetivos del negocio o académicos con lo que el aprendiz necesita poder hacer.</span></p>
     </div>
-    <div class="step1"><span class="lang-en">Step 2 — which model suits your sector?</span><span class="lang-es">Paso 2 — ¿qué modelo se adapta a tu sector?</span></div>
     <div class="id-grid">
 
       <!-- ADDIE -->
@@ -389,6 +372,20 @@ footer.band p.ai b{font-weight:700}
     </div>
   </section>
 
+  <!-- ===== SECTOR TABS + CASES ===== -->
+  <div class="step1"><span class="lang-en">Step 2 — what is your sector?</span><span class="lang-es">Paso 2 — ¿cuál es tu sector?</span></div>
+  <div class="sectors" id="sectors" role="tablist"></div>
+  <div class="featured-band" role="note" aria-label="Featured project / Proyecto destacado">
+    <span class="fb-label lang-en">Featured</span>
+    <span class="fb-label lang-es">Destacado</span>
+    <span class="fb-body lang-en"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20-module interview-ready curriculum <span class="ntn">(opens in a new tab)</span> →</a></span>
+    <span class="fb-body lang-es"><a href="https://profeanaeslavaedtech.github.io/bootcampLearningArchitech/" target="_blank" rel="noopener">L&amp;D Bootcamp — 20 módulos listos para la entrevista <span class="ntn">(abre en pestaña nueva)</span> →</a></span>
+  </div>
+  <div class="flowline"><div class="c"></div><div class="a"></div></div>
+  <div id="panelHead" class="panelhead" aria-live="polite" aria-atomic="true"></div>
+  <div id="panelSub" class="panelsub"></div>
+  <div class="cases" id="cases"></div>
+
   <section class="work" aria-labelledby="work-h">
     <h2 id="work-h" class="work-title"><span class="lang-en">Working together</span><span class="lang-es">Trabajar juntos</span></h2>
     <div class="work-actions">
@@ -445,7 +442,7 @@ var DATA={
    {t:"Cambridge B2 Examiner GPT",t_es:"GPT examinador Cambridge B2", s:"Published record",s_es:"Registro publicado", link:"",
     A:"Speaking exam-prep need",A_es:"Necesidad de preparación de examen oral",D:"Cambridge 5 criteria, bands 0–5",D_es:"5 criterios Cambridge, bandas 0–5",
     Dv:"6-stage assessment pipeline (Custom GPT)",Dv_es:"Pipeline de evaluación de 6 etapas (GPT personalizado)",I:"Works on student-uploaded material only",I_es:"Solo con material subido por el alumno",E:"Banded feedback; retry-to-improve",E_es:"Feedback por bandas; reintento para mejorar"},
-   {t:"University lecturing — Scientific English & technical writing",t_es:"Docencia universitaria — Inglés científico y redacción técnica", s:"Experience · 10 years at university (see CV)",s_es:"Experiencia · 10 años en la universidad (ver CV)", link:"", nl:"Detailed in my CV",nl_es:"Detallado en mi CV",
+   {t:"University lecturing — Scientific English & technical writing",t_es:"Docencia universitaria — Inglés científico y redacción técnica", s:"Experience · 10 years at university (see CV)",s_es:"Experiencia · 10 años en la universidad (ver CV)", link:"",
     A:"Adult learners across science & engineering fields; needs analysis per discipline",A_es:"Adultos de ciencias e ingeniería; análisis de necesidad por disciplina",D:"Syllabus + course design; ESP and technical-writing objectives",D_es:"Diseño de programa y curso; objetivos de ESP y redacción técnica",
     Dv:"Classroom instruction; scientific-writing coaching; journal-review support",Dv_es:"Docencia presencial; acompañamiento en redacción científica; apoyo para revistas",I:"Instructor-led training (ILT), in person — technical English across multiple areas",I_es:"Formación presencial (ILT) — inglés técnico en varias áreas",E:"Students' scientific texts reached peer-reviewed-journal standard",E_es:"Textos científicos del alumnado con nivel de revista con revisión por pares"}
  ]},
