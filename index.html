@@ -521,6 +521,7 @@ function select(k){
     el.innerHTML='<div class="status">'+esc(LC(c,'s'))+'</div><h4>'+esc(LC(c,'t'))+'</h4><ul class="addie-mini">'+rows+'</ul>'+pm+cta;
     cases.appendChild(el);
   });
+  setTimeout(function(){ pH.scrollIntoView({behavior:'smooth',block:'start'}); }, 30);
 }
 buildSectors(); showIntro();
 
