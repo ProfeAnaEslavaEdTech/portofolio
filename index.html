@@ -401,7 +401,11 @@ footer.band p.ai b{font-weight:700}
 </div></footer>
 
 <script>
-function toggleIDCard(card){var open=card.getAttribute('data-open')==='true';card.setAttribute('data-open',open?'false':'true');card.setAttribute('aria-expanded',open?'false':'true');}
+function toggleIDCard(card){
+  var open=card.getAttribute('data-open')==='true';
+  Array.prototype.forEach.call(document.querySelectorAll('.id-card'),function(c){c.setAttribute('data-open','false');c.setAttribute('aria-expanded','false');});
+  if(!open){card.setAttribute('data-open','true');card.setAttribute('aria-expanded','true');}
+}
 
 var DATA={
  reg:{name:"Regulated / MedTech",name_es:"Regulado / MedTech", pain:`"Operators must follow the SOP every time — and we must prove it to auditors."`,pain_es:`"Los operarios deben seguir el SOP siempre — y hay que probarlo ante auditoría."`, cases:[
