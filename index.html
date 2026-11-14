@@ -100,12 +100,11 @@ main{padding:16px 0 10px;flex:1 0 auto}
 /* ===== SECTORS ===== */
 .sectors{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .sbtn{--c:var(--primary);background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--c);border-radius:12px;padding:13px 12px;cursor:pointer;text-align:left;transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;color:var(--ink);min-height:64px;box-shadow:var(--sbtn-sh)}
-/* sector cards sample points across Cobalt → Berry → Amber gradient */
-.sbtn:nth-child(1){--c:#3B5BD6}  /* Cobalt — Regulated */
-.sbtn:nth-child(2){--c:#293B83}  /* Deep Blue — Corporate */
-.sbtn:nth-child(3){--c:#8F3B59}  /* Berry — Academia */
-.sbtn:nth-child(4){--c:#C06240}  /* Amber-Berry mid — Research */
-.sbtn:nth-child(5){--c:#E8A33C}  /* Amber — AI */
+.sbtn:nth-child(1){--c:#3B5BD6}
+.sbtn:nth-child(2){--c:#293B83}
+.sbtn:nth-child(3){--c:#8F3B59}
+.sbtn:nth-child(4){--c:#C06240}
+.sbtn:nth-child(5){--c:#E8A33C}
 .sbtn:hover{border-color:var(--c);background:color-mix(in srgb,var(--c) 5%,var(--surface));box-shadow:var(--sbtn-sh-hi);transform:translateY(-1px)}
 .sbtn:hover .n{color:var(--c)}
 .sbtn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
@@ -123,7 +122,6 @@ main{padding:16px 0 10px;flex:1 0 auto}
 
 /* ===== CASES ===== */
 .cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;--c:var(--primary);--cfill:var(--primary);--cline:var(--primary)}
-/* per-sector palette, sampled across the footer band. --c=top accent, --cfill=solid (white text), --cline=outline/text (theme-aware) */
 .cases[data-sector="reg"]{--c:#3B5BD6;--cfill:#3B5BD6;--cline:#3B5BD6}
 .cases[data-sector="corp"]{--c:#5246C0;--cfill:#4A3EB4;--cline:#4A3EB4}
 .cases[data-sector="acad"]{--c:#7E4FA6;--cfill:#6E4291;--cline:#6E4291}
@@ -160,6 +158,10 @@ main{padding:16px 0 10px;flex:1 0 auto}
 
 /* ===== ID MODEL CARDS ===== */
 .id-section{margin:32px 0 0;border-top:1px solid var(--line);padding-top:28px}
+.id-section-title{font-family:var(--fd);font-weight:700;font-size:clamp(18px,2.6vw,24px);color:var(--primary-deep);text-align:center;margin:0 0 20px;line-height:1.2}
+.id-intro{max-width:720px;margin:0 auto 24px;background:color-mix(in srgb,var(--primary) 5%,var(--surface));border:1px solid var(--line);border-left:3px solid var(--primary);border-radius:0 10px 10px 0;padding:16px 20px}
+.id-intro-q{font-family:var(--fd);font-weight:600;font-size:16px;color:var(--primary-deep);margin-bottom:7px}
+.id-intro-body{font-size:13.5px;color:var(--muted);line-height:1.65;margin:0}
 .id-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .id-card{--mc:var(--primary);background:var(--surface);border:1.5px solid var(--line);border-top:3px solid var(--mc);border-radius:14px;overflow:hidden;cursor:pointer;transition:border-color .18s,box-shadow .18s;box-shadow:var(--shadow)}
 .id-card:hover,.id-card:focus-within{border-color:var(--mc);box-shadow:0 0 0 3px color-mix(in srgb,var(--mc) 18%,transparent),var(--sbtn-sh-hi)}
@@ -275,7 +277,12 @@ footer.band p.ai b{font-weight:700}
 
   <!-- ===== INSTRUCTIONAL DESIGN MODEL REFERENCE ===== -->
   <section class="id-section" aria-labelledby="id-models-h">
-    <div class="step1" id="id-models-h"><span class="lang-en">By design model — when does each one apply?</span><span class="lang-es">Por modelo de diseño — ¿cuándo aplica cada uno?</span></div>
+    <h2 id="id-models-h" class="id-section-title"><span class="lang-en">Instructional Design Models</span><span class="lang-es">Modelos de Diseño Instruccional</span></h2>
+    <div class="id-intro">
+      <h3 class="id-intro-q"><span class="lang-en">What is instructional design?</span><span class="lang-es">¿Qué es el diseño instruccional?</span></h3>
+      <p class="id-intro-body"><span class="lang-en">Instructional design is the systematic process of creating learning experiences that achieve specific, measurable outcomes. It moves from analysing a performance gap to designing, developing, implementing and evaluating a solution — always connecting business or academic goals to what a learner needs to be able to do.</span><span class="lang-es">El diseño instruccional es el proceso sistemático de crear experiencias de aprendizaje que logran resultados específicos y medibles. Va desde el análisis de una brecha de desempeño hasta el diseño, desarrollo, implementación y evaluación de una solución — conectando siempre los objetivos del negocio o académicos con lo que el aprendiz necesita poder hacer.</span></p>
+    </div>
+    <div class="step1"><span class="lang-en">Step 2 — which model suits your sector?</span><span class="lang-es">Paso 2 — ¿qué modelo se adapta a tu sector?</span></div>
     <div class="id-grid">
 
       <!-- ADDIE -->
