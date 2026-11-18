@@ -77,6 +77,15 @@ How agents working for Ana apply it:
 - **In English, *measure* stays** (a number or a distance, not a decision): the motto is «Measure, not decide» and the talk title «Measure ≠ Decide».
 - **The agent keeps its name, «Evaluador» / Evaluator** (Ana, 18 Nov 2026): it is the agent's name, and it appears as such in the xAPI statements and in the IRIs (`evaluator-agent`, R-ID rule 6). Only the verb changes: in Spanish the Evaluador «compara», it never «mide», «valora» or «evalúa».
 
+## Ana's role: learning designer, not the app owner (Ana Eslava-Graterol, 18 Nov 2026)
+
+> Soy la Mobile Language Learning Designer, no la dueña de la app. El modelo se entregó, y ahí termina mi responsabilidad: si lo encienden o lo engavetan, no influye en mi diseño ni en el cierre de la investigación.
+
+How agents working for Ana apply it:
+- **Never publish the app's operational status** (whether it runs, is in production, is implemented or complies today), nor "unsigned" or "awaiting signature" labels. That belongs to the app owner, and it takes credibility from Ana's work.
+- Present her work as the **delivered model**: the design, the norms, the agents and their specification.
+- Audit findings stay in Ana's private working documents and viewers, not on public pages or in the congress material.
+
 ## Record-preservation principle (Ana Eslava-Graterol, 18 Nov 2026)
 
 > De ahora en adelante, no se borra el registro desde que se hace el cambio para atrás.
