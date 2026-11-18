@@ -84,7 +84,7 @@ How agents working for Ana apply it:
 How agents working for Ana apply it:
 - **Never publish the app's operational status** (whether it runs, is in production, is implemented or complies today), nor "unsigned" or "awaiting signature" labels. That belongs to the app owner, and it takes credibility from Ana's work.
 - Present her work as the **delivered model**: the design, the norms, the agents and their specification.
-- Audit findings stay in Ana's private working documents and viewers, not on public pages or in the congress material.
+- **Audit results are not public; only the model is** (Ana, 18 Nov 2026): the Evaluator v2 design, the norms, the agents, the xAPI vocabulary and the definitions. Audit findings, checked figures and LRS evidence stay in Ana's private working documents and viewers, never on public pages or in the congress material.
 
 ## Record-preservation principle (Ana Eslava-Graterol, 18 Nov 2026)
 
