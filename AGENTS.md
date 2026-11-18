@@ -76,3 +76,4 @@ How agents working for Ana apply it:
 - **A change applies from the date it is made.** What was recorded before that date is neither deleted nor rewritten: LRS statements, signatures and keys' past statements, versions of the norms, agent cards and earlier sites.
 - **What stops being valid** is voided, excluded from the averages, or marked with its date, and it stays as history.
 - When you propose a correction, never propose deleting past records. Propose the forward change and how the old records are marked.
+- **Only exception: the learner's personal data** (GDPR, art. 17). When a learner asks for erasure, or their period expires, the table that links their UUID to the person is destroyed (crypto-shredding). The statements stay, but can no longer be linked to anyone. The user can also delete the thumbnail of their own image.
