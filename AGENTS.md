@@ -68,6 +68,15 @@ When you design or review an AI agent for Ana:
 - **Record the exact model identifier,** to audit it, not to trust it.
 - **A change of model is a new version,** and it repeats the tests.
 
+## Terminology: the AI compares, it never "mide" (Ana Eslava-Graterol, 18 Nov 2026)
+
+> En español, «medir» sugiere que la IA aplica un criterio propio, no que se apoya en la base de conocimiento. Measure, not decide: *measure* no significa decidir.
+
+How agents working for Ana apply it:
+- **In Spanish, never write that an AI agent «mide», «valora» or «evalúa».** It **compara** the learner's production with the knowledge base and **localiza** how many descriptors are met in the text that comes from the voice. The code counts and computes. A person decides.
+- **In English, *measure* stays** (a number or a distance, not a decision): the motto is «Measure, not decide» and the talk title «Measure ≠ Decide».
+- The registered identifier `evaluator-agent` does not change (R-ID rule 6).
+
 ## Record-preservation principle (Ana Eslava-Graterol, 18 Nov 2026)
 
 > De ahora en adelante, no se borra el registro desde que se hace el cambio para atrás.
