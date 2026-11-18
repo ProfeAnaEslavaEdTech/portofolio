@@ -67,3 +67,12 @@ When you design or review an AI agent for Ana:
 - **Code and tests enforce the role,** not model parameters: a validated output schema, ids from the base, the common block, the R-ID checks A1–A4 and a repeated-input stability test.
 - **Record the exact model identifier,** to audit it, not to trust it.
 - **A change of model is a new version,** and it repeats the tests.
+
+## Record-preservation principle (Ana Eslava-Graterol, 18 Nov 2026)
+
+> De ahora en adelante, no se borra el registro desde que se hace el cambio para atrás.
+
+How agents working for Ana apply it:
+- **A change applies from the date it is made.** What was recorded before that date is neither deleted nor rewritten: LRS statements, signatures and keys' past statements, versions of the norms, agent cards and earlier sites.
+- **What stops being valid** is voided, excluded from the averages, or marked with its date, and it stays as history.
+- When you propose a correction, never propose deleting past records. Propose the forward change and how the old records are marked.
