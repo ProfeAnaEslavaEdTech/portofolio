@@ -32,6 +32,8 @@ bilingual EN/ES, light/dark, sober minimal layout, band-palette facet funnel, no
 - Always meet WCAG 2.1 AA.
 - Always make it switchable ES/EN.
 - Always apply the `paper-editorial-review` criteria while writing, not as a pass at the end: no chains of semicolons, no habitual triads, varied rhythm, plain words (Ana, 19 Nov 2026).
+- Every acronym carries its full term in brackets, in the language of the text, every time it appears: «OCR (reconocimiento óptico de caracteres)» (Ana, 19 Nov 2026). Acronyms in the MLLDE glossary also link to it: `mllde-xapi/tk-coachai-mllde.html#glosario`.
+- No instructions, dates or authorship labels inside text meant for a reader (Ana, 19 Nov 2026): no «Propuesta del informe», timings, «Frase propuesta», «Decidido (fecha)» or «diseño de Ana». Sections are numbered «1.», «2.»…, not «Lámina N».
 - Always keep it minimalist, like the portfolio hub. This includes the governance viewers and the governance documents published as HTML.
 - **The only exception is the TK CoachAI UX/UI demo.** It keeps its own design (Talketika). Anything added to it follows that design.
 
