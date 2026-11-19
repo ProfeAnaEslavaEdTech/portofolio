@@ -75,6 +75,9 @@ When you design or review an AI agent for Ana:
 How agents working for Ana apply it:
 - **In Spanish, never write that an AI agent «mide», «valora» or «evalúa».** It **compara** the learner's production with the knowledge base and **localiza** how many descriptors are met in the text that comes from the voice. The code counts and computes. A person decides.
 - **In English, *measure* stays** (a number or a distance, not a decision): the motto is «Measure, not decide» and the talk title «Measure ≠ Decide».
+- **Never leave "measure" / «medir» incomplete** (Ana, 19 Nov 2026): it always says against what. In English, "measures against the deterministic engine"; in Spanish the AI «compara con la base», and if «medir» appears at all it reads «mide contra el motor determinista». The motto «Measure, not decide», titles, template names and identifiers stay as they are.
+- **The engine is written "el motor (determinista)" / "the engine (deterministic)"** (Ana, 19 Nov 2026). Deterministic means it does not vary: with the same input it always gives the same result, because it applies the spec exactly as written. Spec-driven development is the method that builds it, not the engine itself.
+- **Every AI agent mentioned in a deliverable links to its card** on the published agent registry (`mllde-xapi/governance/html/registro-agentes.html#<agent-id>`; the engine is `#tk-coach-engine`), because the documents go out as PDFs with live links (Ana, 19 Nov 2026).
 - **The agent keeps its name, «Evaluador» / Evaluator** (Ana, 18 Nov 2026): it is the agent's name, and it appears as such in the xAPI statements and in the IRIs (`evaluator-agent`, R-ID rule 6). Only the verb changes: in Spanish the Evaluador «compara», it never «mide», «valora» or «evalúa».
 
 ## Ana's role: learning designer, not the app owner (Ana Eslava-Graterol, 18 Nov 2026)
