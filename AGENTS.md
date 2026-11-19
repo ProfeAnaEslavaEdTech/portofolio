@@ -31,6 +31,7 @@ bilingual EN/ES, light/dark, sober minimal layout, band-palette facet funnel, no
 - Always write in plain language.
 - Always meet WCAG 2.1 AA.
 - Always make it switchable ES/EN.
+- Always apply the `paper-editorial-review` criteria while writing, not as a pass at the end: no chains of semicolons, no habitual triads, varied rhythm, plain words (Ana, 19 Nov 2026).
 - Always keep it minimalist, like the portfolio hub. This includes the governance viewers and the governance documents published as HTML.
 - **The only exception is the TK CoachAI UX/UI demo.** It keeps its own design (Talketika). Anything added to it follows that design.
 
