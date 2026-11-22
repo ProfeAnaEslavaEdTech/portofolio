@@ -98,6 +98,7 @@ ul.crit{list-style:none;margin:8px 0}.crit li{padding:3px 0;font-size:.9rem}
     <div class="chip" id="hFix">Tela: <b id="hFixV">suelta</b></div>
     <div class="chip" id="hLayer">Capa 2 tocada: <b id="hLayerV">0</b></div>
     <div class="chip" id="hAtt">Intento: <b id="hAttV">1</b></div>
+    <div class="chip" id="hCorrect">Puntadas correctas: <b id="hCorrectV">0</b></div>
   </div>
   <div class="actions" id="actions"></div>
 
@@ -133,7 +134,7 @@ var I={es:{kick:"SOP-100-AX · Bloque 3 · Objetivo 5 · Zero Gate",title:"PASO 
  ainote:"Elaborado con asistencia de IA generativa. Revisado, editado y aprobado bajo la responsabilidad editorial de Ana Eslava-Graterol, diseñadora instruccional y profesional autónoma registrada en España (Reglamento (UE) 2024/1689 — Ley de IA, art. 50).",stepN:"Paso N / 5",
  lab:["Inspección","Fijar tela","Pasar aguja","Enlazar","Cerrar"],
  closed:"Cerrada",openS:"Abierta",c1:"Capa 1 · vista frontal",c2:"Capa 2 · vista posterior",
- fixV:"suelta",fixVok:"fijada",layer:"Capa 2 tocada",att:"Intento",
+ fixV:"suelta",fixVok:"fijada",layer:"Capa 2 tocada",att:"Intento",correct:"Puntadas correctas",
  b_next:"Siguiente",b_open:"Abrir la tela",b_close:"Cerrar la tela",b_fix:"Fijar la tela",b_unfix:"Soltar",
  b_enlaza:"Enlaza 1 vuelta",b_pasa:"Pasa todo el hilo",b_cierra:"Aprieta y tensa (mantén)",
  st_inspect:"Toca la tela: ábrela y ciérrala. Cuando veas las dos capas, pulsa «Siguiente».",
@@ -155,7 +156,7 @@ var I={es:{kick:"SOP-100-AX · Bloque 3 · Objetivo 5 · Zero Gate",title:"PASO 
  ainote:"Developed with the assistance of generative AI. Reviewed, edited and approved under the editorial responsibility of Ana Eslava-Graterol, instructional designer registered as a self-employed professional in Spain (EU AI Act, Art. 50).",stepN:"Step N / 5",
  lab:["Inspect","Fix fabric","Pass needle","Wrap","Close"],
  closed:"Closed",openS:"Open",c1:"Layer 1 · front view",c2:"Layer 2 · back view",
- fixV:"loose",fixVok:"fixed",layer:"Layer 2 touched",att:"Attempt",
+ fixV:"loose",fixVok:"fixed",layer:"Layer 2 touched",att:"Attempt",correct:"Correct stitches",
  b_next:"Next",b_open:"Open the fabric",b_close:"Close the fabric",b_fix:"Fix the fabric",b_unfix:"Release",
  b_enlaza:"Wrap 1 turn",b_pasa:"Pass all the thread",b_cierra:"Press & tension (hold)",
  st_inspect:"Tap the fabric: open and close it. When you see the two layers, press “Next”.",
@@ -183,7 +184,7 @@ var SCORM=(function(){var api=null,ok=false;function find(w){var n=0;while(w&&!w
 
 /* ===== state ===== */
 var phase=1, telaOpen=false, rotZ=-6, fixed=false, dragFab=false, fsx=0, srot=0;
-var needle={x:470,y:322}, nDrag=false, took=false, wrapN=0, layer2=0, done=false, attempt=1, closeProg=0, holdTimer=null, recovered=false;
+var needle={x:470,y:322}, nDrag=false, took=false, wrapN=0, layer2=0, done=false, attempt=1, closeProg=0, holdTimer=null, recovered=false, correct=0;
 var scene=document.getElementById('scene'), stage=document.getElementById('stage');
 /* geometry (scene 900x560) */
 var FACE={bl:[190,58],br:[710,58],fr:[822,248],fl:[78,248]}; // top face trapezoid (Capa 1)
@@ -254,7 +255,7 @@ function renderRail(){var u=U();var r=document.getElementById('rail'),rl=documen
 function renderStep(){var u=U();document.getElementById('stepN').textContent=u.stepN.replace('N',Math.min(phase,5));
  document.getElementById('stepTxt').innerHTML=STEP[LANG][phase-1];
  document.getElementById('hFixV').textContent=fixed?u.fixVok:u.fixV;document.getElementById('hFix').className='chip'+(fixed?'':'');
- document.getElementById('hLayerV').textContent=layer2;document.getElementById('hLayer').className='chip'+(layer2>0?' bad':'');document.getElementById('hAttV').textContent=attempt;
+ document.getElementById('hLayerV').textContent=layer2;document.getElementById('hLayer').className='chip'+(layer2>0?' bad':'');document.getElementById('hAttV').textContent=attempt;document.getElementById('hCorrectV').textContent=correct;
  renderRail();renderActions();}
 function addBtn(a,label,cls,fn,dis){var b=document.createElement('button');b.className='btn '+cls;b.textContent=label;if(fn)b.onclick=fn;if(dis)b.disabled=true;a.appendChild(b);return b;}
 function renderActions(){var u=U();var a=document.getElementById('actions');a.innerHTML='';if(done)return;
@@ -308,7 +309,7 @@ function bindHold(btn){function start(ev){ev.preventDefault();closeProg=0;holdTi
  btn.addEventListener('pointerdown',start);btn.addEventListener('pointerup',stop);btn.addEventListener('pointerleave',stop);btn.addEventListener('pointercancel',stop);}
 
 /* finish */
-function finishRun(ev){done=true;var u=U();var cL=layer2===0,cR=(layer2>0?recovered:true);var passed=cL;var score=cL?100:Math.max(0,100-layer2*20);
+function finishRun(ev){done=true;var u=U();var cL=layer2===0,cR=(layer2>0?recovered:true);var passed=cL;var score=cL?100:Math.max(0,100-layer2*20);if(passed){correct++;var _hc=document.getElementById('hCorrectV');if(_hc)_hc.textContent=correct;}
  rec(passed?'passed':'failed','masteryRun',ev,{critical_single_layer:cL,layer2Touches:layer2,score:score});
  SCORM.set("cmi.core.score.min","0");SCORM.set("cmi.core.score.max","100");SCORM.set("cmi.core.score.raw",String(score));SCORM.set("cmi.core.lesson_status",passed?"passed":"failed");
  SCORM.set("cmi.interactions.0.id","single_layer");SCORM.set("cmi.interactions.0.result",cL?"correct":"wrong");
@@ -351,7 +352,7 @@ function setTxt(id,h){var e=document.getElementById(id);if(e)e.innerHTML=h;}
 function toggleLang(){LANG=LANG==='es'?'en':'es';document.documentElement.lang=LANG;document.getElementById('langBtn').textContent=LANG==='es'?'EN':'ES';var u=U();
  setTxt('t_kick',u.kick);setTxt('t_title',u.title);setTxt('t_warn',u.warn);setTxt('t_reset',u.reset);setTxt('t_foot',u.foot);setTxt('t_ainote',u.ainote);
  setTxt('lblC1',u.c1);setTxt('lblC2',u.c2);setTxt('stateChip',telaOpen?u.openS:u.closed);
- document.getElementById('hFix').innerHTML=(LANG==='es'?'Tela: ':'Fabric: ')+'<b id="hFixV"></b>';document.getElementById('hLayer').innerHTML=u.layer+': <b id="hLayerV"></b>';document.getElementById('hAtt').innerHTML=u.att+': <b id="hAttV"></b>';
+ document.getElementById('hFix').innerHTML=(LANG==='es'?'Tela: ':'Fabric: ')+'<b id="hFixV"></b>';document.getElementById('hLayer').innerHTML=u.layer+': <b id="hLayerV"></b>';document.getElementById('hAtt').innerHTML=u.att+': <b id="hAttV"></b>';document.getElementById('hCorrect').innerHTML=u.correct+': <b id="hCorrectV"></b>';
  drawScene();renderStep();}
 
 /* init */
