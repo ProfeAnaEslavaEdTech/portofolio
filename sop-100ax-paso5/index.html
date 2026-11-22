@@ -67,6 +67,7 @@
 <header>
   <h1><span class="es">Paso 5 · Simulador 3D — puntada de bloqueo en una sola capa</span><span class="en">Step 5 · 3D simulator — single-layer locking stitch</span></h1>
   <div style="display:flex;align-items:center;gap:14px">
+    <button id="btnRise" onclick="volverRise()" style="display:none;align-items:center;gap:6px;background:#2F54B7;color:#fff;border:0;border-radius:16px;padding:6px 13px;font-size:12px;font-weight:700;cursor:pointer"><span class="es">⟵ Volver al curso</span><span class="en">⟵ Back to course</span></button>
     <span id="clock" style="font-size:12px;color:#cdd6e6"></span>
     <div class="tg"><button id="bes" class="on" onclick="setLang('es')" aria-label="Español">ES</button><button id="ben" onclick="setLang('en')" aria-label="English">EN</button></div>
   </div>
@@ -191,6 +192,15 @@ if(typeof THREE==='undefined'){simFail('No se pudo cargar la librería 3D (three
 function setLang(l){document.body.className=l;document.getElementById('bes').classList.toggle('on',l=='es');document.getElementById('ben').classList.toggle('on',l=='en');try{localStorage.setItem('s3',l)}catch(e){}}
 try{var sv=localStorage.getItem('s3');if(sv)setLang(sv);}catch(e){}
 function EN(){return document.body.classList.contains('en');}
+/* ---------- Volver a Rise / al curso ---------- */
+function volverRise(){
+  var r=null;try{r=new URLSearchParams(location.search).get('return');}catch(e){}
+  if(r){location.href=decodeURIComponent(r);return;}
+  try{window.close();}catch(e){}
+  setTimeout(function(){if(!window.closed&&history.length>1)history.back();},120);
+}
+(function(){var emb=false;try{emb=(window.self!==window.top);}catch(e){emb=true;}
+  var b=document.getElementById('btnRise');if(b&&!emb)b.style.display='inline-flex';})();
 /* ---------- SCORM 1.2 (espejo para el LMS) ---------- */
 var API=null, LEARNER='anonimo', IX=0;
 function findAPI(w){var n=0;while(w&&!w.API&&w.parent&&w.parent!=w&&n++<8)w=w.parent;return w?w.API:null;}
