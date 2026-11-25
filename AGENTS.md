@@ -13,6 +13,9 @@ but are **not** part of the Ocean Ink design system and must be left exactly as-
 - **mllde-xapi** repo (`ProfeAnaEslavaEdTech/mllde-xapi`), published at
   https://profeanaeslavaedtech.github.io/mllde-xapi/ — the **appendix of an article being
   published**. Off-limits.
+  *Exception decided by Ana (10 Nov 2026):* the MLLDE AI-governance norms live in
+  `governance/` of this repo. Work on them only on a branch; merge to `main` only with
+  Ana's explicit go-ahead, because `main` is the published appendix.
 - **Gamification** repo (`ProfeAnaEslavaEdTech/Gamification`), the *Academic Writing
   Journey* course, published at https://profeanaeslavaedtech.github.io/Gamification/ —
   **part of the TFM**. Off-limits (link to it, never modify or redesign it).
@@ -23,6 +26,79 @@ The rest of the portfolio follows the **Ocean Ink hub model** (the hub at
 `/portofolio/` is the canonical reference). See the `ocean-ink-design-system` skill:
 bilingual EN/ES, light/dark, sober minimal layout, band-palette facet funnel, no emojis.
 
+**Design rule for every deliverable (Ana Eslava-Graterol, 12 Nov 2026):**
+- Always use the `ocean-ink-design-system` skill.
+- Always write in plain language.
+- Always meet WCAG 2.1 AA.
+- Always make it switchable ES/EN.
+- Always apply the `paper-editorial-review` criteria while writing, not as a pass at the end: no chains of semicolons, no habitual triads, varied rhythm, plain words (Ana, 19 Nov 2026).
+- Every acronym carries its full term in brackets, in the language of the text, every time it appears: «OCR (reconocimiento óptico de caracteres)» (Ana, 19 Nov 2026). Acronyms in the MLLDE glossary also link to it: `mllde-xapi/tk-coachai-mllde.html#glosario`.
+- No instructions, dates or authorship labels inside text meant for a reader (Ana, 19 Nov 2026): no «Propuesta del informe», timings, «Frase propuesta», «Decidido (fecha)» or «diseño de Ana». Sections are numbered «1.», «2.»…, not «Lámina N».
+- Always keep it minimalist, like the portfolio hub. This includes the governance viewers and the governance documents published as HTML.
+- **The only exception is the TK CoachAI UX/UI demo.** It keeps its own design (Talketika). Anything added to it follows that design.
+
 ## Git
 
 Commit with `ProfeAnaEslavaEdTech@users.noreply.github.com` (private email is blocked).
+
+## Audit principle — no claim without its proof (Ana Eslava-Graterol, 10 Nov 2026)
+
+> **Principio de auditoría:** cotejar cada afirmación con los datos es lo que destapó los fallos de TK CoachAI. Si se hubiera aceptado lo que se decía sin comprobarlo, seguiríamos con cifras falsas. Cotejar no es lentitud: es la auditoría. Para la gobernanza, ninguna afirmación se da por buena sin su prueba (IDs de sentencias en el LRS, extracto de código y fecha desde la que se cumple).
+
+How agents working for Ana apply it:
+- Treat every "implemented", "done", "fixed" or "verified" from a developer, a vendor, a document or another AI agent as a **claim**, not a fact.
+- Accept it only with its three proofs: **(a)** statement IDs in the LRS, **(b)** the code excerpt, **(c)** the date from which it holds. Until then, mark it **pending**.
+- Check against **independent data** (the external LRS export), not only against the reporter's own summary or a second model's review.
+- Apply it to your own output too: before a document, slide or email states a figure or a fact, check it against the data, and correct it if the data say otherwise.
+
+
+## Decisions propagate at once (Ana Eslava-Graterol, 10 Nov 2026)
+
+> «Todos los cambios hay que hacerlos actualizados a medida que vamos tomando las decisiones, para que nada quede por fuera y desactualizado.»
+
+How agents working for Ana apply it:
+- When Ana takes a decision, update **every** affected document in the same session. That covers norms, specifications, agent cards, the agent registry, the question script, the decision register, the deck and the video script. Then say which ones you changed.
+- Never leave yesterday's version of a document contradicting today's decision. Write a new dated version, or mark the old text as replaced and give the date.
+- In `mllde-xapi`, the changes still go to a branch only (see the exception above).
+- **Errors already corrected stay off the correction list** (Ana, 11 Nov 2026). An error counts as corrected when the independent LRS data show it no longer happens, or when it has its three proofs. If the old data or screen still affect learners or teachers today, it is not corrected.
+
+## Role-invariance principle (Ana Eslava-Graterol, 10 Nov 2026)
+
+> Ningún agente decide, y todos se apegan a su rol, sea cual sea el modelo, se llame como se llame, y sea cual sea la temperatura que aplique el sistema.
+
+When you design or review an AI agent for Ana:
+- **Code and tests enforce the role,** not model parameters: a validated output schema, ids from the base, the common block, the R-ID checks A1–A4 and a repeated-input stability test.
+- **Record the exact model identifier,** to audit it, not to trust it.
+- **A change of model is a new version,** and it repeats the tests.
+
+## Terminology: the AI compares, it never "mide" (Ana Eslava-Graterol, 18 Nov 2026)
+
+> En español, «medir» sugiere que la IA aplica un criterio propio, no que se apoya en la base de conocimiento. Measure, not decide: *measure* no significa decidir.
+
+How agents working for Ana apply it:
+- **In Spanish, never write that an AI agent «mide», «valora» or «evalúa».** It **compara** the learner's production with the knowledge base and **localiza** how many descriptors are met in the text that comes from the voice. The code counts and computes. A person decides.
+- **In English, *measure* stays** (a number or a distance, not a decision): the motto is «Measure, not decide» and the talk title «Measure ≠ Decide».
+- **Never leave "measure" / «medir» incomplete** (Ana, 19 Nov 2026): it always says against what. In English, "measures against the deterministic engine"; in Spanish the AI «compara con la base», and if «medir» appears at all it reads «mide contra el motor determinista». The motto «Measure, not decide», titles, template names and identifiers stay as they are.
+- **The engine is written "el motor (determinista)" / "the engine (deterministic)"** (Ana, 19 Nov 2026). Deterministic means it does not vary: with the same input it always gives the same result, because it applies the spec exactly as written. Spec-driven development is the method that builds it, not the engine itself.
+- **Every AI agent mentioned in a deliverable links to its card** on the published agent registry (`mllde-xapi/governance/html/registro-agentes.html#<agent-id>`; the engine is `#tk-coach-engine`), because the documents go out as PDFs with live links (Ana, 19 Nov 2026).
+- **The agent keeps its name, «Evaluador» / Evaluator** (Ana, 18 Nov 2026): it is the agent's name, and it appears as such in the xAPI statements and in the IRIs (`evaluator-agent`, R-ID rule 6). Only the verb changes: in Spanish the Evaluador «compara», it never «mide», «valora» or «evalúa».
+
+## Ana's role: learning designer, not the app owner (Ana Eslava-Graterol, 18 Nov 2026)
+
+> Soy la Mobile Language Learning Designer, no la dueña de la app. El modelo se entregó, y ahí termina mi responsabilidad: si lo encienden o lo engavetan, no influye en mi diseño ni en el cierre de la investigación.
+
+How agents working for Ana apply it:
+- **Never publish the app's operational status** (whether it runs, is in production, is implemented or complies today), nor "unsigned" or "awaiting signature" labels. That belongs to the app owner, and it takes credibility from Ana's work.
+- Present her work as the **delivered model**: the design, the norms, the agents and their specification.
+- **Audit results are not public; only the model is** (Ana, 18 Nov 2026): the Evaluator v2 design, the norms, the agents, the xAPI vocabulary and the definitions. Audit findings, checked figures and LRS evidence stay in Ana's private working documents and viewers, never on public pages or in the congress material.
+
+## Record-preservation principle (Ana Eslava-Graterol, 18 Nov 2026)
+
+> De ahora en adelante, no se borra el registro desde que se hace el cambio para atrás.
+
+How agents working for Ana apply it:
+- **A change applies from the date it is made.** What was recorded before that date is neither deleted nor rewritten: LRS statements, signatures and keys' past statements, versions of the norms, agent cards and earlier sites.
+- **What stops being valid** is voided, excluded from the averages, or marked with its date, and it stays as history.
+- **Data before the latest deployed improvement are neither corrected nor evaluated in audits** (Ana, 18 Nov 2026). They stay for traceability and as the history of the prototype. An audit starts at the date of the latest deployed improvement.
+- When you propose a correction, never propose deleting past records. Propose the forward change and how the old records are marked.
+- **Only exception: the learner's personal data** (GDPR, art. 17). When a learner asks for erasure, or their period expires, the table that links their UUID to the person is destroyed (crypto-shredding). The statements stay, but can no longer be linked to anyone. The user can also delete the thumbnail of their own image.
