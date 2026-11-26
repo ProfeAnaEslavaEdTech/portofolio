@@ -83,6 +83,12 @@ How agents working for Ana apply it:
 - **Every AI agent mentioned in a deliverable links to its card** on the published agent registry (`mllde-xapi/governance/html/registro-agentes.html#<agent-id>`; the engine is `#tk-coach-engine`), because the documents go out as PDFs with live links (Ana, 19 Nov 2026).
 - **The agent keeps its name, «Evaluador» / Evaluator** (Ana, 18 Nov 2026): it is the agent's name, and it appears as such in the xAPI statements and in the IRIs (`evaluator-agent`, R-ID rule 6). Only the verb changes: in Spanish the Evaluador «compara», it never «mide», «valora» or «evalúa».
 
+## Terminology: mobile-first and SLA (Ana Eslava-Graterol, 26 Nov 2026)
+
+- **MLLDE is mobile-first, not mobile native.** Mobile-first is about design: lessons, interface and interaction conceived from the start for the phone and for a learner who practises outside the classroom. Mobile native is about technology (an app installed from the store). MLLDE is applied as a progressive web app (PWA).
+- **SLA (second language acquisition) is the research field, not a teaching method.** MLLDE does not replace the formal teaching of ESP (English for specific purposes) in engineering schools and multidisciplinary universities: it extends it beyond the classroom.
+- Both terms are in the MLLDE glossary (`mllde-xapi/tk-coachai-mllde.html#g-mobile-first` and `#g-sla`); write them for a reader who is a linguist, not a technician.
+
 ## Ana's role: learning designer, not the app owner (Ana Eslava-Graterol, 18 Nov 2026)
 
 > Soy la Mobile Language Learning Designer, no la dueña de la app. El modelo se entregó, y ahí termina mi responsabilidad: si lo encienden o lo engavetan, no influye en mi diseño ni en el cierre de la investigación.
