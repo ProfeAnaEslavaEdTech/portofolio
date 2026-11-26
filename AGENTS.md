@@ -89,6 +89,15 @@ How agents working for Ana apply it:
 - **SLA (second language acquisition) is the research field, not a teaching method.** MLLDE does not replace the formal teaching of ESP (English for specific purposes) in engineering schools and multidisciplinary universities: it extends it beyond the classroom.
 - Both terms are in the MLLDE glossary (`mllde-xapi/tk-coachai-mllde.html#g-mobile-first` and `#g-sla`); write them for a reader who is a linguist, not a technician.
 
+## Nothing unfinished goes to a client (Ana Eslava-Graterol, 26 Nov 2026)
+
+> «Regla general: no enviar cosas sin terminar sin alertarme. Los humanos nos cansamos y se nos pasan detalles críticos.»
+
+How agents working for Ana apply it:
+- **Before anything is packaged or sent to a client** (Orkelia, Talketika, a university, a journal), check every file for working notes: text addressed to Ana («tú», «aprobaste», «los decides»), open questions, «Propuesta:», «pendiente», «por decidir», «borrador», «en revisión», audit findings and internal dates or labels.
+- **If anything is unfinished, stop and tell Ana first**, with the exact list (file, line, what is missing). Never send it as if it were finished.
+- A delivered document is not rewritten: what is closed later goes in a dated addendum, written in the third person, that says the point is closed in the model and is not left to the implementer.
+
 ## Ana's role: learning designer, not the app owner (Ana Eslava-Graterol, 18 Nov 2026)
 
 > Soy la Mobile Language Learning Designer, no la dueña de la app. El modelo se entregó, y ahí termina mi responsabilidad: si lo encienden o lo engavetan, no influye en mi diseño ni en el cierre de la investigación.
