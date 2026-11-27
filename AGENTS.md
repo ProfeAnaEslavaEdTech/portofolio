@@ -98,6 +98,18 @@ How agents working for Ana apply it:
 - **If anything is unfinished, stop and tell Ana first**, with the exact list (file, line, what is missing). Never send it as if it were finished.
 - A delivered document is not rewritten: what is closed later goes in a dated addendum, written in the third person, that says the point is closed in the model and is not left to the implementer.
 
+## Clarifications, authorship and the model's evolution (Ana Eslava-Graterol, 26–27 Nov 2026)
+
+> «Son aclaratorias de decisiones tomadas, no nuevas decisiones.»
+
+How agents working for Ana apply it:
+- **A clarification of a decision already taken is rewritten in place,** inside the same document, with the date the decision was taken. It is not a new dated note, it does not carry today's date and it does not create a new version (for example, Q24: the registry v0.8.3 is updated, no v0.8.4 is created).
+- **Authorship is stated once, in general,** at the head of the package or document: the model is Ana's, and it carries her signature because she delivered it. No «diseño de Ana» or «firmado por» labels in each section or card.
+- **What the model will do next is part of the model,** under SAM (successive approximation model): MVP plus cycles of testing, evaluation and review. Never present it as «later phases» or as something outside the delivered model.
+- **Scoring terms** (27 Nov 2026): the only score is the **banda** / band, from 0 to 10. Per criterion, write «ubicación por niveles» / "level position"; for the task part, «descriptores objetivo localizados» / "target descriptors located". Never «nota» or «puntuación» for these.
+- **Human in the loop:** a person is notified only when the learner meets 80% of the descriptors, the effective interaction hours (80 h in the v0.8.3 gate) and every criterion. The person reviews the dashboard and **accepts the level** for the next challenges. It is not an exam and gives no title or certificate.
+- **Learner complaints** are called «resolución del conflicto» / conflict resolution.
+
 ## Ana's role: learning designer, not the app owner (Ana Eslava-Graterol, 18 Nov 2026)
 
 > Soy la Mobile Language Learning Designer, no la dueña de la app. El modelo se entregó, y ahí termina mi responsabilidad: si lo encienden o lo engavetan, no influye en mi diseño ni en el cierre de la investigación.
